@@ -1,0 +1,415 @@
+#bb > footer {
+  background: #000;
+  color: #ccc;
+}
+  #bb > footer .c {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 990px;
+    text-align: left;
+  }
+
+#footer-top {
+    background: #F2F2F2;
+    padding: 0;
+}
+    #footer-top > .section {
+        background: #F2F2F2;
+        padding: 25px 0;
+    }
+
+#footer {
+    background: #000000;
+    padding: 0;
+}
+#footer a,
+#footer p,
+#footer div
+{
+    font-size: 13px;
+}
+#footer .content,
+#footer .content a,
+#footer #copy
+{
+    font-family: Arial;
+}
+    #footer section.block h2,
+    #footer .footer-magazine .content a,
+    #block-billboard-blocks-footer-industry .content a
+    {
+        font-size: 17px;
+        font-family: Helvetica;
+        font-weight: normal;
+    }
+    .bbbiz #footer .footer-magazine .content a,
+    .bbbiz #block-billboard-blocks-footer-industry .content a {
+        color: #FA3D33;
+    }
+
+#footer > .section {
+    background: #000000;
+    height: 345px;
+    position: relative;
+    padding: 50px 0 25px;
+}
+
+    #footer > .section .region-footer {
+        position: relative;
+        padding: 5px 0 0 0;
+        height: 340px;
+    }
+
+#footer #block-billboard-blocks-news-features {
+    clear: both;
+}
+#footer .footer-magazine-image
+{
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 225px;
+}
+#footer .footer-magazine
+{
+    position: absolute;
+    left: 255px;
+    top: 0;
+    width: 170px;
+}
+#footer #block-billboard-blocks-footer-industry
+{
+    position: absolute;
+    left: 255px;
+    top: 110px;
+    width: 170px;
+}
+#footer #block-billboard-blocks-footer-industry p {
+    color: #fff;
+}
+/*#footer #block-billboard-blocks-footer-sharing-billboard*/
+#footer #block-menu-menu-sharing-billboard
+{
+    position: absolute;
+    left: 480px;
+    top: 0;
+    width: 160px;
+}
+#footer #block-menu-menu-sharing-billboard .content li a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 28px;
+    width: 100px;
+}
+
+#footer #block-menu-menu-explore-billboard
+{
+    position: absolute;
+    left: 660px;
+    top: 0;
+    width: 160px;
+}
+#footer #block-menu-menu-informations
+{
+    position: absolute;
+    left: 850px;
+    top: 0;
+    width: 140px;
+}
+
+#footer .footer-logo
+{
+    position: absolute;
+    right: 0;
+    top: 221px;
+}
+
+#footer .footer-logos
+{
+    position: absolute;
+    right: 0;
+    top: 271px;
+    width: 304px;
+    margin-top: 20px;
+}
+
+#footer .footer-logos .bb-logo
+{
+    display: inline-block;
+    height: 31px;
+    width: 150px;
+    background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/Billboard-white.svg") no-repeat center;
+    background-size: contain;
+    margin-bottom: 14px;
+}
+
+#footer .footer-logos .site-footer__link:first-child {
+    margin-left: 0;
+}
+
+#footer .footer-logos .site-footer__link:last-child {
+    margin-right: 0;
+}
+
+#footer .footer-logos .site-footer__link {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0 10px;
+    vertical-align: middle;
+}
+
+#footer .footer-logos .affiliates {
+    margin-top: 10px;
+}
+
+#footer .footer-logos .affiliates .site-footer__link {
+    margin-right: 0;
+}
+
+#footer .footer-logos .site-footer__link.spin {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbfoot-spin.png");
+    margin-right: 20px;
+    height: 25px;
+    width: 50px;
+}
+
+#footer .footer-logos .site-footer__link.stereogum {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbfoot-stereogum.png");
+    height: 12px;
+    width: 130px;
+    margin-top: 1px;
+    margin-right: 6px;
+}
+
+#footer .footer-logos .site-footer__link.thr {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbfoot-thr.png");
+    height: 32px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+#footer .footer-logos .site-footer__link.vibe {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbfoot-vibe.png");
+    height: 25px;
+    width: 75px;
+    margin-right: 15px;
+}
+
+#footer #block-menu-menu-footer-links
+{
+    position: absolute;
+    left: 255px;
+    bottom: 10px;
+}
+    #block-menu-menu-footer-links ul.menu {
+        margin: 0;
+    }
+    #block-menu-menu-footer-links ul li {
+        display: inline;
+    }
+    #block-menu-menu-footer-links ul.menu li a {
+        color: #737373;
+    }
+    #block-menu-menu-footer-links ul.menu li.first a {
+        margin: 0 5px 0 0;
+    }
+    /*
+    #block-menu-menu-footer-links ul.menu li.first:after {
+        color: #737373;
+        content: "/";
+    }
+    */
+    #block-menu-menu-footer-links .item-site-by {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+    #block-menu-menu-footer-links .item-developers {
+        position: absolute;
+        left: 255px; /* 510 - 255 */
+        bottom: 10px;
+    }
+#footer #copy
+{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    color: #737373;
+}
+
+#footer #stationid {
+    font-size: 11px;
+    color: #737373;
+    clear: both;
+    position: absolute;
+    left: 0;
+    bottom: 15px
+}
+
+#footer h2 {
+    font-size: 17px;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 16px;
+    line-height: 20px;
+}
+#footer .menu li {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0 0 2px 0;
+    padding: 0
+}
+#footer .menu a,
+#footer .sharing_billboard a {
+    color: #CACACA;
+}
+#footer .menu a:hover,
+#footer .sharing_billboard a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#footer .sharing_billboard li
+{
+    margin: 0 0 10px;
+}
+#footer a.fb, #footer a.tw, #footer a.rss, #footer a.nsl,
+#footer a.gplus, #footer a.yt, #footer a.ig, #footer a.tb,
+#footer a.pi, #footer a.sp {
+    background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -302px -201px transparent;
+    padding-left: 43px;
+}
+#footer a.fb:hover {
+    background-position: -152px -201px;
+}
+#footer a.tw {
+    background-position: -300px -150px;
+}
+#footer a.tw:hover {
+    background-position: -150px -150px;
+}
+#footer a.rss {
+    background-position: -300px -247px;
+}
+#footer a.rss:hover {
+    background-position: -150px -247px;
+}
+#footer a.nsl {
+    background-position: -301px -297px;
+}
+#footer a.nsl:hover {
+    background-position: -151px -297px;
+}
+
+/** Social icons **/
+#footer a.fb {
+  background-position: -298px -200px;
+}
+#footer a.fb:hover {
+  background-position: -148px -200px;
+}
+#footer a.tw {
+  background-position: -300px -149px;
+}
+#footer a.tw:hover {
+  background-position:  -150px -149px;
+}
+#footer a.gplus {
+  background-position: -299px -349px;
+}
+#footer a.gplus:hover {
+  background-position: -149px -349px;
+}
+#footer a.yt {
+    background-position: 0 -4198px;
+}
+#footer a.yt:hover {
+    background-position: -200px -4198px;
+}
+#footer a.ig {
+    background-position: 0 -4248px;
+}
+#footer a.ig:hover {
+    background-position: -200px -4248px;
+}
+#footer a.tb {
+    background-position: 0px -4299px;
+}
+#footer a.tb:hover {
+    background-position: -200px -4299px;
+}
+#footer a.pi {
+    background-position: -1px -4349px;
+}
+#footer a.pi:hover {
+    background-position: -201px -4349px;
+}
+#footer a.sp {
+    background-position: 0px -4399px;
+}
+#footer a.sp:hover {
+    background-position: -200px -4399px;
+}
+
+
+.bbbiz footer #block-imageblock-2 .block-image {
+    background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll -1px -2400px transparent;
+    font: 0px/0 a;
+    height: 64px;
+    width: 413px;
+}
+.bbbiz footer #block-imageblock-2 .block-image img {
+    display: none;
+}
+
+#footer-top .block-dfp,
+#footer-banner-wrapper {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+
+#footer #block-menu-menu-sharing-billboard .content li a.nsl.biz {
+  display: none;
+}
+
+#bb.bbbiz #footer #block-menu-menu-sharing-billboard .content li a.nsl.com {
+  display: none;
+}
+
+#bb.bbbiz #footer #block-menu-menu-sharing-billboard .content li a.nsl.biz {
+  display: block;
+}
+
+#footer .block-imageblock .block-body img {
+  margin-left: 15px;
+}
+
+#footer .block-imageblock div.block-image {
+  text-align: right;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:27 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:24 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 199.219 (3)
+  esindex: 0.011
+  captures_list: 223.24
+  CDXLines.iter: 13.751 (3)
+  PetaboxLoader3.datanode: 233.312 (4)
+  exclusion.robots: 0.363
+  exclusion.robots.policy: 0.347
+  RedisCDXSource: 5.841
+  load_resource: 91.819
+*/

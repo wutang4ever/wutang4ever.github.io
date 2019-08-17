@@ -1,0 +1,729 @@
+
+/* sitewide news features */
+
+.sitewide-news-features {
+  background: #f2f2f2;
+  padding: 32px 0 40px;
+}
+    .sitewide-news-features > .listing {
+      width: 990px;
+      text-align: left;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+      .sitewide-news-features .view-gallery .view-content article {
+        display: inline;
+        float: left;
+        margin: 0 0 0 30px;
+        padding: 167px 0 0;
+        width: 225px;
+        height: 88px;
+      }
+        .sitewide-news-features .view-gallery .view-content article:first-child {
+          margin: 0 !important;
+        }
+        .sitewide-news-features .view-gallery .view-content article img {
+          width: 225px;
+          height: 149px;
+        }
+
+
+/* the small thumb size 85px x 55 px */
+
+.listing > article.small_thumb {
+    padding: 0 0 18px 104px;
+    width: 206px;
+    border-bottom: 1px solid #e6e6e6;
+    height: auto;
+    min-height: 55px;
+    margin: 0 0 14px;
+}
+
+.full_width .listing > article {
+  display: inline;
+  float: left;
+}
+    .listing > article.small_thumb header {
+        padding-top: 22px;
+    }
+        .listing > article.small_thumb.no_category header {
+            padding-top: 0;
+        }
+        .listing > article.small_thumb header h1 {
+            text-align: left;
+            margin: 0;
+        }
+    .listing > article.small_thumb img {
+        width: 85px;
+        height: 55px;
+        top: 3px;
+    }
+    .listing article.promo {
+      height: 65px;
+      padding: 222px 0 0;
+      position: relative;
+      width: 310px;
+    }
+    .listing article.promo.no-image {
+      padding: 0 0 18px 0;
+      margin: 0 0 14px;
+      height: auto;
+      border-bottom: 1px solid #E6E6E6;
+    }
+    .no-category article.promo .category {
+      display: none; 
+    }
+
+    .listing article.promo img,
+    .listing > article img {
+      background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F2F2F2;
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+
+    .listing article.promo img {
+      width: 310px;
+      height: 205px;
+    }
+    
+    .listing article.promo .thumbnail img {
+      width: auto;
+      height: auto;
+    }
+
+    .listing > article header .category {
+      color: #FC666A;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .listing > article header .category a {
+      color: #FC666A;
+      text-transform: uppercase;
+    }
+
+    .listing article.promo h1 {
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 20px;
+      margin: 0;
+      text-align: center;
+    }
+    .listing article.promo h1 a {
+      color: #000;
+    }
+
+.teaser
+{
+    margin: 0;
+    padding: 25px 0;
+    border-top: 1px solid #EDEDED;
+}
+    .bb_artist .views-row-first .teaser
+    {
+        border-top: 0 none;
+    }
+    .teaser .content-image
+    {
+        float: left;
+        padding: 0 30px 0 0;
+    }
+    .teaser h2
+    {
+        text-align: left;
+        font-size: 17px;
+        margin: 0 0 8px;
+        line-height: 20px;
+    }
+    .teaser h2 a
+    {
+        color: #1A1A1A;
+    }
+    .teaser .content-category
+    {
+        padding-bottom: 3px;
+    }
+  .teaser .content-category .field-item,
+    .teaser .content-category a
+    {
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #F33747;
+    }
+    .teaser .content-category .field-items .field-item
+    {
+        float: left;
+    }
+    .teaser .content-category .field-items .field-item:after {
+      content: " |";
+      padding: 0 5px 0 1px;
+    }
+    .teaser .content-category .field-items .field-item:last-child:after {
+      content: "";
+      padding: 0;
+    }
+    .teaser .content-category .field-items 
+    {
+        overflow: hidden;
+    }
+    .teaser .teaser-body
+    {
+        font-family: Arial;
+        font-size: 13px;
+        line-height: 17px;
+        overflow: hidden;
+    }
+    .teaser .teaser-body .submitted
+    {
+        float: left;
+        color: #999999;
+    }
+    .teaser .teaser-footer
+    {
+        margin: 5px 0 0;
+        
+    }
+    .teaser .post-button .ra1-pw-icon-googleplus,
+    .teaser .post-button .ra1-pw-icon-twitter,
+    .teaser .post-button .ra1-pw-icon-post,
+    .teaser .post-button .ra1-pw-count {
+        display: none !important;
+    }
+
+    .post-button .ra1-pw-icon-linkedin {
+        display: none !important;
+    }
+
+    /*#content-bottom .teaser .social .ra1-pw-classicWidget .ra1-pw-icon,
+    #content .teaser .social .ra1-pw-classicWidget .ra1-pw-icon,*/
+    .teaser .social .comment-count a {
+        float: left !important;
+        border: 1px solid #E6E6E6 !important;
+        padding: 0 0 0 30px !important;
+        width: 30px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        margin: 0 -1px 0 0 !important;
+        font-family: Arial;
+        font-size: 11px;
+        text-decoration: none;
+        background-image: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png");
+        color: #1A1A1A;
+        overflow: hidden;
+    }
+        .social a.ra1-pw-icon-facebook {
+            background-position: 16px -194px !important;
+        }
+        .social a.ra1-pw-icon-linkedin {
+            background-image: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") !important;
+            background-position: 14px -542px !important;
+        }
+
+    .teaser .social .comment-count a {
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") 10px -491px !important;
+    }
+
+    .listing > article.no_image {
+        height: 75px;
+        padding-top: 0;
+    }
+    .listing > article.no_category header {
+        padding-top: 0;
+    }
+    .listing > article.no_image header {
+        position: static;
+        top: 0;
+    }
+    .listing > article h1 a {
+        color: #000000;
+    }
+    .listing > article h1 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 20px;
+        text-align: center;
+    }
+
+  .listing .recent-review {
+    border-bottom: 1px solid #E6E6E6;
+    height: auto;
+    margin: 0 0 14px;
+    min-height: 55px;
+    padding: 0 0 18px 74px;
+    width: 206px;
+    position: relative;
+}
+.listing .recent-review div {
+    padding-top: 22px;
+}
+.listing .recent-review.no-category div {
+    padding-top: 0;
+}
+.node-type-article .listing .recent-review h1,
+.listing .recent-review h1 {
+    display: block;
+    margin: 0;
+    padding: 8px 0 0;
+    text-align: left;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.node-type-article .listing .recent-review h1 a {
+  color: #000;
+}
+
+
+.listing .recent-review img {
+    height: 55px;
+    top: 3px;
+    width: 55px;
+    background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F2F2F2;
+    display: block;
+    left: 0;
+    position: absolute;
+}
+
+/* the song review */
+
+.listing > article.song_review {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 30px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.listing > article.song_review.no_divider {
+  border-top: 0;
+  padding-top: 0;
+}
+
+    .listing > article.no_category.song_review header {
+      padding: 0 150px 0 150px;
+    }
+
+    .listing > article.song_review header h1 {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0 0 2px;
+      padding: 0;
+    }
+
+    .listing > article.song_review header p.chart_info {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+      .listing > article.song_review header p a {
+        color: #1a1a1a;
+      }
+
+      .listing > article.song_review header p a ~ a {
+        color: #b2b2b2;
+      }
+
+      .listing > article.song_review header p a ~ a.peakdate {
+        color: #1CACE2;
+      }
+
+    .listing > article.song_review header .options,
+    .teaser.node-song header .options,
+    .teaser.node-album header .options {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 140px;
+      font-size: 17px;
+      height: 39px;
+      line-height: 39px;
+      margin: 0;
+    }
+
+      .listing > article.song_review header .options > li,
+      .teaser.node-song header .options li,
+      .teaser.node-album header .options li {
+        border-top: 1px solid #ececec;
+      }
+
+        .listing > article.song_review header .options > li:first-child,
+        .teaser.node-song header .options > li:first-child,
+        .teaser.node-album header .options > li:first-child {
+          border-top: 0 none;
+        }
+
+        .listing > article.song_review header .options li a,
+        .teaser.node-song header .options li a,
+        .teaser.node-album header .options li a {
+          display: block;
+          font-size: 17px;
+          height: 39px;
+          line-height: 39px;
+          padding: 0;
+          text-align: center;
+        }
+
+        .listing > article.song_review header .options li.dd,
+        .teaser.node-song header .options li.dd,
+        .teaser.node-album header .options li.dd {
+          position: relative;
+          text-align: center;
+          cursor: pointer;
+        }
+
+          .listing > article.song_review header .options li.dd:hover,
+          .teaser.node-song header .options li.dd:hover,
+          .teaser.node-album header .options li.dd:hover {
+            border-left: 1px solid #ececec;
+            border-right: 1px solid #ececec;
+            border-top: 1px solid #ececec;
+          }
+
+            .listing > article.song_review header .options li.dd:first-child:hover,
+            .teaser.node-song header .options li.dd:first-child:hover,
+            .teaser.node-album header .options li.dd:first-child:hover {
+              margin-top: -1px;
+            }
+
+          .listing > article.song_review header .options li.dd span,
+          .teaser.node-song header .options li.dd span,
+          .teaser.node-album header .options li.dd span {
+            display: inline-block;
+            color: #1cace2;
+            padding-right: 18px;
+            background: url('/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/temp_icons/down_arrow.png') no-repeat 100% 50%;
+          }
+
+          .listing > article.song_review header .options li.dd ul,
+          .teaser.node-song header .options li.dd ul,
+          .teaser.node-album header .options li.dd ul {
+            position: absolute;
+            z-index: 9;
+            left: -1px;
+            right: -1px;
+            top: 100%;
+            padding: 0;
+            display: none;
+            background: transparent;
+            text-align: left;
+          }
+
+            .listing > article.song_review header .options li.dd:hover ul,
+          .teaser.node-song header .options li.dd:hover ul,
+            .teaser.node-album header .options li.dd:hover ul {
+              display: block;
+            }
+
+            .listing > article.song_review header .options li.dd ul li,
+            .teaser.node-song header .options li.dd ul li,
+            .teaser.node-album header .options li.dd ul li {
+              float: none;
+              display: block;
+              background: #fff;
+              border: 1px solid #ececec;
+            }
+
+              .listing > article.song_review header .options li.dd ul li + li,
+              .teaser.node-song header .options li.dd ul li + li,
+              .teaser.node-album header .options li.dd ul li + li {
+                border-top: 0 none;
+              }
+
+              .listing > article.song_review header .options li.dd ul li a,
+              .teaser.node-song header .options li.dd ul li a,
+              .teaser.node-album header .options li.dd ul li a {
+                padding-left: 27px;
+                color: #1a1a1a;
+                text-align: left;
+              }
+
+                .listing > article.song_review header .options li.dd ul li a.ms,
+                .listing > article.song_review header .options li.dd ul li a.sy,
+                .listing > article.song_review header .options li.dd ul li a.ro,
+                .teaser.node-song header .options li.dd ul li a.ms,
+                .teaser.node-song header .options li.dd ul li a.sy,
+                .teaser.node-song header .options li.dd ul li a.ro,
+                .teaser.node-album header .options li.dd ul li a.ms,
+                .teaser.node-album header .options li.dd ul li a.sy,
+                .teaser.node-album header .options li.dd ul li a.ro {
+                  background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -999em -999em;
+                  padding-left: 43px;
+                }
+
+                  .listing > article.song_review header .options li.dd ul li a.ms,
+                  .teaser.node-song header .options li.dd ul li a.ms,
+                  .teaser.node-album header .options li.dd ul li a.ms {
+                    background-position: 5px -2647px;
+                  }
+
+                  .listing > article.song_review header .options li.dd ul li a.sy,
+                  .teaser.node-song header .options li.dd ul li a.sy,
+                  .teaser.node-album header .options li.dd ul li a.sy {
+                    background-position: 5px -2698px;
+                  }
+
+                  .listing > article.song_review header .options li.dd ul li a.ro,
+                  .teaser.node-song header .options li.dd ul li a.ro,
+                  .teaser.node-album header .options li.dd ul li a.ro {
+                    background-position: 5px -2749px;
+                  }
+
+      .listing > article.song_review header .social li {
+        display: inline;
+        float: left;
+        padding: 0;
+        margin: 0;
+      }
+
+         .listing > article.song_review header .social .fb {
+            background-position: 12px -194px;
+          }
+
+          .listing > article.song_review header .social .cmt {
+            background-position: 12px -493px;
+          }
+
+  .listing > article.song_review > img {
+    top: 30px;
+  }
+
+  .listing > article.song_review .chart_awards {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  .listing > article.song_review.no_divider img,
+  .listing > article.song_review.no_divider .chart_awards {
+    top: 0;
+  }
+
+  .listing > article.song_review .position {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    border: 3px solid #1a1a1a;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    -moz-border-radius: 34px;
+    -webkit-border-radius: 34px;
+    border-radius: 34px;
+    position: absolute;
+    left: 95px;
+    top: 40px;
+  }
+
+  .listing > article.song_review.no_divider .position {
+    top: 10px;
+  }
+
+/**
+ * Related Banner
+ */
+.related_banner {
+  margin: 30px 0;
+  background: #F5F5F5;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  padding: 4px 4px 4px 20px;
+  position: relative;
+}
+
+  .related_banner > a {
+    color: inherit;
+    overflow: hidden;
+    display: block;
+  }
+
+    .related_banner > a:hover {
+      text-decoration: none;
+    }
+
+  .related_banner img {
+    float: right;
+    margin-left: 20px;
+    display: block;
+    position: static !important;
+  }
+
+  .related_banner h3 {
+    margin: 10px 0;
+  }
+
+    .related_banner > a:hover h3 {
+      text-decoration: underline;
+    }
+
+    .related_banner img + h3 {
+      margin-top: 15px;
+    }
+
+  .related_banner p {
+    font: 13px/17px Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+
+    .related_banner h3 + p {
+      margin-top: -5px;
+    }
+
+  .listing > article .inline_media {
+    margin-bottom: 0;
+    margin-top: 30px;
+    margin-left: -170px;
+  }
+
+  .related_banner .link {
+    font-size: 17px;
+    color: #1CACE2;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+
+    .related_banner a:hover .link {
+      text-decoration: underline;
+    }
+    
+    /**
+ * Profiles
+ * (Not linked to the standard .listing module)
+ */
+.profiles {
+    overflow: hidden;
+}
+.profiles.singular {
+    border-bottom: 1px solid #e6e6e6;
+}
+.profiles p {
+    font-family: sans-serif;
+}
+    .profiles > h2 {
+        padding-bottom: 15px;
+        padding-top: 45px;
+        clear: left;
+        text-align: center;
+        margin-bottom: 0;
+        border-top: 1px solid #e6e6e6;
+    }
+    .profiles > article {
+        float: left;
+        padding: 30px 0 15px 30px;
+        width: 300px;
+        border-top: 1px solid #e6e6e6;
+    }
+    .profiles.singular > article {
+        /* First-child on contributor page */
+        border-top: 0;
+        padding-top: 0;
+    }
+        .profiles.singular > article header img {
+            top: 0;
+        }
+    .profiles > article.first {
+        padding-left: 0;
+    }
+        .profiles header {
+            overflow: hidden;
+        }
+            .profiles header img {
+                float: left;
+                margin-right: 30px;
+            }
+            .profiles header h2 {
+                /* Used on contributor pages */
+                margin-bottom: 5px;
+    text-align: left;
+            }
+            .profiles header h3 {
+                margin-bottom: 5px;
+            }
+            .profiles header h3 b {
+                display: block;
+            }
+            .profiles header h3 i {
+                font-style: normal;
+            }
+    .profiles > article.full {
+        padding-left: 170px;
+        position: relative;
+        width: auto;
+    }
+    .profiles > article.full + article.full {
+
+    }
+        .profiles > article.full img {
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+    .profiles p {
+        margin: 15px 0;
+    }   
+ 
+ .listing > article.artist_thumb {
+    border-bottom: 1px solid #E6E6E6;
+    height: auto;
+    margin: 0 0 14px;
+    min-height: 55px;
+    padding: 0 0 18px 74px;
+    width: 206px;
+    position: relative;
+}
+.listing > article.artist_thumb header {
+    padding-top: 22px;
+}
+.listing > article.artist_thumb.no_category header {
+    padding-top: 0;
+}
+.listing > article.artist_thumb header h1, .listing > article.artist_thumb header .fb-like {
+    display: block;
+    margin: 0 0 12px;
+    text-align: left;
+}
+.listing > article.artist_thumb header .fb-like {
+    margin: 0;
+}
+.listing > article.artist_thumb img {
+    height: 55px;
+    top: 3px;
+    width: 55px;
+}
+
+.listing > article + p, .listing + p {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+}
+.listing + p.load-more {
+    margin-bottom: 60px;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:33 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:35 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 54.186 (3)
+  esindex: 0.01
+  captures_list: 70.396
+  CDXLines.iter: 11.448 (3)
+  PetaboxLoader3.datanode: 57.054 (4)
+  exclusion.robots: 0.36
+  exclusion.robots.policy: 0.341
+  RedisCDXSource: 0.871
+  PetaboxLoader3.resolve: 7126.414
+  load_resource: 7156.562
+*/

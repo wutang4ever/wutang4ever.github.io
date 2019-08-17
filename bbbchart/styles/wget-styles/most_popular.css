@@ -1,0 +1,154 @@
+/*
+
+Most popular module, as seen in the right column on the photo gallery and many other pages
+
+*/
+
+
+.module_most_popular {
+    margin: 0 0 30px;
+}
+    .module_most_popular h2 {
+        margin-bottom: 13px;
+    }
+    .module_most_popular ul {
+        text-align: center;
+        font-size: 17px;
+        line-height: 20px;
+        margin: 0 0 20px;
+    }
+        .module_most_popular ul li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+            .module_most_popular ul li.current a {
+                color: #000;
+                text-decoration: underline;
+            }
+    .module_most_popular .listing {
+        display: block;
+    }
+        .module_most_popular .listing ~ .listing {
+            display: none;
+        }
+        .module_most_popular .listing#mostPopular_articles {
+            border-top: 1px solid #e6e6e6;
+            padding: 14px 0 0;
+        }
+        .module_most_popular .listing > p {
+            text-align: center;
+            font-size: 17px;
+            line-height: 20px;
+            margin: 0;
+        }
+
+.mostpopular-block
+{
+    border: 0 none;
+}
+    .mostpopular-block .item-list
+    {
+        border: 0 none;
+        padding: 0;
+        margin: 0;
+    }
+    .mostpopular-block .item-list > ul {
+        font-size: 17px;
+        line-height: 20px;
+        margin: 0 0 20px;
+        text-align: center;
+        background: transparent;
+        border: 0 none;
+    }
+    .mostpopular-block .item-list ul li {
+        display: inline-block;
+        padding: 0 5px;
+        background: transparent;
+        border: 0 none;
+        margin: 0;
+    }
+    .mostpopular-block .item-list ul li a {
+        background: transparent;
+        border: 0 none;
+    }
+    .mostpopular-block .item-list ul li.selected a {
+        color: #000000;
+        text-decoration: underline;
+    }
+    .mostpopular-block .mostpopular--content .mostpopular--items > li
+    {
+        padding: 0;
+    }
+    .mostpopular-block article.small_thumb {
+        position: relative;
+        border-bottom: 1px solid #E6E6E6;
+        height: auto;
+        margin: 0 0 14px;
+        min-height: 55px;
+        padding: 0 0 18px 104px;
+        width: 206px;
+    }
+    .mostpopular-block article header
+    {
+        position: relative;
+    }
+    .mostpopular-block article .category {
+        display: none;
+        text-align: left;
+    }
+    .mostpopular-block article .category a {
+        color: #FC666A;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .mostpopular-block article h1 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 20px;
+        margin: 0;
+        text-align: left;
+        padding: 0;
+    }
+    .mostpopular-block article h1 a {
+        color: #000000;
+    }
+    .mostpopular-block article > .thumbnail {
+        left: 0;
+        position: absolute;
+        top: 3px;
+        width: 85px;
+    }
+    .mostpopular-block article > .thumbnail img {
+        background: url("/web/20190719164436im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F2F2F2;
+        display: block;
+    }
+    .mostpopular-block .mostpopular--content
+    {
+        border-top: 1px solid #E6E6E6;
+        padding: 14px 0 0;        
+    }
+    .mostpopular-block .mostpopular--intervals
+    {
+        display: none;
+    }
+/*
+     FILE ARCHIVED ON 16:44:36 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:37 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 120.368 (3)
+  esindex: 0.009
+  captures_list: 151.371
+  CDXLines.iter: 21.213 (3)
+  PetaboxLoader3.datanode: 100.965 (4)
+  exclusion.robots: 0.396
+  exclusion.robots.policy: 0.38
+  RedisCDXSource: 4.315
+  PetaboxLoader3.resolve: 53.586
+  load_resource: 64.013
+*/

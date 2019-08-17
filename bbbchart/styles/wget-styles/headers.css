@@ -1,0 +1,248 @@
+/**
+ * Section header
+ */
+.section_header {
+    position: relative;
+    padding: 25px 50px 2px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.section_header.image {
+  padding: 0;
+  border-bottom: none !important;
+}
+    .section_header h1 {
+        margin-bottom: 0;
+    }
+    /** Arrange meta details above main title **/
+    .section_header .header_meta {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    /** Arrange socialities in bottom-left & bottom-right **/
+    .section_header .social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .section_header .social + .social,
+    .section_header .social.right {
+        left: auto;
+        right: 0;
+    }
+
+    /**
+     * Hoverable socialities (e.g. solitary RSS icons, print icons)
+     */
+    .section_header .social_hover_icon a:hover {
+        background-color: #f2f2f2;
+    }
+
+/**
+ * Header meta (e.g. date)
+ */
+.header_meta {
+    text-align: center;
+    list-style: none;
+    color: #FC666A;
+    margin: 0;
+}
+    .chart-page-weekly-artist .header_meta {
+        background: url("/web/20190719164441im_/https://www.billboard.com/sites/all/themes/bb/images/bg-d9d9d9.png") repeat-x scroll 0 24px transparent;
+        color: #ff6567;
+        font-size: 0;
+        padding: 15px 0 0 0;
+    }
+.header_meta li {
+    /*display: inline-block;*/
+    display: inline;
+    padding: 0;
+    color: #fc666a;
+    vertical-align: top;
+}
+    .chart-page-weekly-artist .header_meta li {
+        background: #ffffff;
+        color: #ff6567;
+        font-size: 14px;
+    }
+    .header_meta li span.chart_date {
+        color: #fc666a;
+        cursor: pointer;
+    }
+        .chart-page-weekly-artist .header_meta li span.chart_date {
+            color: #ff6567;
+        }
+    .header_meta li span.chart_date:hover {
+        text-decoration: underline;
+    }
+        .chart-page-weekly-artist .header_meta:hover li span.chart_date {
+            color: #34b0f7;
+        }
+    .header_meta li.prev {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    .header_meta li.next {
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .header_meta li.next a, .header_meta li.prev a, .header_meta li.next span, .header_meta li.prev span {
+        color: #FFFFFF;
+        display: inline-block;
+        overflow: hidden;
+        padding: 0 10px;
+        position: relative;
+        white-space: nowrap;
+    }
+        .chart-page-weekly-artist .header_meta li.next a, .chart-page-weekly-artist .header_meta li.prev a,
+        .chart-page-weekly-artist .header_meta li.next span, .chart-page-weekly-artist .header_meta li.prev span {
+            width: 0;
+        }
+    .header_meta li.prev + li {
+      font-size: 17px;
+    }
+        .chart-page-weekly-artist .header_meta li.prev + li {
+          font-size: 16px;
+          line-height: 18px;
+        }
+    .header_meta:hover li.next a, .header_meta:hover li.prev a,
+    .header_meta li.next a:hover, .header_meta li.prev a:hover {
+        color: #FC666A;
+        text-decoration: none;
+    }
+        .chart-page-weekly-artist .header_meta:hover li.next a, .header_meta:hover li.prev a,
+        .chart-page-weekly-artist .header_meta li.next a:hover, .header_meta li.prev a:hover {
+            color: #34b0f7;
+            width: 70px;
+        }
+    .header_meta li.next a:hover, .header_meta li.prev a:hover {
+        text-decoration: underline;
+    }
+    .header_meta:hover li.next span, .header_meta:hover li.prev span,
+    .header_meta li.next span:hover, .header_meta li.prev span:hover {
+        color: #B2B2B2;
+        cursor: default;
+    }
+        .chart-page-weekly-artist .header_meta:hover li.next span, .chart-page-weekly-artist .header_meta:hover li.prev span,
+        .chart-page-weekly-artist .header_meta li.next span:hover, .chart-page-weekly-artist .header_meta li.prev span:hover {
+            width: 70px;
+        }
+    .header_meta li.next a:before, .header_meta li.prev a:before, .header_meta li.next span:before, .header_meta li.prev span:before {
+        background: url("/web/20190719164441im_/https://www.billboard.com/sites/all/themes/bb/images/sprite.png") no-repeat scroll 0 -5400px transparent;
+        content: "";
+        height: 10px;
+        left: 14px;
+        position: absolute;
+        top: 4px;
+        width: 6px;
+    }
+    .header_meta li.prev a:before, .header_meta li.prev span:before {
+        background-position: 0 -5350px;
+        left: auto;
+        right: 14px;
+    }
+    .header_meta:hover li.next a:before,
+    .header_meta:hover li.next span:before {
+        left: auto;
+        right: 0;
+    }
+    .header_meta:hover li.prev a:before,
+    .header_meta:hover li.prev span:before {
+        right: auto;
+        left: 0;
+    }
+    .header_meta li.next a:hover:before, .header_meta li.next span:hover:before {
+        left: auto;
+        right: 0;
+    }
+    .header_meta li.prev a:hover:before, .header_meta li.prev span:hover:before {
+        left: 0;
+        right: auto;
+    }
+    .header_meta li.next span:before {
+        background-position: -150px -5400px;
+    }
+    .header_meta li.prev span:before {
+        background-position: -150px -5350px;
+    }
+
+/**
+ * Header meta categories (e.g. date)
+ * @extends .header_meta
+*/
+.header_meta_categories {
+
+}
+    .header_meta_categories li:after {
+        content: " /";
+        padding: 0 5px 0 1px;
+    }
+    .header_meta_categories li.pipes_separated:after {
+        content: " |";
+        padding: 0 5px 0 1px;
+    }
+    .header_meta_categories li.last_element:after {
+        content: " ";
+        padding: 0 5px 0 1px;
+    }
+    .header_meta_categories li span,
+    .header_meta_categories li a {
+        text-transform: uppercase;
+    }
+
+/**
+ * Header intro
+ */
+.header_intro {
+    text-align: left;
+    width: 460px;
+    margin: 10px auto;
+}
+    .header_intro * {
+        font-size: 17px;
+    }
+    /** "Read more" effect -- commented out by Nate, editors want to be able to put markup in header intro **/
+ /* .header_intro > span {
+        display: none;
+    } */
+    /*.node-type-chart-landing .header_intro > span,
+    .node-type-chart .header_intro > span {
+        display: none;
+    }*/
+    .header_intro a span {
+        color: #1a1a1a;
+    }
+
+ .page-videos #page-title,
+ .page-photos #page-title {
+   display: none;
+ }
+
+.node-type-webform #page-title {
+  font-weight: bold;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:41 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:23 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 54.496 (3)
+  esindex: 0.007
+  captures_list: 74.45
+  CDXLines.iter: 14.012 (3)
+  PetaboxLoader3.datanode: 46.361 (4)
+  exclusion.robots: 0.288
+  exclusion.robots.policy: 0.275
+  RedisCDXSource: 1.761
+  PetaboxLoader3.resolve: 156.389
+  load_resource: 165.095
+*/

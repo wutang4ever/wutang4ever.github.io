@@ -1,0 +1,375 @@
+/*
+
+	search results
+
+	html: <section class="search_results">...</section>
+
+*/
+
+#chart_search_results .search_results > h1 {
+	font: bold 35px/42px Georgia, serif;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 27px 0 16px;
+	margin: 0 0 13px;
+	text-align: center;
+}
+
+/**
+ * the form
+ */
+
+#chart_search_results .search_results form {
+	margin: 0;
+	padding: 0;
+}
+#chart_search_results .search_results form fieldset {
+		margin: 0;
+		padding: 0;
+	}
+#chart_search_results .search_results form legend {
+			display: none;
+		}
+  
+  #chart_search_results .search_results form #edit-refine {
+    margin: 0 0 0 30px;
+    width: 990px;
+  }
+  
+  #chart_search_results .search_results form #edit-refine legend {
+    display: block;
+  }
+  #chart_search_results .search_results form #edit-refine legend span {
+    text-align: center;
+  }
+#chart_search_results .search_results form .fieldset-wrapper {
+			margin: 0 0 0 -30px;
+		}
+#chart_search_results .search_results .fieldset-wrapper > div {
+				display: inline;
+				float: left;
+    clear: none;
+				margin: 0 0 11px 30px;
+				width: 310px;
+			}
+   #chart_search_results .search_results .fieldset-wrapper > div.search-message {
+     width: auto;
+     float: none;
+     display: block;
+     margin: 0 35px 10px;
+     font-size: 12px;
+     font-family: Arial, sans-serif;
+     font-style: italic;
+   }
+   #chart_search_results .search_results .fieldset-wrapper > div.search-message-red {
+     width: auto;
+     float: none;
+     display: block;
+     margin: 0 0 15px;
+     text-align: center;
+     font-size: 14px;
+     color: #fa3d33;
+     font-family: Arial, sans-serif;
+   }
+   #chart_search_results .search_results .fieldset-wrapper .container-inline-date > div {
+     width: 310px;
+   }
+			#chart_search_results .search_results form div.total {
+				padding: 45px 0 0 0;
+				font: 16px/20px Arial, sans-serif;
+				color: #b2b2b2;
+			}
+				#chart_search_results .search_results form div.total b {
+					color: #1a1a1a;
+				}
+		#chart_search_results .search_results form p {
+			clear: both;
+			padding: 9px 0 0 0;
+			text-align: center;
+		}
+		#chart_search_results .search_results form #edit-refine {
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+		#chart_search_results .search_results form label, 
+  #chart_search_results .search_results form #edit-refine legend span {
+			display: block;
+			font: bold 16px/32px Arial, sans-serif;
+			margin: 0 0 4px;
+		}
+		#chart_search_results .search_results form input[type=text], 
+  #chart_search_results .search_results form select {
+			display: block;
+			border: 1px solid #d9d9d9;
+			padding: 9px 15px;
+			width: 100%;
+			color: #b2b2b2;
+			font: 14px/20px Arial, sans-serif;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+  #chart_search_results .search_results form select option {
+    color: #000;
+  }
+  #chart_search_results .search_results form select option:hover {
+    color: #b2b2b2;
+  }
+			#chart_search_results .search_results form input[type=text]::-webkit-input-placeholder {
+			  color: #b2b2b2;
+			}
+			#chart_search_results .search_results form input[type=text]:-moz-placeholder {
+			  color: #b2b2b2;
+			}
+			#chart_search_results .search_results form input[type=text]:-ms-input-placeholder {
+			  color: #b2b2b2;
+			}
+			#chart_search_results .search_results form input[type=text]:hover {
+			  border-color: #b3b3b3;
+			  color: #1a1a1a;
+			}
+			#chart_search_results .search_results form input[type=text]:focus {
+			  border-color: #b3b3b3;
+			  color: #1a1a1a;
+			}
+			#chart_search_results .search_results form input[type=text].error {
+			  border-color: #ff3639;
+			  border-width: 3px;
+			  padding: 15px 28px;
+			}
+		#chart_search_results .search_results form input[type=submit] {
+			text-align: center;
+			display: inline;
+			border: 0 none;
+			background: none;
+			color: #fa3d33;
+			font: 16px/32px sans-serif;
+			cursor: pointer;
+		}
+			#chart_search_results .search_results form input[type=submit]:hover {
+				text-decoration: underline;
+			}
+
+
+
+/**
+ * the table
+ */
+
+#chart_search_results .search_results table {
+  width: 100%;
+  margin: 0 0 18px;
+  border: 0 none;
+  border-top: 1px solid #e6e6e6;
+}
+  #chart_search_results .search_results table thead {
+      background: #444;
+  }
+  #chart_search_results .search_results table th {
+  	text-transform: none;
+ 		font: 12px/16px Arial, sans-serif;
+    background: none;
+    border: 0 none;
+    padding: 0;
+    text-align: left;
+    width: 255px;
+  }
+  	#chart_search_results .search_results table th a,
+  	#chart_search_results .search_results table th span {
+  		display: block;
+  		color: #fff;
+  		margin: 0 20px 0 0;
+  		padding: 13px 13px 10px;
+  	}
+  	#chart_search_results .search_results table th.active,
+  	#chart_search_results .search_results table th.active a,
+  	#chart_search_results .search_results table th.active span {
+  		color: #eee;
+  	}
+  	#chart_search_results .search_results table th.active_up a:after,
+  	#chart_search_results .search_results table th.active_down a:after {
+  		content: "";
+  		display: inline-block;
+  		vertical-align: middle;
+  		background: url("/web/20190719164441im_/https://www.billboard.com/sites/all/themes/bb/images/sprite.png") no-repeat -622px -2300px;
+  		width: 7px;
+    height: 4px;
+    margin: -1px 0 0 4px;
+  	}
+  		#chart_search_results .search_results table th.active_up a:after {
+  			background-position: -622px -2350px;
+  		}
+  	#chart_search_results .search_results table th.name {
+  		width: auto;
+  	}
+  	#chart_search_results .search_results table th:last-child {
+  		width: 225px;
+  	}
+  		#chart_search_results .search_results table th:last-child a,
+  		#chart_search_results .search_results table th:last-child span {
+  			margin: 0;
+  		}
+  #chart_search_results .search_results table td {
+    border: 0 none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 13px 14px;
+  }
+  	#chart_search_results .search_results table td a {
+  		color: #1a1a1a;
+  	}
+  		#chart_search_results .search_results table td a:hover {
+  			color: #fa3d33;
+  		}
+
+
+/**
+ * the paginator
+ */
+
+#chart_search_results .search_results .paginator {
+	border-top: 0 none;
+	padding-top: 0;
+	margin: 0 0 120px;
+}
+
+#chart_search_results .container-inline-date .form-item .form-item,
+#chart_search_results .container-inline-date .date-padding {
+  padding: 0;
+  float: none;
+}
+
+#chart_search_results .container-inline-date .description {
+  display: none;
+}
+
+#chart_search_results div.container-inline-date div.form-item input,
+#chart_search_results div.container-inline-date div.form-item {
+  margin: 0;
+}
+
+#chart_search_results .item-list {
+  border: none;
+  padding: 0;
+}
+
+#chart_search_results .item-list li,
+#chart_search_results .item-list li a {
+  color: #FA3D33;
+}
+
+#chart_search_results .item-list li.pager-current {
+  text-decoration: underline;
+}
+
+.search_chart_title {
+  font-weight: bold;
+}
+
+.chart_item_search_details .details {
+  float: left;
+  width: 50%;
+}
+
+.search_details_wrapper {
+  padding: 10px 10px 10px 0;
+}
+
+.title_properties .title_properties_details {
+  margin-left: 170px;
+}
+
+.title_properties .title_image {
+  float: left;
+  width: 140px;
+}
+
+#bb.bbbiz .title_properties_details h2 {
+  text-align: left;
+  font-family: ​Helvetica,​Arial,​sans-serif;
+  margin-bottom: 0;
+}
+
+.title_properties_details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.title_properties_details label {
+  font-weight: normal;
+  display: inline-block;
+}
+
+.title_properties_details span {
+  color: #737373;
+}
+
+.title_chart_info h3 {
+  text-align: center;
+  font-family: Georgia, Helvetica, Arial, serif;
+  font-weight: bold;
+}
+
+.title_chart_info .performance_details {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.title_chart_info .performance_details .value {
+  font-size: 22px;
+  font-family: ​Helvetica,​Arial,​sans-serif;
+  margin-bottom: 10px;
+}
+
+.title_chart_info .performance_details .description {
+  color: #737373;
+  margin-bottom: 5px;
+}
+
+.chart_item_search_details {
+  margin-bottom: 30px;
+}
+
+.search_results .back_button {
+  padding-left: 10px;
+  margin-right: 5px;
+  background: url("/web/20190719164441im_/https://www.billboard.com/sites/all/themes/bb/images/sprite.png") no-repeat scroll 0 -5349px transparent;
+}
+
+.search_results .back_link {
+  color: #FA3D33;
+  cursor: pointer;  
+}
+
+.search_results tbody tr {
+  cursor: pointer;
+}
+
+.search_results tbody tr:hover {
+  background-color: #f2f2f2; 
+}
+
+.page-biz-tag #page-title {
+  display: none;
+}
+/*
+     FILE ARCHIVED ON 16:44:41 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:19 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 110.748 (3)
+  esindex: 0.015
+  captures_list: 139.081
+  CDXLines.iter: 17.255 (3)
+  PetaboxLoader3.datanode: 116.792 (4)
+  exclusion.robots: 0.593
+  exclusion.robots.policy: 0.572
+  RedisCDXSource: 3.576
+  PetaboxLoader3.resolve: 56.733
+  load_resource: 69.845
+*/

@@ -1,0 +1,579 @@
+
+/* Menu */
+
+.node-type-landing-page #content-top #block-menu-menu-bbma-2014-menu,
+.node-type-landing-page #content-top #block-menu-menu-grammy-2014-menu,
+.node-type-landing-page #content-top #block-menu-menu-bbma-menu {
+    margin: -52px 0 0 0;
+    border-top: 1px solid #F2F2F2;
+}
+
+/* Video/Image block */
+#block-views-home-page-bbma-2014-block-image,
+#block-views-home-page-bbma-2014-block-video,
+#block-views-grammys-2014-block-image,
+#block-views-grammys-2014-block-video,
+#block-views-home-page-awards-block-image,
+#block-views-home-page-awards-block-video,
+#block-views-home-page-block-tastemakers-v,
+#block-views-home-page-block-tastemaker {
+    margin: 0 0 30px;
+}
+    #block-views-home-page-bbma-2014-block-image h2,
+    #block-views-home-page-bbma-2014-block-video h2,
+    #block-views-grammys-2014-block-image h2,
+    #block-views-grammys-2014-block-video h2,
+    #block-views-home-page-awards-block-image h2,
+    #block-views-home-page-awards-block-video h2,
+    #block-views-home-page-block-tastemakers-v h2,
+    #block-views-home-page-block-tastemaker h2 {
+        color: #FC666A;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+    }
+
+    #block-views-home-page-bbma-2014-block-image .views-row h2,
+    #block-views-home-page-bbma-2014-block-video .views-row h2,
+    #block-views-grammys-2014-block-image .views-row h2,
+    #block-views-grammys-2014-block-video .views-row h2,
+    #block-views-home-page-awards-block-image .views-row h2,
+    #block-views-home-page-awards-block-video .views-row h2,
+    #block-views-home-page-block-tastemakers-v .views-row h2,
+    #block-views-home-page-block-tastemaker .views-row h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 28px;
+        margin: 0 0 18px;
+        text-align: center;
+        text-transform: none;
+        color: #1A1A1A;
+    }
+
+    #block-views-home-page-bbma-2014-block-image .views-field-field-video-image,
+    #block-views-grammys-2014-block-image .views-field-field-video-image,
+    #block-views-home-page-awards-block-image .views-field-field-video-image,
+    #block-views-home-page-block-tastemaker .views-field-field-video-image {
+        text-align: center;
+        position: relative;
+    }
+        #block-views-home-page-bbma-2014-block-image .views-field-field-video-image:after,
+        #block-views-grammys-2014-block-image .views-field-field-video-image:after,
+        #block-views-home-page-awards-block-image .views-field-field-video-image:after,
+        #block-views-home-page-block-tastemaker .views-field-field-video-image:after {
+            background: url("/web/20190719164436im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -950px transparent;
+            content: " ";
+            height: 51px;
+            width: 51px;
+            left: 50%;
+            top: 50%;
+            margin: -25px 0 0 -25px;
+            pointer-events: none;
+            position: absolute;
+            z-index: 2;
+        }
+
+/* Most Popular block */
+
+.view-display-id-block_popular,
+#block-views-home-page-block-most-popular {
+    clear: both;
+    margin-bottom: 55px;
+}
+    .view-display-id-block_popular .view-header,
+    #block-views-home-page-block-most-popular .view-header {
+        float: right;
+        font-size: 17px;
+        margin: 0 0 -70px;
+        position: relative;
+        top: -50px;
+        line-height: 20px;
+    }
+        .view-display-id-block_popular .view-header a,
+        #block-views-home-page-block-most-popular .view-header a {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+    .view-display-id-block_popular .view-content,
+    #block-views-home-page-block-most-popular .view-content {
+        overflow: hidden;
+        height: auto;
+        width: 2000px;
+    }
+
+    .view-display-id-block_popular .views-row,
+    #block-views-home-page-block-most-popular .views-row {
+        display: inline;
+        float: left;
+        height: auto;
+        min-height: 55px;
+        padding: 0 0 18px 104px;
+        width: 206px;
+        border: 0 none;
+        position: relative;
+        margin: 0 0 0 30px;
+    }
+        .view-display-id-block_popular .views-row.views-row-first,
+        #block-views-home-page-block-most-popular .views-row.views-row-first {
+            margin-left: 0;
+        }
+
+    .view-display-id-block_popular .views-field-field-video-image img,
+    #block-views-home-page-block-most-popular .views-field-field-video-image img {
+        top: 3px;
+        background: url("/web/20190719164436im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F2F2F2;
+        display: block;
+        left: 0;
+        position: absolute;
+    }
+
+    .view-display-id-block_popular .views-field-field-article-category a,
+    #block-views-home-page-block-most-popular .views-field-field-article-category a {
+        color: #FC666A;
+        text-transform: uppercase;
+    }
+
+    .view-display-id-block_popular .views-field-title a,
+    #block-views-home-page-block-most-popular .views-field-title a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 20px;
+        margin: 0;
+        text-align: left;
+    }
+        .view-display-id-block_popular .views-field-title a:hover,
+        .view-display-id-block_popular .views-field-title a:focus,
+        .view-display-id-block_popular .views-field-title a:active,
+        #block-views-home-page-block-most-popular .views-field-title a:hover,
+        #block-views-home-page-block-most-popular .views-field-title a:focus,
+        #block-views-home-page-block-most-popular .views-field-title a:active {
+            text-decoration: underline;
+        }
+
+    /* Rendered mostpopular block */
+
+    #block-views-home-page-block-most-popular .views-row-mostpopular {
+        float: left;
+        display: inline;
+        position: relative;
+        margin: 0 0 0 30px;
+    }
+        #block-views-home-page-block-most-popular section.block-mostpopular h2,
+        #block-views-home-page-block-most-popular section.block-mostpopular ul.mostpopular--services,
+        #block-views-home-page-block-most-popular .views-row-mostpopular .mostpopular--no-results {
+            display: none;
+        }
+
+        #block-views-home-page-block-most-popular .mostpopular--content {
+            border: 0px;
+            padding: 0px;
+        }
+            #block-views-home-page-block-most-popular ul.mostpopular--items {
+                margin: 0px;
+            }
+                #block-views-home-page-block-most-popular ul.mostpopular--items article .category {
+                    display: block;
+                }
+
+                #block-views-home-page-block-most-popular ul.mostpopular--items li {
+                    float: left;
+                    padding: 0px;
+                }
+
+                #block-views-home-page-block-most-popular ul.mostpopular--items li article.small_thumb {
+                    border: 0px;
+                    margin: 0 0 0 30px;
+                }
+
+                #block-views-home-page-block-most-popular ul.mostpopular--items li.first article.small_thumb {
+                    margin: 0;
+                }
+
+/* Latest News block */
+
+#block-views-home-page-bbma-2014-latest-news,
+#block-views-grammys-2014-latest-news,
+#block-views-home-page-awards-latest-news {
+    display: inline;
+    float: left;
+    margin: 0 30px 0 0;
+    width: 310px;
+}
+    #block-views-home-page-bbma-2014-latest-news h2,
+    #block-views-grammys-2014-latest-news h2,
+    #block-views-home-page-awards-latest-news h2 {
+        border-bottom: 1px solid #E6E6E6;
+        margin: 0 0 15px;
+        padding: 0 0 18px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 28px;
+    }
+
+    .view-display-id-latest_news.headlines-slider .view-content {
+        border: 0px;
+        background: #ffffff;
+        height: auto;
+        margin: 0px;
+    }
+
+    .view-display-id-latest_news.headlines-slider .view-content:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+        .view-display-id-latest_news.headlines-slider .view-content .views-row {
+            border-bottom: 1px solid #E6E6E6;
+            height: auto;
+            margin: 0 0 15px;
+            padding: 0 0 15px;
+            display: inline;
+            float: left;
+            position: relative;
+            width: 310px;
+        }
+            .view-display-id-latest_news.headlines-slider .view-content .views-field-field-article-category {
+                display: block;
+                text-align: center;
+            }
+                .view-display-id-latest_news.headlines-slider .view-content .views-field-field-article-category a {
+                    color: #FC666A;
+                    font-weight: normal;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+            .view-display-id-latest_news.headlines-slider .view-content .views-field-title a {
+                display: block;
+                color: #000000;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 20px;
+                                font-weight: normal;
+                text-align: center;
+                padding: 3px 0 0 0;
+            }
+
+/* Promo Area block (images) */
+
+#block-views-home-page-bbma-2014-block-images,
+#block-views-grammys-2014-block-images,
+#block-views-home-page-awards-block-images {
+  display: inline;
+  float: left;
+  margin: 0 0 0 0;
+  width: 310px;
+}
+  .view-display-id-block_images.view-gallery .view-content {
+    margin: 0 0 20px -30px;
+  }
+    .view-display-id-block_images.view-gallery .view-content article {
+      padding: 0;
+      height: auto;
+    }
+      .view-display-id-block_images.view-gallery .view-content article img {
+        position: relative;
+      }
+
+      .view-display-id-block_images.view-gallery .view-content article header {
+        margin: 15px 0 0 0;
+      }
+    
+  #block-views-grammys-2014-block-images .view-gallery .view-content article header {
+    margin: 0;
+  }  
+
+  #block-views-grammys-2014-block-images .view-gallery .view-content article .category {
+    display: none;
+  }
+
+/* Finalists Slider block */
+
+#block-views-home-page-bbma-2014-slider,
+#block-views-home-page-awards-slider {
+    margin: 30px 0 0 0;
+    height: auto;
+    padding: 0 0 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .finalists-slider.headlines-slider .view-content {
+        border: 0px;
+        background: #ffffff;
+        height: 328px;
+        margin: 0px;
+    }
+    
+    .finalists-slider.headlines-slider .jcarousel-container {
+        height: 328px;
+        border: 0px;
+        background: #ffffff;
+        margin: 0px;
+        padding: 0 85px 0 55px;
+    }
+
+        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-clip {
+            width: 850px;
+        }
+
+        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item {
+            width: 850px;
+            height: 328px;
+            background: #ffffff;
+            margin: 0px;
+        }
+
+            .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .views-field-title {
+                margin: 0 0 6px;
+                padding: 4px 0 0 0;
+                position: relative;
+                z-index: 9;
+                border-bottom: 0px solid #F2F2F2;
+                text-align: center;
+                height: auto;
+                color: #1A1A1A;
+                background: #ffffff;
+            }
+
+                .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .views-field-title .field-content {
+                    font-size: 24px;
+                    font-weight: normal;
+                    line-height: 28px;
+                }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .views-field-title .field-content span {
+                        color: #B2B2B2;
+                    }
+
+            .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .views-field-view-node {
+                font-size: 17px;
+                line-height: 20px;
+                margin: 0 0 20px 0;
+                position: relative;
+                text-align: center;
+                z-index: 9;
+                border-top: 0px solid #E6E6E6;
+                padding: 0;
+            }
+
+            .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list {
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+
+                .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li {
+                    position: relative;
+                    width: 140px;
+                    height: 250px;
+                    background: #ffffff;
+                    margin: 0 0 0 30px;
+                    float: left;
+                    list-style: none outside none;
+                    overflow: hidden;
+                    padding: 0px;
+                }
+                  .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li .artist_big_image {
+                      display: none;
+                  }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li img {
+                        width: 140px;
+                        height: 140px;
+                        margin: 0 0 13px 0;
+                    }
+                    
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li h1 {
+                        padding: 0px;
+                        margin: 0px;
+                        font-size: 17px;
+                        line-height: 20px;
+                    }
+
+                        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li a {
+                            color: #000000;
+                            text-decoration: none;
+                            font-size: 17px;
+                            line-height: 20px;
+                        }
+
+                        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li p a {
+                            font-size: 14px;
+                        }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li .win {
+                        background: none;
+                        display: block;
+                        font-size: 14px;
+                        font-style: normal;
+                        height: 30px;
+                        left: 0;
+                        line-height: 31px;
+                        position: absolute;
+                        right: 0;
+                        text-align: center;
+                        text-transform: uppercase;
+                        top: 110px;
+                        width: 140px;
+                        z-index: 1;
+                        color: #ffffff;
+                    }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li .win.win-r {
+                        background: none repeat scroll 0 0 #FA3D33;
+                    }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li .win.win-g {
+                        background: none repeat scroll 0 0 #1FC34C;
+                    }
+
+                    .finalists-slider.headlines-slider .jcarousel-container .jcarousel-item .item-list li .win.win-y {
+                        background: none repeat scroll 0 0 #FFE646;
+                        color: #000000;
+                    }    
+            
+        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-next,
+        .finalists-slider.headlines-slider .jcarousel-container .jcarousel-prev {
+            top: 181px;
+        }
+
+/* Instagram widget */
+
+.bb_instagram_widget {
+}
+
+    .bb_instagram_widget .bb_instagram_content {
+        overflow: hidden
+    }
+
+        .bb_instagram_widget .bb_instagram_content iframe {
+            float: left;
+        }
+
+    .bb_instagram_widget .bb_instagram_footer {
+        border: 1px solid #E6E6E6;
+        border-top: 0px;
+        padding: 15px 0 0 0;
+    }
+
+        .bb_instagram_widget .bb_instagram_footer h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
+        }
+
+        .bb_instagram_widget .bb_instagram_footer h4 {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        .bb_instagram_widget .bb_instagram_footer a.link {
+            color: #1CACE2;
+        }
+        
+/* Horizontal Promo Area block */
+
+#block-views-grammys-2014-promo-area-top {
+  margin: 30px 0;
+  border: 5px solid #005cb4;
+}
+
+.promo-area-hor {
+  padding: 11px 0;
+  overflow: hidden;
+}
+  .promo-area-hor .view-header .pepsi-with-logo {
+    color: #16518b;
+    width: 567px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 16px 0;
+    text-transform: uppercase;
+  }  
+  .promo-area-hor .view-header .pepsi-with-logo .inner {
+    float: right;
+  }
+  .promo-area-hor .view-header .pepsi-with-logo .inner.pepsi_logo {
+    margin-left: 15px;
+  }
+    .promo-area-hor .view-header .pepsi-with-logo h2 {
+      color: #16518b;
+      overflow: hidden;
+      margin: 0px;
+      line-height: 24px;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+  .promo-area-hor .view-content {
+    overflow: hidden;
+  }
+    .promo-area-hor .view-content .views-row {
+      float: left;
+      background: #FFFFFF;
+      margin: 0 0 0 25px;
+      overflow: hidden;
+      padding: 0;
+      width: 174px;
+    }
+      .promo-area-hor .view-content .views-row.views-row-first {
+        margin: 0 0 0 5px;
+      }
+
+      .promo-area-hor .view-content .views-row article h1 {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        font-size: 17px;
+        line-height: 20px;
+      }
+        .promo-area-hor .view-content .views-row article h1 a {
+          color: #000000;
+          font-size: 17px;
+          line-height: 20px;
+          text-decoration: none;
+          text-align: center;
+        }
+
+/* Embed code */
+
+.node-type-landing-page .view-gallery .promo-item-embed-code {
+}
+  .node-type-landing-page .view-gallery .promo-item-embed-code h1 {
+    padding: 15px 0 0 0;
+  }
+
+/*
+     FILE ARCHIVED ON 16:44:36 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:18 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 42.855 (3)
+  esindex: 0.01
+  captures_list: 69.884
+  CDXLines.iter: 17.8 (3)
+  PetaboxLoader3.datanode: 99.266 (4)
+  exclusion.robots: 0.612
+  exclusion.robots.policy: 0.591
+  RedisCDXSource: 1.198
+  PetaboxLoader3.resolve: 60.047
+  load_resource: 154.932
+*/

@@ -1,0 +1,386 @@
+
+
+.bbma {
+}
+  .bbma .cols_3x, 
+  .bbma .slider {
+    margin: 0 0 30px;
+  }
+
+  .bbma > .banner {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 5px 8px;
+    background: #f2f2f2;
+    margin: 0 0 30px;
+  }
+    .bbma > .banner *:first-child {
+      margin: 0 auto 7px;
+    }
+
+  .bbma > header, 
+  .bbma_winner_landing .teritary {
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .bbma_winner_landing {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 30px;
+  }
+
+  .bbma > header {
+    position: relative;
+    height: 140px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+    .bbma > header h1 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 234px;
+      height: 119px;
+      margin: 0 0 0 -117px;
+      background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbma/sprite.png") no-repeat 0 0;
+      font: 0/0 a;
+      color: transparent;
+    }
+    .bbma > header .details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 254px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 20px;
+      padding: 70px 0 0;
+    }
+      .bbma > header .details:before, 
+      .bbma > header .details:after {
+        content: "";
+        background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbma/sprite.png") no-repeat 0 -250px;
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        opacity: .9;
+      }
+        .bbma > header .details:before {
+          width: 27px;
+          height: 27px;
+          margin: 0 0 0 -55px;
+        }
+        .bbma > header .details:after {
+          background-position: 0 -300px;
+          width: 52px;
+          height: 27px;
+        }
+    .bbma > header .sponsors {
+      position: absolute;
+      top: 11px;
+      right: 0;
+      width: 234px;
+      height: 119px;
+      margin: 0;
+      background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbma/sponsors.png") no-repeat 0 0;
+      font: 0/0 a;
+      color: transparent;
+    }
+
+  .bbma .teritary {
+    margin: 0 0 20px;
+  }
+
+  .bbma .col_1 > h2, 
+  .bbma .slider_songs > h2 {
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 0 18px;
+    margin: 0 0 15px;
+  }
+    .bbma .slider_songs > h2 {
+      position: relative;
+      z-index: 9;
+      padding: 4px 0 18px;
+      margin: 0 0 29px;
+    }
+    .bbma .slider_songs > h2 span {
+      color: #b2b2b2;
+    }
+    .bbma .slider_songs > .load-more {
+      position: relative;
+      z-index: 9;
+      text-align: center;
+      font-size: 17px;
+      line-height: 20px;
+      margin: 0;
+    }
+    .bbma .win {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 110px;
+      right: 0;
+      height: 30px;
+      font-size: 14px;
+      font-style: normal;
+      text-transform: uppercase;
+      line-height: 31px;
+      text-align: center;
+    }
+      .bbma .bbma_winner .win {
+        top: 167px;
+      }
+      .bbma .win-g {
+        color: #fff;
+        background: #1fc34c;
+      }
+      .bbma .win-r {
+        color: #fff;
+        background: #fa3d33;
+      }
+      .bbma .win-y {
+        color: #000;
+        background: #ffe646;
+      }
+  .bbma .col_1 .listing {
+    margin: 0;
+  }
+    .bbma .col_1 .listing article.no_image {
+      border-bottom: 1px solid #f2f2f2;
+      height: auto;
+      padding: 0 0 15px;
+      margin: 0 0 15px;
+    }
+      .bbma .col_1 .listing article.no_image h1 {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+  .bbma .col_3 .banner, 
+  .bbma .col_3 .live_updates_module {
+    margin-bottom: 30px;
+  }
+
+  .bbma .col_3 .listing {
+    margin-bottom: 0;
+  }
+
+  .bbma .cols_3x > .load-more {
+    clear: both;
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 0 68px;
+  }
+
+  .bbma .site_popular_videos {
+    margin-bottom: 55px;
+  }
+    .bbma .site_popular_videos > h1 {
+      text-align: center;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: normal;
+      margin: 0 0 18px;
+    }
+    .bbma .site_popular_videos .video {
+      margin: 0 0 17px;
+    }
+    .bbma .site_popular_videos h2 {
+      text-align: center;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: normal;
+      margin: 0 0 18px;
+    }
+    .bbma .site_popular_videos .viewall {
+      display: inline;
+      float: right;
+      font-size: 17px;
+      position: relative;
+      top: -50px;
+      margin: 0 0 -70px;
+    }
+    .bbma .site_popular_videos .listing {
+      margin: 0;
+      clear: both;
+    }
+      .bbma .site_popular_videos .listing article {
+        border: 0 none;
+        margin: 0 0 0 30px;
+      }
+        .bbma .site_popular_videos .listing article:first-child {
+          margin-left: 0;
+        }
+    
+    .listing > article.bbma_winner img {
+      height: 197px;
+      width: 197px;
+    }
+    
+    .listing > article.bbma_winner, .full_width .listing > article.bbma_winner {
+        height: auto;
+        margin: 0 0 0 30px;
+        padding: 210px 0 0;
+        width: 197px;
+        position: relative;
+        cursor: pointer;
+    }
+    .listing > article.bbma_winner p,
+    .listing > article.bbma_winner h1 {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .listing > article.bbma_winner p {
+      margin-bottom: 18px;
+    }
+    
+    .listing > article.bbma_winner p a {
+      color: #1a1a1a;
+    }
+   
+    .listing > article.bbma_winner h1,
+    .listing > article.bbma_winner h1 a {
+          }
+    
+    .bbma.full_width {
+      width: auto;
+    }
+
+  .bbma .col_1 .paginator {
+    clear: both;
+  }
+  .bbma_winner_landing .col_1 .listing {
+    margin: 0 -1px 0 -30px;
+  }
+    .bbma_winner_landing .col_1 .listing + .listing {
+      border-top: 1px solid #f2f2f2;
+      padding: 30px 0 0;
+      margin-top: 15px;
+    }
+  .bbma_winner_landing .col_1 .listing > *:nth-child(3n+1) {
+    clear: left;
+  }
+    .bbma_winner_landing .col_1 .listing > .title {
+      display: inline;
+      float: left;
+      width: 197px;
+      height: 255px;
+      position: relative;
+      margin: 0 0 0 30px;
+    }
+      .bbma_winner_landing .col_1 .listing > .title h1 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: normal;
+        text-align: center;
+        padding: 42px 0 0;
+      }
+      .bbma_winner_landing .col_1 .listing > .title .social {
+        position: absolute;
+        left: 0;
+        bottom: 58px;
+      }
+
+  .bbma .social {
+    display: block;
+    width: 195px;
+    height: 59px;
+    overflow: visible;
+    margin: 0;
+    font: 11px/43px Arial, sans-serif;
+  }
+    .bbma .social + p {
+      margin: 0;
+    }
+    .milestone-listing .social {
+      margin: 0;
+    }
+    .bbma .social ul {
+      display: inline;
+      float: left;
+    }
+    .bbma .social li {
+      width: 97px;
+      height: 29px;
+    }
+      .bbma .social li:first-child, 
+      .bbma .social li:first-child + li {
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .bbma .social li:first-child + li, 
+      .bbma .social li:first-child + li + li + li {
+        width: 97px;
+      }
+      .bbma .social li:first-child + li + li {
+        border-left: 0 none;
+      }
+      .bbma .social li > span, 
+      .bbma .social li > a {
+        padding-left: 30px;
+      }
+      .bbma .social ul.with_buttons li:hover > div {
+        width: auto;
+        padding: 4px 0 5px 5px;
+      }
+      .bbma .social ul.with_buttons li > div.ra1-pw, 
+      .bbma .social ul.with_buttons li:hover > div.ra1-pw {
+        position: static;
+        left: 0;
+        top: 0;
+        padding: 1px 0 0 28px;
+        border: 0 none;
+        width: auto;
+        text-align: left;
+        height: 28px;
+      }
+        .bbma .social li:first-child + li + li + li:hover:after {
+          display: none;
+        }
+        
+        .bbma_finalists h2 {
+                    font-size: 42px;
+          margin-bottom: 0;
+          text-align: left;
+          line-height: 53px;
+        }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .bbma > header h1, 
+  .bbma > header .details:before, 
+  .bbma > header .details:after {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbma/sprite@2x.png");
+    background-size: 234px 350px;
+  }
+  .bbma > header .sponsors {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/bbma/sponsors@2x.png");
+    background-size: 234px 119px;
+  }
+}
+/*
+     FILE ARCHIVED ON 16:44:27 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:23 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 39.18 (3)
+  esindex: 0.005
+  captures_list: 54.965
+  CDXLines.iter: 11.506 (3)
+  PetaboxLoader3.datanode: 85.666 (4)
+  exclusion.robots: 0.238
+  exclusion.robots.policy: 0.226
+  RedisCDXSource: 1.461
+  PetaboxLoader3.resolve: 108.186
+  load_resource: 159.072
+*/

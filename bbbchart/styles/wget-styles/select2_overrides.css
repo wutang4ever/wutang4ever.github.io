@@ -1,0 +1,227 @@
+/* 
+	select 2 overrides
+	
+	charts drawer first, and then search results page later
+
+*/
+
+
+/**
+ * generic and charts drawer
+ */
+
+.select2-container {
+	width: 100%;
+}
+.select2-default {
+	color: #6b6b6b !important;
+}
+.select2-container .select2-choice {
+	height: 39px;
+	border: 1px solid #404040;
+	background: #000;
+	font: 13px/39px Arial, sans-serif;
+	/*color: #bfbfbf;*/
+	color: #6b6b6b;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0 14px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+	.select2-container .select2-choice span {
+		margin-right: 0;
+	}
+	.select2-container .select2-choice div {
+		display: none !important;
+	}
+
+.select2-drop {
+	border-color: #404040;
+	background: #000;
+	color: #bfbfbf;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	font: 13px/39px Arial, sans-serif;
+	margin-top: -40px;
+}
+.select2-search {
+	padding: 0;
+	border-bottom: 1px solid #404040;
+	min-height: 39px;
+	height: 39px;
+	display: block;
+}
+	.select2-search input {
+		background: none !important;
+		height: 39px !important;
+		border: 0 none !important;
+		background: none;
+		padding: 0 14px;
+		width: 280px;
+		font: 13px/39px Arial, sans-serif;
+		color: #BFBFBF;
+		display: block;
+	}
+.select2-results {
+	margin: 0;
+	padding: 0;
+}
+	.select2-results li {
+		border-top: 1px solid #404040;
+	}
+		.select2-results li:first-child {
+			border-top: 0 none;
+		}
+		.select2-results li .select2-result-label {
+			font: 13px/39px Arial, sans-serif;
+			height: 39px;
+			margin: 0;
+			padding: 0 14px;
+		}
+		.select2-results .select2-highlighted {
+			background: #000;
+		}
+			.select2-results .select2-highlighted .select2-result-label {
+				color: #fff;
+			}
+
+.select2-results .select2-no-results, 
+.select2-results .select2-searching, 
+.select2-results .select2-selection-limit {
+	font: 13px/39px Arial, sans-serif;
+	height: 39px;
+	margin: 0;
+	padding: 0 14px;
+	background: #000;
+	color: #fff;
+}
+
+.select2-search input, 
+.select2-search-choice-close, 
+.select2-container 
+.select2-choice abbr, 
+.select2-container .select2-choice div b {
+	background-image: url('/web/20190719164437im_/https://www.billboard.com/sites/all/themes/bb/images/select2.png');
+	background: none !important;
+}
+
+/* Retina-ize icons */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	.select2-search input, 
+	.select2-search-choice-close, 
+	.select2-container .select2-choice abbr, 
+	.select2-container .select2-choice div b {
+		background-image: url(/web/20190719164437im_/https://www.billboard.com/sites/all/themes/bb/images/select2x2.png) !important;
+		background-repeat: no-repeat !important;
+		background-size: 60px 40px !important;
+
+		background: none !important;
+	}
+}
+
+
+/**
+ * search results page
+ */
+
+.search_results .select2-container {
+	display: block;
+}
+ .search_results .select2-container .select2-choice {
+ 	color: #b2b2b2;
+ 	font: 14px/20px Arial, sans-serif;
+ 	background: #fff;
+ 	border: 1px solid #d9d9d9;
+ 	padding: 9px 15px;
+ 	height: auto;
+ }
+ 	.search_results .select2-default {
+ 		color: #b2b2b2 !important;
+ 	}
+
+.select2-drop-search-results {
+ 	border-color: #d9d9d9;
+ 	background: #fff;
+ 	color: #b2b2b2;
+ 	font: 14px/20px Arial, sans-serif;
+ 	margin-top: -39px;
+}
+
+	.select2-drop-search-results .select2-search {
+		border-bottom: 1px solid #d9d9d9;
+		font: 14px/20px Arial, sans-serif;
+		height: auto;
+		min-height: 1px;
+	}
+		.select2-drop-search-results .select2-search input {
+			height: auto !important;
+			padding: 9px 15px;
+			width: auto;
+			font: 14px/20px Arial, sans-serif;
+			color: #1a1a1a;
+		}
+
+		.select2-drop-search-results .select2-results li {
+			border-top: 1px solid #d9d9d9;
+		}
+			.select2-drop-search-results .select2-results li:first-child {
+				border-top: 0 none;
+			}
+			.select2-drop-search-results .select2-results li .select2-result-label {
+				font: 14px/20px Arial, sans-serif;
+				height: auto;
+				margin: 0;
+				padding: 9px 15px;
+			}
+			.select2-drop-search-results .select2-results .select2-highlighted {
+				background: #b2b2b2;
+			}
+				.select2-drop-search-results .select2-results .select2-highlighted .select2-result-label {
+					color: #1a1a1a;
+				}
+
+	.select2-drop-search-results .select2-results .select2-no-results, 
+	.select2-drop-search-results .select2-results .select2-searching, 
+	.select2-drop-search-results .select2-results .select2-selection-limit {
+		font: 14px/20px Arial, sans-serif;
+		height: auto;
+		margin: 0;
+		padding: 9px 15px;
+		background: #fff;
+		color: #737373;
+	}
+
+
+
+
+/*
+     FILE ARCHIVED ON 16:44:37 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:26 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 45.456 (3)
+  esindex: 0.01
+  captures_list: 64.778
+  CDXLines.iter: 13.788 (3)
+  PetaboxLoader3.datanode: 47.639 (4)
+  exclusion.robots: 0.347
+  exclusion.robots.policy: 0.329
+  RedisCDXSource: 0.881
+  PetaboxLoader3.resolve: 126.834
+  load_resource: 132.797
+*/

@@ -1,0 +1,117 @@
+.fan-rating {
+  	border: 1px solid #ececec;
+  	height: 44px;
+  	font-size: 17px;
+  	line-height: 44px;
+  	margin: 0;
+  	padding: 0 19px;
+  }
+  	.fan-rating b {
+			font-weight: normal;
+  		display: inline;
+  		float: right;
+  		width: 80px;
+  		border-left: 1px solid #ececec;
+  		text-align: center;
+  		margin: 0 -19px 0 0;
+  	}
+  		.fan-rating.high b {
+  			color: #2fc252;
+  		}
+  		.fan-rating.low b {
+  			color: #f33747;
+  		}
+    .my-rating label {
+      line-height: 44px;
+      float: left;
+      width: 40%;
+      font-weight: normal;
+    }
+  .my-rating {
+  	border: 1px solid #ececec;
+  	height: 44px;
+  	font-size: 17px;
+  	line-height: 44px;
+  	margin: 0;
+  	padding: 0 20px;
+  }
+  .my-rating .fivestar-minimal div.fivestar-widget .star, 
+  .my-rating .fivestar-minimal div.fivestar-widget-static .star span, 
+  .my-rating .fivestar-minimal div.fivestar-widget-static .star, 
+  .my-rating .fivestar-minimal div.fivestar-widget .cancel, 
+  .my-rating .fivestar-minimal div.fivestar-widget .cancel a,
+  .my-rating .fivestar-minimal div.fivestar-widget .star a {
+    background: none;
+  }
+  .my-rating .field-name-field-fan-voting {
+    float: left;
+    width: 60%;
+    line-height: 44px;
+  }
+  .my-rating .description {
+    display: none;
+  }
+  .my-rating div.fivestar-widget-static,
+  .my-rating div.fivestar-widget {
+    padding: 15px 5px;
+  }
+  	.my-rating .fivestar-minimal div.fivestar-widget .cancel,
+  	.my-rating .fivestar-minimal div.fivestar-widget .star,
+  	.my-rating .fivestar-minimal div.fivestar-widget-static .star {
+  		display: inline-block;
+  		margin: 0;
+  		cursor: default;
+  	}
+  		.my-rating .fivestar-minimal div.fivestar-widget-static .star:first-child,
+  		.my-rating .fivestar-minimal div.fivestar-widget .star:first-child {
+  			margin-left: 10px;
+  		}
+	  	.my-rating .fivestar-minimal div.fivestar-widget-static .star,
+	  	.my-rating .fivestar-minimal div.fivestar-widget .star {
+      font: 0/0;
+      color: transparent;
+      width: 7px;
+      height: 7px;
+      border: 2px solid #1a1a1a;
+      -moz-border-radius: 11px;
+      -webkit-border-radius: 11px;
+      border-radius: 11px;
+      padding: 0;
+      margin: 0 3px;
+	  	}
+	  		.my-rating .fivestar-minimal div.fivestar-widget-static .star.hover, 
+	  		.my-rating .fivestar-minimal div.fivestar-widget .star.hover, 
+	  		.my-rating span.hover span {
+	  			cursor: pointer;
+      background: #2fc252;
+	  		}
+	  		.my-rating .fivestar-minimal div.fivestar-widget-static .star .on,
+	  		.my-rating .fivestar-minimal div.fivestar-widget .star.on {
+	  			background: #2fc252;
+	  		}
+	  		.my-rating.low .fivestar-minimal div.fivestar-widget-static .star.hover, 
+	  		.my-rating.low .fivestar-minimal div.fivestar-widget .star.hover, 
+	  		.my-rating.low span.hover span {
+	  			background: #f33747;
+	  		}
+/*
+     FILE ARCHIVED ON 16:44:25 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:42 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 957.213 (3)
+  esindex: 0.007
+  captures_list: 972.852
+  CDXLines.iter: 10.41 (3)
+  PetaboxLoader3.datanode: 757.884 (4)
+  exclusion.robots: 0.241
+  exclusion.robots.policy: 0.231
+  RedisCDXSource: 2.241
+  PetaboxLoader3.resolve: 643.96
+  load_resource: 716.176
+*/

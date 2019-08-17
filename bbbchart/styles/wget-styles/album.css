@@ -1,0 +1,351 @@
+#block-views-related-song-reviews-artist {
+  border: 1px solid #e6e6e6;
+}
+  #block-views-related-song-reviews-artist h2 {
+    padding: 28px 0 3px;
+    margin: 0;
+  }
+  .view-related-song-reviews {
+    padding: 14px 14px 0;
+  }
+    .view-related-song-reviews .views-row {
+      border-bottom: 1px solid #e6e6e6;
+      position: relative;
+      height: 70px;
+      margin-bottom: 16px;
+    }
+    .view-related-song-reviews .views-row-last {
+      border-bottom-width: 0;
+      margin-bottom: 0;
+    }
+      .view-related-song-reviews .views-field-title {
+        padding-top: 7px;
+      }
+        .view-related-song-reviews .views-field-title a {
+          font-size: 17px;
+          color: #000;
+        }
+      .view-related-song-reviews .views-field-field-image {
+        width: 55px;
+        height: 55px;
+        float: left;
+        margin: 0 19px 0 0;
+      }
+.album-video-container {
+  background-color: #000;
+  margin: 0 0 53px 0;
+  padding: 5px;
+}
+  .album-video-container .album-video-title a {
+    text-align: center;
+    color: #fff;
+    padding: 18px 0 19px;
+    display: block;
+  }
+
+
+    /* album & song teaser */
+    .view-display-id-block_albums .views-row,
+    .view-display-id-block_songs .views-row {
+        border-top: 1px solid #E6E6E6;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        /*height: 170px;*/
+    }
+    .view-display-id-block_albums .views-row .teaser.node-album,
+    .view-display-id-block_songs .views-row .teaser.node-song {
+        border-top: 0 none;
+        position: relative;
+        /*padding: 0 0 0 170px;*/
+    }
+    .view-display-id-block_albums .views-row-first,
+    .view-display-id-block_albums .views-row-first .teaser.node-album,
+    .view-display-id-block_songs .views-row-first,
+    .view-display-id-block_songs .views-row-first .teaser.node-song {
+        border-top: 0 none;
+        padding-top: 0;
+    }
+    .teaser.node-album header,
+    .teaser.node-song header {
+        min-height: 140px;
+        padding-right: 70px;
+        position: relative;
+    }
+    /*.teaser.node-album .teaser-footer,
+    .teaser.node-song .teaser-footer {
+        margin: 0;
+    }*/
+    .teaser.node-album .content-image,
+    .teaser.node-song .content-image {
+        display: block;
+        height: 205px;
+        width: 140px;
+        padding: 0;
+    }
+    .teaser.node-album .content-image img,
+    .teaser.node-song .content-image img {
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F2F2F2;
+        display: inline-block;
+    }
+    .teaser.node-album .content-image .img-wrap,
+    .teaser.node-song .content-image .img-wrap {
+        width: 140px;
+        height: 140px;
+        background: #000;
+        overflow: hidden;
+    }
+    .teaser.node-album .content-image .img-wrap > div,
+    .teaser.node-song .content-image .img-wrap > div {
+        display: table-cell;
+        width: 140px;
+        height: 140px;
+        text-align: center;
+        vertical-align: middle;
+        background: #000;
+    }
+    .teaser.node-album .field-name-field-chart-position,
+    .teaser.node-song .field-name-field-chart-position {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 3px solid #1A1A1A;
+        border-radius: 34px 34px 34px 34px;
+        font-size: 20px;
+        height: 34px;
+        left: 95px;
+        line-height: 34px;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        top: 10px;
+        width: 34px;
+    }
+    .teaser.node-album h1,
+    .teaser.node-song h1 {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 2px;
+        text-align: left;
+        padding: 0;
+        width: 335px;
+    }
+    .teaser.node-album a,
+    .teaser.node-song a {
+        color: #000;
+    }
+    .teaser.node-artist .year,
+    .teaser.node-album .year,
+    .teaser.node-song .year {
+        color: #999999;
+        font: 13px/28px Arial,sans-serif;
+    }
+    .teaser.node-album .field-name-field-artist,
+    .teaser.node-song .field-name-field-artist {
+        font-size: 17px;
+        line-height: 24px;
+    }
+        .teaser.node-album .field-name-field-artist .field-item,
+        .teaser.node-song .field-name-field-artist .field-item {
+            display: inline-block;
+        }
+        .teaser.node-album .field-name-field-artist .field-item:after,
+        .teaser.node-song .field-name-field-artist .field-item:after {
+            content: ", ";
+            padding: 0 3px 0 0;
+        }
+        .teaser.node-album .field-name-field-artist .field-item:last-child:after,
+        .teaser.node-song .field-name-field-artist .field-item:last-child:after {
+            content: "";
+            padding: 0;
+        }
+    .teaser.node-song .field-name-field-album {
+        line-height: 24px;
+    }
+    .teaser.node-album .item-fan-rating,
+    .teaser.node-song .item-fan-rating {
+      position: relative;
+    }
+    /*.teaser.node-album .field-name-field-fan-voting,
+    .teaser.node-song .field-name-field-fan-voting {
+        top: 140px;
+        font-size: 14px;
+        height: 30px;
+        left: 0;
+        line-height: 30px;
+        margin: 0;
+        padding: 0 14px;
+        position: absolute;
+        width: 110px;
+        border: 1px solid #ECECEC;
+    }
+        .teaser.node-album .field-name-field-fan-voting .field-label,
+        .teaser.node-song .field-name-field-fan-voting .field-label {
+            font-weight: normal;
+            float: left;
+        }
+        .teaser.node-album .field-name-field-fan-voting .field-items,
+        .teaser.node-song .field-name-field-fan-voting .field-items {
+            margin-right: -14px;
+            width: 40px;
+            color: #2FC252;
+            border-left: 1px solid #ECECEC;
+            display: inline;
+            float: right;
+            font-weight: normal;
+            text-align: center;
+        }*/
+
+/* Industry Info block */
+.module_industry_info {
+    background: #fff;
+    padding: 37px 29px 14px;
+    border: 1px solid #d8d8d8;
+  margin: 0 0 30px;
+}
+    .col_2 > .module_industry_info h2,
+    .module_industry_info h2 {
+        text-align: center;
+        margin: 0 0 34px;
+        font-weight: normal;
+    }
+    .module_industry_info h3 {
+        margin: 0;
+        font-weight: bold;
+    }
+    .module_industry_info p {
+        font-size: 17px;
+        line-height: 20px;
+        margin: 0 0 10px;
+    }
+        .module_industry_info p + p {
+            padding-top: 0px;
+        }
+.node-type-album .node-article.teaser .content,
+.node-type-song .node-article.teaser .content {
+  padding: 0 0 0 255px;
+}
+.listing > article.track_list_track {
+    border-bottom: 1px solid #E6E6E6;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+.listing > article.track_list_track header {
+    margin: 0;
+    padding: 23px 0;
+}
+.listing > article.track_list_track header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.listing > article.track_list_track .options {
+    height: 39px;
+    margin: -1px 0 0;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.listing > article.track_list_track .options li {
+    display: inline;
+    float: right;
+    font-size: 17px;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 0 0 33px;
+}
+.listing > article.track_list_track .options li a {
+    display: block;
+    font-size: 17px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0;
+}
+.listing > article.track_list_track .options li.dd {
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 130px;
+}
+.listing > article.track_list_track .options li.dd:hover {
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+    margin-top: -1px;
+    width: 128px;
+}
+.listing > article.track_list_track .options li.dd span {
+    background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 99% -2782px transparent;
+    color: #1CACE2;
+    display: inline-block;
+    padding-right: 18px;
+}
+.listing > article.track_list_track .options li.dd ul {
+    background: none repeat scroll 0 0 transparent;
+    display: none;
+    left: -1px;
+    padding: 0;
+    position: absolute;
+    right: -1px;
+    text-align: left;
+    top: 100%;
+    z-index: 9;
+}
+.listing > article.track_list_track .options li.dd:hover ul {
+    display: block;
+}
+.listing > article.track_list_track .options li.dd ul li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ECECEC;
+    display: block;
+    float: none;
+    margin: 0;
+}
+.listing > article.track_list_track .options li.dd ul li + li {
+    border-top: 0 none;
+}
+.listing > article.track_list_track .options li.dd ul li a {
+    color: #1A1A1A;
+    padding-left: 27px;
+}
+.listing > article.track_list_track .options li.dd ul li a.ms, .listing > article.track_list_track .options li.dd ul li a.sy, .listing > article.track_list_track .options li.dd ul li a.ro {
+    background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -999em -999em transparent;
+    padding-left: 43px;
+}
+.listing > article.track_list_track .options li.dd ul li a.ms {
+    background-position: 5px -2647px;
+}
+.listing > article.track_list_track .options li.dd ul li a.sy {
+    background-position: 5px -2698px;
+}
+.listing > article.track_list_track .options li.dd ul li a.ro {
+    background-position: 5px -2749px;
+}
+#block-views-music-album-track-list-block {
+    padding-bottom: 53px;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:33 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:50 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 172.236 (3)
+  esindex: 0.013
+  captures_list: 204.998
+  CDXLines.iter: 18.776 (3)
+  PetaboxLoader3.datanode: 119.99 (4)
+  exclusion.robots: 0.585
+  exclusion.robots.policy: 0.561
+  RedisCDXSource: 6.273
+  PetaboxLoader3.resolve: 121.265 (2)
+  load_resource: 77.072
+*/

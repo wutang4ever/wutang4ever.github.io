@@ -1,0 +1,1498 @@
+
+.media {
+    position: relative;
+    z-index: 2;
+    /*background: #000;*/
+    color: #fff;
+    min-height: 500px;
+    margin: 0;
+    padding: 0 0 15px;
+}
+
+.media {
+  background: #000;
+}
+    .media .c {
+        margin: 0 auto;
+        padding: 0;
+        width: 990px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .media header {
+        position: relative;
+        padding: 58px 0 0 0;
+        text-align: center;
+    }
+        .media header h1 {
+            font-size: 35px;
+            line-height: 42px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 0 10px;
+            padding: 0;
+        }
+        .media header .categories {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 31px;
+            right: 0;
+        }
+            .media header .categories li {
+                display: inline-block;
+                padding: 0;
+                color: #fc666a;
+            }
+                .media header .categories li:after {
+                    content: " /";
+                    padding: 0 2px 0 1px;
+                }
+                .media header .categories li a {
+                    color: #fc666a;
+                    text-transform: uppercase;
+                }
+
+        .media  header p {
+            font: 13px/17px Arial, sans-serif;
+        }
+            .media header p a,
+            .media header p time {
+                margin-left: 10px;
+            }
+                .media header p a.tw {
+                    background: url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat -600px -150px;
+                    padding-left: 18px;
+                }
+                .media header p time.no-padding,
+                .media header p a.no-padding {
+                   margin: 0;
+                   padding: 0;
+                }
+            .media header p i a {
+                margin: 0px;
+            }
+                .media header p i a.gplus,
+                .media header p i a.tw {
+                    margin-left: 10px;
+                }
+        .media header i {
+            font-style: normal;
+        }
+        .media header + img {
+            display: block;
+            margin: 0 0 30px;
+        }
+
+    .media .photos {
+        width: 99999em;
+        margin: 0;
+        position: relative;
+        left: 0;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 40px;
+    }
+        .media .photos li {
+            display: inline;
+            float: left;
+            width: 820px;
+            min-height: 430px;
+            padding: 0 85px;
+            text-align: center;
+            position: relative;
+        }
+        .media .photos li .photo_caption {
+          text-align: left;
+        }
+            .media #photo-gallery-slider .photos li .photo_caption {
+              text-align: center;
+            }
+            .media .photos img {
+                display: block;
+                margin: 0 auto 23px;
+                /*background: #000 url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/spinner.gif") no-repeat 50% 50%;*/
+            }
+            .media .photos p {
+                margin: 0;
+                text-align: center;
+            }
+            .media .photos i {
+                font-style: normal;
+                color: #b2b2b2;
+            }
+
+    .media .video {
+        margin: 0 0 30px;
+    }
+
+    .media .nextPrev {
+        margin: 0;
+    }
+        .media .nextPrev li {
+            position: absolute;
+            z-index: 3;
+            top: 431px;
+            right: 0;
+            margin: -25px 0 0;
+            display: none;
+        }
+        .node-type-landing-page .media .nextPrev li.next {
+            right: 30px;
+        }
+        .node-type-landing-page .media .nextPrev li.prev {
+            left: 30px;
+        }
+            .media .nextPrev li.prev {
+                right: auto;
+                left: 0;
+            }
+            .media .nextPrev a {
+                display: block;
+                width: 51px;
+                height: 51px;
+                background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0px -800px;
+                font: 0/0 a;
+                color: transparent;
+            }
+                .media .nextPrev a.disabled,
+                .media .nextPrev a:hover,
+                .media .nextPrev a.active  {
+                    background-position: -300px -800px;
+                }
+                .media .nextPrev a.disabled {
+                    opacity: 0.5;
+                    cursor: default;
+                }
+                .media .nextPrev li.prev a {
+                    background-position: 0 -700px;
+                }
+                .media .nextPrev li.prev a.disabled,
+                .media .nextPrev li.prev a:hover,
+                .media .nextPrev li.prev a.active  {
+                    background-position: -300px -700px;
+                }
+
+
+    .media footer {
+        position: relative;
+        overflow: hidden;
+    }
+    .node-type-landing-page .media footer {
+        padding: 0 20px;
+    }
+        .media footer a {
+            color: #fff;
+        }
+        .media footer .social {
+            display: inline;
+            float: left;
+            margin: 0 0 30px;
+            border: 1px solid #404040;
+        }
+        .media .node-photo-gallery.bbcom .comments,
+        .media footer .comments {
+            display: inline;
+            float: right;
+            margin: 0 0 30px;
+            border: 1px solid #404040;
+            height: 28px;
+            line-height: 29px;
+            padding: 0 13px 0 35px;
+            background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -142px -492px;
+            cursor: pointer;
+        }
+        .media footer .numerator {
+            text-align: center;
+        }
+        .media footer .tagged {
+            border-top: 1px solid #404040;
+            padding: 18px 0 15px;
+            min-height: 56px;
+            clear: both;
+            position: relative;
+        }
+            .media footer .tagged p {
+                font-size: 17px;
+                line-height: 20px;
+                margin: 0 0 7px;
+            }
+            .media footer .tagged ul {
+                margin: 0;
+            }
+                .media footer .tagged ul li {
+                    display: inline;
+                }
+            .media footer .tagged .banner {
+                float: right;
+                width: 360px;
+                height: auto;
+                background: none repeat scroll 0 0 #F2F2F2;
+                color: #D9D9D9;
+                text-align: center;
+            }
+
+
+    .media .related {
+        border-top: 1px solid #404040;
+        padding: 18px 0 15px;
+    }
+
+    .media .related .small_thumb {
+      border-top: none;
+      position: relative;
+    }
+        .media .region .related h2 {
+            margin-bottom: 25px;
+            font-weight: normal;
+            }
+            .media .region .related .listing {
+                margin: 0 0 0 -30px;
+            }
+                .media .region .related .listing > article {
+                    border-bottom: 0 none;
+                    padding-bottom: 0;
+                    margin: 0 0 0 30px;
+                }
+                    .media .region .related .listing > article header h1 {
+                        text-align: left;
+                        margin: 0;
+                        font-size: 17px;
+                        line-height: 20px;
+                        font-weight: normal;
+                        padding: 0;
+                    }
+                    .media .region .related .listing > article header .category {
+                        text-align: left;
+                    }
+                        .media .region .related .listing > article header h1 a {
+                            color: #fff;
+                        }
+
+    .media footer .tagged,
+    .media footer .comments,
+    .media footer .numerator,
+    .media footer .social {
+        opacity: 1;
+        -o-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+    }
+        .media footer.ad .tagged,
+        .media footer.ad .numerator,
+        .media footer.ad .comments,
+        .media footer.ad .social {
+            opacity: 0;
+        }
+
+.search-inline-form {
+    position: relative;
+    float: right !important;
+    z-index: 2;
+}
+
+#content.with_sidebar_second #block-bb-artist-alphabetical .search-inline-form {
+    position: relative;
+    float: none !important;
+    display: block;
+    margin-top: 35px;
+}
+
+.view-gallery {
+    position: relative;
+    overflow: hidden;
+}
+    .page-videos.sidebar-second .view-id-video_gallery {
+        overflow: visible;
+    }
+
+    .search-inline-form .view-filters {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .view-gallery .view-filters,
+    #block-menu-menu-bbbiz-community-backbeat .view-filters,
+    .node-type-landing-page #content .tertiary-menu .view-filters,
+    .node-type-event-page #content-top .tertiary-menu .view-filters {
+        float: right;
+        position: absolute;
+        right: 0px;
+        top: 19px;
+        z-index: 2;
+    }
+
+    .page-videos.sidebar-second .view-id-video_gallery .view-filters {
+        right: -340px;
+    }
+
+    .view-gallery .view-filters .views-exposed-form .views-exposed-widget,
+    #block-menu-menu-bbbiz-community-backbeat .view-filters .views-exposed-form .views-exposed-widget,
+    .search-inline-form .view-filters .views-exposed-form .views-exposed-widget,
+    .node-type-landing-page #content .tertiary-menu .view-filters .views-exposed-form .views-exposed-widget,
+    .node-type-event-page #content-top .tertiary-menu .view-filters .views-exposed-form .views-exposed-widget {
+        float: none;
+        padding: 0;
+    }
+
+    .view-gallery .view-filters form,
+    .view-gallery .view-filters fieldset,
+    #block-menu-menu-bbbiz-community-backbeat .view-filters form,
+    #block-menu-menu-bbbiz-community-backbeat .view-filters fieldset,
+    .search-inline-form .view-filters form,
+    .search-inline-form .view-filters fieldset,
+    .node-type-landing-page #content .tertiary-menu .view-filters form,
+    .node-type-landing-page #content .tertiary-menu .view-filters fieldset,
+    .node-type-event-page #content-top .tertiary-menu .view-filters form,
+    .node-type-event-page #content-top .tertiary-menu .view-filters fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+        .view-gallery .view-filters legend,
+        .view-gallery .view-filters label,
+        #block-menu-menu-bbbiz-community-backbeat .view-filters legend,
+        #block-menu-menu-bbbiz-community-backbeat .view-filters label,
+        .search-inline-form .view-filters legend,
+        .search-inline-form .view-filters label,
+        .node-type-landing-page #content .tertiary-menu .view-filters legend,
+        .node-type-landing-page #content .tertiary-menu .view-filters label,
+        .node-type-event-page #content-top .tertiary-menu .view-filters legend,
+        .node-type-event-page #content-top .tertiary-menu .view-filters label {
+            display: none;
+        }
+
+        .view-gallery .view-filters input[type=text],
+        #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text],
+        .search-inline-form .view-filters input[type=text],
+        .node-type-landing-page #content .tertiary-menu .view-filters input[type=text],
+        .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text] {
+            display: inline;
+            float: left;
+            color: #1a1a1a;
+            /*padding: 4px 37px 6px 9px;*/
+            padding: 0 35px 0 10px;
+            font: 17px/22px Helvetica, Arial, sans-serif;
+            border: 2px solid #1cace2;
+            width: 260px;
+            /*height: 20px;*/
+            height: 28px;
+            margin: 0;
+        }
+        .node-type-event-page #content-top .tertiary-menu.business .view-filters input[type=text] {
+            width: 254px;
+        }
+            .view-gallery .view-filters input[type=text]:hover,
+            .view-gallery .view-filters input[type=text]:focus,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text]:hover,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text]:focus,
+            .search-inline-form .view-filters input[type=text]:hover,
+            .search-inline-form .view-filters input[type=text]:focus,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=text]:hover,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=text]:focus,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text]:hover,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text]:focus {
+                border-color: #1cace2;
+            }
+            .view-gallery .view-filters input[type=text]::-webkit-input-placeholder,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text]::-webkit-input-placeholder,
+            .search-inline-form .view-filters input[type=text]::-webkit-input-placeholder,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=text]::-webkit-input-placeholder,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text]::-webkit-input-placeholder {
+                color: #1cace2;
+            }
+            .view-gallery .view-filters input[type=text]:-moz-placeholder,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text]:-moz-placeholder,
+            .search-inline-form .view-filters input[type=text]:-moz-placeholder,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=text]:-moz-placeholder,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text]:-moz-placeholder {
+                color: #1cace2;
+            }
+            .view-gallery .view-filters input[type=text]:-ms-input-placeholder,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=text]:-ms-input-placeholder
+            .search-inline-form .view-filters input[type=text]:-ms-input-placeholder,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=text]:-ms-input-placeholder,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=text]:-ms-input-placeholder {
+                color: #1cace2;
+            }
+
+        .view-gallery .view-filters input.form-submit,
+        #block-menu-menu-bbbiz-community-backbeat .view-filters input.form-submit,
+        .search-inline-form .view-filters input.form-submit,
+        .node-type-landing-page #content .tertiary-menu .view-filters input.form-submit,
+        .node-type-event-page #content-top .tertiary-menu .view-filters input.form-submit {
+            position: absolute;
+            /*right: 2px;*/
+            right: 0;
+            /*top: 2px;*/
+            top: 0;
+            height: 30px;
+            line-height: 0px;
+            width: 35px;
+            background: #1cace2 url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 10px -91px;
+            cursor: pointer;
+            border: 0 none;
+            font-size: 0px;
+            color: transparent;
+            text-indent: -9999px;
+            margin: 0px !important;
+            text-align: left;
+            height: 32px;
+        }
+            .view-gallery .view-filters input[type=submit]:hover,
+            #block-menu-menu-bbbiz-community-backbeat .view-filters input[type=submit]:hover,
+            .search-inline-form .view-filters input[type=submit]:hover,
+            .node-type-landing-page #content .tertiary-menu .view-filters input[type=submit]:hover,
+            .node-type-event-page #content-top .tertiary-menu .view-filters input[type=submit]:hover {
+                background-color: #1b9dcd;
+            }
+
+    /* Gallery views listing teasers */
+
+    .view-gallery.view-display-id-all_tab_page .view-content,
+    .view-gallery.popular .view-content,
+    .view-gallery.view-display-id-term_tab_page .view-content,
+    .view-gallery.view-display-id-term_tab_block .view-content {
+        zoom: 1;
+        margin: 0 0 60px -30px;
+        overflow: hidden;
+    }
+
+    .gravity-2x2-wrapper {
+      width: 650px;
+      float: left;
+    }
+
+    .view-gallery.view-home-page .view-content,
+    .view-gallery.view-display-id-all_tab_block .view-content {
+        margin: 0 0 0 -30px;
+    }
+
+    .view-gallery.view-display-id-all_tab_block .view-content .banner {
+        float: right;
+    }
+
+    .sitewide-news-features .view-gallery .view-content {
+        margin: 0;
+    }
+
+    .view-artist-info.view-gallery .view-content article {
+        position: relative;
+        display: inline;
+        float: left;
+        padding: 222px 0 0;
+        margin: 0 0 20px 0px !important;
+        height: 65px;
+        width: 310px;
+        cursor: pointer;
+    }
+
+    .view-gallery .view-content article {
+        position: relative;
+        display: inline;
+        float: left;
+        padding: 222px 0 0;
+        margin: 0 0 30px 30px !important;
+        height: 65px;
+        width: 310px;
+        cursor: pointer;
+    }
+
+    .view-gallery.view-video-gallery .view-content article {
+        padding: 192px 0 0;
+    }
+
+    .view-gallery.artist-most-popular .view-content article,
+    .view-gallery.artist-top-100 .view-content article {
+        width: 140px;
+        height: auto;
+        padding: 0;
+        display: inline-block;
+        float: none;
+    }
+
+    .view-gallery.artist-most-popular .view-content article .thumbnail,
+    .view-gallery.artist-top-100 .view-content article .thumbnail {
+        width: 140px;
+        height: auto;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .view-gallery .view-content article.promo_650 {
+        width: 650px;
+        padding: 377px 0 0;
+    }
+
+        .view-gallery .view-content article h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: normal;
+            padding: 0;
+        }
+            .view-gallery .view-content article h1 a {
+                color: #000;
+            }
+
+        .view-gallery .view-content article header {
+            text-align: center;
+            position: relative;
+            padding: 23px 0 0;
+        }
+
+        .view-gallery.artist-most-popular .view-content article header,
+        .view-gallery.artist-top-100 .view-content article header {
+            overflow: hidden;
+            padding-top: 0px;
+        }
+
+            .view-gallery .view-content article header .category {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                color: #fc666a;
+            }
+
+                .view-gallery .view-content article header .category a {
+                    color: #fc666a;
+                    text-transform: uppercase;
+                }
+
+        .view-gallery .view-content article .no-content-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 310px;
+            height: 205px;
+            background: #f2f2f2;
+        }
+            .view-gallery.view-video-gallery .view-content article .no-content-image {
+                height: 174px;
+            }
+
+        .view-gallery .view-content article img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            /*width: 310px;
+            height: 205px;*/
+            background: #f2f2f2 url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat 50% 50%;
+            max-width: 310px;
+        }
+
+        .view-gallery.artist-most-popular .view-content article img {
+            display: inline;
+            position: relative;
+        }
+
+        .view-gallery.artist-top-100 .view-content article img {
+            display: inline;
+            position: relative;
+        }
+
+        .view-gallery .view-content article.promo_650 img {
+            width: 650px;
+            height: 360px;
+        }
+
+            .view-gallery .view-content article header .category ul.categories {
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .view-gallery .view-content article header .category .categories li + li + li + li {
+                display: none;
+            }
+
+            .view-gallery .view-content article header .category .categories li,
+            .view .view-content article header .content-category .categories li {
+                display: inline;
+            }
+
+            .view-gallery .view-content article header .category .categories li:after,
+            .view .view-content article header .content-category .categories li:after {
+                display: inline;
+                content: " | ";
+            }
+
+            .view-gallery .view-content article header .category .categories li + li + li:after {
+                display: inline;
+                content: " ";
+            }
+
+            .view-gallery .view-content article header .category .categories li:last-child:after,
+            .view .view-content article header .content-category .categories li:last-child:after {
+                display: inline;
+                content: " ";
+            }
+
+        /* is video */
+        .view-gallery.view-video-gallery .view-content article .content-image a:after,
+        .view-gallery .view-content .promo.node-video_item .content-image a:after {
+            content: " ";
+            position: absolute;
+            left: 50%;
+            top: 65px;
+            width: 51px;
+            height: 51px;
+            background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -950px;
+            margin: 0 0 0 -25px;
+        }
+        .view-gallery .view-content .promo.promo_650 .content-image a:after {
+            top: 154px;
+        }
+
+        .view-gallery .item-list {
+            margin: -40px 0 60px 0;
+        }
+
+        .view-gallery .view-content .banner,
+        .view-gallery .view-content .internal {
+            display: inline;
+            float: left;
+            margin: 0 0 30px 20px;
+            width: 310px;
+            height: 287px;
+            background: #f2f2f2;
+        }
+
+        .view-gallery.artist-most-popular .view-content > .banner,
+        .view-gallery.artist-top-100 .view-content > .banner {
+            float: right;
+            width: 300px;
+            height: 275px;
+            margin: 0 0 30px 30px;
+            line-height:85%
+        }
+
+        .view-gallery.artist-most-popular,
+        .view-gallery.artist-top-100 {
+          margin-left: -30px;
+        }
+          .view-gallery.artist-top-100 .item-list {
+            margin-top: 0;
+          }
+
+        .view-gallery.view-video-gallery .view-content > .banner {
+            height: 247px;
+        }
+
+        .view-gallery.view-display-id-block_recent_stories .view-content > .banner {
+            width: 300px;
+            height: auto;
+            line-height:85%;
+            float: right;
+            z-index:4;
+            left: 650px;
+            padding-bottom: 10px;
+            min-height: 272px;
+        }
+
+        .view-gallery .view-content > .banner {
+            color: #d9d9d9;
+            text-align: center;
+            font-size: 12px;
+            width: 300px;
+            height: 277px;
+            padding: 5px;
+            line-height:85%
+        }
+
+            .view-gallery .view-content > .banner *:first-child,
+            .view-gallery .view-content > .internal *:first-child {
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .view-gallery .view-content > .banner .dfp-tag-wrapper script {
+                display:none;
+            }
+
+/* Slider - class ".flashbox-slider" */
+
+.flashbox-slider {
+    width: 990px;
+    overflow: hidden;
+}
+
+#content-header-content .flashbox-slider {
+    width: 650px;
+}
+
+.flashbox-slider .jcarousel-skin-default .jcarousel-container,
+.flashbox-slider ul {
+    overflow: hidden;
+    position: relative;
+    height: 410px;
+    width: 990px;
+    padding: 0px;
+}
+
+#content-header-content .flashbox-slider .jcarousel-skin-default .jcarousel-container,
+#content-header-content .flashbox-slider ul {
+    width: 650px;
+}
+
+.flashbox-slider .jcarousel li {
+  float: left;
+  position: relative;
+}
+.flashbox-slider.articles .jcarousel-skin-default .jcarousel-container {
+    height: 430px !important;
+}
+.flashbox-slider.reviews .jcarousel-skin-default .jcarousel-container {
+    height: 410px !important;
+}
+.field-name-field-flashbox-code .flashbox-slider .jcarousel-skin-default .jcarousel-container {
+    height: 410px !important;
+    width: 510px !important;
+}
+    .field-name-field-flashbox-code .field-label {
+        display: none;
+    }
+
+    .flashbox-slider .jcarousel-container .jcarousel-clip {
+        width: 990px;
+    }
+    .flashbox-slider.articles .jcarousel-container .jcarousel-clip {
+        width: 1530px;
+        margin-left: -540px !important;
+    }
+    #content-header-content .flashbox-slider.articles .jcarousel-container .jcarousel-clip {
+        width: 1360px;
+        margin-left: -710px !important;
+    }
+    .flashbox-slider.reviews .jcarousel-container .jcarousel-clip {
+        width: 1170px;
+        margin-left: -180px !important;
+    }
+    .field-name-field-flashbox-code .flashbox-slider .jcarousel-container .jcarousel-clip {
+        width: 1170px;
+        margin-left: -420px !important;
+    }
+
+    .flashbox-slider .jcarousel-container .jcarousel-list {
+        width: 9999em;
+        height: 410px;
+        position: relative;
+        margin: 0;
+    }
+    .flashbox-slider.articles .jcarousel-container .jcarousel-list {
+        height: 430px !important;
+        /*margin-left: -540px !important;*/
+    }
+    .flashbox-slider.reviews .jcarousel-container .jcarousel-list {
+        height: 410px !important;
+        /*margin-left: -180px !important;*/
+    }
+    .field-name-field-flashbox-code .flashbox-slider .jcarousel-container .jcarousel-list {
+        height: 410px !important;
+    }
+
+        .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item {
+            position: relative;
+            display: inline;
+            float: left;
+            width: 990px;
+            height: 410px;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background: #f2f2f2 url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat 50% 50%;
+        }
+        .flashbox-slider.articles .jcarousel-container .jcarousel-list .jcarousel-item,
+        .flashbox-slider.articles ul li {
+            width: 650px !important;
+            height: 430px !important;
+            margin: 0 0 0 30px;
+            background: #858585;
+        }
+        .flashbox-slider.reviews .jcarousel-container .jcarousel-list .jcarousel-item,
+        .flashbox-slider.reviews ul li {
+            width: 410px !important;
+            height: 410px !important;
+            margin: 0 0 0 30px;
+            background: #858585;
+        }
+        .field-name-field-flashbox-code .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item {
+            width: 410px !important;
+            height: 410px !important;
+            margin: 0 0 0 30px;
+            background: #858585;
+        }
+            .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item .views-field-title,
+            .flashbox-slider ul li .views-field-title {
+                position: absolute;
+                z-index: 2;
+                width: 550px;
+                padding: 13px 20px 20px 20px;
+                left: 50%;
+                bottom: 30px;
+                margin: 0 0 0 -295px;
+                background: rgba(255, 255, 255, 0.85);
+            }
+            .flashbox-slider.reviews .jcarousel-container .jcarousel-list .jcarousel-item .views-field-title,
+            .flashbox-slider.reviews ul li .views-field-title {
+                margin: 0 0 0 -173px;
+                padding: 38px 30px 20px;
+                width: 290px;
+            }
+            .field-name-field-flashbox-code .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item .views-field-title {
+                margin: 0 0 0 -173px;
+                padding: 38px 30px 20px;
+                width: 290px;
+            }
+                .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item .views-field-title a,
+                .flashbox-slider ul li .views-field-title a {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin: 0;
+                    color: #1A1A1A;
+                }
+
+                .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item .views-field-title .views-field-counter,
+                .flashbox-slider ul li .views-field-title .views-field-counter {
+                    padding: 0 0 5px 0;
+                    color: #FC666A;
+                }
+
+            /* is video */
+            .page-videos .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item .views-field-field-video-image a:after {
+                content: " ";
+                position: absolute;
+                z-index: 2;
+                left: 50%;
+                top: 50%;
+                width: 102px;
+                height: 102px;
+                background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -1050px;
+                margin: -51px 0 0 -51px;
+            }
+
+            .flashbox-slider .jcarousel-container .jcarousel-list .jcarousel-item img {
+                z-index: 1;
+            }
+
+    .flashbox-slider .jcarousel-container a.jcarousel-prev,
+    .flashbox-slider .jcarousel-container a.jcarousel-next {
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 30px;
+        margin: -25px 0 0;
+        width: 51px;
+        height: 51px;
+        background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -800px;
+        font: 0/0 a;
+        color: transparent;
+        z-index: 3;
+    }
+
+        .flashbox-slider .jcarousel-container a.jcarousel-prev {
+            right: auto;
+            left: 30px;
+            background-position: 0 -700px;
+        }
+
+        .flashbox-slider .jcarousel-container a.jcarousel-prev:hover {
+            background-position: -300px -700px;
+        }
+
+        .flashbox-slider .jcarousel-container a.jcarousel-next:hover {
+            background-position: -300px -800px;
+        }
+
+        .field-name-field-flashbox-code .flashbox-slider .jcarousel-container a.jcarousel-prev {
+            left: 60px;
+        }
+
+        .field-name-field-flashbox-code .flashbox-slider .jcarousel-container a.jcarousel-next {
+            right: 60px;
+        }
+
+/* Slider - class ".headlines-slider" */
+
+.headlines-slider ul {
+    display: none;
+}
+
+.headlines-slider .jcarousel-container ul {
+    display: block !important;
+}
+
+.headlines-slider .view-content {
+    background: #F8F8F8;
+    border: 1px solid #E6E6E6;
+    height: 104px;
+    width: auto;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+    .headlines-slider .jcarousel-container {
+        position: relative;
+        height: 104px;
+        width: auto;
+        padding: 0 60px 0 40px;
+        overflow: hidden;
+    }
+
+    .headlines-slider .jcarousel-container .jcarousel-clip,
+    .headlines-slider .jcarousel-container .jcarousel-clip ul {
+        width: 888px;
+    }
+
+    .headlines-slider .jcarousel-container .jcarousel-item {
+        position: relative;
+        background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/loader.gif") no-repeat scroll 50% 50% #F8F8F8;
+        height: 104px;
+        margin: 0 0 0 20px;
+        width: 202px;
+        border: 0px;
+    }
+
+        .headlines-slider .jcarousel-container .jcarousel-item .views-field-title {
+            background: #F8F8F8;
+            height: 63px;
+            margin: 0;
+            padding: 41px 0 0;
+            position: static;
+            width: auto;
+        }
+
+            .headlines-slider .jcarousel-container .jcarousel-item .views-field-title .field-content {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                margin: 0;
+            }
+
+            .headlines-slider .jcarousel-container .jcarousel-item .views-field-title a {
+                color: #000000;
+            }
+
+        .headlines-slider .jcarousel-container .jcarousel-item .views-field-field-article-category {
+            position: absolute;
+            top: 17px;
+            left: 0;
+            right: 0;
+            margin-bottom: 18px;
+        }
+
+            .headlines-slider .jcarousel-container .jcarousel-item .views-field-field-article-category a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #FC666A;
+            }
+
+    .headlines-slider .jcarousel-container .jcarousel-prev {
+        position: absolute;
+        left: 19px;
+        top: 41px;
+        width: 22px;
+        height: 22px;
+        z-index: 3;
+        background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -600px transparent;
+    }
+
+        .headlines-slider .jcarousel-container .jcarousel-prev:hover {
+            background-position: -150px -600px;
+        }
+
+    .headlines-slider .jcarousel-container .jcarousel-next {
+        position: absolute;
+        right: 19px;
+        top: 41px;
+        width: 22px;
+        height: 22px;
+        z-index: 3;
+        background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -650px transparent;
+    }
+
+        .headlines-slider .jcarousel-container .jcarousel-next:hover {
+            background-position: -150px -650px;
+        }
+
+
+#block-billboard-blocks-previous-galleries {
+    display: none;
+}
+.previous-galleries-block {
+    padding-top: 65px;
+}
+    .previous-galleries-block-content h3,
+    .previous-galleries-block-next,
+    .previous-galleries-block-replay {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 28px;
+        color: #fff;
+    }
+    .previous-galleries-block-content h3 {
+        margin: 60px 0 20px 0;
+    }
+    .previous-galleries-block-replay,
+    .previous-galleries-block-next {
+        padding: 10px 0 10px 70px;
+        margin: 0 30px;
+        cursor: pointer;
+        display: inline-block;
+        *display: inline;
+    }
+    .previous-galleries-block-replay span,
+    .previous-galleries-block-next span {
+        float: left;
+        width: 51px;
+        height: 51px;
+        margin: -10px 0 -10px -70px;
+        background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -4750px transparent;
+    }
+    .previous-galleries-block-replay span {
+        background-position: 0 -4850px;
+    }
+    a.previous-galleries-block-replay:hover,
+    a.previous-galleries-block-next:hover {
+        color:#e7e7e7;
+        text-decoration: none;
+    }
+    a.previous-galleries-block-next:hover span {
+        background-position: -200px -4750px;
+    }
+    a.previous-galleries-block-replay:hover span {
+        background-position: -200px -4850px;
+    }
+    .previous-galleries-block-content {
+        overflow: hidden;
+    }
+      .previous-galleries-block-items {
+          width: 630px;
+          margin: 0 auto;
+          oveflow: hidden;
+      }
+        .previous-galleries-block-item {
+            width: 180px;
+            margin: 0 15px;
+            float: left;
+        }
+            .previous-galleries-block-category {
+                color: #fc666a;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+                height: 20px;
+            }
+            .previous-galleries-block-title a {
+                color: #fff;
+                font-size: 18px;
+            }
+            .previous-galleries-block-image {
+                width: 180px;
+                height: 180px;
+                margin-bottom: 15px;
+            }
+            .media .photos .previous-galleries-block img {
+                width: 180px;
+            }
+
+#block-bb-artist-alphabetical-subtitle h2 {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.view-artists .views-view-grid {
+    margin-bottom: 60px;
+    border: none;
+}
+
+    .view-artists .views-view-grid td {
+        padding: 0 30px 0 0;
+        vertical-align: middle;
+        border: none;
+        font-family: Helvetica,Arial,sans-serif;
+    }
+
+    .view-artists .views-view-grid td.col-last {
+        padding: 0 0 0 0;
+    }
+
+        .view-artists .views-view-grid td a {
+            color: #1A1A1A;
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 4px 0;
+        }
+.view-display-id-more_galleries_block .view-content article {
+    padding: 0;
+}
+    .view-display-id-more_galleries_block .view-content article .no-content-image,
+    .view-display-id-more_galleries_block .view-content article img {
+        display: none;
+    }
+#photo-gallery-slider .tagged .field-name-field-tags {
+  float: left;
+  width: 620px;
+}
+#photo-gallery-slider.media footer {
+  overflow: visible;
+}
+#photo-gallery-slider .photos li .comscore {
+  display: none;
+}
+
+/* BBBiz */
+
+.view-display-id-block_backbeat,
+.view-display-id-block_community_backbeat {
+    margin-bottom: 45px;
+/*    margin-left: -29px;
+    margin-top: -29px;*/
+    overflow: hidden;
+}
+
+.view-bbbiz-landing-pages > .view-content:after {
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0px;
+    width: 100%;
+}
+.view-bbbiz-landing-pages > .view-content article.promo_278 {
+    border: 1px solid #D8D8D8;
+    float: left;
+    min-height: 100px;
+    margin-left: 0;
+    margin-top: 29px;
+    padding: 325px 15px 46px;
+    width: 278px;
+    position: relative;
+}
+    .view-bbbiz-landing-pages > .view-content .views-row-even article.promo_278 {
+        margin-left: 29px;
+    }
+
+    .view-bbbiz-landing-pages > .view-content article.promo_278 .content-image {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 278px;
+        height: 278px;
+        background: #000;
+    }
+    .view-bbbiz-landing-pages > .view-content article.promo_278 .content-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .view-bbbiz-landing-pages > .view-content article.promo_278 .content-image .presented-by {
+        color: #737373;
+        font-size: 11px;
+        left: 10px;
+        position: absolute;
+        text-indent: 5px;
+        top: 215px;
+        z-index: 1;
+    }
+
+        .view-bbbiz-landing-pages > .view-content article.promo_278 .content-image .presented-by img {
+            position: static;
+            float: left;
+            margin: 0px;
+            background-color: transparent;
+        }
+
+    .view-bbbiz-landing-pages > .view-content article.promo_278 header .category {
+        text-align: center;
+    }
+
+    .view-bbbiz-landing-pages > .view-content article.promo_278 header h1 {
+        font: bold 17px/20px Georgia,serif;
+        margin: 0;
+        text-align: center;
+        padding: 0 20px 10px;
+    }
+    .view-bbbiz-landing-pages.view-display-id-block_backbeat > .view-content article.promo_278 header h1 {
+      height: 100px;
+    }
+
+        .view-bbbiz-landing-pages > .view-content article.promo_278 header h1 a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+    .view-bbbiz-landing-pages.view-display-id-block_backbeat > .view-content article.editorial-imported,
+    .view-bbbiz-landing-pages.view-display-id-block_community_backbeat > .view-content article.editorial-imported {
+        background: #EBEBEB;
+    }
+    .view-bbbiz-landing-pages.view-display-id-block_backbeat > .view-content article.instagram-imported,
+    .view-bbbiz-landing-pages.view-display-id-block_community_backbeat > .view-content article.instagram-imported {
+        background: #fff;
+    }
+
+    .view-bbbiz-landing-pages > .view-content article.editorial-imported .category,
+    .view-bbbiz-landing-pages > .view-content article.instagram-imported .category,
+    .view-bbbiz-landing-pages > .view-content article.editorial-imported .content-category,
+    .view-bbbiz-landing-pages > .view-content article.instagram-imported .content-category,
+    .view-bbbiz-landing-pages > .view-content article.promo_278 .category,
+    .view-bbbiz-landing-pages > .view-content article.promo_278 .category a {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 0px 10px;
+        color: #FC666A;
+        text-transform: uppercase;
+    }
+
+    .view-bbbiz-landing-pages > .view-content article.editorial-imported .content-category,
+    .view-bbbiz-landing-pages > .view-content article.instagram-imported .content-category {
+        margin: 0;
+    }
+
+/* BBBiz backbeat page */
+
+footer.promo_278 {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+    footer.promo_278 .social {
+        border-color: #cccccc;
+    }
+
+        footer.promo_278 .social li + li {
+            border-left: 1px solid #cccccc;
+        }
+
+        footer.promo_278 .social .icon.photos,
+        footer.promo_278 .social .ia.photos:after,
+        footer.promo_278 .social .ib.photos:before {
+          background: url("/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat 0 -2900px;
+          width: 17px;
+          height: 14px;
+        }
+.node-type-video-item #bb .full_width,
+.node-type-photo-gallery #bb .full_width {
+  background: transparent;
+}
+
+.media .photos .pin-it-button-container {
+  position: absolute;
+  bottom: 135px;
+  left: 50%;
+  height: 20px;
+  width: 40px;
+  margin: 0 0 0 -20px;
+  display: none;
+  top: 500px;
+}
+.media .photos li:hover .pin-it-button-container {
+  display: block;
+}
+  .media .photos .pin-it-button-container img {
+    background: none;
+    margin: 0;
+  }
+  .media .photos .pin-it-button-container span {
+    background: transparent url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/images/bps1.png') no-repeat scroll 0 0;
+    height: 20px;
+    width: 40px;
+    display: block;
+  }
+
+.media .node-photo-gallery.bbcom .nextPrev {
+  overflow: hidden;
+  width: 180px;
+  margin: 0 auto 14px;
+  height: 51px;
+}
+.media .node-photo-gallery.bbcom .nextPrev li {
+  position: static;
+  margin: 0;
+  float: left;
+}
+.media .node-photo-gallery.bbcom .nextPrev.on-image {
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  top: 0;
+}
+.media .node-photo-gallery.bbcom .nextPrev.on-image.hidden {
+  display: none;
+}
+.media .node-photo-gallery.bbcom .nextPrev.on-image li {
+  position: absolute;
+  top: 238px;
+  background-color: #111;
+  opacity: 0.5;
+  display: none;
+}
+.media .node-photo-gallery.bbcom .nextPrev.on-image li.prev {
+  padding: 7px 7px 7px 12px;
+  left: 0;
+}
+.media .node-photo-gallery.bbcom .nextPrev.on-image li.next {
+  padding: 7px 12px 7px 7px;
+  right: 0;
+}
+.node-photo-gallery.bbcom .numerator {
+  width: 78px;
+  float: left;
+  text-align: center;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+.node-photo-gallery.bbcom .comments a {
+  color: #fff;
+}
+.node-photo-gallery.bbcom #photo-social-wrapper {
+  float: left;
+}
+.media .node-photo-gallery.bbcom .comments {
+  float: right;
+  margin: 0;
+  width: 190px;
+}
+.node-photo-gallery.bbcom .photo-gallery-subheader {
+  margin-bottom: 11px;
+  height: 48px;
+}
+.media .node-photo-gallery.bbcom .photos img {
+  margin: 0 auto;
+}
+.media .node-photo-gallery.bbcom .photos li {
+  width: 650px;
+  height: 630px;
+  padding: 0;
+}
+.media .node-photo-gallery.bbcom .photo {
+  width: 650px;
+  height: 630px;
+  text-align: center;
+  float: left;
+}
+.media .node-photo-gallery.bbcom .photo-embeded {
+  width: 510px;
+  height: 630px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.media .node-photo-gallery.bbcom .photo-embeded .instagram-container,
+.media .node-photo-gallery.bbcom .photo-embeded .youtube-container {
+  position: relative;
+  padding-bottom: 120%;
+  height: 0;
+  overflow: hidden;
+}
+.media .node-photo-gallery.bbcom .photo-embeded .instagram-container iframe,
+.media .node-photo-gallery.bbcom .photo-embeded .instagram-container object,
+.media .node-photo-gallery.bbcom .photo-embeded .instagram-container embed,
+.media .node-photo-gallery.bbcom .photo-embeded .youtube-container iframe,
+.media .node-photo-gallery.bbcom .photo-embeded .youtube-container object,
+.media .node-photo-gallery.bbcom .photo-embeded .youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.node-photo-gallery.bbcom .photo-gallery-slider {
+  margin: 7px;
+  width: 650px;
+  height: 689px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  top: 0;
+}
+.node-photo-gallery.bbcom .photo-gallery-slider:hover .nextPrev.on-image li {
+  display: block;
+}
+.media .node-photo-gallery.bbcom .photos small {
+  font-size: 11px;
+}
+.media .node-photo-gallery.bbcom .photos .pin-it-button-container {
+  height: 0;
+  bottom: auto;
+  position: relative;
+}
+.media .node-photo-gallery.bbcom .photos .pin-it-button-container a {
+  position: absolute;
+  bottom: 40px;
+}
+.node-photo-gallery.bbcom .photo-gallery-slider:hover .pin-it-button-container {
+  display: block;
+}
+.node-photo-gallery.bbcom .photo-caption {
+  width: 312px;
+  font-size: 13px;
+  max-height: 335px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.node-photo-gallery.bbcom .photo-gallery-right {
+  padding: 0 7px 7px;
+  float: left;
+}
+.node-photo-gallery.bbcom .previous-galleries-block {
+  padding: 0;
+}
+.media .node-photo-gallery.bbcom .photos i {
+  width: 100%;
+  display: block;
+  text-align: right;
+  margin-top: 9px;
+}
+
+/* for gumgum */
+.media .node-photo-gallery.bbcom .photos li img {
+  opacity: 0.99;
+  filter: alpha(opacity=99);
+}
+.media .node-photo-gallery.bbcom .photos li.visible img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* Video embed */
+.field-name-field-video-embed {
+  padding: 0 0 5px 0;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:23 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:37 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 59.816 (3)
+  esindex: 0.013
+  captures_list: 83.979
+  CDXLines.iter: 15.872 (3)
+  PetaboxLoader3.datanode: 64.966 (4)
+  exclusion.robots: 0.422
+  exclusion.robots.policy: 0.401
+  RedisCDXSource: 1.962
+  PetaboxLoader3.resolve: 59.318
+  load_resource: 109.592
+*/

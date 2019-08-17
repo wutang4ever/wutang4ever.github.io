@@ -1,0 +1,158 @@
+/* 
+    "Event page" area styling
+*/
+
+.node-type-event-page #content-top {
+  margin: 0px auto !important;
+  padding-top: 0px !important;
+}
+  .node-type-event-page #content-top .tertiary-menu {
+    border-top: 1px solid #F2F2F2;
+    margin: -52px 0 0;
+  }
+
+  .node-type-event-page #content-top .tertiary-menu.business {
+    border-top: none;
+    margin-top: -6px;
+    margin-bottom: -30px;
+  }
+
+  .node-type-event-page .finalists-slider {
+    height: auto;
+    margin: 0px;
+    overflow: hidden;
+    padding: 30px 0 0;
+    position: relative;
+  }
+
+  .node-type-event-page #content-top .section {
+    position: relative;
+    margin-top: 56px;
+  }
+    .node-type-event-page #content-top .section > .field > .field-items > .field-item:first-child > .block {
+      margin-top: -52px   ;
+    }
+
+  .node-type-event-page #content-top .social {
+    float: right;
+    position: absolute;
+    z-index: 10;
+    top: -26px;
+    right: 0;
+  }
+
+.node-type-event-page #content .tertiary-menu {
+  position: relative;
+  width: 990px;
+}
+
+.node-type-event-page .full_width {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.node-type-event-page #main-wrapper.without_menu {
+  margin-top: 30px;
+}
+
+/* Latest News block */
+
+.node-type-event-page .two-columns .field-name-field-middle-blocks > .field-items > .field-item {
+  float: left;
+  overflow: hidden;
+}
+
+.node-type-event-page .field-name-field-middle-blocks section.latest-news {
+  float: left;
+  display: inline;
+  width: 310px;
+  margin: 0 30px 0 0;  
+}
+  .node-type-event-page .field-name-field-middle-blocks section.latest-news h2 {
+    border-bottom: 1px solid #E6E6E6;
+    margin: 0 0 15px;
+    padding: 0 0 18px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+  }
+
+/* Video/Image block */
+
+.node-type-event-page .view-display-id-block_video,
+.node-type-event-page .view-display-id-block_image {
+  margin: 0 0 30px;
+}
+  .node-type-event-page .view-display-id-block_video h2,
+  .node-type-event-page .view-display-id-block_image h2 {
+    color: #FC666A;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+  }
+
+  .node-type-event-page .view-display-id-block_video .views-row h2,
+  .node-type-event-page .view-display-id-block_image .views-row h2 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: none;
+    color: #1A1A1A;
+  }
+
+  .node-type-event-page .view-display-id-block_image .views-field-field-video-image {
+    text-align: center;
+    position: relative;
+  }
+    .node-type-event-page .view-display-id-block_image .views-field-field-video-image:after {
+      background: url("/web/20190719164436im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -950px transparent;
+      content: " ";
+      height: 51px;
+      width: 51px;
+      left: 50%;
+      top: 50%;
+      margin: -25px 0 0 -25px;
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+.node-type-event-page .view-landing-page-aritcles .view-filters {
+  display: none;
+}
+
+.node-type-event-page .tertiary-menu.business .view-filters #edit-tid-wrapper {
+  display: none;
+}
+
+.node-type-event-page #sidebar-second .field-name-field-right-sidebar-blocks .field-item > .block {
+    margin: 0 0 30px;
+}
+
+
+/*
+     FILE ARCHIVED ON 16:44:36 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:27 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 44.58 (3)
+  esindex: 0.006
+  captures_list: 62.331
+  CDXLines.iter: 13.618 (3)
+  PetaboxLoader3.datanode: 83.192 (4)
+  exclusion.robots: 0.246
+  exclusion.robots.policy: 0.236
+  RedisCDXSource: 0.504
+  PetaboxLoader3.resolve: 31.61
+  load_resource: 74.053
+*/

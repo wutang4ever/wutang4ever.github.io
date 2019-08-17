@@ -1,0 +1,42 @@
+/**
+ * @file
+ *   Adds some styles to the standard Drupal autocomplete widget.
+ */
+.apachesolr_autocomplete {
+}
+.apachesolr_autocomplete.message {
+  font-size:80%;
+  color:#888;
+}
+.apachesolr_autocomplete.count {
+  float:right;
+}
+div.apachesolr_autocomplete.suggestion {
+  display:inline;
+  float:left;
+}
+div.ac_results li {
+  list-style:none;
+  background-image: none !important;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:38 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:06 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 32.482 (3)
+  esindex: 0.01
+  captures_list: 58.089
+  CDXLines.iter: 13.802 (3)
+  PetaboxLoader3.datanode: 37.346 (4)
+  exclusion.robots: 0.478
+  exclusion.robots.policy: 0.463
+  RedisCDXSource: 6.191
+  load_resource: 8.502
+*/

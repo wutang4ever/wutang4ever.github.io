@@ -1,0 +1,1173 @@
+/*
+
+    article detail article styling
+
+    html: <article class="article">...</article>
+
+*/
+
+/**
+ * Article landing
+ */
+
+.article_landing > header {
+  position: relative;
+  padding: 28px 50px 0;
+  margin: 0 0 25px;
+  text-align: center;
+}
+  .article_landing > header .categories {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    right: 0;
+  }
+  .article_landing > header i {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .article_landing > header p a.tw {
+    background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat -600px -150px;
+    padding-left: 25px;
+    margin-left: 8px;
+  }
+  .article_landing > header .rss {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+    .article_landing > header .rss a {
+      display: block;
+      border: 1px solid #e6e6e6;
+      background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 8px -242px;
+      width: 28px;
+      height: 29px;
+      font: 0/0 a;
+      color: transparent;
+      padding: 0;
+      margin: 0;
+    }
+      .article_landing > header .rss a:hover {
+        background-color: #f2f2f2;
+        border-color: #e6e6e6;
+      }
+
+.article_landing .side_rail {
+  padding-top: 30px;
+}
+
+
+/**
+ * Article header
+ */
+.article > header {
+    position: relative;
+    padding: 28px 50px 0;
+    margin: 0 0 25px;
+    text-align: center;
+}
+    .article > header .categories {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        right: 0;
+    }
+    .article > header p {
+        font: 13px/17px Arial, sans-serif;
+    }
+    .article > header i {
+        font-style: normal;
+    }
+    .article > header p i a {
+        margin: 0px;
+    }
+    .article > header p i a.gplus,
+    .article > header p i a.tw {
+        margin-left: 10px;
+    }
+    .article > header p a,
+    .article > header p time {
+        margin-left: 10px;
+    }
+ .article > header p time.no-padding,
+ .article > header p a.no-padding {
+   margin: 0;
+   padding: 0;
+ }
+    /*.article > header p time {
+        color: #999;
+    }*/
+    .article > header + img {
+        display: block;
+        margin: 0 0 30px;
+    }
+    .article > header p a.tw {
+        background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat -600px -150px;
+        padding-left: 18px;
+    }
+
+/**
+ * Article content
+ */
+
+.node-type-article h1 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.node-type-article .paginator .item-list {
+  border: none;
+  padding: 0;
+}
+    /*.node-type-article #main.clearfix {
+        overflow: hidden;
+    }*/
+        .node-type-article #content {
+            display: inline;
+            float: left;
+            width: 310px;
+        }
+        .node-type-article #sidebar-last {
+            display: inline;
+            float: right;
+            width: 310px;
+        }
+
+.article .article_content {
+    padding: 0 70px;
+    min-height: 210px; /* Match to .social buttons on short articles */
+}
+.article .article_content p,
+.article .article_content ul,
+.article .article_content ol,
+.article .article_content table td {
+        font-family: Arial, sans-serif;
+  line-height: 23px;
+    }
+    .article .article_content ul {
+        padding-left: 1.2em;
+        margin-bottom: 18px;
+    }
+        .article .article_content ul li {
+            list-style-type: disc;
+        }
+    .article .article_content ol {
+        padding-left: 1.2em;
+        margin-bottom: 18px;
+    }
+    .article .article_content iframe,
+    .article .article_content object,
+    .article .article_content embed {
+        margin: 20px 0 5px;
+    }
+ .article .article_content h2 {
+   text-align: left;
+ }
+    .article .article_content h3 {
+        font-weight: bold;
+        margin: 0 0 4px;
+        padding: 1px 0 0;
+    }
+ .article .article_content .article_list_item h3 {
+   padding: 0;
+ }
+
+
+/**
+ * Article boxouts
+ */
+.article_boxout {
+    display: inline;
+    float: right;
+    margin: 0 -70px 30px 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    width: 225px;
+ font-family: ​Helvetica,​Arial,​sans-serif;
+}
+    .article_boxout .boxout_thumb {
+        margin: 0 0 15px;
+    }
+    /** Side-by-side cta links **/
+    .article_boxout .ctas  a {
+        display: inline;
+        float: left;
+        margin: 0 5px 15px;
+        font-size: 17px;
+    }
+        .article_boxout .ctas a + a {
+            float: right;
+        }
+    /**  List support within article boxout **/
+    .article_boxout h3 {
+        padding-bottom: 15px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .article .article_content .article_boxout ul,
+    .article_boxout ul {
+        list-style: none;
+        margin-bottom: 0;
+  padding: 0;
+  font-family: ​Helvetica,​Arial,​sans-serif;
+    }
+        .article_boxout ul li {
+            border-top: 1px solid #E6E6E6;
+        }
+  .article .article_content .article_boxout ul li {
+    list-style-type: none;
+  }
+            .article_boxout ul li a {
+                display: block;
+                padding: 15px 0;
+            }
+    .article .article_content img {
+        max-width: 510px;
+    }
+
+/** Photo only (so, allow flexible width) **/
+.article_boxout.photo_only {
+    width: 310px;
+}
+    .article_boxout.photo_only .boxout_thumb {
+        margin-bottom: 0;
+    }
+
+
+/**
+ * paginator thingy
+ */
+.article .paginator {
+    border-top: 0 none;
+    padding: 31px 0 0;
+    margin: 0 0 20px;
+    clear: both;
+}
+    .article .paginator p {
+        font-size: 17px;
+        line-height: 20px;
+        margin: 0 0 19px;
+        text-align: center;
+        position: relative;
+        color: #1CACE2;
+    }
+        .article .paginator p a.np {
+            text-decoration: none;
+        }
+            .article .paginator p a.np i {
+                color: #1a1a1a;
+                font-style: normal;
+            }
+                .article .paginator p a.np:hover i {
+                    text-decoration: underline;
+                }
+        .article .paginator p a.prt {
+            position: absolute;
+            right: 0;
+            top: -45px;
+            display: block;
+            border: 1px solid #e6e6e6;
+            background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 6px -444px;
+            width: 28px;
+            height: 29px;
+            font: 0/0 a;
+            color: transparent;
+        }
+            .article .paginator p a.prt:hover {
+                background-color: #f2f2f2;
+                border-color: #e6e6e6;
+            }
+        .article .paginator ul {
+            border-top: 1px solid #e6e6e6;
+            padding: 8px 0 0;
+            margin: 0 0 73px;
+        }
+
+/**
+ * Sibling navigation
+ */
+.article .sibling-nav {
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 20px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    padding: 24px 0;
+    margin: 0 0 45px;
+}
+    .article .sibling-nav a {
+        display: inline;
+        width: 200px;
+    }
+    .article .sibling-nav a:hover {
+        text-decoration: none;
+    }
+    .article .sibling-nav .prev {
+        float: left;
+    }
+    .article .sibling-nav .next {
+        float: right;
+        text-align: right;
+    }
+        .article .sibling-nav a i {
+            display: block;
+            font-style: normal;
+            color: #1a1a1a;
+            margin-top: 5px;
+        }
+        .article .sibling-nav a:hover i {
+            text-decoration: underline;
+        }
+
+
+/**
+ * Tags
+ */
+.article .tagged {
+    padding: 19px 0 24px;
+    border-top: 1px solid #ececec;
+}
+    .article .tagged h3 {
+        margin-bottom: 7px;
+    }
+    .article .tagged a {
+        color: inherit;
+    }
+
+
+.article .rating_lg {
+    position: relative;
+    padding: 0 0 0 410px;
+    margin: 0 0 45px;
+    min-height: 410px;
+    border: 1px solid #ececec;
+}
+    .article .rating_lg.promo_650 {
+        min-height: 430px;
+        border: none;
+    }
+    .article .rating_lg img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .article .rating_lg > div {
+        position: relative;
+        padding: 100px 29px 0;
+        min-height: 308px;
+    }
+        .article .rating_lg p.artist_text {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+        }
+        .article .rating_lg p.album_text {
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .article .rating_lg div.position {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid #ececec;
+        }
+        .article .rating_lg .review-rating {
+            width: 140px;
+            margin: 0 auto;
+            float: none;
+        }
+    .article .rating_lg ul {
+        height: 39px;
+        margin: -1px 0 0;
+    }
+        .article .rating_lg ul li {
+            display: inline;
+            float: left;
+            font-size: 17px;
+            height: 39px;
+            line-height: 39px;
+            margin: 0;
+        }
+            .article .rating_lg ul li a {
+                display: block;
+                font-size: 17px;
+                height: 39px;
+                line-height: 39px;
+                padding: 0;
+            }
+            .article .rating_lg ul li.dd {
+        position: relative;
+        width: 130px;
+        text-align: center;
+        cursor: pointer;
+      }
+        .article .rating_lg ul li.dd:hover {
+            border-left: 1px solid #ececec;
+            border-right: 1px solid #ececec;
+            width: 128px;
+        }
+        .article .rating_lg ul li.dd span {
+            display: inline-block;
+            color: #1cace2;
+            padding-right: 18px;
+            background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/temp_icons/down_arrow.png') no-repeat 100% 50%;
+        }
+        .article .rating_lg ul li.dd ul {
+          position: absolute;
+          z-index: 9;
+          left: -1px;
+          right: -1px;
+          top: 100%;
+          padding: 0;
+          display: none;
+          background: transparent;
+          text-align: left;
+        }
+          .article .rating_lg ul li.dd:hover ul {
+            display: block;
+          }
+          .article .rating_lg ul li.dd ul li {
+            float: none;
+            display: block;
+            background: #fff;
+            border: 1px solid #ececec;
+          }
+            .article .rating_lg ul li.dd ul li + li {
+                border-top: 0 none;
+              }
+              .article .rating_lg ul li.dd ul li a {
+                padding-left: 27px;
+                color: #1a1a1a;
+              }
+                .article .rating_lg ul li.dd ul li a.ms,
+                    .article .rating_lg ul li.dd ul li a.sy,
+                    .article .rating_lg ul li.dd ul li a.ro {
+                        background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -999em -999em;
+                        padding-left: 43px;
+                    }
+                        .article .rating_lg ul li.dd ul li a.ms {
+                            background-position: 5px -2647px;
+                        }
+                        .article .rating_lg ul li.dd ul li a.sy {
+                            background-position: 5px -2698px;
+                        }
+                        .article .rating_lg ul li.dd ul li a.ro {
+                            background-position: 5px -2749px;
+                        }
+
+  .article .rating_lg .fan-rating {
+    position: absolute;
+    bottom: 44px;
+    left: -1px;
+    right: -1px;
+    margin: 0;
+  }
+  .article .rating_lg .my-rating {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    margin: 0;
+  }
+
+  .article .rating_lg .my-rating .ajax-progress {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    width: 150px;
+    height: 60px;
+  }
+
+/**
+ * Article hero (supports social buttons)
+ */
+  .article-hero {
+    position: relative;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .node-events {
+    position: relative;
+  }
+  .node-events .article-hero {
+    margin-bottom: 0;
+  }
+  .node-events h2.title {
+    margin: 0;
+  }
+  .article-hero.cover_image {
+    margin-bottom: 0;
+  }
+    .social-actions {
+        position: absolute;
+        bottom: 7px;
+        right: 0;
+        height: 20px;
+        display: none;
+    }
+
+/**
+ * Inline media within article content
+ */
+
+.inline_media {
+    margin: 45px 0;
+    padding-top: 315px;
+    position: relative;
+}
+    .inline_media a {
+        text-decoration: underline;
+        color: inherit;
+    }
+    .inline_media .content {
+        position: absolute;
+        top: 0;
+        width: 510px;
+        height: 285px;
+        z-index: 1;
+    }
+    .inline_media figcaption {
+        text-align: center;
+    }
+
+    /** Larger video **/
+    .inline_media.large_video {
+        padding-top: 380px;
+    }
+        .inline_media.large_video .content {
+            width: 640px;
+            height: 360px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+    /** Dark **/
+    .inline_media.dark {
+        background: #000;
+        color: #fff;
+    }
+        .inline_media.dark figcaption {
+            font-size: 17px;
+            padding-bottom: 20px;
+        }
+        .inline_media.dark figcaption a {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+/**
+    * Article list item
+    */
+.article_list_item {
+    margin: 45px 0;
+}
+    .article_list_item i {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 999px;
+        border: 2px solid #000;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 2px;
+    }
+    .article_list_item h4 small,
+    .article_list_item h3 small {
+        font: inherit;
+        color: #B3B3B3;
+        font-weight: normal;
+    }
+    .article_list_item .field-collection-view > h4 {
+      font-size: 17px;
+      line-height: 20px;
+      margin: 0;
+    }
+    .article_list_item p {
+        font: 14px/20px Arial, sans-serif;
+    }
+    .article_list_item .inline_media {
+        margin: 15px 0;
+    }
+.article_list_item.one_line {
+
+}
+    .article_list_item.one_line h3 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .article_list_item .field-collection-view .field-name-field-text {
+      margin-top: 20px;
+    }
+
+
+/**
+ * Article footnotes
+ */
+.article_footnotes p {
+    font: 13px/17px Arial, sans-serif;
+}
+    .article_footnotes small {
+        color: #989898;
+        font: inherit;
+    }
+  .node-type-article .field-collection-view {
+   margin: 0;
+   padding: 0;
+   border: none;
+  }
+  .node-type-article .photo_caption,
+  .node-type-listicle .photo_caption,
+  .node-type-review .photo_caption {
+    margin-bottom: 10px;
+  }
+  .node-type-article .photo_caption,
+  .node-type-listicle .photo_caption,
+  .node-type-review .photo_caption {
+    border-bottom: 1px solid #E6E6E6;
+    color: #C5C5C5;
+    display: block;
+    padding: 14px 0 15px;
+    text-align: left;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+  }
+  .node-type-article .infographic .photo_caption,
+  .node-type-listicle .infographic .photo_caption,
+  .node-type-review .infographic .photo_caption {
+    border-bottom: none;
+    text-align: center;
+  }
+  .node-type-photo-gallery .bbcom .photo_caption {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .node-type-article .bbcom .caption_photo,
+  .node-listicle .caption_photo {
+    display: block;
+    font-weight: normal;
+  }
+  .node-type-listicle .bbcom .caption_photo,
+  .node-type-review .bbcom .caption_photo {
+    font-weight: normal;
+  }
+  .node-type-article .bbcom .photo_caption,
+  .node-type-listicle .bbcom .photo_caption,
+  .node-type-review .bbcom .photo_caption {
+    font-family: Arial;
+    font-size: 14px;
+  }
+  .node-type-article .photo_caption small,
+  .node-type-listicle .photo_caption small,
+  .node-type-review .photo_caption small {
+    font: 13px/20px Arial,sans-serif;
+    display: block;
+    margin: 0;
+  }
+  .infographic .photo_caption small,
+  .node-type-photo-gallery .bbcom .photo_caption small {
+    border-top: 1px solid #FFFFFF;
+    display: block;
+    font-family: Arial;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: normal;
+    padding: 10px 0 0;
+    text-align: right;
+    margin: 10px 0;
+  }
+
+  .node-type-article .bbcom .photo_caption small,
+  .node-type-listicle .bbcom .photo_caption small,
+  .node-type-review .bbcom .photo_caption small {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal
+  }
+ .article-hero small,
+ .article_list_item small {
+    border-bottom: 1px solid #E6E6E6;
+    color: #C5C5C5;
+    display: block;
+    font: 13px/20px Arial,sans-serif;
+    padding: 14px 0 15px;
+    text-align: left;
+}
+  .node-type-article .bbcom .cover_text {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    color: #989796;
+  }
+
+.article_boxout small {
+    color: #C5C5C5;
+    display: block;
+    font: 13px/20px Arial,sans-serif;
+    padding: 14px 0 0;
+}
+
+#block-billboard-blocks-comment-block {
+    margin: 10px auto;
+    text-align: center;
+}
+#block-billboard-blocks-comment-block p{
+    font-size: 18px;
+}
+#block-billboard-blocks-biz-comment-block {
+    margin: 0px auto 10px;
+    text-align: center;
+}
+#block-billboard-blocks-biz-comment-block p{
+    font-size: 18px;
+}
+
+/**
+ * Disqus overrides
+ */
+
+#dsq-content .dsq-more-button {
+    margin-bottom: 3.5em !important;
+}
+
+.header_column_image {
+  margin-bottom: 25px;
+  clear: both;
+  text-align: center;
+}
+
+.header_column_image.title_image {
+  margin: 0px;
+  padding: 12px 0 8px 0;
+}
+
+#bb.bbbiz .node-events .listing .promo_174 {
+  margin-bottom: 10px;
+}
+
+.bbcom .caption_photo {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.node-listicle .caption_photo {
+  font-size: 14px;
+}
+
+.bbcom .caption_photo p,
+.node-listicle .caption_photo p {
+  margin: 0;
+}
+
+.node-listicle .field-collection-container .field-items .field-item {
+  margin-bottom: 0px;
+}
+
+.bbcom .credit_photo,
+.node-listicle .credit_photo {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+#block-taboola-taboola-video {
+  margin-bottom: 10px;
+}
+
+.infographic_wrapper {
+  display: none;
+}
+
+.infographic .full_width {
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.infographic .media {
+  padding: 0 15px;
+  width: 960px;
+}
+
+.infographic .media header .categories li a {
+  font-family: ​ Helvetica,​ Arial,​ sans-serif;
+}
+
+.infographic .photo_caption {
+  padding: 0 15px;
+}
+
+.node-type-article #cboxOverlay {
+  background: rgba(255,255,255,.5);
+}
+
+.node-type-article #cboxContent,
+.node-type-article #cboxWrapper {
+  background: none;
+}
+
+.node-type-article #cboxClose {
+  top: 10px;
+  z-index: 100;
+  background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll 0 -2800px transparent;
+  height: 22px;
+  width: 22px;
+  right: 10px;
+}
+.node-type-article .article_content .PDS_Poll {
+  overflow: hidden;
+}
+
+.node .field-collection-container {
+  border: none;
+  margin-bottom: 0;
+}
+
+.page-node .node .video_content {
+  margin-bottom: 40px;
+}
+
+/* Women in Music 2012 */
+.thumblist-entry .blockthumb .singlethumb {
+  width: 195px;
+  height: 215px;
+  float: left;
+  margin: 15px 7px 5px 5px;
+}
+.thumblist-entry .blockthumb .singlethumb .wintro .wnumber {
+  width: 47px;
+  height: 47px;
+  float: left;
+  margin: 0;
+  color: #303030;
+  font: normal 31px/50px Arial,sans-serif;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.thumblist-entry .blockthumb .singlethumb .wintro .wname {
+  width: 135px;
+  float: right;
+  margin: 5px 0 0 0;
+  font: bold 15px/14px Arial,sans-serif;
+  letter-spacing: -1px;
+}
+.thumblist-entry .blockthumb .singlethumb .wintro .wjob {
+  width: 135px;
+  float: right;
+  margin: 3px 0 0 0;
+  color: #767676;
+  font: italic 12px/14px Arial,sans-serif;
+}
+.thumblist-entry .blockthumb .singlethumb .wimage {
+  margin: 0;
+}
+.numlist-bg-1 {
+  background: #ffdd00;
+}
+.numlist-bg-2 {
+  background: #ed1c10;
+}
+.numlist-bg-3 {
+  background: #00aeef;
+}
+.numlist-bg-4 {
+  background: #99a600;
+}
+.numlist-bg-5 {
+  background: #96a5b5;
+}
+.profile-content .numlist-color-1,
+#bb.bbbiz .node-profile-list .numlist-color-1 h2 a {
+  color: #ffdd00;
+}
+.profile-content .numlist-color-2,
+#bb.bbbiz .node-profile-list .numlist-color-2 h2 a {
+  color: #ed1c10;
+}
+.profile-content .numlist-color-3,
+#bb.bbbiz .node-profile-list .numlist-color-3 h2 a {
+  color: #00aeef;
+}
+.profile-content .numlist-color-4,
+#bb.bbbiz .node-profile-list .numlist-color-4 h2 a {
+  color: #99a600;
+}
+.profile-content .numlist-color-5,
+#bb.bbbiz .node-profile-list .numlist-color-5 h2 a {
+  color: #96a5b5;
+}
+
+.node-profile-list .field-name-field-subscribe-block {
+  padding: 25px;
+  font-size: 13px;
+  line-height: 14px;
+  background-color: #000;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+.node-profile-list .field-name-field-subscribe-block p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  font-family: inherit;
+}
+.node-profile-list .field-name-field-subscribe-block a {
+  color: #fa3d33;
+  font-weight: bold;
+}
+.node-profile-list .field-name-field-profile-list .field-name-field-image a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+.node-profile-list .rank {
+  color: #fa3d33;
+  font: bold 17px/21px Georgia, serif;
+}
+.node-profile-list .field-name-field-hero-image {
+  margin: 14px 0;
+}
+.node-profile-list .field-name-field-profile-list .teaser .content-image {
+  margin-bottom: 11px;
+  overflow: hidden;
+}
+.node-profile-list .field-name-field-profile-list .teaser h3 a {
+  font: bold 15px/18px Georgia, serif;
+  color: #000;
+}
+.node-profile-list .field-name-field-profile-list .col2 {
+  background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/profile-list.png") repeat-y -509px 0;
+}
+.node-profile-list .field-name-field-profile-list .col3 {
+  width: 255px;
+  position: relative;
+}
+.node-profile-list .field-name-field-profile-list .col3,
+.node-profile-list .field-name-field-profile-list .col4 {
+  background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/profile-list.png") repeat-y;
+}
+.node-profile-list .field-name-field-profile-list .field-item {
+  float: left;
+}
+.node-profile-list .field-name-field-profile-list .block1 {
+  position: absolute;
+  top: 20px;
+  left: 271px;
+  z-index: 1;
+}
+.node-profile-list .field-name-field-profile-list .block2 {
+  padding: 36px 0;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+  clear: both;
+  background-color: #fff;
+}
+.node-profile-list .field-name-field-profile-list .block1 p,
+.node-profile-list .field-name-field-profile-list .block2 p {
+  margin: 0;
+  line-height: 0;
+}
+.node-profile.teaser {
+  width: 105px;
+  padding: 18px 15px;
+}
+.node-profile.teaser.item-0,
+.col3 .node-profile.teaser.item-2 {
+  padding-left: 0;
+}
+.col2 .node-profile.teaser.item-1,
+.col4 .node-profile.teaser.item-3 {
+  padding-right: 0;
+}
+.node-profile-list .strap {
+  border-bottom: 10px solid #000;
+}
+.node-profile-list .strap.col3 {
+  width: 255px;
+}
+.node-profile-list .field-name-field-top-block {
+  border-top: 10px solid #000;
+  padding-top: 11px;
+}
+.node-profile-list .field-name-field-top-block table,
+.node-profile-list .field-name-field-top-block table td {
+  border-width: 0;
+}
+.node-profile-list .field-name-field-top-block table td {
+  padding: 0 45px 0 0;
+}
+.node-profile-list .field-name-field-top-block h3 {
+  font: bold 30px/34px Georgia, serif;
+  margin-bottom: 32px;
+}
+.node-profile-list .field-name-field-top-block ul {
+  margin-bottom: 0;
+}
+.node-profile-list .field-name-field-top-block li {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.node-profile-list .field-name-field-top-block li strong {
+  color: #fa3d33;
+}
+.node-profile.teaser.large {
+  width: 239px;
+  background-color: #fff;
+  margin-right: 1px;
+}
+
+.cck_pager .item-list {
+  clear: both;
+}
+.node-profile .sibling-nav {
+  border-top-width: 0;
+  position: relative;
+}
+.node-profile .sibling-nav li a {
+  height: 44px;
+  width: 175px;
+  line-height: 51px;
+  display: block;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  line-height: 1;
+  padding-top: 16px;
+}
+.node-profile .sibling-nav li a.next {
+  padding-right: 70px;
+}
+.node-profile .sibling-nav li a.next:after {
+  position: absolute;
+  content: "";
+  width: 51px;
+  height: 51px;
+  top: 0;
+  right: 0;
+  background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 0 -3750px;
+}
+.node-profile .sibling-nav li a.prev {
+  padding-left: 70px;
+}
+.node-profile .sibling-nav li a.prev:before {
+  position: absolute;
+  content: "";
+  width: 51px;
+  height: 51px;
+  top: 0;
+  left: 0;
+  background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 0 -3650px;
+}
+.node-profile .sibling-nav .item-list ul li {
+  margin: 0;
+}
+.node-profile .sibling-nav .field-name-field-image {
+  position: absolute;
+  top: 34px;
+  left: 275px;
+}
+.node-profile .profile-image {
+  width: 255px;
+  margin: 0 15px 15px 0;
+  float: left;
+}
+.node-profile .profile-details {
+  margin-left: 270px;
+  padding-top: 67px;
+}
+.node-profile header {
+  font-size: 16px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.node-profile .field-name-field-abstract {
+  margin: 10px 0;
+}
+.node-profile .field-name-field-abstract p {
+  margin: 0;
+  font: 15px/18px Georgia, serif;
+  font-style: italic;
+}
+.node-profile .profile-strap {
+  width: 509px;
+  height: 10px;
+  background-color: #000;
+  margin: 14px 0 18px 0;
+}
+.node-profile .profile-strap-short {
+  display: block;
+  border-top: 1px solid #999;
+  width: 24px;
+}
+.node-profile .numlist {
+  color: #fa3d33;
+  display: block;
+  font-weight: bold;
+}
+.node-profile header h2 {
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.node-profile .field-name-field-text {
+  padding: 18px 0 0;
+  margin-bottom: 18px;
+  border-top: 1px solid #999;
+}
+.node-profile .field-name-field-text strong {
+  color: #fa3d33;
+}
+.node-profile .field-name-field-text .profile-strap-short {
+  margin-bottom: 18px;
+}
+.node-profile .field-name-body {
+  padding-top: 18px;
+  border-top: 1px solid #999;
+}
+.node-profile .field-name-field-profile-title,
+.node-profile .field-name-field-affiliation {
+  overflow: hidden;
+  font: 15px/18px Georgia, serif;
+  font-style: italic;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:31 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:02 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 179.836 (3)
+  esindex: 0.01
+  captures_list: 199.496
+  CDXLines.iter: 12.645 (3)
+  PetaboxLoader3.datanode: 27.826 (4)
+  exclusion.robots: 0.338
+  exclusion.robots.policy: 0.323
+  RedisCDXSource: 2.563
+  PetaboxLoader3.resolve: 224.611 (2)
+  load_resource: 78.084
+*/

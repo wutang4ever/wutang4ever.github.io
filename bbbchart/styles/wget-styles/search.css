@@ -1,0 +1,347 @@
+.page-search h1.seach-title {
+    margin: 0 0 35px;
+    padding: 0 0 0 54px;
+    position: relative;
+    text-align: left;
+}
+    .page-search h1.seach-title:after {
+        background: url("/web/20190719164434im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -3400px transparent;
+        content: " ";
+        height: 28px;
+        left: 8px;
+        position: absolute;
+        top: 8px;
+        width: 28px;
+        z-index: 1;
+    }
+    .page-search #main-wrapper
+    {
+        padding: 30px 0;
+    }
+.search-results h3.title
+{
+    font-size: 17px;
+    margin: 0 0 5px;
+}
+    .search-results .item-0 h3.title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .search-results h3.title a
+    {
+        color: #1A1A1A;
+    }
+.search-results .search-section-title
+{
+    font-size: 24px;
+}
+.search-results .search-section-link
+{
+    float: right;
+}
+    .search-results .search-section-link a
+    {
+        font-size: 17px;
+    }
+.search-results ul,
+.search-results li
+{
+    margin: 0;
+    list-style: none;
+}
+.search-results .search-section-header,
+.search-results li.search-result
+{
+    margin: 0;
+    padding: 25px 0 20px;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 0 none;
+    overflow: hidden;
+    position: relative;
+}
+.search-results li.search-result.node-artist
+{
+    padding: 15px 0 0;
+    min-height: 100px;
+}
+.search-results .search-snippet
+{
+    margin: 0;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 17px;
+}
+    .search-results .search-snippet .date
+    {
+        color: #999999;
+    }
+    .search-results .category-link
+    {
+        margin: 0 0 3px;
+    }
+    .search-results .category-link a
+    {
+        text-transform: uppercase;
+        color: #F33747;
+    }
+    .search-results .thumbnail-wrap
+    {
+        float: left;
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        background: #000;
+    }
+    .search-results .thumbnail
+    {
+        width: 85px;
+        height: 85px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .search-results .type-media .thumbnail-wrap
+    {
+        height: 55px;
+    }
+    .search-results .type-media .thumbnail
+    {
+        height: 55px;
+    }
+    .search-results .field-label,
+    .page-search .spelling-suggestions
+    {
+        display: none;
+    }
+    .search-results .node-type-song .field-item a
+    {
+        color: #000;
+    }
+    .search-results .teaser.node-album .field-name-field-artist,
+    .search-results .teaser.node-song .field-name-field-artist {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .search-result .album_thumbs {
+        height: 55px;
+        margin: 24px 0 15px;
+        overflow: hidden;
+    }
+        .search-result .album_thumbs li {
+            display: inline;
+            float: left;
+            margin: 0 0 0 15px;
+        }
+        .search-result .album_thumbs li:first-child {
+            margin-left: 0;
+        }
+        .search-result .album_thumbs a {
+            display: table-cell;
+            height: 55px;
+            width: 55px;
+            background: #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .search-result .album_thumbs a img {
+            display: inline-block;
+        }
+
+    .search-result .album_tracks {
+        margin: 0;
+    }
+    .search-result .album_tracks li {
+        border-top: 1px solid #E6E6E6;
+        padding: 25px 0 22px 75px;
+        position: relative;
+    }
+    .search-result .album_tracks b {
+        color: #1A1A1A;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    .chart_position {
+        border: 3px solid #1A1A1A;
+        border-radius: 45px 45px 45px 45px;
+        display: inline-block;
+        font-size: 22px;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 0 15px;
+        position: relative;
+        text-align: center;
+        width: 45px;
+    }
+    .search-result .album_tracks .chart_position {
+        border-width: 2px;
+        font-size: 13px;
+        height: 25px;
+        left: 0;
+        line-height: 25px;
+        margin: 0;
+        position: absolute;
+        top: 21px;
+        width: 25px;
+    }
+    .chart_position.position-up:after, 
+    .chart_position.position-up:after {
+        background: url("/web/20190719164434im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -1900px transparent;
+        content: " ";
+        height: 51px;
+        left: 48px;
+        position: absolute;
+        top: -3px;
+        width: 51px;
+    }
+    .search-result .album_tracks .chart_position.position-up:after, 
+    .search-result .album_tracks .chart_position.position-down:after, 
+    .search-result .album_tracks .chart_position.position-static:after {
+        background: url("/web/20190719164434im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") repeat scroll 0 0 transparent;
+        content: " ";
+        height: 30px;
+        left: 27px;
+        position: absolute;
+        top: -2px;
+        width: 30px;
+    }
+    .search-result .album_tracks .chart_position.position-up:after {
+        background-position: 0 -3450px;
+    }
+    .search-result .album_tracks .chart_position.position-down:after {
+        background-position: 0 -3500px;
+    }
+    .search-result .album_tracks .chart_position.position-static:after {
+        background-position: 0 -3550px;
+    }
+    .search-result .album_tracks i {
+        color: #1A1A1A;
+        font-size: 14px;
+        font-style: normal;
+        display: inline-block;
+        width: 40%;
+    }
+    .search-result .album_tracks a {
+        color: #1A1A1A;
+    }
+
+.search-result.with_thumbnail .img-wrap
+{
+    width: 85px;
+    height: 85px;
+    background: #000;
+    position: absolute;
+    overflow: hidden;
+}
+.search-result.with_thumbnail .img-wrap > div
+{
+    display: table-cell;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    vertical-align: middle;
+    background: #000;
+}
+.search-result.with_thumbnail .img-wrap img
+{
+    display: inline-block;
+}
+
+.search-result.with_thumbnail .search-snippet,
+.search-result.with_thumbnail h3,
+.search-result.with_thumbnail .category-link,
+.search-result.with_thumbnail .field-name-field-artist,
+.search-result.with_thumbnail .field-name-field-album
+{
+    padding-left: 115px;
+}
+.search-result.with_thumbnail.item-0 .search-snippet,
+.search-result.with_thumbnail.item-0 h3,
+.search-result.with_thumbnail.item-0 .category-link,
+.search-result.with_thumbnail.item-0 .field-name-field-artist,
+.search-result.with_thumbnail.item-0 .field-name-field-album,
+.search-result.with_thumbnail.item-0 .album_thumbs
+{
+    padding-left: 155px;
+}
+.search-result.with_thumbnail.item-0 .img-wrap
+{
+    display: table-cell;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    vertical-align: middle;
+    background: #000;
+    position: absolute;
+}
+.search-result.with_thumbnail.item-0 .img-wrap > div
+{
+    width: 140px;
+    height: 140px;
+}
+.search-result.with_thumbnail.item-0 .img-wrap img
+{
+    display: inline-block;
+}
+#main-wrapper #search-form
+{
+    display: none;
+    position: relative;
+}
+    #main-wrapper #search-form .form-item
+    {
+        display: block;
+        margin: 30px 0 0;
+    }
+    #main-wrapper #search-form label
+    {
+        display: none;
+    }
+    #main-wrapper #search-form #edit-keys
+    {
+        padding: 5px 0 5px 55px;
+        border: 0 none;
+        font-size: 35px;
+        line-height: 35px;
+        height: 35px;
+        background: #fff;
+        color:  #1A1A1A;
+        cursor: default;
+    }
+    #main-wrapper #search-form #edit-submit
+    {
+        padding: 0 6px;
+        position: absolute;
+        display: block;
+        text-indent: -999px;
+        left: 15px;
+        top: 10px;
+        height: 27px;
+        width: 27px;
+        background: url("/web/20190719164434im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -144px -92px;
+        cursor: pointer;
+        border: 0 none;
+        color: transparent;
+    }
+
+/*
+     FILE ARCHIVED ON 16:44:34 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:49 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 65.313 (3)
+  esindex: 0.01
+  captures_list: 92.689
+  CDXLines.iter: 11.785 (3)
+  PetaboxLoader3.datanode: 73.472 (4)
+  exclusion.robots: 0.357
+  exclusion.robots.policy: 0.341
+  RedisCDXSource: 10.912
+  PetaboxLoader3.resolve: 214.088
+  load_resource: 225.52
+*/

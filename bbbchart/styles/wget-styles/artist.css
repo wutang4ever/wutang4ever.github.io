@@ -1,0 +1,598 @@
+/*
+
+    "Artist" area styling
+
+*/
+
+/**
+ * Artist Header
+ */
+/** Taken from .article_landing header **/
+.artist > header {
+  position: relative;
+  padding: 25px 50px 2px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+    .artist > header h1 {
+        margin-bottom: 0;
+    }
+    /** Taken from .article_landing header **/
+  .artist > header .categories {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+    .artist > header .categories.date a {
+        text-transform: none;
+    }
+        .artist > header .categories.date li:after {
+            display: none;
+        }
+    /** Horizontal social links **/
+    .artist > header .social {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        width: auto;
+        float: none;
+        display: block;
+    }
+        .artist > header .social li {
+            float: left;
+            margin-bottom: 0;
+        }
+            .artist > header .social li + li {
+                border-left: 1px solid #E6E6E6;
+            }
+            .artist > header .social a,
+            .artist > header .social span {
+                line-height: 29px;
+                text-align: left;
+                padding: 0 13px 0 35px;
+                height: auto;
+            }
+            .artist > header .social a.fb {
+                background-position: 16px -194px;
+            }
+            .artist > header .social a.sT {
+                background-position: 14px -394px;
+                padding: 0;
+                width: 42px;
+            }
+            .artist > header .social a.prt {
+                background: none;
+                padding: 0 6px;
+            }
+                .artist > header .social i.prt {
+                    display: block;
+                    background: url('/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 6px -444px;
+                    width: 28px;
+                    height: 29px;
+                    font: 0/0 a;
+                    color: transparent;
+                }
+            .artist > header .social .cmt {
+                background-position: 13px -492px;
+            }
+    /** Another set of right-hand social links (for commenting and printing) **/
+    .artist > header .social.util {
+        position: absolute;
+        right: 0;
+        left: auto;
+    }
+
+/**
+ * Artist Navigation (@todo -- Use nav.tertiary)
+ */
+.artist .teritary {
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 25px;
+}
+    .artist .teritary > ul {
+     margin: 14px 0;
+   }
+        .artist .teritary > ul a,
+        .artist .teritary > ul span {
+         padding: 4px 7px 3px;
+       }
+   .artist .teritary_a-z > ul a,
+   .artist .teritary_a-z > ul span {
+      padding: 4px 5px 3px;
+    }
+      .artist .teritary_a-z > ul li:first-child a {
+        padding: 4px 7px 3px;
+      }
+
+/**
+ * Artist Navigation slider
+ */
+.artist .increment-slider {
+    overflow: hidden;
+    position: relative;
+    height: 98px;
+}
+    .artist .increment-slider .label {
+        position: absolute;
+        left: 0;
+        top: 32px;
+        background: #f9f9f9;
+        border: 1px solid #d9d9d9;
+        width: 69px;
+        height: 33px;
+        line-height: 33px;
+        color: #1a1a1a;
+        text-align: center;
+    }
+        /* arrows - http://cssarrowplease.com/ */
+    .artist .increment-slider .label:after,
+    .artist .increment-slider .label:before {
+      bottom: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      left: 50%;
+      border-width: 0;
+      margin-left: 0;
+    }
+      .artist .increment-slider .label:after {
+        border-bottom-color: #f9f9f9;
+        border-width: 5px;
+        margin-left: -5px;
+      }
+      .artist .increment-slider .label:before {
+        border-bottom-color: #d9d9d9;
+        border-width: 7px;
+        margin-left: -7px;
+      }
+    .artist .increment-slider .label_from,
+    .artist .increment-slider .label_to,
+    .artist .increment-slider div {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+        .artist .increment-slider .label_from {
+            width: 56px;
+        }
+        .artist .increment-slider .label_to {
+            width: 77px;
+            text-align: right;
+        }
+        .artist .increment-slider div {
+            width: 856px;
+        }
+
+    .artist .increment-slider .ui-slider {
+        background: #1a1a1a;
+        height: 4px;
+        overflow: visible;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        margin-top: 7px;
+    }
+        .artist .increment-slider .ui-slider-handle {
+            background: #fd6469;
+            border: 3px solid #1a1a1a;
+            width: 9px;
+            height: 9px;
+            -moz-border-radius: 11px;
+            -webkit-border-radius: 11px;
+            border-radius: 11px;
+            margin-top: -1px;
+            cursor: pointer;
+        }
+
+/**
+ * Load more photos
+ */
+.artist .load-more {
+    border-top: 1px solid #E6E6E6;
+    padding: 15px 0 0;
+    margin: 0 0 68px;
+}
+
+/**
+ * Tertiary nav the artist landing page
+ */
+
+.artist_landing .teritary {
+    margin: 0 0 29px;
+}
+
+
+/**
+ * Pinterest area on artist landing needs different spacing.
+ */
+
+.artist_landing .listing.pinteresterize {
+    margin-bottom: 0;
+}
+
+/**
+ * Slider at the top of the artist landing page
+ */
+
+.artist_landing .slider {
+    background: #1a1a1a;
+    padding: 41px 0 54px;
+    margin: 0 0 30px;
+}
+
+.artist_landing .slider .listing > article {
+    margin: 0;
+}
+
+/**
+ * Banner and module at the top of the artist landing page
+ */
+
+.artist_landing .col_2 > .banner {
+    margin: 0 0 29px;
+}
+
+.artist_landing .col_2 > .module_related_artists_cloud {
+    margin-bottom: 30px;
+}
+
+/**
+ * Artist Biography content
+ */
+.bio_content {
+    padding-left: 206px; /** Leave room for bio sidebar **/
+    margin-bottom: 60px;
+}
+    .bio_content p {
+        font-family: Arial, sans-serif;
+    }
+    .bio_content > br {
+        display: block;
+        margin-top: 15px;
+    }
+
+/**
+ * Artist Biography sidebar
+ */
+.bio_content .bio_sidebar {
+    margin-left: -206px;
+    float: left;
+    width: 170px;
+}
+
+/**
+ * Artist Facts
+ */
+dl.facts {
+    font: 14px/20px Arial, sans-serif;
+    padding: 15px;
+    border: 1px solid #E6E6E6;
+}
+    dl.facts dt {
+        font-family: Arial, sans-serif;
+        display: block;
+        float: none;
+        padding: 0;
+    }
+    dl.facts dd {
+        margin-bottom: 15px;
+    }
+
+/**
+ * Song listings
+ */
+
+/** Remove padding from top listing, as it's already taken care of by its container **/
+.artist .listing.no_divider > article:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+    .artist .listing.no_divider > article:first-child img {
+        top: 0;
+    }
+    .artist .listing.no_divider > article:first-child .position {
+        top: 10px;
+    }
+
+/** Don't use the grey links **/
+.artist_songs .listing > article.song_review header p a {
+    color: #1A1A1A;
+}
+
+.node-type-artist .page-title,
+.node-type-chart-landing .page-title,
+.node-type-chart .page-title
+{
+    position: relative;
+}
+.node-type-artist #page-title
+{
+    text-align: center;
+    font: 35px/35px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.node-type-artist .section_header
+{
+    padding-top: 10px;
+}
+.node-type-artist #breadcrumb
+{
+    text-align: center;
+}
+    .node-type-artist #breadcrumb a
+    {
+        color: #F33747;
+        text-transform: uppercase;
+    }
+    .node-type-artist .page-title .comment-print,
+    .node-type-chart-landing .page-title .comment-print,
+    .node-type-chart .page-title .comment-print
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .page-user a.print,
+    .node-type-artist .page-title .comment-print a,
+    .node-type-chart-landing .page-title .comment-print a,
+    .node-type-chart .page-title .comment-print a
+    {
+        float: left;
+        border: 1px solid #E6E6E6;
+        padding: 0 0 0 30px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 -1px 0 0;
+        font-family: Arial;
+        font-size: 11px;
+        text-decoration: none;
+        background: url("/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") 10px -193px;
+        color: #1A1A1A;
+        overflow: hidden;
+    }
+    .page-user a.print,
+    .node-type-artist .page-title .comment-print a.print,
+    .node-type-chart-landing .page-title .comment-print a.print,
+    .node-type-chart .page-title .comment-print a.print
+    {
+        background: url("/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") 10px -443px;
+        padding: 0 3px;
+        text-indent: -999px;
+    }
+    .node-type-artist .page-title .comment-print a.comment,
+    .node-type-chart-landing .page-title .comment-print a.comment,
+    .node-type-chart .page-title .comment-print a.comment
+    {
+        background: url("/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") 10px -491px;
+    }
+    .node-type-chart-landing .page-title .comment-print a.rss-link,
+    .node-type-chart .page-title .comment-print a.rss-link
+    {
+        background: url("/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") 9px -240px;
+        padding: 0 3px;
+        width: 24px;
+        text-indent: -999px;
+    }
+    .node-type-artist .region-sidebar-second #block-views-artist-info-block-latest
+    {
+        margin: 0;
+    }
+    .node-type-artist #sidebar-second .view-gallery .view-content article
+    {
+        height: auto;
+    }
+    .node-type-artist .view-gallery .view-content
+    {
+        margin-bottom: 0;
+    }
+.artist_latest_tweet,
+.author_tweet
+{
+    border: 4px solid #3CB0F4;
+    color: #3CB0F4;
+    margin: 0;
+    padding: 24px 30px 19px;
+    text-align: center;
+}
+    .artist_latest_tweet .twitter_logo,
+    .author_tweet .twitter_logo
+    {
+        background: url("/web/20190719164430im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -600px -148px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+    }
+    .artist_latest_tweet p,
+    .author_tweet p {
+        color: inherit;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 28px;
+        margin: 0 0 15px;
+    }
+    .artist_latest_tweet p a,
+    .author_tweet p a {
+        color: #3CB0F4;
+        font-size: 14px;
+    }
+    .artist_latest_tweet .twitter_content {
+      word-wrap: break-word;
+    }
+
+.artist_related_artist {
+    text-align: center;
+}
+.artist_related_artist article {
+    display: inline;
+    margin: 0 11px;
+}
+.artist_related_artist article header, .artist_related_artist article header h1 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.artist_related_artist article a {
+    display: inline-block;
+    margin: 5px 0;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+    .bio_content h2
+    {
+        text-align: left;
+    }
+    .bio_content {
+        margin-bottom: 60px;
+        padding-left: 206px;
+    }
+    .bio_content .bio_sidebar {
+        float: left;
+        margin-left: -206px;
+        width: 170px;
+    }
+    .bio_content p {
+        font-family: Arial,sans-serif;
+    }
+    dl.facts {
+        border: 1px solid #E6E6E6;
+        font: 14px/20px Arial,sans-serif;
+        padding: 15px;
+    }
+    dl.facts dt {
+        display: block;
+        float: none;
+        font-family: Arial,sans-serif;
+        padding: 0;
+    }
+    dl.facts dd {
+        margin-bottom: 15px;
+    }
+    dl.facts dd a
+    {
+        color: #1A1A1A;
+        text-decoration: underline;
+    }
+    dl.facts dd span:after,
+    dl.facts dd a:after
+    {
+        content: ",";
+        padding: 0 2px 0 0px;
+    }
+    dl.facts dd span:last-child:after,
+    dl.facts dd a:last-child:after
+    {
+        content: "";
+        padding: 0;
+    }
+.artist-overview-column {
+  width: 310px;
+  float: left;
+}
+.artist-overview-column.left {
+  margin: 0 30px 0 0;
+}
+  .artist-overview-column article.promo {
+    margin: 0 0 32px;
+  }
+  .artist-overview-column header {
+    text-align: center;
+    position: relative;
+    /*padding: 23px 0 0;*/
+  }
+    .artist-overview-column .promo .category {
+      /*position: absolute;*/
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .artist-overview-column .content-image {
+      margin: 0 0 10px;
+    }
+        .artist-overview-column .content-image .field-item > a {
+            width: 310px;
+            display: inline-block;
+            text-align: center;
+        }
+    .artist-overview-column h1 {
+      font-size: 17px;
+      line-height: 20px;
+      padding: 0px
+    }
+      .artist-overview-column h1 a {
+        color: #000;
+      }
+.module_chart_position,
+#block-bb-artist-latest-tweet,
+#block-views-artist-overview-related-song-reviews,
+#block-views-related-song-reviews-artist {
+  margin: 0 0 32px;
+}
+.node-type-artist .teaser.node-album .content,
+.node-type-artist .teaser.node-song .content {
+  padding: 0 0 0 170px;
+}
+.node-type-artist .teaser.node-song .content-image {
+    text-align: center;
+}
+.view-display-id-block_overview .field-name-field-image .field-item {
+  text-align: center;
+}
+
+
+#block-views-artist-overview-related-song-reviews {
+    padding-top: 20px;
+    border: 1px solid #D8D8D8;
+}
+#block-views-artist-overview-related-song-reviews h2 {
+    margin: 0 0 20px;
+}
+#block-views-artist-overview-related-song-reviews .views-row {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 0;
+  width: 275px;
+  border-bottom: 1px solid #E6E6E6;
+}
+#block-views-artist-overview-related-song-reviews .views-row.views-row-last {
+  clear: left;
+  border-bottom: none;
+}
+#block-views-artist-overview-related-song-reviews .views-field-field-image .field-content {
+  float: left;
+  padding-right: 20px;
+}
+#block-views-artist-overview-related-song-reviews .views-field-title .field-content a {
+  color: #000;
+  font-size: 17px;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:30 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:00 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 34.792 (3)
+  esindex: 0.01
+  captures_list: 53.605
+  CDXLines.iter: 12.337 (3)
+  PetaboxLoader3.datanode: 39.601 (4)
+  exclusion.robots: 0.432
+  exclusion.robots.policy: 0.415
+  RedisCDXSource: 0.631
+  PetaboxLoader3.resolve: 203.145
+  load_resource: 211.372
+*/

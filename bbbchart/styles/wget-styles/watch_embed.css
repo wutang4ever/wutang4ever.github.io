@@ -1,0 +1,588 @@
+.mfp-container {
+  margin-top: 50px;
+  padding: 0; }
+  .mfp-container .mfp-content {
+    margin: 0 auto;
+    position: relative; }
+    .mfp-container .mfp-content .mfp-close {
+      background: black;
+      color: white;
+      height: 35px;
+      line-height: 35px;
+      margin: 15px;
+      width: 35px; }
+  @media only screen and (min-width: 1024px) {
+    .mfp-container {
+      margin-top: 0; } }
+
+.billboard-watch {
+  background: black;
+  color: white;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  overflow: hidden;
+  position: relative; }
+  .billboard-watch .content-title {
+    font-size: 1.2em;
+    line-height: 1.2em; }
+  .billboard-watch a {
+    color: white;
+    text-decoration: none; }
+    .billboard-watch a:hover, .billboard-watch a:active {
+      text-decoration: underline; }
+  .billboard-watch .block-header {
+    background: #383637;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 20px 20px 15px;
+    text-transform: uppercase; }
+  .billboard-watch .billboard-watch-additional .content-title {
+    font-size: 1em; }
+  .billboard-watch .billboard-watch-additional .controls a {
+    background: #53bde5;
+    color: white;
+    display: inline-block;
+    font-size: 1.1em;
+    height: 35px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 35px; }
+    .billboard-watch .billboard-watch-additional .controls a.previous {
+      margin-right: 1px; }
+  .billboard-watch .image-container {
+    font-size: 1.75em;
+    position: relative; }
+    .billboard-watch .image-container div {
+      height: 0;
+      overflow: hidden;
+      padding-top: 56%;
+      position: relative;
+      width: 100%; }
+      .billboard-watch .image-container div::after {
+        background: white;
+        content: " ";
+        height: 0.5em;
+        left: 50%;
+        margin: -0.25em 0 0 -0.25em;
+        position: absolute;
+        top: 50%;
+        width: 0.5em; }
+    .billboard-watch .image-container::after {
+      color: #53bde5;
+      content: "\f16a";
+      font-family: FontAwesome;
+      left: 0;
+      line-height: 1em;
+      margin-top: -.5em;
+      pointer-events: none;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%; }
+  .billboard-watch .dfp-ad {
+    position: relative;
+    vertical-align: middle; }
+    .billboard-watch .dfp-ad > div {
+      position: relative; }
+    .billboard-watch .dfp-ad.presenter > div::before {
+      color: #989898;
+      content: "Presented by:";
+      font-size: 10px;
+      line-height: 3.4em;
+      position: absolute;
+      right: 90px;
+      text-transform: none;
+      width: 80px; }
+  .billboard-watch .swiper-wrapper {
+    transition-property: all; }
+  .billboard-watch .swiper-container {
+    max-width: none; }
+  .billboard-watch .swiper-slide {
+    max-width: none;
+    width: auto; }
+
+.billboard-watch-embedded .billboard-watch-main .video-js {
+  height: 170px;
+  width: 300px; }
+.billboard-watch-embedded #irisPlayerThumbsUp,
+.billboard-watch-embedded #irisPlayerThumbsDown,
+.billboard-watch-embedded #irisPlayerSkipBackward,
+.billboard-watch-embedded #irisPlayerSkipForward {
+  display: none; }
+
+.billboard-watch-embedded.billboard-watch-small .block-header {
+  text-align: center; }
+.billboard-watch-embedded.billboard-watch-small .dfp-ad > div {
+  margin: 20px auto; }
+.billboard-watch-embedded.billboard-watch-small .dfp-ad.presenter > div {
+  margin-left: 70px; }
+.billboard-watch-embedded.billboard-watch-small .billboard-watch-main {
+  border-bottom: 1px solid #181818;
+  width: 100%; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-main .image-container {
+    font-size: 5em; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-main .post-content {
+    padding: 20px; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-main .dfp-ad > div {
+    margin-left: 0; }
+.billboard-watch-embedded.billboard-watch-small .billboard-watch-additional {
+  border-top: 1px solid #181818;
+  width: 100%; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional .swiper-slide {
+    width: 100%;
+    padding: 0; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional article {
+    overflow: hidden;
+    padding: 20px 20px 0;
+    position: relative; }
+    .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional article .image-container {
+      float: left;
+      width: 35%; }
+    .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional article .post-content {
+      padding-left: 40%; }
+    .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional article:last-of-type {
+      padding-bottom: 10px; }
+  .billboard-watch-embedded.billboard-watch-small .billboard-watch-additional .controls {
+    padding-right: 10px;
+    text-align: right; }
+
+.billboard-watch-embedded.billboard-watch-medium .block-header-wrapper {
+  background: #383637; }
+.billboard-watch-embedded.billboard-watch-medium .section-title {
+  display: inline-block;
+  vertical-align: middle; }
+.billboard-watch-embedded.billboard-watch-medium .dfp-ad {
+  display: inline-block; }
+  .billboard-watch-embedded.billboard-watch-medium .dfp-ad > div {
+    margin-left: 30px; }
+  .billboard-watch-embedded.billboard-watch-medium .dfp-ad.presenter > div {
+    margin-left: 100px; }
+.billboard-watch-embedded.billboard-watch-medium .billboard-watch-main {
+  float: left;
+  padding: 20px;
+  width: 340px; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-main .image-container {
+    font-size: 5em; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-main .post-content {
+    display: block;
+    padding: 20px 0;
+    position: relative; }
+    .billboard-watch-embedded.billboard-watch-medium .billboard-watch-main .post-content .content-title {
+      font-size: 1.2em;
+      line-height: 1.2em; }
+.billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional {
+  background: #181818;
+  float: right;
+  position: relative;
+  width: 304px; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional .content-title {
+    font-size: 1em; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional .swiper-slide {
+    width: 303px; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional article {
+    overflow: hidden;
+    padding: 20px 20px 0;
+    position: relative; }
+    .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional article > a {
+      display: block;
+      float: left;
+      width: 100px; }
+    .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional article .post-content {
+      padding-left: 115px; }
+    .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional article:last-of-type {
+      padding-bottom: 20px; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional .controls {
+    border-top: 1px solid #383637;
+    margin: 0 20px;
+    padding-top: 20px;
+    text-align: right; }
+  .billboard-watch-embedded.billboard-watch-medium .billboard-watch-additional::after {
+    content: " ";
+    display: block;
+    background: #181818;
+    border-left: 1px solid #383637;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.billboard-watch-embedded.billboard-watch-wide .block-header-wrapper {
+  background: #383637; }
+.billboard-watch-embedded.billboard-watch-wide .section-title {
+  display: inline-block;
+  vertical-align: middle; }
+.billboard-watch-embedded.billboard-watch-wide .dfp-ad {
+  display: inline-block; }
+  .billboard-watch-embedded.billboard-watch-wide .dfp-ad > div {
+    margin-left: 30px; }
+  .billboard-watch-embedded.billboard-watch-wide .dfp-ad.presenter > div {
+    margin-left: 100px; }
+.billboard-watch-embedded.billboard-watch-wide .billboard-watch-main {
+  float: left;
+  padding: 20px;
+  width: 340px; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-main .image-container {
+    font-size: 5em; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-main .post-content {
+    display: block;
+    padding: 20px 0;
+    position: relative; }
+    .billboard-watch-embedded.billboard-watch-wide .billboard-watch-main .post-content .content-title {
+      font-size: 1.2em;
+      line-height: 1.2em; }
+.billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional {
+  background: #181818;
+  float: right;
+  padding: 10px 10px 0;
+  position: relative;
+  width: 604px; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional .content-title {
+    font-size: 1em; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional .swiper-slide {
+    width: 584px; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional .image-container {
+    font-size: 2em; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional article {
+    float: left;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    position: relative;
+    width: 33%; }
+    .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional article > a {
+      display: block; }
+    .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional article .post-content {
+      padding: 8px 0 15px; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional .controls {
+    border-top: 1px solid #383637;
+    margin: 0 10px;
+    padding-top: 20px;
+    text-align: right; }
+  .billboard-watch-embedded.billboard-watch-wide .billboard-watch-additional::after {
+    content: " ";
+    display: block;
+    background: #181818;
+    border-left: 1px solid #383637;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.billboard-watch-popup.billboard-watch-medium .block-header,
+.billboard-watch-popup.billboard-watch-medium .content-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 728px; }
+.billboard-watch-popup.billboard-watch-medium .block-header-wrapper {
+  background: #383637; }
+.billboard-watch-popup.billboard-watch-medium .section-title {
+  display: inline-block;
+  vertical-align: middle; }
+.billboard-watch-popup.billboard-watch-medium .dfp-ad {
+  display: inline-block; }
+  .billboard-watch-popup.billboard-watch-medium .dfp-ad > div {
+    margin-left: 30px; }
+  .billboard-watch-popup.billboard-watch-medium .dfp-ad.presenter > div {
+    margin-left: 100px; }
+.billboard-watch-popup.billboard-watch-medium .billboard-watch-main {
+  float: left;
+  padding: 20px;
+  width: 424px; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .video-js {
+    height: 216px;
+    width: 384px; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .social-shares {
+    background: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 25px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .social-shares p {
+      display: none; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .social-shares .social-share {
+      border-radius: 0;
+      display: block;
+      font-size: 1.5em;
+      height: 32px;
+      margin-bottom: 5px;
+      width: 32px; }
+      .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .social-shares .social-share .fa {
+        font-size: 1em;
+        line-height: 32px; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .image-container {
+    font-size: 5em; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .post-content {
+    display: block;
+    padding: 20px 0 0 48px;
+    position: relative; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .post-content .content-title {
+      font-size: 1.5em;
+      line-height: 1.4em;
+      padding-bottom: 10px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .post-content .body {
+      padding-bottom: 10px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-main .post-content .post-info {
+      font-size: 0.8em; }
+.billboard-watch-popup.billboard-watch-medium .billboard-watch-additional {
+  background: #181818;
+  float: right;
+  position: relative;
+  width: 304px; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional .content-title {
+    font-size: 1em; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional .swiper-slide {
+    padding: 0;
+    width: 303px; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article {
+    overflow: hidden;
+    padding: 20px 20px 0;
+    position: relative; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article > a {
+      display: block;
+      float: left;
+      width: 100px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article .post-content {
+      padding-left: 115px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article:last-of-type {
+      padding-bottom: 20px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article.active::after {
+      background: #ff6567;
+      color: white;
+      content: "Now Playing";
+      display: block;
+      font-size: 0.8em;
+      left: 20px;
+      padding: 1px;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      top: 20px;
+      width: 100px; }
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article.active div::after,
+    .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional article.active .image-container::after {
+      display: none; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional .controls {
+    border-top: 1px solid #383637;
+    margin: 0 20px;
+    padding-top: 20px;
+    text-align: right; }
+  .billboard-watch-popup.billboard-watch-medium .billboard-watch-additional::after {
+    content: " ";
+    display: block;
+    background: #181818;
+    border-left: 1px solid #383637;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.billboard-watch-popup.billboard-watch-wide .block-header,
+.billboard-watch-popup.billboard-watch-wide .content-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 964px; }
+.billboard-watch-popup.billboard-watch-wide .block-header-wrapper {
+  background: #383637; }
+.billboard-watch-popup.billboard-watch-wide .section-title {
+  display: inline-block;
+  vertical-align: middle; }
+.billboard-watch-popup.billboard-watch-wide .dfp-ad {
+  display: inline-block; }
+  .billboard-watch-popup.billboard-watch-wide .dfp-ad > div {
+    margin-left: 30px; }
+  .billboard-watch-popup.billboard-watch-wide .dfp-ad.presenter > div {
+    margin-left: 100px; }
+.billboard-watch-popup.billboard-watch-wide .billboard-watch-main {
+  float: left;
+  padding: 20px;
+  width: 688px; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .video-js {
+    width: 100%; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .post-content {
+    display: block;
+    padding-bottom: 10px;
+    position: relative; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .post-content .content-title {
+      font-size: 2em;
+      line-height: 1.4em;
+      padding: 20px 100px 12px 0; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .post-content .body {
+      line-height: 1.4em;
+      padding: 0 100px 12px 0; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .post-content .post-info {
+      font-size: 0.8em; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .social-shares {
+    background: none;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 10px; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .social-shares p {
+      display: none; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-main .social-shares .social-share {
+      border-radius: 0;
+      font-size: 1.5em; }
+.billboard-watch-popup.billboard-watch-wide .billboard-watch-additional {
+  background: #181818;
+  border-left: 1px solid #383637;
+  float: right;
+  position: relative;
+  width: 271px; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional::after {
+    content: " ";
+    display: block;
+    background: #181818;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional .content-title {
+    font-size: 1.2em;
+    padding-bottom: 8px; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional .swiper-slide {
+    width: 270px; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article {
+    padding: 20px 20px 0;
+    position: relative; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article > a {
+      display: block;
+      padding-bottom: 10px; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article .image-container {
+      font-size: 4em; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article:last-of-type {
+      padding-bottom: 20px; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article.active::after {
+      background: #ff6567;
+      color: white;
+      content: "Now Playing";
+      display: block;
+      left: 20px;
+      padding: 4px 9px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 20px; }
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article.active div::after,
+    .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional article.active .image-container::after {
+      display: none; }
+  .billboard-watch-popup.billboard-watch-wide .billboard-watch-additional .controls {
+    padding-right: 10px;
+    text-align: right; }
+
+/* Additional styles */
+
+.region .billboard-watch {
+    font-size: 14px;
+    line-height: 17px;
+}
+.region .billboard-watch .dfp-ad {
+    text-align: center;
+}
+.region .billboard-watch .dfp-ad > div {
+    display: inline-block;
+}
+.billboard-watch .section-title {
+    font-size: 21px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0;
+}
+.region .billboard-watch .body p {
+    margin: 0;
+    font-size: 10px;
+}
+.region .billboard-watch .content-title {
+    font-size: 17px;
+    margin: 0;
+}
+.region .billboard-watch .billboard-watch-additional .content-title {
+    font-size: 12px;
+}
+.region .billboard-watch .image-container::after {
+    font-size: 30px;
+}
+.region .billboard-watch .image-container div::after {
+    height: 14px;
+    width: 14px; 
+    margin: -7px 0 0 -7px;
+}
+.region .billboard-watch .billboard-watch-main .image-container::after {
+    font-size: 60px;
+}
+.region .billboard-watch .billboard-watch-main .image-container div::after {
+    height: 28px;
+    width: 28px; 
+    margin: -14px 0 0 -14px;
+}
+.region .billboard-watch-embedded .billboard-watch-main .video-js {
+    width: 310px;
+}
+.region .billboard-watch-sidebar .billboard-watch-additional .controls a {
+    padding: 15px 20px 10px;
+    margin-bottom: 20px;
+}
+.billboard-watch .billboard-watch-additional .swiper-container {
+    padding: 0 0 28px;
+}
+
+.billboard-watch-popup.billboard-watch-wide *,
+.billboard-watch-popup.billboard-watch-wide *::before,
+.billboard-watch-popup.billboard-watch-wide *::after {
+    box-sizing: border-box;
+}
+.billboard-watch-popup.billboard-watch-wide #dfp-ad-bbwatch1-wrapper {
+  padding-left: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative
+}
+.billboard-watch-popup.billboard-watch-wide .social-shares .social-share {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+.billboard-watch-popup.billboard-watch-wide .social-shares .social-share .fa {
+    font-size: 22px;
+    line-height: 32px;
+}
+.billboard-watch-popup.billboard-watch-wide .social-shares .social-share-facebook {
+    background-color: #3b5998;
+}
+.billboard-watch-popup.billboard-watch-wide .social-shares .social-share-twitter {
+    background-color: #55acee;
+}
+#billboard-watch-embed {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#content-header-sidebar #billboard-watch-embed {
+  padding: 0;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:39 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:28 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 44.335 (3)
+  esindex: 0.007
+  captures_list: 63.75
+  CDXLines.iter: 9.904 (3)
+  PetaboxLoader3.datanode: 44.402 (4)
+  exclusion.robots: 0.386
+  exclusion.robots.policy: 0.365
+  RedisCDXSource: 6.332
+  PetaboxLoader3.resolve: 40.718
+  load_resource: 48.035
+*/

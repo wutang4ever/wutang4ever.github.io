@@ -1,0 +1,320 @@
+.form-item {
+  margin: 0;
+}
+.form-item select.error {
+  border: 3px solid red;
+}
+/**
+ * Standard form
+ */
+.standard_form {
+  overflow: hidden;
+  margin: 45px 0;
+}
+  .standard_form * { /** Change box sizing so we can have fluid inputs **/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /** Field holders **/
+  
+  .standard_form .row {
+    overflow: hidden;
+  }
+  
+  .standard_form .field {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+  }
+    .standard_form .field.half {
+      width: 310px;
+    }
+    .standard_form .field.half + .field.half {
+      margin-left: 30px;
+    }
+  .standard_form label {
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+    .standard_form label .required {
+      color: #F33747;
+      margin-left: -3px;
+    }
+    .standard_form label .error.required {
+      margin-left: 5px;
+    }
+  .standard_form input[type="text"],
+  .standard_form input[type="email"],
+  .standard_form input[type="password"],
+  .standard_form textarea {
+    border: 1px solid #d9d9d9;
+      margin: 2px 0;
+    padding: 17px 20px;
+    width: 100%;
+    color: #1a1a1a;
+    font-weight: normal;
+    font-size: 12px;
+  }
+    .standard_form input[type="text"]:hover,
+    .standard_form input[type="email"]:hover,
+    .standard_form input[type="password"]:hover,
+    .standard_form select:hover,
+    .standard_form textarea:hover {
+      border-color: #b3b3b3;
+    }
+    .standard_form input[type="text"]:focus,
+    .standard_form input[type="email"]:focus,
+    .standard_form input[type="password"]:focus,
+    .standard_form select:focus,
+    .standard_form textarea:focus {
+      border-color: #b3b3b3;
+    }
+    .standard_form select.error,    
+    .standard_form input[type="text"].error,
+    .standard_form input[type="email"].error,
+    .standard_form input[type="tel"].error,
+    .standard_form input[type="password"].error,
+    .standard_form li.error,
+    .standard_form textarea.error {
+      border-color: #ff3639;
+      border-width: 3px;
+          margin: 0;
+    }
+  .standard_form textarea {
+    height: 175px;
+    resize: none;
+  }
+  .standard_form select {
+    width: 100%;
+    -webkit-appearance: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+    padding: 17px 20px;
+    font-size: 13px;
+  }
+  .standard_form .select {
+    position: relative;
+  }
+  .standard_form .select:after {
+    content: '';
+    position: absolute;
+    background: url('/web/20190719164437im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat -622px -2300px;
+    width: 7px;
+    height: 4px;
+    right: 27px;
+    bottom: 27px;
+    margin-top: -2px;
+    z-index: 3;
+  }
+  .standard_form input[type="submit"] {
+      background: none repeat scroll 0 0 #FFFFFF;
+      border: 0 none;
+      color: #00ABE4;
+      font-family: Arial,sans-serif;
+      font-size: 17px;
+  }
+  .page-user .standard_form .field input[type="submit"] {
+    background: none repeat scroll 0 0 #00ABE4;
+      border: 1px solid #1CA4D8;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 32px;
+      padding: 0 10px;
+      white-space: nowrap;
+  }
+  .page-user .standard_form .bbbiz-form input[type="submit"] {
+      background: none repeat scroll 0 0 #FA3D33;
+      border-color: #E93930;
+      display: inline;
+      float: left;
+      margin: 0 30px 30px 0;
+  }
+  .standard_form .form_actions {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: -10px;
+  }
+    .standard_form .form_actions input {
+      background: #fff;
+      color: #00ABE4;
+      font-size: 17px;
+      border: 0;
+      font-family: Arial, sans-serif;
+    }
+
+  .sailthru_form .subheader, 
+  .node-webform .field-name-field-subheader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 28px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .webform-component-checkboxes {
+    overflow: hidden;
+  } 
+  .sailthru_form .form-type-checkbox,  
+  .webform-component-checkboxes .form-checkboxes {
+    float: left;
+    width: 45%;
+  }
+  .sailthru_form .form-type-checkbox label,
+  .webform-component-checkboxes .form-checkboxes label {
+    font-weight: bold;
+    line-height: 24px;
+  }
+  .sailthru_form fieldset, 
+  .webform-component-fieldset {
+    margin: 25px 0;
+  }
+  .sailthru_form legend,
+  .webform-component-fieldset legend {
+    background: #eee !important;
+    display: block;
+    width: 100%;
+    border-top: 3px solid #000;
+  }
+  .sailthru_form .fieldset-legend, 
+  .webform-component-fieldset .fieldset-legend {
+    padding: 10px 0 10px 30px !important;
+  }
+  .sailthru_form .fieldset-title,
+  .webform-component-fieldset .fieldset-title {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .sailthru_form fieldset label,
+  .webform-component-fieldset label {
+    float: left;
+    line-height: 51px;
+  }
+  
+  .sailthru_form #edit-step-1 label {
+    text-transform: uppercase;
+  }
+  
+  .sailthru_form #edit-step-1 .form-type-checkbox label {
+    text-transform: none;
+    line-height: 24px;
+    width: 55%;
+  }
+  
+  .sailthru_form fieldset select,
+  .sailthru_form fieldset input,
+  .webform-component-fieldset select,
+  .webform-component-fieldset input {
+    width: 345px;
+    float: right;
+    border: 1px solid #d9d9d9;
+    padding: 17px 20px;
+    color: #1a1a1a;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  
+  .sailthru_form fieldset .form-type-checkbox input {
+    width: auto;
+    float: left;
+  }
+  
+  .sailthru_form fieldset select,
+  .webform-component-fieldset select {
+    width: 387px;
+  }
+  
+  .sailthru_form fieldset select:hover,
+  .sailthru_form fieldset select:focus,
+  .sailthru_form fieldset input:focus,
+  .sailthru_form fieldset input:hover,
+  .webform-component-fieldset select:hover,
+  .webform-component-fieldset select:focus, 
+  .webform-component-fieldset input:focus, 
+  .webform-component-fieldset input:hover {
+    border-color: #b3b3b3;
+    }
+  
+  .sailthru_form .fieldset-wrapper .form-item,
+  .webform-component-fieldset .fieldset-wrapper .webform-component {
+    overflow: hidden;
+    margin: 10px;
+  }
+   .sailthru_form input[type="submit"],
+   .sailthru_buttons input[type="submit"],
+    .webform-client-form input[type="submit"] {
+      background: none repeat scroll 0 0 #00ABE4;
+      border: 0 none;
+      color: #FFFFFF;
+      font-family: Arial,sans-serif;
+      font-size: 17px;
+     font-weight: bold;
+     padding: 13px 15px 12px;
+     width: 200px;
+     height: 52px;
+     margin: 20px 0;
+     cursor: pointer;
+  }
+ .sailthru_form input[type="submit"]:hover,
+ .webform-client-form input[type="submit"]:hover {
+   text-decoration: underline;
+   background: none repeat scroll 0 0 #00ABCC;
+ }
+ 
+ .sailthru_form .sailthru_buttons .form-submit {
+   margin-right: 10px;
+ }
+ 
+ #webform-component-step-3.webform-component-fieldset select,
+ .sailthru_form #edit-step-3 select,
+ #webform-component-step-3.webform-component-fieldset label,
+ .sailthru_form #edit-step-3 label,
+ #webform-component-step-3.webform-component-fieldset input,
+ .sailthru_form #edit-step-3 input {
+   width: 100%;
+   float: none;
+   font-weight: normal;
+   line-height: inherit;
+ }
+ 
+ .sailthru_form #edit-step-3 label,
+ #webform-component-step-3.webform-component-fieldset label {
+   position: relative;
+   padding-left: 10px;
+   letter-spacing: -1px;
+ }
+ 
+ .sailthru_form #edit-step-3 label span,
+ #webform-component-step-3.webform-component-fieldset label span {
+   position: absolute;
+   left: 0;
+   top: 0;
+ }
+/*
+     FILE ARCHIVED ON 16:44:37 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:53 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 76.904 (3)
+  esindex: 0.007
+  captures_list: 89.658
+  CDXLines.iter: 9.515 (3)
+  PetaboxLoader3.datanode: 57.13 (4)
+  exclusion.robots: 0.22
+  exclusion.robots.policy: 0.21
+  RedisCDXSource: 0.481
+  PetaboxLoader3.resolve: 171.561
+  load_resource: 213.897
+*/

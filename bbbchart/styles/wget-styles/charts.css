@@ -1,0 +1,944 @@
+/**
+ * Chart archives
+ */
+.chart_archives_container {
+  /*margin-bottom: 70px;*/
+  margin-bottom: 40px;
+  overflow: hidden;
+  /*min-height: 500px;*/
+}
+  .chart_archives_container h1 {
+    text-align: center;
+  }
+    #block-bb-chart-archived-bb-chart-archived-browsing .chart_archives_container {
+      min-height: 300px;
+    }
+  /** Navigation **/
+
+  /** Pagination **/
+  .chart_archives_container .paginator {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 0;
+    margin-top: 0;
+  }
+    .chart_archives_container .paginator ul {
+      font-size: 24px;
+    }
+
+#chart-browsing-year,
+#chart-browsing-ajax {
+  display: block;
+  float: left;
+  clear: both;
+  min-height: 330px; /* 308 */
+  width: 100%;
+}
+  /*#chart-browsing-year .module_chart_archived,*/
+  #chart-browsing-ajax .module_chart_archived {
+    display: none;
+  }
+  .front #chart-browsing-ajax {
+    min-height: 250px;
+  }
+
+/**
+ * Archive nav (extends .teritary)
+ */
+
+.archive_nav #bb-chart-archived-form #edit-archived-year,
+.archive_nav form #edit-year {
+  display: none;
+}
+
+  .archive_nav .form-item-archived-year .current_year,
+  .archive_nav .form-item-year .current_year {
+    font-size: 24px;
+    width: 98px;
+    text-decoration: none;
+    height: 56px;
+    border-left: 1px solid #e6e6e6 !important;
+    float: left;
+    position: relative;
+    text-align: center;
+    display: block;
+    line-height: 56px;
+    padding: 0;
+    border: 2px solid #FFFFFF;
+    color: #1A1A1A;
+    margin: 1px -2px 0 0px;
+  }
+
+
+.archive_nav .form-item-archived-year,
+.archive_nav .form-item-year {
+  float: left;
+  position: relative;
+}
+
+  .archive_nav .form-item-archived-year ul,
+  .archive_nav .form-item-year ul {
+    /*border-bottom: 1px solid #e6e6e6;*/
+    /*border-left: 1px solid #e6e6e6;*/
+    background: none repeat scroll 0 0 transparent;
+    display: none;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 9;
+    width: 98px;
+    color: #1A1A1A;
+    height: 300px;
+    overflow: auto;
+  }
+  .archive_nav .form-item-archived-year:hover ul,
+  .archive_nav .form-item-year:hover ul {
+    display: block;
+  }
+
+    .archive_nav .form-item-archived-year ul li,
+    .archive_nav .form-item-year ul li {
+      background: #fff;
+      float: none;
+      display: block;
+    }
+
+    .archive_nav .form-item-archived-year ul a,
+    .archive_nav .form-item-archived-year ul a:hover,
+    .archive_nav .form-item-year ul a,
+    .archive_nav .form-item-year ul a:hover {
+      background: #fff;
+      color: #1A1A1A;
+      display: block;
+      border: 0;
+      text-align: left;
+      padding: 10px;
+      /*border-top: 1px solid #e6e6e6;*/
+      border-right: 1px solid #e6e6e6;
+
+      border-left: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .archive_nav .form-item-archived-year ul li:first-child a {
+      border-top: 1px solid #e6e6e6;
+    }
+
+    .archive_nav .form-item-archived-year ul a:hover,
+    .archive_nav .form-item-year ul a:hover {
+      text-decoration: underline;
+    }
+
+/*  .archive_nav .form-item-year .current_year:after,
+  .archive_nav .form-item-year .current_year:before {
+    background-position: -622px -2300px;
+    height: 4px;
+    width: 8px;
+  }*/
+
+  .archive_nav .form-item-archived-year .current_year:after,
+  .archive_nav .form-item-year .current_year:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+  }
+    .archive_nav .form-item-archived-year:hover .current_year:after,
+    .archive_nav .form-item-year:hover .current_year:after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 7px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 0;
+      border-bottom: 5px solid #000;
+    }
+
+.archive_nav #bb-chart-archived-form #edit-archived-month,
+.archive_nav form #edit-month {
+  height: 60px;
+  border: 1px solid #E6E6E6;
+  border-left: 0;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+  .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month,
+  .archive_nav form #edit-month .form-item-month {
+    height: 60px;
+    border-left: 1px solid #e6e6e6;
+    float: left;
+    position: relative;
+    width: 73px;
+    margin: 0;
+  }
+    .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month label,
+    .archive_nav #edit-month .form-item-month label {
+      text-align: center;
+      display: block;
+      line-height: 56px;
+      padding: 0;
+
+      border: 2px solid #FFFFFF;
+      color: #1A1A1A;
+      letter-spacing: 1px;
+      margin: 0 -2px 0 0;
+      text-transform: uppercase;
+    }
+    .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month label:hover,
+    .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month label.current,
+    .archive_nav #edit-month .form-item-month label:hover,
+    .archive_nav #edit-month .form-item-month label.current,
+    .archive_nav .form-item-year:hover .current_year {
+      border-color: #1A1A1A !important;
+      position: relative;
+      text-decoration: none;
+      z-index: 1;
+    }
+
+      .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month.disabled label {
+        color: #B3B3B3;
+      }
+      .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month.disabled label:hover,
+      .archive_nav #bb-chart-archived-form #edit-archived-month .form-item-archived-month.disabled label.current {
+        border-color: #FFFFFF !important;
+        z-index: 0;
+      }
+
+  .archive_nav .form-item-archived-month input,
+  .archive_nav .form-item-archived-year .ajax-progress,
+  .archive_nav .form-item-archived-month .ajax-progress,
+  .archive_nav .form-item-month input,
+  .archive_nav .form-item-year .ajax-progress,
+  .archive_nav .form-item-month .ajax-progress {
+    display: none;
+  }
+
+.archive_nav > ul {
+  line-height: 60px;
+  border: 1px solid #E6E6E6;
+  border-left: 0;
+  overflow: visible;
+  margin-bottom: 0;
+}
+  .archive_nav > ul > li {
+    border-left: 1px solid #e6e6e6;
+    position: relative; /* Overlap on drop-downs */
+    width: 73px;
+  }
+  .archive_nav > ul a {
+    padding: 0;
+    text-align: center;
+    display: block;
+  }
+  .archive_nav .archive_date > a {
+    font-size: 24px;
+  }
+    .archive_nav .archive_date .ia.down-arrow:after {
+      top: -2px;
+      position: relative;
+    }
+    .archive_nav .archive_date:hover .ia.down-arrow:after {
+      background-position: -622px -2350px; /** Up arrow **/
+    }
+  .archive_nav li.dd {
+    background: transparent;
+    width: 98px;
+  }
+    .archive_nav li.dd ul {
+      border-bottom: 1px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+    }
+    .archive_nav li.dd ul a,
+    .archive_nav li.dd ul a:hover {
+      background: #fff;
+      display: block;
+      border: 0;
+      text-align: left;
+      padding: 10px;
+      border-top: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+    }
+    .archive_nav li.dd ul a:hover {
+      text-decoration: underline;
+    }
+
+
+/**
+ * Chart position icons
+ */
+.chart_position,
+.module_chart_summary .chart_position {
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+  margin: 0 0 15px;
+  text-align: center;
+  border: 3px solid #1a1a1a;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+}
+  .chart_position.position-up,
+  .chart_position.position-static,
+  .chart_position.position-down,
+  .chart_position.position-peak,
+  .chart_position.position-new,
+  .chart_position.position-bullseye,
+  .chart_position.position-roset,
+  .chart_position.position-re {
+    margin-left: -48px;
+  }
+
+
+  .chart_position.position-up:after,
+  .module_chart_summary .chart_position.position-up:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -1900px;
+  }
+  .chart_position.position-down:after,
+  .module_chart_summary .chart_position.position-down:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -2000px;
+  }
+  .chart_position.position-static:after,
+  .module_chart_summary .chart_position.position-static:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -2100px;
+  }
+  .chart_position.position-peak:after,
+  .module_chart_summary .chart_position.position-peak:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -3100px;
+  }
+  .chart_position.position-greatest-gains,
+  .module_chart_summary .chart_position.position-greatest-gains {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -3px -2903px transparent;
+    color: #FFFFFF;
+  }
+  .chart_position.position-new:after,
+  .module_chart_summary .chart_position.position-new:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -3200px;
+  }
+  .chart_position.position-re:after,
+  .module_chart_summary .chart_position.position-re:after {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -5100px transparent;
+    content: " ";
+    height: 51px;
+    left: 48px;
+    position: absolute;
+    top: -3px;
+    width: 51px;
+  }
+  .chart_position.position-bullseye:after,
+  .module_chart_summary .chart_position.position-bullseye:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -3000px;
+  }
+  .chart_position.position-roset:after,
+  .module_chart_summary .chart_position.position-roset:after {
+    position: absolute;
+    left: 48px;
+    top: -3px;
+    width: 51px;
+    height: 51px;
+    content: " ";
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -3000px;
+  }
+
+/**
+ * Chart filters
+ */
+
+.chart_filters {
+  cursor: default;
+  color: #1CACE2;
+  font-size: 17px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+    .chart_filters > div.left {
+      float: left;
+    }
+    .chart_filters > div.right {
+      float: right;
+    }
+    .chart_filters > div > a {
+      padding-top: 10px;
+      display: block;
+    }
+  .chart_filters .dd {
+    color: #1a1a1a;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .chart_filters .play-entire-chart .dd {
+    padding: 10px 0 0;
+  }
+    .chart_filters .dd span {
+      position: relative;
+      display: inline-block;
+      padding-right: 15px;
+      cursor: pointer;
+    }
+      .chart_filters .dd span i {
+        position: absolute;
+        background: url('/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat -622px -2300px;
+        top: 50%; margin-top: -2px;
+        right: 0;
+        width: 7px;
+        height: 4px;
+      }
+    .chart_filters .dd ul {
+      position: absolute;
+      z-index: 900;
+      right: -1px;
+      top: 100%;
+      padding: 0;
+      display: none;
+      background: transparent;
+      text-align: left;
+      width: 180px;
+      font-size: 17px;
+    }
+
+    .artist_charts {
+      overflow: auto;
+      height: 300px;
+    }
+      .chart_filters .dd:hover ul,
+      .chart_filters .dd.hover_effect ul {
+        display: block;
+      }
+        .chart_filters .dd ul li {
+          float: none;
+          display: block;
+          background: #fff;
+          border: 1px solid #ececec;
+        }
+        .chart_filters .dd ul li + li {
+          border-top: 0;
+        }
+        .chart_filters .dd ul li {
+          line-height: 39px;
+        }
+        .chart_filters .dd ul li a {
+          display: block;
+          padding: 10px 0 10px 20px;
+          line-height: 20px;
+        }
+  .chart_filters .paginator {
+    border-top: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+/** Full width **/
+.chart_filters.full {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+  .node-type-chart-landing .chart_filters.full {
+    margin-top: 0px;
+    border-top: 0px;
+  }
+  .node-type-chart-landing .chart_filters.full,
+  .node-type-chart .chart_filters.full {
+    display: none;
+  }
+  .node-type-chart-landing .full_width .chart_filters.full,
+  .node-type-chart .full_width .chart_filters.full,
+  .node-type-chart-landing .chart_pager_bottom.chart_filters.full,
+  .node-type-chart .chart_pager_bottom.chart_filters.full {
+    display: block;
+  }
+
+  .chart_filters.full > div {
+    margin-left: 30px;
+  }
+  .chart_filters.full > div.next-chart {
+    margin-left: 10px;
+  }
+  .chart_filters.full > div.play-entire-chart {
+    margin-left: 50px;
+  }
+    .chart_filters.full > div:first-child {
+      margin-left: 0;
+    }
+
+      .chart_filters.full.cf div.left div.item-list {
+        border-top: none;
+        margin-bottom: 0;
+        padding-top: 10px;
+      }
+
+.chart_pager_bottom.next-chart {
+  font-size: 17px;
+}
+
+.chart_pager_bottom .item-list {
+  margin-bottom: 0;
+}
+
+.chart_pager_bottom.chart_filters.full {
+  border-bottom: none;
+  border-top: none;
+  padding-top: 10px;
+  margin: 0 250px 40px;
+}
+
+/**
+ * Chart play icon
+ */
+.play_action {
+  color: #1CACE2;
+  position: relative;
+  top: -4px;
+}
+  .play_action:hover {
+    text-decoration: underline;
+  }
+  .play_action:before {
+    content: '';
+    background: url('/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/temp_icons/chart_play_icon.png') no-repeat 0 0;
+    width: 36px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  /** Drop-down **/
+  .dd .play_action .icon {
+    margin-top: -4px;
+    background: url('/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/temp_icons/down_arrow.png') no-repeat 100% 50%;
+    width: 8px;
+  }
+  .dd .play_action + ul {
+    left: 45px;
+  }
+
+
+/**
+ * Chart listing
+ */
+.listing.chart_listing > article,
+.listing.chart_listing > article.no_category.song_review header {
+  position: relative;
+  height: auto;
+  min-height: 211px;
+}
+.chart-page-weekly-artist .listing.chart_listing > article,
+.chart-page-weekly-artist .listing.chart_listing > article.no_category.song_review header {
+  min-height: 141px;
+}
+.listing.chart_listing > article.song_review .inline_media {
+  margin-bottom: 30px;
+}
+.listing.chart_listing > article.song_review .inline_media.large_video {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+}
+.listing.chart_listing > article.song_review .inline_media figcaption a {
+  padding: 0;
+}
+.listing.chart_listing > article header,
+.listing.chart_listing > article header h1 {
+  text-align: center;
+}
+.listing.chart_listing > article header .social {
+  left: auto;
+  right: 0;
+}
+
+/**
+ * Chart stats
+ */
+.chart_stats {
+  list-style: none;
+  cursor: default;
+}
+  .chart_stats li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    line-height: 20px;
+  }
+  .chart_stats li.lh16 {
+    line-height: 16px;
+  }
+  .chart_stats li + li {
+    margin-left: 20px;
+  }
+    .chart_stats li:hover {
+      color: #cbcbcb;
+    }
+    /** Icons **/
+    .chart_stats li .icon {
+      margin-right: 3px;
+      vertical-align: top;
+      position: relative;
+      top: 2px;
+    }
+    /** Hovers on sprite **/
+    .chart_stats li:hover .icon.duration {
+      background-position: -150px -1250px;
+    }
+    .chart_stats li:hover .icon.peak {
+      background-position: -151px -1300px;
+    }
+    .chart_stats li:hover .icon.shift {
+      background-position: -150px -1350px;
+    }
+
+    /** Tooltips **/
+    .chart_stats li .tt {
+      position: absolute;
+      display: none;
+      background: #fff;
+      color: #1a1a1a;
+      bottom: -30px;
+      font: 13px/20px Arial, sans-serif;
+      padding: 0 7px;
+      border: 1px solid #e6e6e6;
+      white-space: nowrap;
+      z-index: 10;
+    }
+      .chart_stats li:hover .tt {
+        display: block;
+      }
+
+/**
+ * Chart awards
+ */
+.chart_awards {
+    list-style: none;
+}
+    .chart_awards li {
+        background: #1eb0e8;
+        color: #fff;
+        max-width: 28px;
+        position: relative;
+        white-space: nowrap;
+        -webkit-transition: max-width 0.3s ease, padding 0.3s ease;
+           -moz-transition: max-width 0.3s ease, padding 0.3s ease;
+            -ms-transition: max-width 0.3s ease, padding 0.3s ease;
+                    transition: max-width 0.3s ease, padding 0.3s ease;
+        overflow: hidden;
+        font: 11px/25px sans-serif;
+    }
+        .chart_awards_white li {
+            background: #fff !important;
+            color: #1a1a1a;
+            margin: 0 0 -1px;
+            border: 1px solid #e6e6e6;
+        }
+    .chart_awards li:hover {
+        max-width: 999px;
+        padding-right: 10px;
+    }
+        .chart_awards_white li:hover {
+            max-width: 138px;
+            width: 138px;
+            padding-right: 0;
+            text-align: left;
+        }
+    .chart_awards li:nth-child(2) {
+        background: #00c545;
+    }
+    .chart_awards li:nth-child(3) {
+        background: #fa3d33;
+    }
+        .chart_awards .ib {
+            width: 28px;
+            display: inline-block;
+            text-align: center;
+        }
+        .chart_awards .ib:before {
+            margin-right: 0px;
+        }
+
+
+/**
+ * Chart placeholders
+ */
+.placehold-55x55 {
+  background-color: #000;
+  height: 55px;
+  width: 55px;
+}
+
+
+
+/*
+* Charts biz table
+*/
+
+.charts_table {
+    border: 0 none;
+    margin: 0 0 50px;
+}
+.charts_table thead {
+}
+.charts_table thead tr {
+}
+.charts_table thead th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    color: #B2B2B2;
+    font: 12px/14px Arial,sans-serif;
+    padding: 0 0 30px;
+    text-transform: none;
+    text-align: center;
+}
+.charts_table thead th:nth-child(4) {
+    padding-left: 20px;
+    text-align: left;
+}
+/*.charts_table thead th:hover {
+    color: #1A1A1A;
+}*/
+.charts_table tbody {
+}
+.charts_table tbody tr {
+}
+
+.charts_table tr.print-only {
+  display: none;
+}
+
+.charts_table tbody td {
+    border-left: 0 none;
+    border-right: 0 none;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 52px;
+}
+.charts_table tbody tr td.details {
+    color: #737373;
+    font: 12px/20px Arial,sans-serif;
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+    width: auto;
+}
+.charts_table tbody tr td:first-child {
+    border-left: 1px solid #D9D9D9;
+}
+.charts_table tbody tr td.details + td, .charts_table tbody tr td:last-child {
+    border-right: 1px solid #D9D9D9;
+}
+.charts_table tbody tr.highlight td.details,
+.charts_table tbody tr.highlight td.details ~ td,
+.charts_table tbody tr.highlight td.play {
+    background: none repeat scroll 0 0 #FFE646;
+    position: static;
+}
+.charts_table tbody tr:hover td.details, .charts_table tbody tr:hover td.details ~ td {
+}
+.charts_table tbody tr td.details + td {
+    vertical-align: top;
+}
+.charts_table tbody tr td.cert {
+    border-bottom-width: 0;
+}
+.charts_table tbody tr td.play {
+    vertical-align: bottom;
+    border-top: 0;
+    border-left: 0;
+}
+.charts_table tbody tr td.new, .charts_table tbody tr td.this_week {
+    background: none repeat scroll 0 0 #000000;
+    border-color: #1A1A1A;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+.charts_table tbody tr td.this_week {
+    font-size: 26px;
+}
+.charts_table tbody td b, .charts_table tbody td b a {
+    color: #1A1A1A;
+    font: 24px/24px sans-serif;
+}
+.charts_table tbody td b.title, .charts_table tbody td b.title a, .charts_table tbody td i.title a {
+    text-transform: uppercase;
+}
+.charts_table tbody td i, .charts_table tbody td i a {
+    color: #1A1A1A;
+    font: 17px/20px sans-serif;
+}
+.charts_table tbody td .play {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll 0 -1000px transparent;
+    display: block;
+    height: 22px;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 22px;
+    margin: 0 auto;
+}
+.charts_table tbody td .play:hover {
+    background-position: -150px -1000px;
+}
+.charts_table .flag {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll 0 -1700px transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 55px;
+    line-height: 14px;
+    margin: -15px 10px 0 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 36px;
+}
+.charts_table .flag span {
+    display: table-cell;
+    height: 55px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    width: 36px;
+}
+.charts_table .flag.wks {
+    font-size: 16px;
+    height: 39px;
+    line-height: 16px;
+    padding-top: 16px;
+    vertical-align: top;
+}
+.charts_table .flag.wks span {
+    display: block;
+    font-size: 7px;
+    line-height: 7px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.charts_table .gain span {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block;
+    height: 33px;
+    line-height: 34px;
+    text-align: center;
+    width: 33px;
+}
+.charts_table tr td.gain:first-child {
+    background: none repeat scroll 0 0 #D9D9D9;
+}
+.charts_table tr td:first-child + .gain {
+    background: none repeat scroll 0 0 #B2B2B2;
+}
+.charts_table .this_week.gain span {
+    color: #1A1A1A;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+}
+.charts_table a.play-entire {
+    background: none repeat scroll 0 0 #F2F2F2;
+    color: #1A1A1A;
+    display: block;
+    font: 17px/50px sans-serif;
+    height: 50px;
+    margin: -15px 0;
+    text-align: center;
+}
+.charts_table a.play-entire:before {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll 0 -1000px transparent;
+    content: " ";
+    display: inline-block;
+    height: 22px;
+    margin: -2px 8px 0 0;
+    vertical-align: middle;
+    width: 22px;
+}
+.charts_table .certification {
+    background: url("/web/20190719164439im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll 0 -1351px transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+    width: 20px;
+    margin: 0 auto 5px;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:39 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:46 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 90.193 (3)
+  esindex: 0.008
+  captures_list: 112.06
+  CDXLines.iter: 13.22 (3)
+  PetaboxLoader3.datanode: 98.42 (4)
+  exclusion.robots: 0.252
+  exclusion.robots.policy: 0.241
+  RedisCDXSource: 5.015
+  PetaboxLoader3.resolve: 580.759
+  load_resource: 598.721
+*/

@@ -1,0 +1,196 @@
+.col.col_1 {
+    width: 650px;
+    margin: 0;
+    float: left;
+}
+
+.col.col_2.side_rail {
+    /*float: right;*/
+    /*width: 310px;*/
+    /*margin: 0;*/
+}
+
+.archive {
+    padding: 3px 0 66px;
+}
+
+
+.archive .archive_month {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    .archive .archive_month:first-child {
+        /*border-top: 1px solid #e6e6e6;*/
+    }
+
+    .archive .archive_month h1 {
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+        .archive .archive_month h1 span.count {
+            float: right;
+            color: #999;
+        }
+
+    .archive .section_header {
+      position: relative;
+      padding: 10px 50px 20px;
+      margin: 0 0 25px;
+      text-align: center;
+      border-bottom: 1px solid #e6e6e6;
+    }
+        .archive .section_header .social {
+            bottom: 20px;
+        }
+
+    .archive section {
+        position: relative;
+    }
+        .archive section h2 {
+            text-align: center;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0;
+            /*padding: 29px 0 22px;*/
+            padding: 22px 0 22px;
+        }
+            .archive section:first-child h2 {
+                /*padding-top: 9px;*/
+            }
+            .archive section p {
+                position: absolute;
+                right: 0;
+                top: 17px;
+                color: #c5c5c5;
+                font-size: 17px;
+                line-height: 44px;
+            }
+                .archive section p.back {
+                    right: auto;
+                    left: 0;
+                }
+                    .archive section p.back a {
+                        padding-left: 25px;
+                        background: url("/web/20190719164442im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -617px -2498px;
+                    }
+                    /*617 2504*/
+
+
+    .archive .load-more {
+        text-align: center;
+        font-size: 17px;
+        margin: 0;
+        border-top: 0 none;
+    }
+
+
+/* ------------ Mac google Archive page ---------------- */
+
+.archive .section_header {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+
+.header_archive {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+    .header_archive li {
+        display: inline;
+        margin: 0 10px;
+    }
+        .header_archive a {
+            color: #1CACE2;
+        }
+
+
+.archive .section_header .social {
+    bottom: 20px;
+}
+
+.archive .ui-accordion h2 {
+    border: 0px;
+    border-bottom: 1px solid #E6E6E6;
+    background: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    color: 	#1A1A1A;
+}
+
+    .archive .listing article h1 a {
+        color: #000000;
+    }
+    .archive .listing article h1 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+.archive .ui-accordion .ui-accordion-content {
+    top: 0px;
+    border: 0px;
+    margin: 0 0 20px 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+    .archive .ui-accordion .ui-accordion-content .views-field {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 10px 0;
+    }
+
+        .archive .ui-accordion .ui-accordion-content .views-field a {
+            font-family: Arial,sans-serif;
+            font-size: 14px;
+            padding: 0 0 0 52px;
+            line-height: 20px;
+            color: #1A1A1A;
+            display: block;
+        }
+        
+        .archive .ui-widget,
+        .archive .ui-widget-header,
+        .archive .ui-widget-content {
+          background: none;
+          font-family: inherit;
+          border: none;
+          color: #000000;
+        }
+        
+        .archive .ui-state-default, .archive  .ui-widget-content .ui-state-default,.archive .ui-widget-header .ui-state-default {
+          background: none;
+          border: none;
+        }
+        .archive .tertiary-menu .content > ul.menu li a {
+          font-size: 14px;
+        }
+        
+        .archive .tertiary-menu .content > ul.menu li.ui-state-active a {
+          border: 2px solid #1A1A1A;
+        }
+
+/*
+     FILE ARCHIVED ON 16:44:42 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:55 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 40.657 (3)
+  esindex: 0.013
+  captures_list: 66.478
+  CDXLines.iter: 17.539 (3)
+  PetaboxLoader3.datanode: 39.915 (4)
+  exclusion.robots: 0.443
+  exclusion.robots.policy: 0.427
+  RedisCDXSource: 2.167
+  PetaboxLoader3.resolve: 100.673
+  load_resource: 124.212
+*/

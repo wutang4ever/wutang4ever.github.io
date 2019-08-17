@@ -1,0 +1,147 @@
+/**
+ * Paywall container
+ */
+.paywall_container {
+  position: relative; /* Used for paywall banner */
+  padding-bottom: 350px;
+}
+
+/**
+ * Paywall banner
+ */
+.paywall_banner {
+  padding: 25px 0 70px;
+  border: 0 solid #fa3d33;
+  border-width: 3px 0;
+  position: absolute;
+  left: 0; right: 0;
+  background: #FFF;
+  z-index: 100;
+  margin: 0 auto;
+}
+.paywall_banner_back {
+  height: 0px;
+}
+#content,
+.content .article_content.fix_image {
+  position: relative;
+}
+.charts_table + .paywall_banner {
+  margin-top: -150px;
+  right: -1px; /*  Hide border */
+}
+  #content .charts_table tbody tr:first-child  + tr + tr + tr td .play{
+    z-index: 150;
+    position: relative;
+  }
+  .paywall_banner:before {
+      content: '';
+      position: absolute;
+      top: -133px;
+      left: 0; right: 0;
+      background: url('/web/20190718023601im_/https://www.billboard.com/sites/all/themes/bb/images/paywall_bg.png') repeat-x 0 0;
+      height: 130px;
+  }
+  .article .article_content .paywall_banner h2,
+  .paywall_banner h2 {
+      text-align: center;
+      margin: 0 50px 30px;
+      font-family: Georgia, serif;
+      font-weight: bold;
+  }
+
+  .article .article_content .paywall_banner ul,
+  .paywall_banner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-family: sans-serif;
+    text-align: left;
+    width: 630px;
+    display: block;
+    float: none;
+    overflow: hidden;
+  }
+
+  .paywall_banner span {
+    font-family: sans-serif;
+  }
+
+    .article  .article_content .paywall_banner ul li,
+    .paywall_banner ul li{
+      list-style-type: none;
+      float: left;
+      width: 290px;
+      margin: 0 25px 0 0;
+    }
+
+    .paywall_banner li:before {
+        content: '—';
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+  .paywall_banner .cta {
+      text-align: center;
+      font-size: 16px;
+      color: #fa3d33;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 24px;
+      clear: both;
+      margin: 0 0 8px;
+  }
+    .paywall_banner .cta a {
+      color: #fa3d33;
+      text-decoration: underline;
+    }
+
+  .paywall_banner .lta {
+      text-align: center;
+      font-size: 16px;
+      color: #000;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 24px;
+      clear: both;
+      margin: 0 0 8px;
+      line-height: 28px;
+  }
+    .paywall_banner .lta a {
+      color: #fa3d33;
+      text-decoration: underline;
+    }
+
+  .paywall_banner .logo {
+    width: 171px;
+    height: 26px;
+    text-indent: -999px;
+    position: absolute;
+    background: url('/web/20190718023601im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png') no-repeat 0 -2250px;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -85px;
+  }
+
+/*
+     FILE ARCHIVED ON 02:36:01 Jul 18, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:15 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 26.572 (3)
+  esindex: 0.01
+  captures_list: 41.257
+  CDXLines.iter: 11.26 (3)
+  PetaboxLoader3.datanode: 31.914 (4)
+  exclusion.robots: 0.323
+  exclusion.robots.policy: 0.309
+  RedisCDXSource: 0.674
+  PetaboxLoader3.resolve: 59.629
+  load_resource: 68.235
+*/

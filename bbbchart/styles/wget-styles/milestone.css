@@ -1,0 +1,1130 @@
+.node-type-milestone .tertiary-menu ul li .milestone-link,
+.node-type-milestone .tertiary-menu ul li.active-trail {
+  display: none;
+}
+
+.node-type-milestone .header_column_image {
+  text-align: center;
+}
+
+.node-type-milestone .header_column_image img {
+  max-width: 990px;
+}
+
+#form340, iframe#voting_form {
+  visibility: hidden;
+  display: none;
+}
+.section_header.image {
+  height: 151px;
+  padding-bottom: 0;
+}
+.section_header.image img {
+  background: transparent;
+}
+
+.thanks .standard_form {
+  margin-top: 10px;
+}
+
+.thanks .standard_form .field {
+  margin-bottom: 0;
+}
+
+.error_description {
+  position: absolute;
+  color: #f00;
+  top: 0;
+  left: 300px;
+  width: 250px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #f00;
+  padding: 5px;
+  z-index: 10;
+}
+
+.milestone {
+  margin-bottom: 30px;
+}
+
+.milestone .milestone_logo img {
+  background: transparent;
+}
+
+.milestone .milestone_logo {
+  float: left;
+  padding-right: 5px;
+}
+
+  .milestone > header, 
+  .milestone .cols_2x {
+    margin: 0 0 30px;
+  }
+    .milestone > header img {
+      display: block;
+      background: transparent;
+    }
+    .milestone > header .header {
+      margin: 0 auto;
+    }
+    .milestone > header .banner {
+      color: #d9d9d9;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px 5px 8px;
+      background: #f2f2f2;
+      margin: 0 0 30px;
+    }
+      .milestone > header .banner *:first-child {
+        margin: 0 auto 7px;
+      }
+      .milestone .field-name-field-embed-code.video {
+        min-width: 650px;
+        width: 650px;
+      }
+  .milestone .video:after, 
+  .milestone .video:before {
+    display: none;
+  }
+
+  .milestone .col > iframe, 
+  .milestone .col > .video iframe {
+    display: block;
+  }
+
+  .milestone-landing header + .cols_2x {
+    height: 335px;
+  }
+
+  .milestone .cols_2x .col_1_484 {
+    width: 484px;
+  }
+  .milestone .cols_2x .col_1_484 + .col_2 {
+    width: 476px;
+  }
+    .milestone .cols_2x .col_1_484 + .col_2 .social {
+      display: inline;
+      float: right;
+      margin: 0 0 26px;
+    }
+    .milestone .cols_2x .col_1_484 + .col_2 .social + p {
+      clear: both;
+      font: 14px/20px Arial, sans-serif;
+      margin: 0 0 -4px;
+    }
+
+  .milestone .col_2 > .banner {
+    padding-bottom: 8px;
+    margin: 0;
+  }
+    .milestone .article + .banner {
+      margin: 20px 0 30px 0;
+        color: #D9D9D9;
+        font-size: 12px;
+        height: 280px;
+        padding: 5px;
+        text-align: center;
+        width: 300px;
+        background: none repeat scroll 0 0 #F2F2F2;
+        display: inline;
+        float: left;
+    }
+    .milestone .col_2 > .banner *:first-child {
+      margin-bottom: 7px;
+    }
+
+  .milestone .tout-vote-now {
+    width: 650px;
+    height: 290px;
+  }
+    .milestone .tout-vote-now a, 
+    .milestone .tout-vote-now img {
+      display: block;
+    }
+
+  .milestone .want-to-present {
+    height: 290px;
+    width: 990px;
+    margin: 0 0 30px;
+  }
+    .milestone .want-to-present a, 
+    .milestone .want-to-present img {
+      display: block;
+    }
+
+    .milestone .social {
+      width: 310px;
+      background: #fff;
+      margin: 0 0 11px 0;
+      font: 11px/43px Arial, sans-serif;
+    }
+      .milestone .full_width .social + p {
+        margin: 0 340px 0 0;
+      }
+      .milestone-listing .socials {
+        margin: 0;
+      }
+        .milestone .social a,
+        .milestone.social span {
+          padding: 0 18px;
+        }
+        .milestone .social .ib.sT {
+          color: #1a1a1a;
+          width: auto;
+        }
+        #bb .milestone .social .ra1-pw_size_medium .ra1-pw-icon {
+          color: #1a1a1a !important;
+          width: auto;
+        }
+
+    .intro_vote p {
+      margin: 0;
+    }
+    
+.node-type-page .insert_social .social {
+  display: block;
+  width: 312px;
+  height: 79px;
+  overflow: visible;
+  float: right;
+  margin: 0 0 10px 0;
+  font: 11px/43px Arial, sans-serif;
+  border: 0px;
+}
+  .milestone-listing .social {
+    margin: 0;
+  }
+  .node-type-page .insert_social .social ul {
+    display: inline;
+    float: left;
+  }
+  .node-type-page .insert_social .social li {
+    width: 153px;
+    height: 39px;
+    border: 1px solid #E6E6E6;
+  }
+    .node-type-page .insert_social .social li:first-child, 
+    .node-type-page .insert_social .social li:first-child + li {
+      /*border-bottom: 1px solid #e6e6e6;*/
+      border-bottom: 0px;
+    }
+    .node-type-page .insert_social .social li:first-child + li, 
+    .node-type-page .insert_social .social li:first-child + li + li + li {
+      /*width: 154px;*/
+      border-left: 0px;
+    }
+    .node-type-page .insert_social .social li:first-child + li + li {
+      /*border-left: 0 none;*/
+    }
+    .node-type-page .insert_social .social li > span {
+      padding-left: 58px;
+      padding-top: 5px;
+    }
+    #bb .node-type-page .insert_social .social li > a {
+      margin-left: 52px !important;
+      margin-top: 5px !important;
+    }
+    .node-type-page .social-cols ul.with_buttons li > div {
+      padding: 10px 7px 9px;
+    }
+    .node-type-page .social-cols ul.with_buttons li:hover > div {
+      width: auto;
+      right: -1px;
+    }
+    .node-type-page .social-cols ul.with_buttons li > div.ra1-pw, 
+    .node-type-page .social-cols ul.with_buttons li:hover > div.ra1-pw {
+      position: static;
+      left: 0;
+      top: 0;
+      padding: 6px 0 0 52px;
+      width: 102px;
+      border: 0 none;
+      width: auto;
+      text-align: left;
+    }
+      .node-type-page .social-cols li:first-child + li + li + li:hover:after {
+        display: none;
+      }
+
+.milestone .intro, 
+.milestone .full_width.intro {
+  position: relative;
+  padding: 0 0 0 146px;
+  margin: 0 0 25px;
+  width: 844px;
+}
+
+  .milestone .intro:before {
+    content: "Vote";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 116px;
+    height: 116px;
+    letter-spacing: -1px;
+    background: #1eb0e8;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 116px;
+    -webkit-border-radius: 58px;
+    -moz-border-radius: 58px;
+    border-radius: 58px;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+ .milestone .intro_vote:before {
+   content: " ";
+   line-height: 50px;
+   float: left;
+   position: relative;
+   margin: 0 5px 5px 0;
+   width: 119px;
+   height: 118px;
+   display: block;
+   background: url('/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/vote_final_3.png') no-repeat 0 0;
+ }
+ .milestone .intro_win:before {
+   content: " ";
+   line-height: 50px;
+   float: left;
+   position: relative;
+   margin: 0 5px 5px 0;
+   width: 119px;
+   height: 118px;
+   display: block;
+   background: url('/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/vote_for_sonic.png') no-repeat 0 0;
+ }
+ 
+ .milestone .cols_2x .col_2 {
+    float: left;
+    margin: 0 0 0 25px;
+    width: 310px;
+}
+
+  .milestone .intro p {
+    margin: 0;
+  }
+  .milestone .intro .social {
+    display: inline;
+    float: right;
+    margin: 0 0 10px;
+  }
+  .milestone .intro + .side_rail {
+    display: none;
+  }
+
+.milestone .full_width.listing {
+  width: 1020px;
+}
+  .milestone .full_width.listing .banner + .article {
+    clear: left;
+  }
+
+  .milestone .full_width.listing .banner + .article + .article {
+    margin-left: 0;
+  }
+
+  .milestone .full_width.listing .banner + .article,
+  .milestone .full_width.listing .banner + .article + .article {
+    float: right;
+  }
+  .milestone .full_width.listing .want-to-present {
+    display: inline;
+    float: left;
+    margin: 0 30px 30px 0;
+    width: 310px;
+    height: 390px;
+    padding: 0;
+    clear: both;
+  }
+    .milestone .full_width.listing .want-to-present p:first-child {
+      padding: 50px 40px 0;
+      line-height: 34px;
+      margin: 0 0 40px;
+      text-shadow: 0 0 20px #000;
+    }
+    .milestone .full_width.listing .want-to-present p a {
+      background: #000;
+      width: 200px;
+    }
+      .milestone .full_width.listing .want-to-present p a:hover {
+        background: #fff;
+        color: #000;
+      }
+  .milestone .full_width.listing .article {
+      padding: 168px 0 0;
+      display: inline;
+      float: left;
+      margin: 0 30px 15px 0;
+      position: relative;
+      width: 310px;
+  }
+  
+  .milestone.phase_1 .full_width.listing .article {
+    margin-bottom: 17px;
+  }
+ 
+ .milestone.new .full_width.listing .article {
+   margin-bottom: 70px;
+ }
+
+  .milestone .full_width.listing .article:last-child {
+    margin-right: 0;
+  }
+
+    .milestone .full_width.listing .article .header {
+        position: static;
+        padding: 23px 0 0;
+        text-align: center;
+        display: block;
+    }
+    .milestone .full_width.listing .article .video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+      .milestone .full_width.listing .article .video:after {
+        display: none;
+      }
+    .milestone .full_width.listing .article h1 {
+      color: #1eb0e8;
+      margin: 0 0 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+       font-size: 17px;
+       line-height: 20px;
+       text-align: center;
+    }
+    .milestone .full_width.listing .article p {
+      text-align: left;
+      margin: 0;
+    }
+      .milestone .full_width.listing .article h1 + p {
+        font: 14px/20px Arial, sans-serif;
+        font: 14px/20px sans-serif;
+      }
+      .milestone .full_width.listing .article p.v {
+        letter-spacing: -1px;
+      }
+   
+   .milestone .full_width.listing .article p.twit {
+      width: 240px;
+      margin: 5px auto;
+   }
+   .milestone .full_width.listing .article .twit a {
+      display: block;
+      text-transform: uppercase;
+      padding: 7px 30px;
+      color: #fff;
+      background: #000;
+      text-overflow: ellipsis;
+      line-height: 17px;
+      font-size: 17px;
+      position: relative;
+      text-decoration: none;
+      overflow: visible;
+      text-transform: uppercase;
+      text-align: center;
+      width: 180px;
+   }
+    .milestone .full_width.listing .article .v a {
+      display: block;
+      border: 2px solid #1eb0e8;
+      text-transform: uppercase;
+      padding: 0 45px;
+      color: #000;
+      background: url('/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/btn_bg.png') repeat 0 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 30px;
+      line-height: 30px;
+      font-size: 17px;
+      position: relative;
+      text-decoration: none;
+      overflow: visible;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .milestone .full_width.listing .article .twit a:before {
+      position: absolute;
+      left: -24px;
+      top: -3px;
+      width: 40px;
+      height: 100%;
+      content: "";
+      display: block;
+      padding: 5px 2px 0;
+      background: url('/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/twitter_icon.png') no-repeat 0 center;
+   }
+      .milestone .full_width.listing .article .v a:before {
+        content: "My Pick";
+        position: absolute;
+        left: 5px;
+        top: -8px;
+        width: 31px;
+        height: 30px;
+        padding: 5px 2px 0;
+        letter-spacing: -1px;
+        background: #1eb0e8;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 11px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        border-radius: 18px;
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+      }
+      .milestone .full_width.listing .article .v a:hover {
+      }
+        .milestone .full_width.listing .article .v a:hover:before {
+          background: #000;
+        }
+
+#milestone_lb_m {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.5);
+  display: none;
+}
+
+#milestone_lb {
+  width: 922px;
+  min-height: 489px;  
+}
+
+.light-box,
+#milestone_lb_wrapper {
+  display: none;
+  position: absolute;
+  z-index: 100000001;
+  left: 50%;
+  top: 50px;
+  width: 922px;
+  min-height: 489px;
+  height: auto;
+  margin: 0 0 0 -461px;
+  border: 1px solid #E5E5E5;
+  background: #fff;  
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.light-box,
+#milestone_lb_contents * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#milestone_lb_contents {
+ min-height: 489px;
+/*  background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/bg-bma-lightbox-artist.jpg") left bottom no-repeat;*/
+}
+  #milestone_lb_contents header {
+    background: #000;
+    position: relative;
+    padding: 20px 0;
+    margin: 0 0 15px;
+  }
+    #milestone_lb_contents .header {
+      background: transparent;
+    }
+    #milestone_lb_contents header h1 {
+      color: #1eb0e8;
+      font-size: 35px;
+      line-height: 40px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    #milestone_lb_contents header p {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+    .light-box .close-button,
+    #milestone_lb_wrapper .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: transparent;
+      font: 0/0 a;
+      background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/sprite.png") no-repeat 0 -4150px;
+      width: 22px;
+      height: 23px;
+      cursor: pointer;
+    }
+      #milestone_lb_contents header .close:hover {
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+        filter: alpha(opacity=65);
+        opacity: .5;
+      }
+
+  #milestone_lb_contents > p {
+    padding: 0 30px;
+    margin: 0 0 18px;
+  }
+  #milestone_lb_contents div.standard_form {
+    overflow: visible;
+    position: relative;
+    margin: 0 0 16px;
+  }
+    #milestone_lb_contents fieldset {
+      display: inline;
+      float: left;
+      width: 50%;     
+    }
+      #milestone_lb_contents fieldset div.enter_form_wrapper {
+        padding: 0 10px 0 15px;
+      }
+      #milestone_lb_contents ol {
+        padding: 0;
+        margin: 0;
+      }
+        #milestone_lb_contents ol + p {
+          padding-top: 20px;
+        }
+      #milestone_lb_contents li {
+        padding: 0;
+        margin: 0 0 2px;
+        list-style-type: none;
+        overflow: visible;
+        clear: both;
+    position: relative;
+      }
+   #milestone_lb_contents li.fiel {
+     overflow: hidden;
+   }
+        #milestone_lb_contents li.file + li.checkbox {
+          padding-top: 15px;
+        }
+      #milestone_lb_contents label {
+        display: inline;
+        float: left;
+        width: 100px;
+        padding: 0 20px 0 0;
+        text-align: right;
+        font: 12px/20px Arial, sans-serif;
+      }
+        #milestone_lb_contents li.file label {
+          width: 160px;
+          padding: 0;
+          font: 17px/30px sans-serif;
+          text-align: left;
+        }
+        #milestone_lb_contents li.checkbox label {
+          float: none;
+          display: block;
+          width: auto;
+          font: 12px/16px Arial, sans-serif;
+          color: #1a1a1a;
+          text-align: left;
+          padding: 0;
+        }
+        #milestone_lb_contents li.checkbox label.error {
+          color: #ff3639;
+        }
+    #milestone_lb_contents .thanks .bbma_center h3,
+    #milestone_lb_contents .bbma_center li.checkbox label {
+      text-align: center;
+    }
+          #milestone_lb_contents li.checkbox label a {
+            color: #1a1a1a;
+            text-decoration: underline;
+          }
+          #milestone_lb_contents li.checkbox label.error a {
+            color: #ff3639;
+          }
+        #milestone_lb_contents li.textarea label {
+          font: 17px/20px sans-serif;
+          font: 12px/16px Arial, sans-serif;
+          text-align: left;
+        }
+          #milestone_lb_contents li.textarea label i {
+            display: block;
+            font: 12px/16px Arial, sans-serif;
+            color: #737373;
+          }
+        #milestone_lb_contents label abbr {
+          color: #fc3f2e;
+        }
+      #milestone_lb_contents li input[type="tel"],
+      #milestone_lb_contents li input[type="email"],
+      #milestone_lb_contents li select,
+      #milestone_lb_contents li input {
+        font: 12px/20px Arial, sans-serif;
+        height: auto;
+        width: 305px;
+        padding: 7px 10px;
+      }
+   #milestone_lb_contents li .col select,
+   #milestone_lb_contents li .col input {
+     width: 115px;
+   }
+   #milestone_lb_contents .bbma_center {
+     text-align: center;
+     width: 430px;
+     margin: 30px auto;
+   }
+   #milestone_lb_contents.thanks > h3.win_sonic {
+     text-align: left;
+     font-size: 20px;
+   }
+        #milestone_lb_contents li.file input {
+          width: 210px;
+          padding: 0;
+          float: none;
+        }
+        #milestone_lb_contents li.checkbox label,
+        #milestone_lb_contents li.checkbox input {
+          width: auto;
+          float: none;
+        }
+    #milestone_lb_contents li input:after {
+      content: ".";
+      width: 0;
+      height: 0;
+      color: #fff;
+      clear: both;
+    }
+      #milestone_lb_contents li textarea {
+        margin: 0 0 10px;
+        width: 291px;
+      }
+    #milestone_lb_contents input[type=submit] {
+      background: #1eb0e8;
+      color: #fff;
+      padding: 0;
+      font-size: 20px;
+      line-height: 38px;
+      height: 38px;
+      text-transform: uppercase;
+      width: 271px;
+    }
+      #milestone_lb_contents input[type=submit]:hover {
+        cursor: pointer;
+        background: #1a1a1a;
+      }
+
+    #milestone_lb_contents form .info {
+      margin: 0;
+      font: 12px/16px Arial, sans-serif;
+      color: #1a1a1a;
+    }
+      #milestone_lb_contents form .info a {
+        color: #1a1a1a;
+        text-decoration: underline;
+      }
+        #milestone_lb_contents form .info a.tel {
+          text-decoration: none;
+        }
+      #milestone_lb_contents form .info small {
+        display: block;
+        padding: 18px 0 0;
+        color: #1a1a1a;
+      }
+        #milestone_lb_contents form .info small a {
+          color: #d9d9d9;
+          text-decoration: underline;
+          font: 12px/16px Arial, sans-serif;
+          color: #1a1a1a;
+        }
+          #milestone_lb_contents form .info small a:hover {
+            text-decoration: underline;
+          }
+
+
+    #milestone_lb_contents div.selector, 
+    #milestone_lb_contents div.selector span {
+      -webkit-font-smoothing: subpixel-antialiased;
+      line-height: normal;
+      vertical-align: middle;
+      width: 305px;
+      color: #b2b2b2;
+      font-weight: normal;
+      height: auto;
+      font: 12px/16px Arial, sans-serif;
+      text-align: left;
+    }
+      #milestone_lb_contents div.selector {
+        display: block;
+        border: 1px solid #d9d9d9;
+        overflow: hidden;
+          position: relative;
+      }
+        #milestone_lb_contents div.selector span {
+          min-height: 16px;
+        }
+        #milestone_lb_contents div.selector:hover {
+          border-color: #b3b3b3;
+          color: #1a1a1a;
+        }
+        #milestone_lb_contents .selector:after {
+          content: " ";
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          width: 0;
+          height: 0;
+          border: solid transparent;
+          border-width: 5px;
+          border-top-color: #000;
+          margin-top: -1px;
+          pointer-events: none;
+        }
+
+    .selector select {
+      border: none;
+      font-size: 13px;
+        border: medium none;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 9px 10px;
+        right: 0;
+        top: 0;
+    }
+   
+   .standard_form .selector select.field {
+      margin: 0;
+   }
+
+   .standard_form input[type="tel"] {
+      border: 1px solid #d9d9d9;
+    padding: 17px 20px;
+    width: 100%;
+    color: #1a1a1a;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+#milestone_lb_contents.thanks {
+  text-align: center;
+}
+  #milestone_lb_contents.thanks header {
+    background: transparent;
+    padding: 30px;
+    margin: 0 0 32px;
+  text-align: center;
+  }
+    #milestone_lb_contents.thanks header .close {
+      background-position: 0 -4150px;
+    }
+  #milestone_lb_contents.thanks h2 {
+    font-size: 30px;
+    line-height: 32px;
+      font-weight: normal;
+    color: #1eb0e8;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+  letter-spacing: 1px;
+  }
+  #milestone_lb_contents.thanks h2.congrats {
+   text-transform: none;
+   font-size: 50px;
+      line-height: 56px;
+   margin-bottom: 15px;
+ }
+ #milestone_lb_contents.thanks h3.congrats {
+   font-size: 20px;
+   margin-bottom: 40px;
+    }
+  #milestone_lb_contents.thanks > h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+  #milestone_lb_contents.thanks > p {
+    margin: 0 0 70px;
+  }
+    #milestone_lb_contents.thanks > p > a {
+      display: inline-block;
+      background: #1eb0e8;
+      color: #fff;
+      padding: 0;
+      font-size: 20px;
+      line-height: 38px;
+      height: 38px;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 271px;
+      font-weight: bold;
+    }
+      #milestone_lb_contents.thanks > p > a:hover {
+        background: #1a1a1a;
+      }
+  .light-box {
+    padding: 30px;
+  }
+
+  .video-light-box iframe {
+    margin: 10px 111px;
+  }
+  .light-box .v a {
+    display: block;
+    width: 210px;
+    padding: 0 50px;
+    border: 2px solid #1eb0e8;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+    color: #000;
+    background: url('/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/milestone/btn_bg.png') repeat 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    text-transform: uppercase;
+    text-align: center;
+  }
+    .light-box .v a:before {
+      content: "My Pick";
+      position: absolute;
+      left: 5px;
+      top: -8px;
+      width: 31px;
+      height: 30px;
+      padding: 5px 2px 0;
+      letter-spacing: -1px;
+      background: #1eb0e8;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 11px;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      border-radius: 18px;
+      -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+    }
+
+   
+  .wufoo {
+      display: none;
+  }
+
+  .standard_form .wufoo {
+      display: block;
+  }
+ 
+  
+  .standard_form .wufoo .fileupload {
+    position: relative;
+    overflow: hidden;    
+  }
+  .standard_form .wufoo .fileupload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  .standard_form .wufoo .btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #CCCCCC #CCCCCC #B3B3B3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+  }
+  
+  #milestone_lb_contents  .standard_form .wufoo li input.file_name { 
+    background-color: #EEEEEE;
+    cursor: not-allowed;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 0.428571rem;
+    width: 128px;
+    display: none;
+  }
+  
+  #milestone_lb_contents  .standard_form .wufoo li input.file_name.error {
+    display: inline-block;
+  }
+  
+  
+ .form_messages {
+   border-color: #FF3639;
+   border-width: 3px;  
+   color: #FF3639;
+   display: none;
+   padding: 10px 30px;
+   position: absolute;
+   top: -30px;
+   left: 0;
+ }
+ 
+ .form_info {
+   display: none;
+   color: #f00;
+ }
+
+ .surprise {
+  margin-top: 80px;
+  color: #00a5e1;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+   }
+ 
+ .bbma_live {
+   font-size: 26px;
+   line-height: 30px;
+    }
+ 
+ .bbma_live img {
+   vertical-align: middle;
+ }
+ 
+#milestone_lb_contents.thanks h3.bbma_live {
+   text-transform: uppercase;
+   font-size: 36px;
+   line-height: 32px;
+      margin-bottom: 0;
+ }
+ 
+ #milestone_lb_contents .bbma_center h3 {
+   font-size: 20px;
+   line-height: 26px;
+   font-weight: normal;
+    }
+ 
+ #milestone_lb_contents {
+   text-shadow: none;
+ }
+ 
+ .milestone.new .listing {
+   margin-top: 20px;
+ }
+ 
+ .milestone.phase_1 .content {
+   position: relative;
+ }
+ 
+ .milestone.phase_1 .content .milestone_banner {
+    position: absolute;
+ }
+ .milestone.phase_1 .content .left_banner {  
+   left: 0;
+   bottom: 0;
+ }
+ .milestone.phase_1 .content .right_banner {  
+   right: 0;
+   top: 0;
+   display: block;
+   width: 300px;
+   height: 280px;
+ }
+ 
+ .milestone.phase_1 .full_width.listing .article.item_1 {
+   margin-right: 340px;
+ }
+ .milestone.phase_1 .full_width.listing .article.item_2,
+ .milestone.phase_1 .full_width.listing .article.item_4 {
+   margin-left: 340px;
+ }
+ 
+ .milestone .rules,
+ .milestone .rules a {
+   color: #000;
+   text-align: center;
+   font-size: 10px;
+ }
+ .milestone .rules a {
+   text-decoration: underline;
+ }
+ 
+ .milestone .col.col_1 {
+   position: relative;
+ }
+ 
+ .milestone .rules {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+ }
+ 
+ .col.col_1 .milestone_description .field-name-body {
+   margin-left: 137px;
+ }
+ 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+  #milestone_lb_contents header .close {
+    background-image: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/sprite@2x.png");
+    background-size: 640px 5450px;
+  }
+
+}
+/*
+     FILE ARCHIVED ON 16:44:27 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:21 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 551.144 (3)
+  esindex: 0.022
+  captures_list: 570.357
+  CDXLines.iter: 12.749 (3)
+  PetaboxLoader3.datanode: 41.961 (4)
+  exclusion.robots: 0.393
+  exclusion.robots.policy: 0.378
+  RedisCDXSource: 2.001
+  PetaboxLoader3.resolve: 1348.86 (2)
+  load_resource: 862.653
+*/

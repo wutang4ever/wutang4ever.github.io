@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chart Converter</title>
+
+    <style type="text/css" media="all">
+        @import url("styles/wget-styles/system.base.css");
+        @import url("styles/wget-styles/system.menus.css");
+        @import url("styles/wget-styles/system.messages.css");
+        @import url("styles/wget-styles/system.theme.css");
+    </style>
+    <style type="text/css" media="all">
+        @import url("styles/wget-styles/jquery.ui.core.min.css");
+        @import url("styles/wget-styles/jquery.ui.theme.min.css");
+        @import url("styles/wget-styles/jquery.ui.datepicker.min.css");
+    </style>
+    <link type="text/css" rel="stylesheet" href="styles/wget-styles/jquery.timeentry.css" media="all"/>
+    <style type="text/css" media="all">
+        @import url("styles/wget-styles/date.css");
+        @import url("styles/wget-styles/datepicker.1.7.css");
+        @import url("styles/wget-styles/field.css");
+        @import url("styles/wget-styles/node.css");
+        @import url("styles/wget-styles/user.css");
+        @import url("styles/wget-styles/user-alert.css");
+        @import url("styles/wget-styles/views.css");
+    </style>
+    <style type="text/css" media="all">
+        @import url("styles/wget-styles/apachesolr_autocomplete.css");
+        @import url("styles/wget-styles/jquery.autocomplete.css");
+        @import url("styles/wget-styles/colorbox_default_style.css");
+        @import url("styles/wget-styles/ctools.css");
+        @import url("styles/wget-styles/printlinks.css");
+        @import url("styles/wget-styles/paywall.css");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("styles/wget-styles/common.css");
+        @import url("styles/wget-styles/application.css");
+        @import url("styles/wget-styles/header.css");
+        @import url("styles/wget-styles/headers.css");
+        @import url("styles/wget-styles/footer.css");
+        @import url("styles/wget-styles/social.css");
+        @import url("styles/wget-styles/genericons.css");
+        @import url("styles/wget-styles/teaser.css");
+        @import url("styles/wget-styles/gallery.css");
+        @import url("styles/wget-styles/most_popular.css");
+        @import url("styles/wget-styles/newsletter.css");
+        @import url("styles/wget-styles/pull_quote.css");
+        @import url("styles/wget-styles/rating.css");
+        @import url("styles/wget-styles/rating2.css");
+        @import url("styles/wget-styles/chart.css");
+        @import url("styles/wget-styles/charts.css");
+        @import url("styles/wget-styles/chart_summary.css");
+        @import url("styles/wget-styles/chart_legend.css");
+        @import url("styles/wget-styles/search.css");
+        @import url("styles/wget-styles/album.css");
+        @import url("styles/wget-styles/on_tour.css");
+        @import url("styles/wget-styles/forms.css");
+        @import url("styles/wget-styles/archive.css");
+        @import url("styles/wget-styles/linkedin.css");
+        @import url("styles/wget-styles/inline_promo.css");
+        @import url("styles/wget-styles/pushdown_promo.css");
+        @import url("styles/wget-styles/video.css");
+        @import url("styles/wget-styles/artist.css");
+        @import url("styles/wget-styles/article.css");
+        @import url("styles/wget-styles/tertiary.css");
+        @import url("styles/wget-styles/landing-page.css");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("styles/wget-styles/landing-page-biz.css");
+        @import url("styles/wget-styles/home-page.css");
+        @import url("styles/wget-styles/search_results.css");
+        @import url("styles/wget-styles/milestone.css");
+        @import url("styles/wget-styles/bbma.css");
+        @import url("styles/wget-styles/select2.css");
+        @import url("styles/wget-styles/select2_overrides.css");
+        @import url("styles/wget-styles/event-page.css");
+        @import url("styles/wget-styles/watch_embed.css");
+        @import url("styles/wget-styles/swiper.css");
+        @import url("styles/wget-styles/magnific-popup.css");
+    </style>
+    <style type="text/css" media="print">
+        @import url("styles/wget-styles/billboard-print.css");
+    </style>
+
+
+
+    <style>
+    </style>
+</head>
+<body>
+
+<div id="chartSelect" align="center">
+    <label>Enter URL:</label><br>
+    <input type="text" id="chartURL" style="width:400px;"/><br><br>
+    <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button>
+    <br><br>
+    <div id="userMessage"></div><br><br>
+    <!--    <input type="textarea" id="textAreaOutput" hidden="true" style="width: 400px; height: 1200px;"/>-->
+</div>
+
+<div id="hiddenChart" hidden="true"></div>
+<div id="hiddenChartPos" hidden="true"></div>
+
+<div id="textChartRoot" align="center">
+    <textarea id="textAreaOutput" hidden="true" style="width: 800px; height: 1200px;"></textarea>
+</div>
+
+<div id="bizChartRoot" hidden="true">
+
+    <div id="bb" class="bbbiz" data-behavior="bbbiz">
+        <div class="full_width">
+            <!--            <ul class="header_meta">-->
+            <!--                <li class="prev"><a href="/web/20190719160117/https://www.billboard.com/biz/charts/2019-07-13/the-billboard-hot-100">Last week</a></li>-->
+            <!--                <li><span class="chart_date">July 20, 2019</span></li>-->
+            <!--                <li class="next"><span>Next week</span></li>-->
+            <!--            </ul>-->
+            <!--            <div class="comment-print">-->
+            <!--                <a class="print" title="print" href="#print">Print</a>-->
+            <!--            </div>-->
+            <div class="page-title">
+                <h1 class="title" id="page-title">The Billboard Hot 100</h1>
+                <!--                <div class="social">-->
+                <!--                    <ul class="with_buttons">-->
+                <!--                        <li>-->
+                <!--                            <span class="ib in">2</span>-->
+                <!--                            <div><script type="IN/Share" data-url="http://www.billboard.com/biz/charts/the-billboard-hot-100"></script></div>-->
+                <!--                        </li>-->
+                <!--                        <li>-->
+                <!--                            <span class="ib fb">35</span>-->
+                <!--                            <div class="fb-like" data-href="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-send="false" data-layout="button_count" data-width="300" data-show-faces="true"></div> </li>-->
+                <!--                        <li>-->
+                <!--                            <span class="ib tw">20</span>-->
+                <!--                            <div class="tweetbutton-tweet tweetbutton"><a href="http://web.archive.org/web/20190719160117/https://twitter.com/share" data-size="medium" data-count="none" data-via="billboardbiz" data-related=":" data-text="" data-counturl="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-url="http://web.archive.org/web/20190719160117/http://www.billboard.com/biz/charts/the-billboard-hot-100" data-lang="en" class="twitter-share-button"></a></div> </li>-->
+                <!--                        <li>-->
+                <!--                            <span class="ib gplus">4</span>-->
+                <!--                            <div class="g-plusone-wrapper"><div class="g-plusone" data-href="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-size="medium" data-annotation="none"></div></div> </li>-->
+                <!--                    </ul>-->
+                <!--                    <div class="cleaner"></div>-->
+                <!--                </div>-->
+            </div>
+            <div class="header_intro">This week's most popular songs across all genres, ranked by radio airplay audience impressions as measured by Nielsen Music, sales data as compiled by Nielsen Music and streaming activity data provided by online music sources.</div>
+            <div class="tabs"></div>
+        </div>
+        <div id="main-wrapper"><div id="main" class="clearfix">
+            <div id="content" class="column with_sidebar_second" role="main"><div class="section">
+                <div class="region region-content">
+                    <div id="block-system-main" class="block block-system">
+                        <div class="content">
+                            <table class="charts_table" data-behavior="charts_table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Two Weeks</th>
+                                    <th scope="col">Last Week</th>
+                                    <th scope="col">This Week</th>
+                                    <th></th> <th scope="col">
+                                    RIAA certification
+                                </th>
+                                    <th scope="col">Peak Pos.</th>
+                                    <th scope="col">Weeks on Chart</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <!--                            <div class="paywall_banner">-->
+                            <!--                                <h2>Subscribe to billboard biz to continue reading this chart and thousands more.</h2>-->
+                            <!--                                <span>Billboard.biz subscribers get:</span>-->
+                            <!--                                <ul>-->
+                            <!--                                    <li>24/7 coverage of every genre and sector of the business with over 150 exclusive charts</li>-->
+                            <!--                                    <li>Bulletin: Breaking stories, chart info and analysis sent directly to your inbox every weekday</li>-->
+                            <!--                                    <li class="cleaner">Billboard Magazine iPad Edition: An enhanced version of the magazine with video, photo galleries and playable charts</li>-->
+                            <!--                                    <li>Archives: A rich history of Billboard.biz articles and exclusive charts</li>-->
+                            <!--                                </ul> <p class="cta">-->
+                            <!--                                <a href="/web/20190719160117/https://www.billboard.com/subscribe" target="_blank">Join now</a>-->
+                            <!--                                or-->
+                            <!--                                <a href="/web/20190719160117/https://www.billboard.com/login-popup/nojs" class="use-ajax">Log In</a> </p>-->
+                            <!--                                <a href="/web/20190719160117/https://www.billboard.com/biz" class="logo">billboard biz</a>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="paywall_banner_back">-->
+                            <!--                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+
+        </div>
+
+
+        </div>
+
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/xlsx.full.min.js"></script>
+        <script>
+
+            function parseChartFromPrintView(htmlChart) {
+                // setTextArea(htmlChart);
+                // return;
+                var title = $('.print-chart__title').text();
+                var date = $('.print-chart__week').text();
+                var criteria = $('.print-chart__criteria').text();
+                var description = $('.print-chart__description').text();
+                // var printView = htmlChart.slice(htmlChart.indexOf('<table>'), htmlChart.indexOf('</table>') + 8);
+                // $('#hiddenChart').html(printView);
+                var positions = [];
+                // alert($('tbody > tr').length);
+                $('#hiddenChart').find('tbody > tr').each(function() {
+                    // if (positions.length > 2) {
+                    //     return;
+                    // }
+                    $('#hiddenChartPos').html(this.innerHTML);
+                    var w2 = $(this).find('td:nth-child(1)').text();
+                    var w1 = $(this).find('td:nth-child(2)').text();
+                    var pos = $(this).find('td:nth-child(3)').text();
+                    var gainer = $(this).find('.item-details__gainer').text();
+                    var title = $(this).find('.item-details__title').text();
+                    var artist = $(this).find('.item-details__artist').text();
+                    var credits = $(this).find('.item-details__credits').text();
+                    var label = $(this).find('td:nth-child(4) div:last-child').text();
+                    var cert = $(this).find('td:nth-child(5)').text();
+                    var weeksAt1 = $(this).find('td:nth-child(6)').text();
+                    var weeks = $(this).find('td:nth-child(7)').text();
+                    var peak = weeks === '1' ? positions.length + 1 + '' : '';
+                    var p = {
+                        w2: w2,
+                        w1: w1,
+                        pos: pos,
+                        cert: cert,
+                        weeks: weeks,
+                        gainer: gainer,
+                        title: title,
+                        artist: artist,
+                        credits: credits,
+                        label: label,
+                        peak: peak
+                    };
+                    positions.push(p);
+                });
+
+                return {
+                    title: title,
+                    date: date,
+                    criteria: criteria,
+                    description: description,
+                    positions: positions
+                };
+            }
+
+            function detectRenderLayout(htmlChart) {
+                if (htmlChart.includes('<span class="chart-list-item__ministats-cell-heading">Peak</span>')) {
+                    return 'BIZ';
+                } else {
+                    return 'MAIN';
+                }
+            }
+
+            function parseAdditionalItemsFromRenderViewMain(chart, htmlChart) {
+                var pos = $('#hiddenChart').find('.chart-list-item');
+                if (pos.length !== chart.positions.length) {
+                    setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
+                }
+                // note the strange class name - could be fixed later
+                var l = $('#hiddenChart').find('.chart-list-item,.chart-list-item__weeks-at-one');
+                var extra = 1;
+                var index = -1;
+                l.each(function() {
+                    if ($(this).hasClass('chart-list-item')) {
+                        extra = 0;
+                        index++;
+                    } else if ($(this).hasClass('chart-list-item__weeks-at-one')) {
+                        if (extra === 1) {
+                            // setUserMessage("Illegal state");
+                        }
+                        if (extra === 0) {
+                            chart.positions[index].peak = $(this).text();
+                        }
+                        extra = 1;
+                    }
+                });
+            }
+
+            function parseAdditionalItemsFromRenderViewBiz(chart, htmlChart) {
+                var index = 0;
+                var l = $('#hiddenChart').find('.chart-list-item__ministats-cell-heading').filter(function(e) {
+                    return $(this).text()==='Peak';
+                });
+                if (l.length !== chart.positions.length) {
+                    setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
+                }
+                l.each(function() {
+                    chart.positions[index++].peak = $(this).parent().clone().children().remove().end().text().trim();
+                });
+            }
+
+            function parseAdditionalItemsFromRenderViewCommon(chart, htmlChart) {
+            }
+
+            function parseChart(htmlChart) {
+                var mainView = htmlChart.slice(htmlChart.indexOf('<main'), htmlChart.indexOf('</main>') + 7);
+                $('#hiddenChart').html(mainView);
+                var chart = parseChartFromPrintView(htmlChart);
+                parseAdditionalItemsFromRenderViewCommon(chart, htmlChart);
+                if (detectRenderLayout(htmlChart) === 'BIZ') {
+                    parseAdditionalItemsFromRenderViewBiz(chart, htmlChart);
+                } else {
+                    parseAdditionalItemsFromRenderViewMain(chart, htmlChart);
+                }
+                return chart;
+            }
+
+            function setHtml(id, text) {
+                $('#'+id).html(text);
+            }
+
+            function setTextArea(text) {
+                $('#textAreaOutput').val(text);
+                $('#textAreaOutput').show();
+            }
+
+            function setUserMessage(text) {
+                setHtml('userMessage', text);
+            }
+
+            function validateResponse(data) {
+                return data.includes('<table>') &&
+                    (data.includes('<span class="chart-list-item__ministats-cell-heading">Peak</span>') ||
+                        data.includes('<div class="chart-list-item__weeks-on-chart">'));
+            }
+
+            function isNew(p) {
+                return p.w1 === '--' && p.w2 === '--';
+            }
+
+            function getChartText(chart) {
+                var lines = [];
+                lines.push(chart.title);
+                lines.push(chart.date);
+                lines.push('TW LW 2W WOC Title Artist ( Peak ) Imprint | label');
+                // alert(chart.positions.length);
+                chart.positions.forEach(function(p) {
+                    var cols = [];
+                    cols.push(p.pos);
+                    if (isNew(p)) {
+                        if (p.weeks === '1') {
+                            cols.push('NEW');
+                        } else {
+                            cols.push('Re-Entry');
+                        }
+                    } else {
+                        cols.push(p.w1);
+                        cols.push(p.w2);
+                    }
+                    cols.push(p.weeks);
+                    cols.push(p.title);
+                    cols.push('-');
+                    cols.push(p.artist);
+                    cols.push('(');
+                    cols.push(p.peak);
+                    cols.push(')');
+                    cols.push(p.label);
+                    lines.push(cols.join(' '));
+                });
+                return lines.join('\n');
+            }
+
+            function makeRow(position) {
+                var tr = $('<tr>');
+                if (isNew(position) && position.weeks === '1') {
+                    tr.attr('class', 'highlight');
+                }
+                var w2 = $('<td>').attr('rowspan', '2').append($('<span>').text(position.w2));
+                var w1 = $('<td>').attr('rowspan', '2').append($('<span>').text(position.w1));
+                var pos = $('<td>').attr('rowspan', '2').attr('class', 'this_week').append($('<span>').text(position.pos));
+                var details = $('<td>').attr('rowspan', '2').attr('class', 'details')
+                    .html('<b>'+position.title+'</b><br/><i>'+position.artist+'</i><br/>'+position.credits+'<br/>'+position.label)
+                ;
+                var cert = $('<td>').attr('class', 'cert');
+                var peak = $('<td>').attr('rowspan', '2').text(position.peak);
+                var weeks = $('<td>').attr('rowspan', '2').text(position.weeks);
+                if (position.weeks === '1') {
+                    tr.append('<td rowspan="2" colspan="2" class="new"><span>New</span></td>');
+                } else if (position.w1 === '--') {
+                    tr.append('<td rowspan="2" colspan="2" class="new"><span>Re-Entry</span></td>');
+                } else {
+                    tr.append(w2).append(w1);
+                }
+                tr.append(pos).append(details).append(cert).append(peak).append(weeks);
+                return tr;
+            }
+
+            function setBizChart(chart) {
+                $('#page-title').text(chart.title);
+                $('.header_intro').text(chart.description);
+
+                var chartsTable = $('.charts_table > tbody');
+                chartsTable.empty();
+                chart.positions.forEach(function(p) {
+                    chartsTable.append(makeRow(p));
+                    if (isNew(p) && p.weeks === '1') {
+                        chartsTable.append('<tr class="highlight">\n' +
+                            '                                    <td class="play"></td>\n' +
+                            '                                </tr>');
+                    } else {
+                        chartsTable.append('<tr>\n' +
+                            '                                    <td class="play"></td>\n' +
+                            '                                </tr>');
+                    }
+                });
+
+                $('#bizChartRoot').show();
+            }
+
+            function download(chart) {
+                var wb = XLSX.utils.book_new();
+                wb.SheetNames.push("Chart");
+                var ws_data = [];
+                ws_data.push(['TW', 'LW', '2W', 'WOC', 'TITLE', 'ARTIST', 'PEAK', 'LABEL']);
+                chart.positions.forEach(function(p) {
+                    ws_data.push([p.pos, p.w1, p.w2, p.weeks, p.title, p.artist, p.peak, p.label])
+                });
+                wb.Sheets["Chart"] = XLSX.utils.aoa_to_sheet(ws_data);
+                XLSX.writeFile(wb, chart.title+' '+chart.date+`.xlsx`);
+            }
+
+            function callback(data, format) {
+                if (!validateResponse(data)) {
+                    setUserMessage('No chart found in response from server');
+                } else {
+                    var chart = parseChart(data);
+                    if (format === 'TEXT') {
+                        var chartText = getChartText(chart);
+                        setTextArea(chartText);
+                    } else if (format === 'BIZ') {
+                        setBizChart(chart);
+                    } else if (format === 'XLSX') {
+                        download(chart);
+                    }
+                }
+            }
+
+            function getChartHtml(chartUrl, callback, format) {
+                setUserMessage('');
+                $('#textAreaOutput').hide();
+                $('#bizChartRoot').hide();
+                $.ajax({
+                    url:"https://cors-anywhere.herokuapp.com/"+chartUrl,
+                    // headers: {
+                    // 	'Origin': 'https://billboard.com'
+                    // },
+                    type:'GET',
+                    success: function(data){
+                        callback(data, format);
+                    },
+                    error: function(data) {
+                        setUserMessage('Server error');
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                $("#getChart").click(function () {
+                    var chartUrl = $("#chartURL").val();
+                    if (chartUrl.includes("billboard.com/charts")) {
+                        getChartHtml(chartUrl, callback, 'TEXT');
+                    } else {
+                        setUserMessage('Incorrect URL');
+                    }
+                });
+                $("#getBizChart").click(function () {
+                    var chartUrl = $("#chartURL").val();
+                    if (chartUrl.includes("billboard.com/charts")) {
+                        getChartHtml(chartUrl, callback, 'BIZ');
+                    } else {
+                        setUserMessage('Incorrect URL');
+                    }
+                });
+                $("#getExcelFile").click(function () {
+                    var chartUrl = $("#chartURL").val();
+                    if (chartUrl.includes("billboard.com/charts")) {
+                        getChartHtml(chartUrl, callback, 'XLSX');
+                    } else {
+                        setUserMessage('Incorrect URL');
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

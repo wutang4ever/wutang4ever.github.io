@@ -1,0 +1,73 @@
+.module_on_tour {
+	border: 4px solid #ff6567;
+	text-align: center;
+	padding-top: 0;
+	color: #3cb0f4;
+	padding: 32px 30px 38px;
+	margin: 43px 0;
+}
+	.listing.pinteresterize .module_on_tour {
+		width: 242px;
+		background: #fff;
+		position: absolute;
+		margin: 0 0 30px 30px;
+	}
+	.module_on_tour h2 {
+		text-align: center;
+		margin: 0 0 17px;
+		color: #ff6567;
+	}
+	.module_on_tour .listing, 
+	.listing.pinteresterize .module_on_tour .listing {
+		margin: 0;
+		padding: 0;
+	}
+		.listing.pinteresterize .module_on_tour .listing .tour_date {
+			float: none;
+			display: block;
+			margin: 0 0 14px;
+		}
+  .module_on_tour .listing + p {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 7px 0 0;
+  }  
+  .module_on_tour .listing h1 {
+    margin: 0;
+  }  
+    .module_on_tour .listing h1 a {
+      font: 13px/20px Arial, sans-serif;
+    }
+    .module_on_tour .listing > article.no_image {
+      height: 73px;
+    }
+      .module_on_tour .listing > article.no_image header {
+        position: relative;
+      }
+    .module_on_tour .listing > article.tour_date .category {
+      color: #B2B2B2;
+      text-transform: uppercase;
+      top: 7px;
+    }
+
+/*
+     FILE ARCHIVED ON 16:44:36 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:52 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 725.735 (3)
+  esindex: 0.01
+  captures_list: 753.158
+  CDXLines.iter: 20.778 (3)
+  PetaboxLoader3.datanode: 177.726 (4)
+  exclusion.robots: 0.409
+  exclusion.robots.policy: 0.391
+  RedisCDXSource: 0.869
+  PetaboxLoader3.resolve: 633.247 (3)
+  load_resource: 92.573
+*/

@@ -1,0 +1,88 @@
+.review-rating {
+  border: none;
+  float: left;
+}
+
+.review-rating > input { display: none; }
+.review-rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f006";
+}
+
+.review-rating > .half:before {
+  content: "\f123";
+  position: absolute;
+  display: none;
+}
+
+.review-rating > label {
+  color: #222;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+/*.review-rating > input:checked + label  { color: #222;  } /* show gold star when clicked */
+.review-rating > input:checked ~ label:before  { content: "\f005"; }
+.review-rating > input:checked + label.half:before  { content: "\f123"; display: inline-block; }
+
+
+/*!
+ *  Font Awesome 3.2.1
+ *  the iconic font designed for Bootstrap
+ *  ------------------------------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation can be
+ *  found at http://fontawesome.io.  Stay up to date on Twitter at
+ *  http://twitter.com/fontawesome.
+ *
+ *  License
+ *  ------------------------------------------------------------------------------
+ *  - The Font Awesome font is licensed under SIL OFL 1.1 -
+ *    http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - Font Awesome documentation licensed under CC BY 3.0 -
+ *    http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fontawesome.io"
+ *
+ *  Author - Dave Gandy
+ *  ------------------------------------------------------------------------------
+ *  Email: dave@fontawesome.io
+ *  Twitter: http://twitter.com/byscuits
+ *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/fonts/fontawesome-webfont.eot?v=3.2.1');
+  src: url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/fonts/fontawesome-webfont.eot#iefix&v=3.2.1') format('embedded-opentype'), url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('/web/20190719164423im_/https://www.billboard.com/sites/all/themes/bb/fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+     FILE ARCHIVED ON 16:44:23 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:43 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 332.977 (3)
+  esindex: 0.006
+  captures_list: 349.713
+  CDXLines.iter: 12.19 (3)
+  PetaboxLoader3.datanode: 135.843 (4)
+  exclusion.robots: 0.346
+  exclusion.robots.policy: 0.334
+  RedisCDXSource: 0.689
+  PetaboxLoader3.resolve: 371.288
+  load_resource: 407.784
+*/

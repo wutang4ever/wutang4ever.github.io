@@ -1,0 +1,827 @@
+#bb #header
+{
+    width: auto;
+    background: #fff;
+    color: #CCCCCC;
+    margin: 0;
+    padding: 10px 0 30px;
+    height: auto;
+    position: static;
+}
+#bb.bbcom #header {
+    width: auto;
+    background: #fff;
+    color: #CCCCCC;
+    margin: 0;
+    padding: 32px 0 0;
+    height: auto;
+    position: static;
+}
+#bb #header > .section
+{
+    width: 990px;
+    margin: 0 auto;
+    height: 135px;
+    position: relative;
+}
+#bb.bbcom #header > .section
+{
+    width: 990px;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+  #bb > nav#navigation {
+    margin: 0 auto 30px;
+    width: 990px;
+    clear: both;
+    background: #fff;
+  }
+  #bb.bbcom > nav#navigation {
+    margin-bottom: 10px;
+  }  
+  .node-type-photo-gallery #bb.bbbiz > nav#navigation {
+    margin: 0;
+  }
+  #bb > header .region-header > .block-imageblock:first-child
+  {
+    border-right: 1px solid #D1D1D1;
+    padding: 0 10px 0 0;
+    position: absolute;
+  }
+  #bb > header #block-twitter-follow-button-twitter-follow-button
+  {
+    position: absolute;
+    left: 126px;
+    top: 0;
+  }
+  #bb > header #block-fblikebutton-fblikebutton-static-block
+  {
+    position: absolute;
+    left: 196px;
+    top: 0;
+    height: 25px;
+  }
+  #bb > header #block-fblikebutton-fblikebutton-static-block > .content {
+    height: 25px;
+  }
+  #bb > header #block-search-form
+  {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+  }
+  #bb > header .region-user-menu
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #bb > header .region-user-menu > div
+  {
+    font: 12px/20px Arial,sans-serif;
+    float: left;
+    margin: 0;
+  }
+      #bb > header .subscribe-link {
+        position: relative;
+      }
+      #bb > header .subscribe-link .subscribe {
+        color: #1A1A1A;
+        width: 150px;
+        height: 30px;
+        display: block;
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/subscribe.png") no-repeat scroll 0 0 transparent;
+      }
+      #bb.bbbiz > header .subscribe-link .subscribe {
+        background-position: 0 -30px;
+      }
+        #bb > header .subscribe-link .rollover {
+          display: none;
+          background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/rollover_350x170_com.jpg") no-repeat scroll 0 0 transparent;
+          width: 350px;
+          height: 170px;
+          position: absolute;
+          top: 35px;
+          right: 0;
+          z-index: 1;
+        }
+        #bb.bbbiz > header .subscribe-link .rollover {
+          background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/rollover_350x170_biz.jpg") no-repeat scroll 0 0 transparent;
+        }
+        #bb > header .subscribe-link:hover .rollover {
+          display: block;
+        }
+        #bb > header .subscribe-link .separator {
+          display: none;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          width: 150px;
+          height: 5px;
+        }
+        #bb > header .subscribe-link:hover .separator {
+          display: block;
+        }
+      #bb > header #block-fboauth-login {
+        height: 21px;
+        border-left: 1px solid #CCCCCC;
+        padding: 0 0 0 10px;
+        margin: 0 0 0 10px;
+      }
+      #bb > header #block-bb-user-navigation {
+        border-left: 1px solid #D1D1D1;
+        padding: 0 0 0 5px;
+        margin: 0 0 0 10px;
+        z-index: 999;
+        height: 21px;
+      }
+
+      /*hide login-link for bbcom */
+      body.not-logged-in #bb > header #block-bb-user-navigation {
+        display: none;
+      }
+      body.not-logged-in #bb.bbbiz > header #block-bb-user-navigation {
+        display: block;
+      }
+
+      #bb.bbbiz > header #block-bb-user-navigation {
+        border-left: 1px solid #2E2E2E;
+      }
+      .logged-in #bb > header #block-bb-user-navigation {
+        border-left-width: 0;
+      }
+      #bb > header .region-user-menu .user_options {
+        position: relative;
+        overflow: visible;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+      #bb > header .region-user-menu .user_options > span {
+        display: block;
+        border: 1px solid #fff;
+        border-bottom: 0 none;
+        padding: 5px 8px 5px 5px;
+        line-height: 21px;
+        height: 21px;
+        margin: -6px 8px 0 0;
+        color: #1a1a1a;
+        position: relative;
+        cursor: pointer;
+        z-index: 99;
+      }
+      #bb.bbbiz > header .region-user-menu .user_options > span {
+        border: 1px solid #000;
+        border-bottom: 0 none;
+        background: #000;
+        color: #b2b2b2;
+      }
+        #bb > header .region-user-menu .user_options > span:after {
+          content: "";
+          display: inline-block;
+          background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -622px -2300px transparent;
+          width: 7px;
+          height: 4px;
+          vertical-align: middle;
+          margin: 0 0 0 4px;
+        }
+        #bb.bbbiz > header .region-user-menu .user_options > span:after {
+          background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat -622px -3400px;
+        }
+        #bb > header .region-user-menu .user_options:hover > span {
+          border-color: #d9d9d9;
+          background: #fff;
+          color: #1a1a1a;
+        }
+          #bb > header .region-user-menu .user_options:hover > span:after {
+            background-position: -622px -2350px;
+            margin-top: -2px;
+          }
+          #bb.bbbiz > header .region-user-menu .user_options:hover > span:after {
+            background-position: -622px -3450px;
+            margin-top: -2px;
+          }
+          #bb > header .region-user-menu .user_options:hover > span:before {
+            content: "";
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            height: 1px;
+            background: #fff;
+          }
+        #bb > header .region-user-menu .user_options span img {
+          display: inline-block;
+          vertical-align: middle;
+          margin: -2px 6px 0 0;
+        }
+      #bb > header .region-user-menu .user_options ul {
+        position: absolute;
+        left: 0px;
+        top: 25px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        display: none;
+        z-index: 98;
+      }
+        #bb > header .region-user-menu .user_options:hover ul {
+          display: block;
+        }
+        #bb > header .region-user-menu .user_options li {
+          border-top: 1px solid #f5f5f5;
+        }
+          #bb > header .region-user-menu .user_options li:first-child {
+            border-top: 0 none;
+          }
+          #bb > header .region-user-menu .user_options li a {
+            display: block;
+            padding: 10px 10px;
+            white-space: nowrap;
+            color: #000;
+          }
+          #bb > header .region-user-menu .user_options li a.fbc_switch span {
+            display: inline-block;
+            margin: 0 0 0 5px;
+            color: #b2b2b2;
+          }
+            #bb > header .region-user-menu .user_options li a.fbc_switch span.active {
+              color: #1EB0E8;
+            }
+            #bb.bbbiz > header .region-user-menu .user_options li a.fbc_switch span.active {
+              color: #fa3d33;
+            }
+    #bb > header .region-user-menu .user_options .no-connect
+    {
+      padding: 0 0 0 5px;
+    }
+    #bb > header .region-user-menu .user_options .no-connect .progress-disabled {
+      opacity: 0.3;
+    }
+    #bb > header .region-user-menu .user_options .no-connect .ajax-progress {
+      display: none;
+    }
+    #bb > header .region-user-menu .user_options .no-connect.logout
+    {
+        padding: 0 0 0 10px;
+        border-left: 1px solid #D1D1D1;
+        margin: 0 0 0 10px;
+    }
+    #bb.bbbiz > header .region-user-menu .user_options .no-connect.logout
+    {
+        border-left: 1px solid #2E2E2E;
+    }
+    #bb > header .region-user-menu .user_options .no-connect.linkedin-connect
+    {
+        padding: 0 10px 0 5px;
+        border-right: 1px solid #2E2E2E;
+        margin: 0 5px 0 0;
+    }
+    #bb > header .region-user-menu .user_options .no-connect.linkedin-connect a
+    {
+        padding: 0 0 0 20px;
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat scroll -12px -3500px transparent;
+    }
+    .facebook-action-connect
+    {
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/temp_icons/fb_icon.png") no-repeat scroll 0 50% transparent;
+        display: block;
+        padding-left: 20px;
+        color: #1A1A1A;
+    }
+    .facebook-action-connect img { display: none; }
+    #bb > header .region-user-menu .user_options > div a
+    {
+        color: #1A1A1A;
+    }
+    #bb.bbbiz > header .region-user-menu .user_options > div a
+    {
+        color: #B2B2B2;
+    }
+    #bb > header .region-user-menu .slide_switch {
+      float: right;
+      margin: 0;
+      height: 21px;
+      position: relative;
+      color: #1a1a1a;
+    }
+    #bb.bbbiz > header .region-user-menu .slide_switch {
+      color: #b2b2b2;
+    }
+      #bb > header .region-user-menu .slide_switch a {
+        color: #737373;
+        display: inline-block;
+        padding: 0 0 0 4px;
+      }
+        #bb > header .region-user-menu .slide_switch a ~ a {
+          width: 15px;
+          overflow: visible;
+          padding: 0;
+        }
+        #bb > header .region-user-menu .slide_switch a:hover,
+        #bb > header .region-user-menu .slide_switch a.active,
+        #bb > header .region-user-menu .slide_switch a.active:hover {
+          color: #1a1a1a;
+          text-decoration: none;
+        }
+        #bb.bbbiz > header .region-user-menu .slide_switch a:hover,
+        #bb.bbbiz > header .region-user-menu .slide_switch a.active,
+        #bb.bbbiz > header .region-user-menu .slide_switch a.active:hover {
+          color: #b2b2b2;
+        }
+      #bb > header .region-user-menu .slide_switch input[type="checkbox"] {
+        display: inline-block;
+        margin: 0 2px 0 2px;
+        width: 30px;
+        height: 13px;
+        position: relative;
+        z-index: 2;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0;
+        cursor: pointer;
+      }
+      #bb > header .region-user-menu .slide_switch:before {
+        content: "";
+        position: absolute;
+        right: 21px;
+        top: 7px;
+        background: #7c7c7c;
+        width: 30px;
+        height: 7px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        pointer-events: none;
+      }
+      #bb > header .region-user-menu .slide_switch:after {
+        content: "";
+        position: absolute;
+        right: 37px;
+        top: 4px;
+        background: #00c545;
+        width: 9px;
+        height: 9px;
+        border: 2px solid #000000;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        transition: all .2s linear;
+      }
+      #bb.bbbiz > header .region-user-menu .slide_switch:after {
+        border: 2px solid #fff;
+      }
+        #bb > header .region-user-menu .slide_switch.sharing_off:after {
+          right: 21px;
+          background: #9d9fa2;
+        }
+
+#bb > header #logo {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -148px;
+  width: 299px;
+  height: 62px;
+  bottom: 0;
+}
+#bb.bbcom > header #logo {
+  width: 299px;
+  height: 62px;
+  position: static;
+  margin: 0;
+}
+  #bb > header #logo a {
+  display: block;
+  font: 0/0 a;
+  color: transparent;
+  width: 300px;
+  height: 75px;
+  background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 0;
+  }
+
+/* Billboard COM, hide print logo for screen */
+#bb > header .logo {
+  display: none;
+}
+/* Billboard BIZ, hide print logo for screen */
+#bb.bbbiz > header .logo {
+  display: none;
+}
+
+
+#bb > header .primary {
+}
+  #bb > header #block-menu-menu-secondary-menu {
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+  }
+  #bb > header ul.menu {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
+    /*
+    #bb > header ul.menu li {
+      display: inline;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+      #bb > header ul.menu a {
+        display: block;
+        padding: 6px 8px 5px;
+        border: 2px solid #fff;
+        color: #1a1a1a;
+        margin: 0 -2px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+        #bb > header ul.menu a:hover,
+        #bb > header ul.menu li.current a {
+          border-color: #1a1a1a;
+          text-decoration: none;
+          position: relative;
+          z-index: 1;
+        }
+    */
+        #bb > header form,
+        #bb > header fieldset {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+          #bb > header legend,
+          #bb > header label {
+            display: none;
+          }
+          #bb.bbcom > #navigation #search-block-form input.form-text,
+          #bb > header #search-block-form input.form-text {
+            color: #1a1a1a;
+            height: 17px;
+            padding: 6px 37px 5px 9px;
+            font: 14px/20px Helvetica, Arial, sans-serif;
+            border: 2px solid #fff;
+            margin: 0;
+          }
+          #bb > header #search-block-form input.form-text {
+            display: inline;            
+            width: 196px;
+            float: left;
+          }          
+          #bb.bbcom > #navigation #search-block-form input.form-text {
+            float: none;
+          }
+          #bb.bbcom > #navigation .section {
+            display: table;
+            width: 100%;
+            line-height: 0;
+            border-spacing: inherit;
+          }
+          #bb.bbcom > #navigation .section .region-navigation {
+            display: table-row;
+            width: 100%;
+          }
+          #bb.bbcom > #navigation .region-navigation .block.block-search,                    
+          #bb.bbcom > #navigation #block-system-main-menu {
+            display: table-cell;  
+            vertical-align: top;
+          }
+          #bb.bbcom > #navigation .region-navigation .block.block-search .content {
+            border: 1px solid #D9D9D9;
+            position: relative;
+          }          
+          #bb.bbcom > #navigation div.content > ul {
+            width: 100%;             
+            display: table;            
+          }
+          #bb.bbcom > #navigation #search-block-form .form-item {
+            display: block;
+          }
+          #bb.bbcom > #navigation #search-block-form input.form-text {
+            color: #3cb1f4;
+            height: 48px;
+            font: 15px/20px Helvetica, Arial, sans-serif;
+            vertical-align: inherit;
+            padding-right: 0;
+            width: 100%;
+            border-right: 37px solid transparent;
+            box-sizing: border-box;
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+          }       
+            #bb > header #search-block-form input.form-text:hover,
+            #bb > header #search-block-form input.form-text:focus {
+              border-color: #1cace2;
+            }
+            #bb > header #search-block-form input.form-text::-webkit-input-placeholder {
+              color: #1cace2;
+            }
+            #bb > header #search-block-form input.form-text:-moz-placeholder {
+              color: #1cace2;
+            }
+            #bb > header #search-block-form input.form-text:-ms-input-placeholder {
+              color: #1cace2;              
+            }
+          #bb.bbcom #navigation #search-block-form input.form-text:focus,
+          #bb.bbcom #navigation #search-block-form input.form-text:hover {
+            color: #3cb1f4;
+            border-color: #1cace2;
+          }
+          #bb.bbcom #navigation #search-block-form input.form-text::-webkit-input-placeholder {
+            color: #3cb1f4;
+            opacity: 1;
+          }
+          #bb.bbcom #navigation #search-block-form input.form-text:-moz-placeholder {
+            color: #3cb1f4;
+            opacity: 1;
+          }
+          #bb.bbcom #navigation #search-block-form input.form-text::-moz-placeholder {
+            color: #3cb1f4;
+            opacity: 1;
+          }
+          #bb.bbcom #navigation #search-block-form input.form-text:-ms-input-placeholder {
+            color: #3cb1f4;
+            opacity: 1;
+          }    
+          #bb.bbcom > #navigation #search-block-form input.form-submit,
+          #bb > header #search-block-form input.form-submit {
+            padding: 0 6px;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            height: 28px;
+            width: 35px;
+            background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -140px -93px;
+            cursor: pointer;
+            border: 0 none;
+            font: 0/0 a;
+            color: transparent;
+          }       
+          #bb.bbcom > #navigation #search-block-form input.form-submit {
+            background: #fff url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -140px -85px;
+            z-index: 10;            
+            height: 44px;
+          }
+            #bb.bbcom > #navigation #search-block-form input.form-text:focus + input.form-submit,
+            #bb > header #search-block-form input.form-text:focus + input.form-submit {
+              background-color: #1cace2;
+              background-position: 10px -92px;
+            }
+            #bb.bbcom > #navigation #search-block-form input.form-text:focus + input.form-submit:hover,
+            #bb > header #search-block-form input.form-text:focus + input.form-submit:hover {
+              background-color: #1b9dcd;
+            }
+            html.js input.form-autocomplete {
+              background: none;
+            }
+
+#bb.bbcom > #navigation #search-block-form input.form-submit {
+  top: 2px;
+}  
+            
+#bb > #navigation .content ul {
+  height: 60px;
+  margin: 0;
+}
+#bb.bbcom > #navigation .content ul {
+  height: 50px;
+}
+  #bb > #navigation div.content > ul > li {
+    display: inline;
+    float: left;    
+    margin: 0;
+    padding: 0;
+    margin: 0 -1px 0 0;
+    border: 1px solid #D9D9D9;
+    padding: 1px;    
+    position: relative;
+  }
+  #bb.bbcom > #navigation div.content > ul > li {  
+    display: table-cell;
+    float: none;
+    border-right: 1px solid #fff;
+  }
+  
+  #bb > #navigation div.content > ul > li.expanded div {
+    position: relative;
+  }
+  
+    #bb > #navigation .content a {
+        color: #1A1A1A;
+        display: block;
+        font-size: 22px;
+        padding: 18px 22px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    #bb.bbcom > #navigation .content a {
+        color: #000;
+        display: block;
+        font-size: 20px;
+        padding: 13px 20px;
+        text-decoration: none;
+        white-space: nowrap;
+        letter-spacing: -0.5px;
+    }
+      #bb > #navigation .content a.promoted-red {
+        color: #FC666A;
+      }
+    #bb > #navigation div.content > ul > li:hover { 
+        border: 2px solid #1A1A1A;
+        /*padding: 18px 26px;*/
+        padding: 0px;
+        z-index: 1002;
+    }
+    /*#bb.bbcom > #navigation div.content > ul > li:hover a {
+        padding: 13px 19px 13px 20px;    
+    }
+    #bb.bbcom > #navigation .content li.expanded:hover div > a {
+        padding: 13px 24px 13px 20px;
+    }*/
+      #bb > #navigation .content a.open_drawer {
+        background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 100% -2272px;
+        padding-right: 45px;
+      }
+        #bb > #navigation .content li.open a.open_drawer {
+          background-position: 100% -2327px;
+        }
+    #bb > #navigation .content li ul {
+        background: none repeat scroll 0 0 #FFFFFF;
+        display: none;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        z-index: 1000;
+        margin-left: -2px;
+        margin-top: 2px;
+    }
+    #bb > #navigation .content li.expanded > a {
+       background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 101.5% -2272px transparent;
+       padding-right: 41px;
+    }
+    #bb.bbcom > #navigation .content li.expanded div > a {
+       background: url("/web/20190719164433im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 100.5% -2278px transparent;
+       padding-right: 25px;
+    }
+    #bb.bbbiz > #navigation .content li.expanded > a {
+      background: none;
+    }
+    #bb > #navigation .content li.expanded:hover > a, #bb > #navigation .content li.expanded > a:hover {
+        background-position: 101.25% -2322px;
+        padding-right: 41px;
+    }
+    #bb.bbcom > #navigation .content li.expanded:hover > a {
+        background-position: 100.5% -2278px;
+        padding-right: 25px;
+    }
+    #bb > #navigation .content li.expanded:hover ul {
+        display: block;
+    }
+    #bb > #navigation .content li.expanded ul li {
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin: 0 0 -1px 0;
+        border: 1px solid #D9D9D9;
+    }
+    #bb > #navigation .content li.expanded ul li a {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-top: 0 none;
+        font-size: 17px;
+        margin: 0;
+        white-space: nowrap;
+    }
+    #bb > #navigation .content li.expanded ul li a:hover {
+        text-decoration: underline;
+    }
+    #bb > #navigation .content li.expanded ul li.first {
+        border-top: 0 none;
+    }
+    #bb > #navigation .content li.expanded ul a.promoted {
+        color: #00ABE4;
+    }
+
+    #bb #breadcrumb
+    {
+        text-align: center;
+        color: #FC666A;
+    }
+    #bb #breadcrumb span,
+    #bb #breadcrumb a
+    {
+        text-transform: uppercase;
+        color: #FC666A;
+        margin: 0 5px;
+    }
+
+        #bb #header-banner-wrapper
+    {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    #bb.bbcom #header .region {
+      float: left;
+    }
+    
+    #bb.bbcom #header .region-header {
+      width: 510px;
+      margin-left: 180px;
+    }
+    #bb.bbcom #header .region-header .block {
+      float: right;
+    }
+    
+    #bb.bbcom #header .region-header #block-billboard-blocks-top-cover-art-image {
+      width: 300px;
+    }
+    
+    #bb.bbcom #header .region-header #block-billboard-blocks-top-cover-art-image.block {
+      float: none;
+    }
+    
+    .top-cover-image .top-cover-image,
+    .top-cover-image .top-links {
+      float: left;
+    }
+    
+    .top-cover-image .top-links {
+      width: 155px;
+      margin-right: 10px;
+      text-align: right;
+      margin-top: 30px;
+    }
+    
+    .top-cover-image .top-cover-image {
+      margin-right: 20px;
+      width: 100px;
+      position: relative;
+    }
+    
+    .top-cover-image .top-cover-image a {
+      position: absolute;
+      width: 133px;
+      height: 93px;
+      overflow: hidden;
+      left: -8px;
+      top: -12px;
+    }
+    
+    .top-cover-image .top-links a {
+      font-size: 15px;
+      line-height: 18px;      
+      color: #000;      
+    }
+    
+    .top-cover-image .top-links a:hover {
+      color: #3cb1f4;
+      text-decoration: none;
+    }
+    
+    #block-billboard-blocks-bb-followus .item-list {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+    
+    .follow-us {
+      overflow: hidden;
+    }
+    
+    .item-list ul.follow-us li {
+      float: left;
+      margin: 50px 0 0 15px;
+    }
+
+/*
+     FILE ARCHIVED ON 16:44:33 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:21 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 84.197 (3)
+  esindex: 0.007
+  captures_list: 101.322
+  CDXLines.iter: 11.152 (3)
+  PetaboxLoader3.datanode: 86.592 (4)
+  exclusion.robots: 0.362
+  exclusion.robots.policy: 0.349
+  RedisCDXSource: 2.053
+  PetaboxLoader3.resolve: 43.493
+  load_resource: 49.417
+*/

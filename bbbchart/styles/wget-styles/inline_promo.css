@@ -1,0 +1,136 @@
+.module_inline_promo {
+  border-top: 2px solid #f33747;
+  border-bottom: 2px solid #f33747;
+}
+	/*  Counter-balance margin when the promo is in articles */
+	.sibling-nav + .module_inline_promo {
+    margin-top: -46px; /*  45px + 1px border */
+    margin-bottom: 45px;
+	}
+	.module_inline_promo .listing > article.with_excerpt {
+    padding: 30px 0 0 160px;
+    width: auto;
+    margin: 0 0 30px;    
+    position: relative;
+    min-height: 105px;
+	}
+		.module_inline_promo .listing > article.with_excerpt img {
+      position: absolute;
+      top: 30px;
+      left: 0;
+		}
+		.module_inline_promo .listing > article.with_excerpt header .excerpt {
+			margin-bottom: 10px;
+		}
+	.module_inline_promo .promo_cta {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 0;
+	}
+		.module_inline_promo .promo_cta a {
+      text-decoration: none;
+      display: block;
+		}
+			.module_inline_promo .promo_cta a .link_span {
+				text-decoration: underline;
+        color: #fa3d33;
+			}
+			.module_inline_promo .promo_cta a .billboard_logo_small {
+				margin-left: 5px;
+			}
+.billboard_logo_small {
+  background: url("/web/20190719164432im_/https://www.billboard.com/sites/all/themes/bb/images/billboard-logo-small.png") no-repeat 0 0;
+  width: 104px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: top;
+  text-indent: -9999px;
+}
+  .module_inline_promo .listing > article.with_excerpt header .excerpt {
+    font: 13px/17px Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  .module_inline_promo .listing > article.with_excerpt header .excerpt time {
+    color: #999;
+    margin-right: 5px;
+  }
+  .module_inline_promo .listing > article.with_excerpt header h1 {
+    text-align: left;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 0 8px;    
+  }
+.article .article_content .module_inline_promo p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 20px;
+}
+.article-widget-right {
+  border: 4px solid #f33747;
+  padding: 16px;
+}
+  .article-widget-right h2 {
+    font-size: 20px;
+    margin: 10px 0 17px 0;
+  }
+  .article-widget-right .article {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 14px 0;
+    overflow: hidden;
+  }
+    .article-widget-right h3 {
+      float: left;
+      width: 165px;
+      margin: 0;
+    }
+      .article-widget-right h3 a {
+        font-family: Georgia, serif;
+        color: #1a1a1a;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+      }
+    .article-widget-right .image {
+      float: left;
+      margin-right: 20px;
+      
+    }
+  .article-widget-right .subscribe {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: underline;
+    display: block;
+    color: #f33747;
+    font-weight: bold;
+    margin: 24px 0 0 0;
+  }
+    .article-widget-right .logo {
+      background: url("/web/20190719164432im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -4435px;
+      width: 171px;
+      height: 40px;
+      margin: 15px auto 9px;
+      display: block;
+    }
+/*
+     FILE ARCHIVED ON 16:44:32 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:57 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 136.07 (3)
+  esindex: 0.005
+  captures_list: 148.301
+  CDXLines.iter: 9.118 (3)
+  PetaboxLoader3.datanode: 127.203 (4)
+  exclusion.robots: 0.243
+  exclusion.robots.policy: 0.233
+  RedisCDXSource: 0.494
+  PetaboxLoader3.resolve: 38.29
+  load_resource: 44.57
+*/

@@ -1,0 +1,234 @@
+h2.aside_on_the_charts {
+  margin-bottom: 5px;
+}
+.module_chart_summary {
+  border: 1px solid #d8d8d8;
+  padding: 30px 0 26px;
+  position: relative;
+}
+
+.module_chart_summary.carousel {
+  padding: 15px 0;
+}
+  .module_chart_position {
+    padding-bottom: 36px;
+  }
+  .module_chart_summary p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
+  }
+    .module_chart_summary p span,
+    .module_chart_summary p a,
+    .module_chart_summary p b,
+    .module_chart_summary p i {
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    .module_chart_summary p .chart_name {
+      color: #FC666A;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .module_chart_summary .chart_date.chart_carousel {
+      color: #FC666A;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .module_chart_summary p .age {
+      text-transform: uppercase;
+      color: #b2b2b2;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+    .module_chart_summary p a.black,
+    .module_chart_summary p b,
+    .module_chart_summary p i {
+      font-size: 16px;
+      line-height: 22px;
+      font-style: normal;
+      margin-bottom: 0;
+      color: #000;
+    }
+      .module_chart_summary p i {
+        margin-bottom: 15px;
+      }
+
+      .module_chart_summary p.category {
+        color: #FC666A;
+        margin: 0 0 24px;
+      }
+        .module_chart_summary p.category a {
+          color: #FC666A;
+        }
+      .view-id-artist_info.view-display-id-block_overview .module_chart_summary p.category {
+        margin-bottom: 0;
+      }
+      .view-id-artist_info.view-display-id-block_overview .module_chart_summary p.chart_date {
+        color: #FC666A;
+        margin: 0 0 24px;
+        font-size: 14px;
+      }
+  .module_chart_summary ul {
+    margin: 0;
+  }
+
+  .module_chart_summary .jcarousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+    .module_chart_summary .jcarousel-container > span {
+      position: absolute;
+      top: 50%;
+      margin: -11px 0 0;
+    }
+    .module_chart_summary .on_the_charts li {
+      position: inherit;
+      margin: 0;
+      width: 308px;
+    }
+      .module_chart_summary .jcarousel-container > span.jcarousel-next,
+      .module_chart_summary li.next {
+        right: 20px;
+      }
+      .module_chart_summary .jcarousel-container > span.jcarousel-prev,
+      .module_chart_summary li.prev {
+        left: 20px;
+      }
+      .module_chart_summary .jcarousel-container > span,
+      .module_chart_summary li.next a,
+      .module_chart_summary li.prev a {
+        display: block;
+        width: 22px;
+        height: 22px;
+        font: 0/0 a;
+        color: transparent;
+        background: url("/web/20190719164427im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -650px;
+      }
+
+      .module_chart_summary .jcarousel-container > span.jcarousel-next-disabled,
+      .module_chart_summary .jcarousel-container > span.jcarousel-next:hover,
+      .module_chart_summary li.next a.disabled,
+      .module_chart_summary li.next a:hover {
+        background-position: -150px -650px;
+      }
+      .module_chart_summary .jcarousel-container > span.jcarousel-prev,
+      .module_chart_summary li.prev a {
+        background-position: 0 -600px;
+      }
+        .module_chart_summary .jcarousel-container > span.jcarousel-prev-disabled,
+        .module_chart_summary .jcarousel-container > span.jcarousel-prev:hover,
+        .module_chart_summary li.prev a.disabled,
+        .module_chart_summary li.prev a:hover {
+          background-position: -150px -600px;
+        }
+
+/**
+ * Chart archived (extends .module_chart_summary)
+ * (Used on Hot 100 archive area)
+ */
+.module_chart_archived {
+  float: left;
+  width: 223px;
+  height: 190px;
+}
+  .module_chart_archived + .module_chart_archived {
+    margin-left: 30px;
+  }
+  .module_chart_archived a {
+    color: inherit;
+  }
+  .module_chart_archived a:hover {
+    text-decoration: none;
+  }
+  .module_chart_archived a:hover b {
+    text-decoration: underline;
+  }
+  /**
+   * Chart "status" (e.g. Greatest Gainer)
+   */
+  .module_chart_archived .chart_status {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #B3B3B3;
+  }
+  /**
+   * Chart date
+   */
+  .module_chart_archived .chart_date {
+    color: #F33747;
+    margin-bottom: 30px;
+  }
+  .module_chart_archived a:hover .chart_date {
+    text-decoration: underline;
+  }
+
+  /**
+   * Chart name
+   */
+  .module_chart_archived .chart_date {
+    font-size: 15px;
+  }
+  .module_chart_archived .chart_name {
+    color: #F33747;
+    margin-bottom: 30px;
+  }
+    .module_chart_archived .chart_name a {
+      color: #F33747;
+    }
+  .module_chart_archived a:hover .chart_name {
+    text-decoration: underline;
+  }
+  /* temp */
+  .module_chart_archived .chart_name,
+  .module_chart_archived .chart_date {
+    margin-bottom: 2px;
+  }
+
+
+.listing.pinteresterize .module_chart_summary {
+  width: 310px;
+  background: #fff;
+  position: absolute;
+  margin: 0 0 30px 30px;
+}
+
+#chart-browsing-year {
+  display: none;
+}
+
+#chart-browsing-year li.jcarousel-item {
+  height: 270px;
+  width: 223px;
+  margin-right: 32px;
+}
+#chart-browsing-year .jcarousel-item .item_hidden {
+  display: none;
+}
+
+
+/*
+     FILE ARCHIVED ON 16:44:27 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:47 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 141.84 (3)
+  esindex: 0.006
+  captures_list: 160.201
+  CDXLines.iter: 12.927 (3)
+  PetaboxLoader3.datanode: 54.097 (4)
+  exclusion.robots: 0.337
+  exclusion.robots.policy: 0.328
+  RedisCDXSource: 0.833
+  PetaboxLoader3.resolve: 128.267 (3)
+  load_resource: 45.367
+*/

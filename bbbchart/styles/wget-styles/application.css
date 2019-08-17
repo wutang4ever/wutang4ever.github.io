@@ -1,0 +1,2151 @@
+/*
+
+    1312 vs. Billboard (vs. Drupal vs. div div div div div div div div div)
+
+    written by Mike "1312" (mike at area17.com)
+
+    for Area 17 (www.area17.com)
+
+
+
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ fonts! */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ body */
+
+body {
+  background: #fff;
+    font: 14px/20px Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+  text-rendering: optimizeLegibility;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 75%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ layouts */
+
+#bb {
+  padding: 0;
+  background: #fff;
+}
+
+a.context-block-region {
+    display: none !important;
+}
+  #tools {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 990px;
+    left: 50%;
+    padding: 10px 0 0;
+    height: 70px;
+    margin-left: -495px;
+    background: #fff;
+  }
+
+#bb .full_width {
+  background: #fff;
+}
+
+#bb #footer-top {
+  margin: 0 auto !important;
+}
+
+/* cols */
+#main-wrapper,
+#main-wrapper.cols,
+#content-header,
+#content-after,
+#bottom-wrapper,
+.cols, .cols.cols_2x {
+  margin: 0 auto;
+  padding: 0 !important;
+  width: 990px !important;
+  clear: both;
+  overflow: hidden;
+}
+
+#content-header-content {
+  float: left;
+  margin: 0;
+  width: 650px;
+}
+
+.header_column_image,
+#footer > .section,
+#footer-top > .section {
+  clear: both;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  width: 990px;
+}
+
+#content-top > .section {
+  margin: 0 auto;
+  padding: 5px 0 0 0 !important;
+  width: 990px !important;
+  clear: both;
+}
+
+#main-wrapper.cols,
+.cols.cols_2x {
+  overflow: visible;
+}
+
+#content-top .region-content-top .block-views,
+#content-top .field-name-field-top-blocks .block-views {
+  overflow: hidden;
+}
+
+.node-type-chart-landing #main-wrapper,
+.node-type-chart #main-wrapper {
+  overflow: visible;
+}
+
+.page-archive-charts #footer > .section,
+.page-archive-charts #footer-top > .section,
+.page-archive-charts #content-top > .section {
+  overflow: visible;
+}
+
+#bb #content-header .block-dfp iframe {
+  margin: 0 auto 10px;
+  display: block;
+}
+
+#bb #content-header .block-dfp .dfp-tag-wrapper a {
+  text-align: center;
+  display: block;
+}
+
+#bb.bbbiz #content-header .block-dfp {
+  margin-bottom: 0;
+}
+
+#bb #content-header .block-dfp .dfp-tag-wrapper {
+  overflow: visible;
+}
+
+#bb #content-header .block-dfp .dfp-tag-wrapper > .dfp-tag-wrapper > div {
+  display: block !important;
+  margin: 0 auto 10px;
+}
+
+.full_width {
+  margin: 0 auto;
+  width: 990px;
+  clear: both;
+}
+  #main-wrapper #main {
+    width: 990px;
+  }
+  .cols:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .cols .col {
+    display: inline;
+    float: left;
+    width: 310px;
+    margin: 0 30px 0 0;
+  }
+    .cols_2x .col_1 {
+      width: 650px;
+      margin: 0;
+    }
+    .cols_2x .col_2 {
+      float: right;
+      width: 310px;
+      margin: 0;
+    }
+        .cols_4x .col {
+            width: 224px;
+        }
+            .cols_4x .col.col_last {
+                margin-right: 0;
+            }
+    #sidebar-second .block > h2 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+#content.with_sidebar_second,
+#content-bottom.with_sidebar_bottom
+{
+    float: left;
+    width: 650px;
+}
+#content.with_sidebar_second.without_right_sidebar
+{
+    float: none;
+    width: auto;
+}
+#content-header-sidebar,
+#sidebar-second,
+#sidebar-bottom
+{
+    float: right;
+    width: 310px;
+}
+    #sidebar-second .region-sidebar-second > .block
+    {
+        margin: 0 0 30px;
+    }
+
+    .charts-landing-page #sidebar-second
+    {
+        margin-top: 101px;
+    }
+
+    .charts-landing-page.bbbiz #sidebar-second
+    {
+        margin-top: 0px;
+    }
+
+    .page-videos.sidebar-second #sidebar-second
+    {
+        margin-top: 71px;
+    }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ general styles */
+
+#admin-menu h1, #admin-menu h2, #admin-menu h3, #admin-menu h4, #admin-menu h5, #admin-menu h6, #admin-menu p, #admin-menu ul, #admin-menu ol, #admin-menu dl, #admin-menu small, #admin-menu q {
+    font-size: 11px;
+    line-height: 14px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, small, q {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+    p {
+        margin-bottom: 18px;
+    }
+
+    small {
+        font-size: 13px;
+        line-height: 17px;
+    }
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: normal;
+    margin: 0 0 20px;
+    padding: 25px 50px 2px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+    margin: 0 0 28px;
+  }
+    aside h2 {
+        text-align: center;
+    }
+  h3 {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 0 20px;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 20px;
+    font-weight: normal;
+  }
+  ul li {
+        list-style-type: none;
+    }
+    ol li {
+    }
+    dt {
+        clear: left;
+        display: inline;
+        float: left;
+        padding: 0 10px 0 0;
+    }
+    dd {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+  blockquote p,
+  q {
+    color: #1a1a1a;
+  }
+    blockquote {
+      border-top: 2px solid #1a1a1a;
+      padding: 21px 0 0;
+    }
+    blockquote p:first-child:before {
+      content: "";
+      /*content: "\201C";
+      position: absolute;
+      left: -12px;
+      top: 14px;*/
+    }
+    blockquote p:last-child:after {
+      /*content: "\201D";*/
+      content: "";
+    }
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+}
+
+img {
+}
+
+a {
+    color: #1cace2;
+    text-decoration: none;
+}
+    a:hover, a:focus, a:active {
+        text-decoration: underline;
+    }
+
+table {
+  width: 100%;
+  margin: 0 0 18px;
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+}
+  table th {
+    text-transform: uppercase;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    padding: 3px 9px;
+  }
+  table td {
+    font-family: Arial, sans-serif;
+    border: 1px solid #e6e6e6;
+    padding: 3px 9px;
+  }
+/* Tertiary menu */
+
+.tertiary-menu {
+}
+  .tertiary-menu.artist-alpha-pager,
+  .tertiary-menu.bb_artist {
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 20px;
+  }
+  .tertiary-menu .content > ul.menu {
+    height: 35px;
+    margin: 0;
+    padding: 18px 0;
+    overflow: hidden;
+  }
+  #content.with_sidebar_second #block-bb-artist-alphabetical .tertiary-menu .content > ul.menu {
+    height: 70px;
+  }
+  .upper_black_nav .tertiary-menu .content > ul.menu {
+    height: 40px;
+    padding: 0;
+  }
+    #bb.bbbiz.charts-landing-page #main .tertiary-menu .content > ul.menu {
+      height: auto;
+      width: 600px;
+    }
+    .charts-landing-page #main .tertiary-menu .content > ul.menu {
+      height: auto;
+      margin: 0;
+      padding: 18px 0;
+      overflow: hidden;
+      border-bottom: 1px solid #E6E6E6;
+      border-top: 1px solid #E6E6E6;
+      margin: 0 0 30px;
+      box-sizing: border-box;
+    }
+    .tertiary-menu .content > ul.menu li {
+      display: inline;
+      float: left;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid transparent;
+      height: 34px;
+    }
+    .upper_black_nav .tertiary-menu .content > ul.menu li {
+      display: inline;
+      float: left;
+      padding: 0;
+      margin: 0;
+      border-top: none;
+      height: auto;
+    }
+
+    .upper_black_nav .tertiary-menu .content > ul.menu li.promoted-red {
+      float: right;
+    }
+
+    .tertiary-menu.pepsi .content > ul.menu li.last {
+      height: 40px;
+    }
+
+      .tertiary-menu .content > ul.menu a,
+      .tertiary-menu .content > ul.menu span.disabled {
+        display: block;
+        padding: 6px 8px 4px;
+        border: 2px solid transparent;
+        color: #1a1a1a;
+        margin: 0 -2px 0 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        height: 20px;
+        line-height: 20px;
+        white-space: nowrap;
+      }
+      .upper_black_nav .tertiary-menu .content > ul.menu a {
+        padding: 11px 30px 11px 0;
+        border: none;
+        line-height: 18px;
+        font-size: 15px;
+        color: #fff;
+        text-transform: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        margin: 0;
+        letter-spacing: normal;
+        text-shadow: none;
+        letter-spacing: -0.5px;
+      }
+      .upper_black_nav .tertiary-menu .content > ul.menu a.promoted-red {
+        color: #ff6567;
+      }
+        .tertiary-menu.artist-alpha-pager .content > ul.menu a,
+        .tertiary-menu.artist-alpha-pager .content > ul.menu span.disabled {
+          padding: 4px 5px 3px;
+        }
+        #content.with_sidebar_second .tertiary-menu.artist-alpha-pager .content > ul.menu a {
+          padding: 4px 4px 3px;
+        }
+        .tertiary-menu .content > ul.menu a:hover,
+        .tertiary-menu .content > ul.menu li.open a,
+        .tertiary-menu .content > ul.menu li.active-trail a,
+        #block-menu-menu-secondary-menu.tertiary-menu .content > ul.menu a.active,
+        .node-type-landing-page #content .tertiary-menu .content > ul.menu a.active {
+          border-color: #1a1a1a;
+          text-decoration: none;
+          position: relative;
+          z-index: 1;
+        }
+        .upper_black_nav .tertiary-menu .content > ul.menu li.active-trail a,
+        .upper_black_nav #block-menu-menu-secondary-menu.tertiary-menu .content > ul.menu a.active,
+        .upper_black_nav .tertiary-menu .content > ul.menu a:hover {
+          color: #3cb1f4;
+        }
+        .tertiary-menu.pepsi .content > ul.menu .last a {
+          margin-top: -5px;
+          height: 30px;
+        }
+
+        .tertiary-menu.pepsi .content > ul.menu .last a:hover,
+        .tertiary-menu.pepsi .content > ul.menu li.open.last a,
+        .tertiary-menu.pepsi .content > ul.menu li.active-trail.last a,
+        #block-menu-menu-secondary-menu.tertiary-menu.pepsi .content > ul.menu .last a.active,
+        .node-type-landing-page #content .tertiary-menu.pepsi .content > ul.menu .last a.active {
+          border-color: transparent;
+        }
+
+        .node-type-landing-page #content #block-menu-menu-3rd-bbbiz-charts-menu.tertiary-menu .content > ul.menu a.active {
+          border-color: #ffffff;
+        }
+        .node-type-landing-page #content #block-menu-menu-3rd-bbbiz-charts-menu.tertiary-menu .content > ul.menu li a:hover,
+        .node-type-landing-page #content #block-menu-menu-3rd-bbbiz-charts-menu.tertiary-menu .content > ul.menu li.first a.active,
+        .node-type-landing-page #content #block-menu-menu-3rd-bbcom-charts-menu.tertiary-menu .content > ul.menu li a:hover,
+        .node-type-landing-page #content #block-menu-menu-3rd-bbcom-charts-menu.tertiary-menu .content > ul.menu li a.active {
+          border-color: #1a1a1a;
+          z-index: 2;
+        }
+
+        .tertiary-menu .content > ul.menu span.disabled {
+            border: 2px solid #FFF;
+            background: #FFF;
+            position: static;
+            color: #CBCBCB;
+            cursor: default;
+        }
+
+          .tertiary-menu .content > ul.menu li a.promoted {
+            color: #00d2cc;
+          }
+
+            .tertiary-menu .content > ul.menu li a.promoted:hover,
+            .tertiary-menu .content > ul.menu li.open a.promoted,
+            .tertiary-menu .content > ul.menu li.active-trail a.promoted,
+            .node-type-landing-page #content .tertiary-menu .content > ul.menu a.promoted.active {
+              border-color: #00d2cc;
+            }
+
+          .tertiary-menu .content > ul.menu li.expanded ul.menu {
+            display: none;
+          }
+
+          .tertiary-menu .content > ul.menu li.expanded a {
+            background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 100% -2286px;
+            padding-right: 27px;
+          }
+            .tertiary-menu .content > ul.menu li.expanded ul a {
+              padding-right: 8px;
+            }
+
+            .tertiary-menu .content > ul.menu li.expanded.open a {
+              background-position: 100% -2337px;
+            }
+
+        .tertiary-menu li.dd {
+          background: #f2f2f2;
+          position: relative;
+        }
+          .tertiary-menu li.dd ul {
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            right: 0;
+            top: 100%;
+            padding: 0;
+            display: none;
+            background: transparent;
+          }
+            .tertiary-menu li.dd:hover ul {
+              display: block;
+            }
+
+            .tertiary-menu li.dd ul li {
+              float: none;
+              display: block;
+              background: #fff;
+            }
+    .tertiary-menu .content > ul.menu a.rss:hover {
+        background-color: #F2F2F2;
+        border-color: #E6E6E6;
+    }
+
+
+  .tertiary-menu .drawer {
+    border-top: 1px solid #e6e6e6;
+    display: none;
+  }
+    .tertiary-menu .drawer ul {
+      margin: 0 0 0 -30px;
+      overflow: hidden;
+    }
+      .tertiary-menu .drawer ul li {
+        display: inline;
+        float: left;
+        width: 310px;
+        margin: 0 0 0 30px;
+        padding: 0px;
+        border-top: 1px solid #e6e6e6;
+      }
+        .tertiary-menu .drawer ul li a {
+          display: block;
+          padding: 18px 10px;
+          color: #1a1a1a;
+        }
+
+        .tertiary-menu .drawer ul li:first-child,
+        .tertiary-menu .drawer ul li:first-child + li,
+        .tertiary-menu .drawer ul li:first-child + li + li {
+          border-top: 0 none;
+        }
+
+    #block-menu-menu-3rd-landing-page-menu > .content {
+        width: 650px;
+    }
+    #block-menu-menu-3rd-landing-page-menu .drawer ul li {
+        border-top: 1px solid #e6e6e6;
+    }
+    #block-menu-menu-3rd-landing-page-menu .drawer ul li:first-child,
+    #block-menu-menu-3rd-landing-page-menu .drawer ul li:first-child + li {
+      border-top: 0 none;
+    }
+
+
+/* Paginator */
+
+.item-list {
+  border-top: 1px solid #e6e6e6;
+  padding: 33px 0 0;
+  margin: 0 0 60px;
+}
+  .item-list ul.pager {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+  }
+    .item-list ul.pager li {
+      display: inline;
+      color: #1cace2;
+      padding: 0 5px;
+      margin: 0px;
+    }
+    .item-list ul.pager li.pager-current {
+      color: #000;
+      font-weight: normal;
+    }
+      .item-list ul.pager li.pager-last,
+      .item-list ul.pager li.pager-first {
+        /* display: none; */
+      }
+
+      .item-list ul.pager li.pager-next {
+        display: block;
+        float: right;
+      }
+
+      .item-list ul.pager li.pager-previous {
+        display: block;
+        float: left;
+      }
+
+      .item-list ul.pager li.pager-next a,
+      .item-list ul.pager li.pager-previous a {
+        display: block;
+        width: 22px;
+        height: 22px;
+        font: 0/0 a;
+        color: transparent;
+        background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -650px;
+      }
+        .item-list ul.pager li.pager-next a.disabled,
+        .item-list ul.pager li.pager-next a:hover {
+          background-position: -150px -650px;
+        }
+
+        .item-list ul.pager li.pager-previous a {
+          background-position: 0 -600px;
+        }
+          .item-list ul.pager li.pager-previous a.disabled,
+          .item-list ul.pager li.pager-previous a:hover {
+            background-position: -150px -600px;
+          }
+
+.cck_pager > .item-list > ul.pager > li.pager-first,
+.cck_pager > .item-list > ul.pager > li.pager-last {
+    display: none;
+}
+
+.cck_pager > .item-list > ul.pager > li.pager-item > a.active {
+    color: #1cace2;
+}
+
+
+
+.col_2 > .banner {
+  display: inline;
+  float: left;
+  margin: 0 0 30px 30px;
+  width: 310px;
+  height: 290px;
+  background: #f2f2f2;
+}
+  .col_2 > .banner {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 12px;
+    width: 300px;
+    height: 280px;
+    padding: 5px;
+  }
+    .col_2 > .banner *:first-child {
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+.fake_header {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  width: 990px;
+  height: 65px;
+  text-align: center;
+  background: #fff;
+}
+  .fake_header a:first-child {
+    display: block;
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -2400px;
+    font: 0/0 a;
+    color: transparent;
+    width: 127px;
+    height: 25px;
+    margin: 20px auto;
+  }
+  .fake_header a + a {
+    position: absolute;
+    right: 50%;
+    top: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 0 0 0 20px;
+    margin-right: -495px;
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat -618px -2448px;
+  }
+
+.fake_header.milestone {
+  height: auto;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* icons !Experimental! */
+
+.ia:after,
+.ib:before {
+    content: '';
+}
+
+.ia:after {
+    margin-left: 5px;
+}
+
+.ib:before {
+    margin-right: 5px;
+}
+
+.icon {
+    text-indent: -999em;
+}
+
+.icon,
+.ia:after,
+.ib:before {
+  display: inline-block;
+  vertical-align: middle;
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 0;
+}
+
+.icon_only {
+    display: block;
+    width: 6px;
+    height: 30px;
+    overflow: hidden;
+}
+    .icon_only:before {
+        content: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png");
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        margin: -800px 0 0 -4px;
+    }
+
+.icon.down-arrow,
+.ia.down-arrow:after,
+.ib.down-arrow:before {
+  width: 8px;
+  height: 4px;
+  background-position: -622px -2300px;
+}
+
+/** Chart icons **/
+.icon.duration {
+    background-position: 0 -1250px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon.peak {
+    background-position: -1px -1300px;
+    width: 14px;
+    height: 14px;
+}
+
+.icon.shift {
+    background-position: 0 -1350px;
+    width: 15px;
+    height: 14px;
+}
+
+.icon.position-up-small, .ia.position-up-small:after, .ib.position-up-small:before {
+    background-position: 0 -1750px;
+    height: 22px;
+    width: 22px;
+}
+.icon.position-down-small, .ia.position-down-small:after, .ib.position-down-small:before {
+    background-position: 0 -1800px;
+    height: 22px;
+    width: 22px;
+}
+.icon.position-static-small, .ia.position-static-small:after, .ib.position-static-small:before {
+    background-position: 0 -1850px;
+    height: 22px;
+    width: 22px;
+}
+.icon.hot-shot-small, .ia.hot-shot-small:after, .ib.hot-shot-small:before {
+    background-position: 0 -4950px;
+    height: 22px;
+    width: 22px;
+}
+.icon.greatest-airplay-small, .ia.greatest-airplay-small:after, .ib.greatest-airplay-small:before {
+    background-position: 0 -5000px;
+    height: 22px;
+    width: 22px;
+}
+.icon.airplay-gainer, .ia.airplay-gainer:after, .ib.airplay-gainer:before {
+    background-position: -156px -1457px;
+    height: 11px;
+    width: 16px;
+}
+.icon.digital-gainer, .ia.digital-gainer:after, .ib.digital-gainer:before {
+    background-position: -159px -1506px;
+    height: 14px;
+    width: 9px;
+}
+.icon.streaming-gainer, .ia.streaming-gainer:after, .ib.streaming-gainer:before {
+    background-position: -154px -1556px;
+    height: 13px;
+    width: 19px;
+}
+.icon.greatest-gainer, .ia.greatest-gainer:after, .ib.greatest-gainer:before {
+    background-position: -156px -1407px;
+    height: 13px;
+    width: 15px;
+}
+.icon.pacesetter, .ia.pacesetter:after, .ib.pacesetter:before {
+    background-position: -159px -1606px;
+    height: 12px;
+    width: 9px;
+}
+.icon.heatseeker, .ia.heatseeker:after, .ib.heatseeker:before {
+    background-position: 0 -5050px;
+    height: 14px;
+    width: 9px;
+}
+.icon.new-small, .ia.new-small:after, .ib.new-small:before {
+    background-position: 0 -5200px;
+    height: 22px;
+    width: 22px;
+}
+.icon.re-small, .ia.re-small:after, .ib.re-small:before {
+    background-position: 0 -5250px;
+    height: 22px;
+    width: 22px;
+}
+.icon.bbbiz {
+    background-position: 0 -4450px;
+    height: 25px;
+    width: 171px;
+}/** Social icons **/
+.icon.tw,
+.ia.tw:after,
+.ib.tw:before {
+    background-position: 0 -150px;
+    width: 18px;
+    height: 14px;
+}
+.icon.fb,
+.ia.fb:after,
+.ib.fb:before {
+    background-position: 0 -201px;
+    width: 12px;
+    height: 14px;
+}
+.icon.in,
+.ia.in:after,
+.ib.in:before {
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat -150px -550px;
+    width: 13px;
+    height: 14px;
+}
+.icon.rss,
+.ia.rss:after,
+.ib.rss:before {
+    background-position: 0 -250px;
+    width: 13px;
+    height: 13px;
+}
+.icon.email,
+.ia.email:after,
+.ib.email:before {
+    background-position: 0 -300px;
+    width: 17px;
+    height: 13px;
+}
+.icon.gplus,
+.ia.gplus:after,
+.ib.gplus:before {
+    background-position: 0 -351px;
+    width: 17px;
+    height: 15px;
+}
+.icon.close, .ia.close:after, .ib.close:before {
+    background-position: -200px -4150px;
+    height: 22px;
+    width: 22px;
+}
+a:hover .icon.close {
+    background-position: 0 -4150px;
+}
+/* ------------ Commented out by Mac whilst trying pseudo hacks ----------- */
+
+ .icon.sT,
+.ia.sT:after,
+.ib.sT:before {
+    background-position: 0 -400px;
+    width: 16px;
+    height: 15px;
+    position: relative; top: -2px; /* Align to the icon's baseline */
+}
+.icon.prt,
+.ia.prt:after,
+.ib.prt:before {
+    background-position: 0 -450px;
+    width: 17px;
+    height: 15px;
+}
+.icon.cmt,
+.ia.cmt:after,
+.ib.cmt:before {
+    background-position: 0 -500px;
+    width: 15px;
+    height: 14px;
+}
+
+/** Dark social icons **/
+.media .icon.tw,
+.media .ia.tw:after,
+.media .ib.tw:before,
+.breaking_news_bar .icon.tw,
+.breaking_news_bar .ia.tw:after,
+.breaking_news_bar .ib.tw:before {
+    background-position: -150px -150px;
+}
+
+.media .icon.fb,
+.media .ia.fb:after,
+.media .ib.fb:before,
+.breaking_news_bar .icon.fb,
+.breaking_news_bar .ia.fb:after,
+.breaking_news_bar .ib.fb:before {
+    background-position: -152px -201px;
+}
+
+.media .icon.in,
+.media .ia.in:after,
+.media .ib.in:before,
+.breaking_news_bar .icon.in,
+.breaking_news_bar .ia.in:after,
+.breaking_news_bar .ib.in:before {
+    background-position: -300px -550px;
+}
+
+.media .icon.rss,
+.media .ia.rss:after,
+.media .ib.rss:before {
+    background-position: -150px -250px;
+}
+.media .icon.email,
+.media .ia.email:after,
+.media .ib.email:before {
+    background-position: -151px -300px;
+}
+.media .icon.gplus,
+.media .ia.gplus:after,
+.media .ib.gplus:before {
+    background-position: -150px -351px;
+}
+.media .icon.sT,
+.media .ia.sT:after,
+.media .ib.sT:before {
+    background-position: -150px -400px;
+}
+.media .icon.prt,
+.media .ia.prt:after,
+.media .ib.prt:before {
+    background-position: -151px -450px;
+}
+.media .icon.cmt,
+.media .ia.cmt:after,
+.media .ib.cmt:before {
+    background-position: -152px -500px;
+}
+
+/** Blue twitter */
+.icon.tw_blue,
+.ia.tw_blue:after,
+.ib.tw_blue:before {
+    background-position: -600px -150px;
+    width: 18px;
+    height: 18px;
+}
+
+/** Blue facebook */
+.icon.in_gray, .ia.in_gray:after, .ib.in_gray:before,
+.icon.in_blue, .ia.in_blue:after, .ib.in_blue:before {
+    height: 13px;
+    width: 13px;
+    background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 0 -4601px;
+}
+.your-profile-section .social_networks .ib:before {
+    width: 20px;
+}
+
+.icon.fb_blue,
+.ia.fb_blue:after,
+.ib.fb_blue:before {
+    background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 0 0;
+    width: 18px;
+    height: 18px;
+}
+
+/* Chart award icons */
+.icon.gg,
+.ia.gg:after,
+.ib.gg:before {
+    background-position: -6px -1407px;
+    width: 15px;
+    height: 13px;
+}
+.icon.ag,
+.ia.ag:after,
+.ib.ag:before {
+    background-position: -6px -1457px;
+    width: 16px;
+    height: 11px;
+}
+.icon.dg,
+.ia.dg:after,
+.ib.dg:before {
+    background-position: -9px -1506px;
+    width: 9px;
+    height: 14px;
+}
+.icon.sg,
+.ia.sg:after,
+.ib.sg:before {
+    background-position: -4px -1556px;
+    width: 19px;
+    height: 13px;
+}
+.icon.pace,
+.ia.pace:after,
+.ib.pace:before {
+    background-position: -9px -1606px;
+    width: 9px;
+    height: 12px;
+}
+
+.icon.fb_gray, .ia.fb_gray:after, .ib.fb_gray:before,
+.icon.fb_blue, .ia.fb_blue:after, .ib.fb_blue:before {
+    background-position: 0 -4550px;
+    height: 14px;
+    width: 8px;
+}
+.icon.fb_gray, .ia.fb_gray:after, .ib.fb_gray:before {
+    background-position: -200px -4551px;
+}
+.icon.in_gray, .ia.in_gray:after, .ib.in_gray:before {
+    background-position: -200px -4600px;
+
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ element specific styles */
+
+/**
+ * Split column (used inside of the main content column)
+ */
+.split_col {
+    width: 310px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
+    .split_col:first-child {
+        margin-left: 0;
+    }
+    .split_col h2 {
+        margin-bottom: 10px;
+  text-align: left;
+    }
+    .split_col h2 ~ h2 {
+        margin-top: 30px;
+    }
+    /** Indent the list (e.g. RSS page) **/
+    .split_col_space {
+        width: 280px;
+        padding-left: 30px;
+    }
+
+
+/**
+ * Small listings (for table of contents, normally text only)
+ */
+.small_listing {
+    list-style: none;
+    margin-bottom: 30px;
+}
+    .small_listing a {
+        color: #1a1a1a;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+        padding: 4px 0;
+    }
+        .small_Listing a:hover {
+            text-decoration: underline;
+        }
+        .split_col .small_listing a {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 0;
+        }
+
+/**
+ * Load more
+ */
+.load-more {
+  border-top: 1px solid #E6E6E6;
+  padding: 15px 0 0;
+  margin: 0 0 68px;
+}
+
+/**
+ * Horizontal navigation
+ * (Simple and reusable for site -- see Chart Detail for Songs/Albums nav)
+ */
+.horz_nav {
+    margin: 5px 0 10px;
+}
+    .horz_nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+    }
+        .horz_nav li {
+            float: left;
+        }
+        .horz_nav li + li {
+            margin-left: 20px;
+        }
+        .horz_nav li.current a {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+.breaking_news_bar {
+  background: #000;
+  display: none;
+  color: #fff;
+}
+.breaking_news_bar div.user-alert {
+  height: auto;
+  line-height: 50px;
+}
+.breaking_news_bar div.user-alert span.user-label,
+.breaking_news_bar div.user-alert {
+  background: transparent;
+}
+
+  .upper_black_nav {
+    background: #000;
+  }
+  .breaking_news_bar .c,
+  .upper_black_nav .c {
+    position: relative;
+    overflow: visible;
+    margin: 0 auto;
+    width: 990px;
+    height: 50px;
+    text-align: left;
+  }
+  .upper_black_nav .c {
+    padding: 0;
+    background: #000;
+  }
+    .breaking_news_bar .c a:hover {
+      text-decoration: none;
+    }
+    .breaking_news_bar .c span {
+      display: inline-block;
+    }
+      .breaking_news_bar .c span.title {
+        background-color: #FA676B;
+        width: 150px;
+        text-align: center;
+        float: left;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .breaking_news_bar .c span.image {
+        width: 150px;
+        height: 50px;
+        float: left;
+      }
+      .breaking_news_bar .c span.text {
+        margin-left: 21px;
+      }
+      .breaking_news_bar .c span.text a {
+        color: #D8D8D8;
+        text-decoration: none;
+      }
+      .breaking_news_bar .c span.text a.more {
+        color: #ff6567;
+      }
+
+
+  .breaking_news_bar p.close {
+    position: absolute;
+    right: 0;
+    top: 16px;
+  }
+    .breaking_news_bar p.close a {
+      color: #fff;
+    }
+
+    .news_bar_actions {
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 14px;
+    }
+    .news_bar_actions li {
+        float: left;
+        margin-left: 24px;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+    }
+
+    .news_bar_actions li.clearfix {
+      width: 10px;
+      margin-left: 0;
+    }
+    .news_bar_actions li div {
+      position: absolute;
+      top: 1px;
+      left: 20px;
+      display: none;
+    }
+
+    .news_bar_actions li a {
+        color: #FFFFFF;
+        line-height: 20px;
+        font-size: 18px;
+    }
+/**
+ * Newsletter registration
+ * @todo -- Choose relevant location, or name appropriately
+*/
+.newsletter_registration {
+    text-align: center;
+    margin-bottom: 65px;
+    margin-right: 75px;
+}
+    .newsletter_registration h1 {
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    .newsletter_registration h1 + h3 {
+        margin-bottom: 45px;
+    }
+    .newsletter_registration .checkbox_group {
+        margin-bottom: 30px;
+        text-align: left;
+        overflow: hidden;
+    }
+        .newsletter_registration .checkbox_group .field {
+            margin-bottom: 25px;
+            padding-left: 45px;
+            position: relative;
+            font: 14px/20px sans-serif;
+        }
+            .newsletter_registration .checkbox_group .field label {
+                cursor: pointer;
+            }
+            .newsletter_registration .checkbox_group .field strong {
+                display: block;
+            }
+            .newsletter_registration .checkbox_group .field input {
+                position: absolute;
+                top: 2px; left: 0;
+                cursor: pointer;
+            }
+                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    .newsletter_registration .checkbox_group .field input {
+                        -webkit-appearance: none;
+                        border: 1px solid #D9D9D9;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                    }
+                        .newsletter_registration .checkbox_group .field input:checked:before {
+                            content: '?';
+                            position: absolute;
+                            top: 0; right: 0; bottom: 0; left: 0;
+                            color: #1a1a1a;
+                            line-height: 20px;
+                            text-align: center;
+                        }
+                }
+    .newsletter_registration .field.email {
+        border: 1px solid #e6e6e6;
+        overflow: hidden;
+    }
+        .newsletter_registration .field.email input {
+            padding: 18px;
+            display: block;
+            float: left;
+            width: 359px;
+            border: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+        .newsletter_registration .field.email button {
+            width: 108px;
+            text-align: center;
+            border: 0;
+            border-left: 1px solid #e6e6e6;
+            background: #fff;
+            padding: 0;
+            line-height: 50px;
+            margin: 0;
+            font-size: 17px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+            .newsletter_registration .field.email button:hover {
+                background: #e6e6e6;
+            }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page specific styles */
+
+/**
+ * "About" section
+ */
+.about-section {
+    padding-bottom: 70px; /* @todo -- Do we need a global main cut-off ? */
+}
+    .about-section p {
+        font-family: sans-serif;
+    }
+
+/**
+ * "Your Profile" section
+ */
+.col_1.your-profile-section {
+    margin-bottom: 70px;
+}
+    .your-profile-section .profiles.singular {
+        border-bottom: 0;
+        margin-bottom: 0px;
+    }
+    .your-profile-section .profiles > article.full {
+        padding-left: 200px;
+        min-height: 170px;
+        min-width: 300px;
+    }
+    .your-profile-section .profiles.singular a {
+        color: inherit;
+    }
+    .your-profile-section .standard_form {
+        margin: 25px 0;
+    }
+    .your-profile-section .social_networks h3 {
+        margin-bottom: 15px;
+    }
+    .your-profile-section .social_networks a {
+        display: inline-block;
+    }
+    .your-profile-section .social_networks .ib:before {
+        width: 30px;
+    }
+    .your-profile-section .standard_form .form_actions {
+        text-align: left;
+    }
+        .your-profile-section .standard_form .form_actions input {
+            background: #00ABE4;
+            color: #fff;
+            line-height: 32px;
+            white-space: nowrap;
+            padding: 0 20px;
+            border: 1px solid #1ca4d8;
+            cursor: pointer;
+
+        }
+
+#bb ~ footer h1,
+#bb ~ footer h2 {
+  color: #ff6567;
+}
+
+#tools ul {
+}
+  #tools ul li {
+    display: inline;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+    #tools ul li.connect {
+      float: right;
+      padding: 0 0 0 8px;
+      margin: 0 0 0 8px;
+      border-left: 1px solid #d1d1d1;
+    }
+    #tools ul li.subscribe {
+      float: right;
+      margin: 0;
+    }
+    #tools ul a {
+      color: #1a1a1a;
+    }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page specific styles */
+
+.ajax-progress .throbber {
+  /*background: transparent url("/web/20190719164431im_/https://www.billboard.com/images/loader.gif") no-repeat 0px -18px;*/
+}
+
+.indented_content {
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+.indented_content h3 {
+        margin-bottom: 10px;
+    }
+    .indented_content h3 ~ h3 {
+        margin-top: 30px;
+    }
+    .indented_content a {
+        color: inherit;
+        text-decoration: underline;
+    }
+    .indented_content p {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ login popup */
+#lb_m {
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.5);
+}
+#lb_c {
+  position: fixed;
+  *position: absolute;
+  z-index: 200;
+  left: 50%;
+  top: 50%;
+  margin: -183px 0 0 -240px;
+  background: #fff;
+  width: 420px;
+  height: 364px;
+  border: 1px solid #e5e5e5;
+  padding: 0 29px;
+}
+  #lb_c.login {
+    width: 818px;
+    height: 570px;
+    margin: -315px 0 0 -438px;
+    padding: 35px 29px 25px;
+  }
+  #lb_c.login .close {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    color: #FA3D33;
+    font: bold 17px sans-serif;
+  }
+  #lb_c h3 {
+    text-align: center;
+    font: bold 24px/28px Georgia, serif;
+    padding: 22px 0 10px;
+    margin: 0 0 12px;
+    border-bottom: 3px solid #fa3d33;
+  }
+  #lb_c.connect p {
+    font: 14px/20px Arial, sans-serif;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    color: #1a1a1a;
+  }
+    #lb_c.connect p a,
+    #lb_c.connect p i {
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+    }
+    #lb_c.connect p a.cfl,
+    #lb_c.connect p a.no {
+      font: 17px/20px sans-serif;
+    }
+    #lb_c.connect p a.cfl {
+      margin-top: 18px;
+      margin-bottom: 30px;
+    }
+    #lb_c.connect p a.cfl:before {
+      content: "";
+      display: block;
+      background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat 0 -3300px;
+      width: 99px;
+      height: 87px;
+      margin: 0 auto 18px;
+    }
+    #lb_c.connect p a.no {
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    #lb_c.connect p i {
+      font-size: 12px;
+      line-height: 16px;
+      color: #ccc;
+    }
+
+  #lb_c.login .col {
+    display: inline;
+    float: left;
+    width: 340px;
+    height: 570px;
+    padding: 0 29px 0 0;
+    border-right: 1px solid #d9d9d9;
+    font: 14px/20px Arial, sans-serif;
+    position: relative;
+  }
+    #lb_c.login .col + .col {
+      border-right: 0 none;
+      padding: 0 0 0 29px;
+      width: 418px;
+    }
+    #lb_c.login form {
+    }
+      #lb_c.login form fieldset {
+      }
+        #lb_c.login form legend {
+          font: 0/0 a;
+          color: transparent;
+          margin: 0;
+          padding: 0;
+          background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite_biz-2013-01-25.png") no-repeat 0 -2250px;
+          width: 171px;
+          height: 25px;
+        }
+        #lb_c.login form ol {
+          margin: 0;
+          padding: 30px 0 0;
+        }
+          #lb_c.login form li {
+            list-style-type: none;
+            margin: 0 0 15px;
+          }
+            #lb_c.login form li label {
+              display: block;
+              font: 14px/32px Arial, sans-serif;
+            }
+              #lb_c.login form li label abbr {
+                color: #fa3d33;
+              }
+            #lb_c.login form input[type=text],
+            #lb_c.login form input[type=password] {
+              border: 1px solid #d9d9d9;
+              padding: 17px 20px;
+              width: 100%;
+              color: #b2b2b2;
+              font-weight: normal;
+              font-size: 12px;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+              #lb_c.login form input[type=text]:hover,
+              #lb_c.login form input[type=password]:hover {
+                border-color: #b3b3b3;
+                color: #1a1a1a;
+              }
+              #lb_c.login form input[type=text]:focus,
+              #lb_c.login form input[type=password]:focus {
+                border-color: #b3b3b3;
+                color: #1a1a1a;
+              }
+              #lb_c.login form input[type=text].error,
+              #lb_c.login form input[type=password].error {
+                border-color: #ff3639;
+                border-width: 3px;
+                padding: 15px 28px;
+              }
+            #lb_c.login form li.cb {
+              font: 12px/18px Arial, sans-serif;
+            }
+              #lb_c.login form li.cb label {
+                font: 12px/18px Arial, sans-serif;
+                color: #b2b2b2;
+                display: inline;
+              }
+                #lb_c.login form li.cb input[type=checkbox] {
+                  display: inline;
+                  vertical-align: top;
+                }
+      #lb_c.login form p {
+        font: 12px/18px Arial, sans-serif;
+      }
+        #lb_c.login form p a {
+          color: #b2b2b2;
+        }
+        #lb_c.login form p input[type=submit] {
+          color: #fff;
+          white-space: nowrap;
+          padding: 0 10px;
+          border: 1px solid #e93930;
+          cursor: pointer;
+          font: 16px/32px Arial, sans-serif;
+          background: #FA3D33;
+        }
+        #lb_c.login .messages.error {
+          padding: 12px 12px 12px 40px;
+          border-color: #FF3639;
+        }
+        #lb_c.login .messages ul {
+          margin: 0;
+        }
+        #lb_c.login .messages ul li {
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+    #lb_c.login .help {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+      #lb_c.login .help p {
+        font: 12px/18px Arial, sans-serif;
+        margin: 0 0 15px;
+        color: #B2B2B2;
+      }
+        #lb_c.login .help p a,
+        #lb_c.login .help p b {
+          font-weight: normal;
+          color: #737373;
+        }
+          #lb_c.login .help p a {
+            text-decoration: underline;
+          }
+      #lb_c.login .help ul {
+        overflow: hidden;
+        margin: 0;
+        font: 12px/18px Arial, sans-serif;
+      }
+        #lb_c.login .help ul li {
+          display: inline;
+          float: left;
+          margin: 0 10px 0 0;
+          color: #d9d9d9;
+        }
+          #lb_c.login .help ul li a {
+            color: #d9d9d9;
+          }
+    #lb_c.login h3 {
+      padding-top: 0;
+      margin-bottom: 25px;
+    }
+    #lb_c.login img {
+      display: block;
+      margin: 0 auto 30px;
+      border: 1px solid #e6e6e6;
+    }
+    #lb_c.login .kF {
+      /* key features */
+      overflow: hidden;
+      margin: 0 0 20px -15px;
+      line-height: 18px;
+    }
+      #lb_c.login .kF li {
+        display: inline;
+        float: left;
+        width: 195px;
+        height: 54px;
+        overflow: visible;
+        margin: 0 0 7px 0;
+        padding: 0 0 0 15px;
+        position: relative;
+      }
+          #lb_c.login .kF li.kFr {
+            float: right;
+          }
+        #lb_c.login .kF li:before {
+          content: '—';
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+    #lb_c.login .kF + p {
+      text-align: center;
+      margin: 0;
+      position: relative;
+    }
+      #lb_c.login a.sub_now {
+        font: 17px/20px sans-serif;
+        text-decoration: underline;
+        font-weight: bold;
+        color: #FA3D33;
+      }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ custom classes */
+
+.teritary {
+}
+  .teritary > ul {
+    margin: 18px 0;
+    overflow: hidden;
+  }
+    .teritary li {
+      display: inline;
+      float: left;
+    }
+      .teritary > ul a,
+      .teritary > ul span {
+        display: block;
+        padding: 6px 8px 4px;
+        border: 2px solid #fff;
+        color: #1a1a1a;
+        margin: 0 -2px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+        .teritary > ul span {
+          color: #cbcbcb;
+          cursor: default;
+        }
+        .teritary > ul li:hover a,
+        .teritary > ul li.current a,
+        .teritary > ul li.open a {
+          border-color: #1a1a1a;
+          text-decoration: none;
+          position: relative;
+          z-index: 1;
+        }
+          .teritary li.featured a {
+            color: #00d2cc;
+          }
+            .teritary li.featured a:hover,
+            .teritary li.featured.current a {
+              border-color: #00d2cc;
+            }
+          .teritary a.open_drawer {
+            background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 100% -2286px;
+            padding-right: 27px;
+          }
+            .teritary li.open a.open_drawer {
+              background-position: 100% -2337px;
+            }
+
+        .teritary li.dd {
+          background: #f2f2f2;
+          position: relative;
+        }
+          .teritary li.dd ul {
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            right: 0;
+            top: 100%;
+            padding: 0;
+            display: none;
+            background: transparent;
+          }
+            .teritary li.dd:hover ul {
+              display: block;
+            }
+            .teritary li.dd ul li {
+              float: none;
+              display: block;
+              background: #fff;
+            }
+      .teritary .alt {
+        float: right;
+        margin: 0 20px 0 0;
+      }
+        .teritary > ul .alt a {
+          display: block;
+          text-transform: none;
+          color: #1cace2;
+          font-size: 17px;
+          padding: 6px 0 4px;
+          margin: 0;
+          border: 0 none;
+          letter-spacing: 0;
+        }
+          .teritary > ul .alt a:hover {
+            text-decoration: underline;
+          }
+          .teritary > ul .alt.current a {
+            text-decoration: underline;
+            color: #1a1a1a;
+          }
+      .teritary li.rss {
+        float: right;
+        margin: 0 30px 0 0;
+      }
+        .teritary li.rss a {
+          display: block;
+          border: 1px solid #e6e6e6;
+          background: url('/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png') no-repeat 8px -242px;
+          width: 28px;
+          height: 29px;
+          font: 0/0 a;
+          color: transparent;
+          padding: 0;
+          margin: 0;
+        }
+          .teritary .rss a:hover {
+            background-color: #f2f2f2;
+            border-color: #e6e6e6;
+          }
+      .teritary .search {
+        float: right;
+        position: relative;
+      }
+        .teritary form,
+        .teritary fieldset {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+          .teritary legend,
+          .teritary label {
+            display: none;
+          }
+          .teritary input[type=text] {
+            display: inline;
+            float: left;
+            color: #1a1a1a;
+            padding: 4px 37px 6px 9px;
+            font: 17px/20px Helvetica, Arial, sans-serif;
+            border: 2px solid #1cace2;
+            width: 260px;
+            margin: 0;
+          }
+            .teritary input[type=text]:hover,
+            .teritary input[type=text]:focus {
+              border-color: #1cace2;
+            }
+            .teritary input[type=text].placeholder {
+              color: #1cace2;
+            }
+            .teritary input[type=text]::-webkit-input-placeholder {
+              color: #1cace2;
+            }
+            .teritary input[type=text]:-moz-placeholder {
+              color: #1cace2;
+            }
+            .teritary input[type=text]:-ms-input-placeholder {
+              color: #1cace2;
+            }
+          .teritary input[type=submit] {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            height: 30px;
+            width: 35px;
+            background: #1cace2 url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 10px -93px;
+            cursor: pointer;
+            border: 0 none;
+            font: 0/0 a;
+            color: transparent;
+          }
+            .teritary input[type=submit]:hover {
+              background-color: #1b9dcd;
+            }
+
+.paginator {
+  border-top: 1px solid #e6e6e6;
+  padding: 33px 0 0;
+  margin: 0 0 60px;
+}
+  .paginator ul {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+  }
+    .paginator li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+      .paginator li.current a {
+        color: inherit;
+      }
+      .paginator li.next {
+        display: inline;
+        float: right;
+      }
+      .paginator li.prev {
+        display: inline;
+        float: left;
+      }
+      .paginator li.next a,
+      .paginator li.prev a {
+        display: block;
+        width: 22px;
+        height: 22px;
+        font: 0/0 a;
+        color: transparent;
+        background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat 0 -650px;
+      }
+        .paginator li.next a.disabled,
+        .paginator li.next a:hover {
+          background-position: -150px -650px;
+        }
+        .paginator li.prev a {
+          background-position: 0 -600px;
+        }
+          .paginator li.prev a.disabled,
+          .paginator li.prev a:hover {
+            background-position: -150px -600px;
+          }
+
+#connect_with_facebook {
+    left: -9999em;
+    margin: 0 0 0 -96px;
+    padding: 20px 0 0;
+    position: absolute;
+    top: -9999em;
+    z-index: 9999;
+}
+
+#connect_with_facebook p {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #DDDDDD;
+    color: #1A1A1A;
+    font: 14px/17px Arial,sans-serif;
+    margin: 0;
+    padding: 16px 18px;
+    width: 154px;
+}
+
+#connect_with_facebook a {
+    display: block;
+    margin-top: 12px;
+}
+.block-dfp .slug
+{
+    position: absolute;
+}
+
+
+
+.page-user .full_width #page-title {
+  display: none;
+}
+.page-user .section_header .social {
+  bottom: 25px;
+}
+.page-user .section_header a.print {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+}
+.page-user .section_header {
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.page-user .standard_form .icon.bbbiz {
+    height: 25px;
+    width: 171px;
+    display: block;
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 0 -4450px transparent;
+    border-bottom: none;
+    margin: 25px 0;
+}
+.page-user .bbbiz-form input[type="submit"] {
+    background: none repeat scroll 0 0 #FA3D33;
+    border-color: #E93930;
+    display: inline;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.page-user .bbbiz-form input[type="submit"] + p {
+    color: #B2B2B2;
+    font: 12px/18px Arial,sans-serif;
+    margin: 0 0 30px;
+}
+
+.page-user .bbbiz-form input[type="submit"] + p a,
+.page-user .bbbiz-form input[type="submit"] + p b {
+    color: #737373;
+    font-weight: normal;
+}
+.page-user .cambey_west_profile .ib:before
+.page-user .social_networks .ib:before {
+    width: 20px;
+    margin-top: -6px;
+}
+
+.your-profile-section .cambey_west_profile a,
+.your-profile-section .social_networks a,
+.your-profile-section .cambey_west_profile span
+.your-profile-section .social_networks span {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.your-profile-section .social_networks span {
+    color: #B2B2B2;
+    margin-right: 10px;
+}
+
+.your-profile-section .social_networks span + a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+#block-billboard-blocks-executive-turntable-related {
+  text-align: center;
+}
+#block-billboard-blocks-executive-turntable-related .related-node-row {
+    padding: 222px 0 0;
+    position: relative;
+    width: 310px;
+    margin-bottom: 20px;
+}
+#block-billboard-blocks-executive-turntable-related .related-node-row h2 a {
+  font: 17px/20px "Lyon-Text-Web-Bold",Georgia,serif;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+#block-billboard-blocks-executive-turntable-related .related-node-row .image-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 205px;
+  position: absolute;
+  background: #000;
+}
+#block-billboard-blocks-executive-turntable-related .related-node-row .image-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.article-current-issue-block {
+  display: inline;
+  float: right;
+  margin: 0 -70px 30px 30px;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+  width: 225px;
+}
+  .article-current-issue-block p {
+    margin: 0;
+  }
+    .article .article_content .article-current-issue-block .footer-magazine ul {
+      margin: 7px 0 0;
+      padding: 0;
+    }
+      .article .article_content .article-current-issue-block .footer-magazine ul li {
+        list-style-type: none;
+      }
+      .article-current-issue-block .footer-magazine .content a {
+        display: inline;
+        margin: 0 5px 15px;
+        color: #fa3d33;
+        text-decoration: none;
+        font: 17px/20px sans-serif;
+      }
+      .article-current-issue-block .footer-magazine a.subscribe {
+        float: right;
+      }
+      .article-current-issue-block .footer-magazine a.buy {
+        float: left;
+      }
+      .article-current-issue-block .footer-magazine br {
+        display: none;
+      }
+      #block-user-alert-user-alert .content {
+        position: relative;
+      }
+p.no_data {
+  font-size: 17px;
+  margin: 40px 0 0 0;
+  width: 650px;
+  text-align: center;
+}
+
+.view-id-related_articles > .more-link {
+  text-align: center;
+}
+
+.cols #main-wrapper {
+  padding-left: 0 !important;
+}
+
+.node-advpoll .social {
+  margin: 0 0 30px 0;
+}
+
+.node-poll #poll-view-voting .poll {
+  padding: 50px 0 0 0;
+}
+
+
+/*
+     FILE ARCHIVED ON 16:44:31 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:42:19 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 180.751 (3)
+  esindex: 0.009
+  captures_list: 198.898
+  CDXLines.iter: 12.159 (3)
+  PetaboxLoader3.datanode: 184.303 (4)
+  exclusion.robots: 0.219
+  exclusion.robots.policy: 0.21
+  RedisCDXSource: 2.305
+  PetaboxLoader3.resolve: 1184.148
+  load_resource: 1202.421
+*/

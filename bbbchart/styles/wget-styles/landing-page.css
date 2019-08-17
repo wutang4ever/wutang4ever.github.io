@@ -1,0 +1,270 @@
+/* 
+
+    "Landing page" area styling
+
+*/
+
+.node-type-landing-page #page-title {
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.node-type-landing-page #content-top {
+  margin: 0px auto !important;
+  padding-top: 0px !important;
+}
+
+.node-type-landing-page #content-top .social {
+  float: right;
+}
+
+.node-type-landing-page #content .tertiary-menu,
+.node-type-event-page #content-top .tertiary-menu {
+    position: relative;
+    width: 990px;
+}
+    /*
+    .node-type-landing-page .field-name-field-landing-page-articles .views-row-1 > .teaser
+    {
+        border-top: 0 none;
+        padding: 0 0 25px;
+    }
+    */
+    .node-type-landing-page .rss-link a,
+    .node-type-event-page .rss-link a {
+        background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 9px -240px transparent;
+        border: 1px solid #E6E6E6;
+        color: transparent;
+        display: block;
+        font: 0px/0 a;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        width: 30px;
+    }
+    .node-type-landing-page .rss-link {
+        position: absolute;
+        right: 340px;
+        top: 19px;
+    }
+
+    .node-type-event-page .rss-link {
+        position: absolute;
+        right: 309px;
+        top: 19px;
+    }
+
+    .node-type-landing-page .filter-type
+    {
+        position: absolute;
+        right: 382px;
+        top: 19px;
+    }
+        .node-type-landing-page .filter-type a
+        {
+            border: 0 none;
+            color: #1CACE2;
+            display: inline-block;
+            float: right;
+            margin: 0 20px 0 0;
+            font-size: 17px;
+            letter-spacing: 0;
+            padding: 6px 0 4px;
+            text-transform: none;
+        }
+        .node-type-landing-page .filter-type a.active
+        {
+            color: #1A1A1A;
+            text-decoration: underline;
+        }
+    .node-type-landing-page .full_width {
+        position: relative;
+        /*margin-bottom: 25px;*/
+    }
+    .node-type-landing-page #main-wrapper.without_menu {
+        margin-top: 30px;
+    }
+    .node-type-landing-page .full_width .rss-link,
+    .node-type-event-page .full_width .rss-link {
+        bottom: auto;
+        margin-top: -34px;
+        position: absolute;
+        right: 0;
+        top: auto;
+    }
+    .node-type-landing-page .full_width .rss-link.with-title-image {
+        margin-top: -5px;
+    }
+    .node-type-author .teaser .content,
+    .node-type-landing-page .teaser .content,
+    .node-type-event-page .teaser .content,
+    .node-type-artist .teaser .content {
+        padding: 0 0 0 255px;
+    }
+    .node-type-landing-page .teaser .content-image .content {
+        padding: 0 0 0 0;
+    }
+    .node-type-landing-page .teaser.node-song .content,
+    .node-type-landing-page .teaser.node-album .content {
+        padding: 0 0 0 170px;
+    }
+    .node-type-landing-page .views-row .node-song .content-wrapper,
+    .node-type-landing-page .views-row .node-album .content-wrapper {
+        position: relative;
+    }
+    .node-type-landing-page .teaser.node-album header, 
+    .node-type-landing-page .teaser.node-song header {
+        padding-right: 170px;
+        min-height: auto;
+        overflow: hidden;
+    }
+    .node-type-landing-page .artist_latest_tweet,
+    .node-type-landing-page .author_tweet {
+        border: 0 none;
+        color: #1A1A1A;
+        margin: 0;
+        padding: 0 40px;
+        text-align: center;
+    }
+    .node-type-landing-page .artist_latest_tweet p,
+    .node-type-landing-page .author_tweet p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .node-type-landing-page .artist_latest_tweet a,
+    .node-type-landing-page .author_tweet a {
+        color: #3CB0F4;
+    }
+    .node-type-landing-page .artist_latest_tweet .twitter_content,
+    .node-type-landing-page .artist_latest_tweet .twitter_logo,
+    .node-type-landing-page .artist_latest_tweet a,
+    .node-type-landing-page .author_tweet .twitter_logo,
+    .node-type-landing-page .author_tweet a {
+        display: inline-block;
+    }
+    .node-type-landing-page .author_tweet .author_tweet_description {
+        display: inline;
+    }
+    .node-type-landing-page .artist_latest_tweet .twitter_logo,
+    .node-type-landing-page .author_tweet .twitter_logo {
+        margin: 0 3px 0 10px;
+        line-height: 20px;
+        height: 20px;
+        background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -600px -146px transparent;
+    }
+
+    #block-billboard-blocks-billboard-latest-tweets {
+    }
+
+        #block-billboard-blocks-billboard-latest-tweets h2 a {
+            text-decoration: none;
+        }
+
+        #block-billboard-blocks-billboard-latest-tweets h2:before {
+            display: inline-block;
+            background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll -600px -146px transparent;
+            vertical-align: middle;
+            height: 24px;
+            width: 17px;
+            line-height: 24px;
+            margin: 0 5px 0 0;          
+            content: "";
+        }
+
+        .bb_latest_tweets .twitter_loading,
+        .bb_latest_tweets .tweet_item {
+            position: relative;
+            border-top: 1px solid #E6E6E6;
+            padding: 15px 10px 0 10px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 20px;
+            text-align: center;
+            height: 112px;
+        }
+            .bb_latest_tweets .tweet_item .tweet-text {
+                display: block; 
+                overflow: hidden; 
+                height: 80px;
+            }
+
+        .bb_latest_tweets .twitter_view_more {
+            /*border-top: 1px solid #E6E6E6;*/
+            padding-top: 15px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .bb_latest_tweets .twitter_content {
+            height: 540px;
+            overflow: hidden;
+        }
+        .bb_latest_tweets .twitter_content li.jcarousel-item {
+            height: 540px;
+        }
+
+        .bb_latest_tweets .bb_latest_tweets_content,
+        .bb_latest_tweets .bb_latest_tweets_content .jcarousel-clip-vertical {
+            height: 430px;
+            overflow: hidden;
+        }
+
+        .bb_latest_tweets .twitter_content .tweet-time {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            color: #999999;
+            display: block;
+            font: 13px/17px sans-serif;
+            margin: 15px 0 0 0;
+        }
+.view-display-id-wim2012 .views-row .content {
+  float: left;
+  width: 420px;
+}
+
+.page-events-videos-grammys-2014,
+.page-events-photos-grammys-2014 {
+}
+  .page-events-videos-grammys-2014 .article > header,
+  .page-events-photos-grammys-2014 .article > header {
+    margin: 0px;
+  }
+
+  .page-events-videos-grammys-2014 .region-content-top .view-landing-page-aritcles,
+  .page-events-photos-grammys-2014 .region-content-top .view-landing-page-aritcles {
+    padding: 0 0 25px 0;
+  }
+
+  .page-events-videos-grammys-2014 #sidebar-second,
+  .page-events-photos-grammys-2014 #sidebar-second {
+    padding: 18px 0 0 0;
+  }
+
+
+/*
+     FILE ARCHIVED ON 16:44:31 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:45:12 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 33.417 (3)
+  esindex: 0.017
+  captures_list: 57.057
+  CDXLines.iter: 13.306 (3)
+  PetaboxLoader3.datanode: 126.126 (4)
+  exclusion.robots: 1.595
+  exclusion.robots.policy: 1.575
+  RedisCDXSource: 3.687
+  load_resource: 98.613
+*/

@@ -1,0 +1,492 @@
+/*
+
+the tall thin social sharing module
+
+later modified in the gallery to be horizontal and different colors
+
+*/
+
+/**
+ * socialities
+ */
+.social {
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    vertical-align: top;
+    font: 11px/29px Arial, sans-serif;
+    margin: 0;
+}
+    .social ul {
+        margin: 0;
+        font: 11px/29px Arial, sans-serif;
+    }
+    .social li {
+        float: left;
+    }
+    .social li + li {
+        border-left: 1px solid #e6e6e6;
+    }
+    /** Use <spans> as well as <a>s for potential drop-downs **/
+    .social li > a,
+    .social li > span {
+        padding: 0 13px;
+        display: inline-block;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .social li > a:hover {
+        text-decoration: none;
+    }
+    .social .icon {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .social .ib.sT {
+        color: transparent;
+        width: 16px ;
+        white-space: nowrap ;
+    }
+
+    #bb .social .ra1-pw_size_medium .ra1-pw-icon {
+        color: transparent !important;
+        width: 40px !important;
+        white-space: nowrap !important;
+        height: 29px !important;
+    }
+
+
+
+/**
+ * Vertical social icons
+ * @extends .social
+ */
+.social_vert {
+    width: 37px;
+    line-height: 1;
+    float: left;
+}
+    .social_vert li {
+        float: none;
+    }
+    .social_vert li > a,
+    .social_vert li > span {
+        text-align: center;
+        padding-bottom: 9px;
+        padding-top: 6px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social_vert li + li {
+        border-left: 0;
+    }
+    .social_vert li.sep {
+        border-top: 1px solid #e6e6e6; /* Not all items are divided when vertical */
+        text-align: center;
+    }
+        .social_vert li:first-child > a,
+        .social_vert li.sep > a,
+        .social_vert li.sep > span {
+            padding-top: 13px;
+        }
+    .social_vert .ib:before {
+        display: block;
+        margin: 0 auto 5px auto;
+    }
+    .social_vert .icon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .social_vert .ib.sT {
+        width: auto;
+        height: 18px;
+    }
+
+    .social_vert .sep .cmt {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #bb .social_vert .ra1-pw_size_medium .ra1-pw-icon {
+        width: auto !important;
+        height: 35px !important;
+    }
+
+    .social_vert .ib.fb:before {
+        background-position: 3px -201px;
+    }
+    .social_vert .sep div.pw-widget {
+      display: none;
+    }
+
+
+/* horizontal, with buttons */
+
+.social {}
+
+    .social ul {
+        display: inline;
+        float: left;
+    }
+        .social ul + ul > li:first-child {
+            border-left: 1px solid #e6e6e6;
+        }
+        .social ul.with_buttons li {
+            position: relative;
+        }
+            .social ul.with_buttons li:hover:after {
+                content: "";
+                position: absolute;
+                z-index: 1000;
+                top: 100%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: #fff;
+            }
+            .node-type-page .insert_social .social ul.with_buttons li.sep:hover:after {
+              display: none;
+            }
+            .social ul.with_buttons li > div {
+                position: absolute;
+                /*left: -1px;*/
+                padding: 0px;
+                width: 0px;
+                height: 0px;
+                border: 0px solid #ffffff;
+                overflow: visible;
+                left: -9999em;
+                top: 100%;
+                /*height: 20px;*/
+                /*padding: 5px 7px;*/
+                background: #fff;
+                /*border: 1px solid red;*/
+                /*width: 106px;*/
+                text-align: left;
+                z-index: 999;
+            }
+            .node-type-page .social ul.with_buttons li > div#pw_post_1 {
+              background-color: transparent;
+              height: 34px !important;
+              padding-top: 5px;
+              margin: 0 auto;
+              width: 40px;
+              z-index: 900;
+            }
+
+                .social ul.with_buttons li > div > span,
+                .social ul.with_buttons li > div > div {
+                    padding: 5px 7px;
+                }
+
+            .node-type-page .insert_social .social ul.with_buttons li.sep > div {
+              position: relative;
+              left: 0;
+              top: 0;
+              border: none;
+              text-align: center;
+              width: auto;
+            }
+
+            .node-type-page #bb .insert_social .social .ra1-pw_size_medium .ra1-pw-icon {
+              margin: 0 auto !important;
+            }
+                .social ul.with_buttons li:hover > div {
+                    /*border: 1px solid #e6e6e6;
+                    width: auto;
+                    height: auto;*/
+                    left: -1px;
+                    z-index: 99;
+                }
+                .node-type-page .insert_social .social ul.with_buttons li.sep:hover > div {
+                  left: 0;
+                }
+
+
+/* vertical, with buttons */
+
+.social_vert {
+    position: relative;
+    z-index: 99;
+    border: 0 none;
+}
+
+.node-events .social_vert {
+  position: absolute;
+  left: -50px;
+}
+    .social_vert ul {
+        display: block;
+        float: none;
+        border: 1px solid #e6e6e6;
+        min-width: 35px;
+        background: #fff;
+        overflow: visible;
+    }
+        .social_vert ul + ul {
+            border-top: 0 none;
+        }
+            .social_vert ul li.sep:first-child {
+                border-top: 0 none;
+                border-left: 0;
+            }
+            .social_vert ul + ul + li:first-child {
+                border-left: 1px solid #e6e6e6;
+            }
+
+        .social_vert ul.with_buttons {
+            padding: 5px 0 0 0;
+        }
+        .social_vert ul.with_buttons,
+        .social_vert ul.with_buttons li {
+            -webkit-transition: width .2s ease;
+            -moz-transition: width .2s ease;
+            -ms-transition: width .2s ease;
+            transition: width .2s ease;
+            background: #fff;
+        }
+            .social_vert ul.with_buttons li {
+                position: relative;
+                display: block;
+                width: 35px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+                .social_vert ul.with_buttons li:first-child {
+                    /*height: 67px;*/
+                    height: 74px;
+                }
+                .social_vert ul.with_buttons li:first-child > div > iframe {
+                    height: 62px !important;
+                    padding: 0 0 0 1px;
+                }
+                .social_vert ul.with_buttons li:hover:after {
+                    display: none;
+                }
+                .social_vert ul.with_buttons li > span:first-child {
+                    display: inline-block;
+                    width: 35px;
+                    text-align: center;
+                }
+                .social_vert ul.with_buttons li > div {
+                    position: static;
+                    border: 0 none;
+                    display: inline-block !important;
+                    overflow: hidden;
+                    width: 0px;
+                    padding: 0;
+                    height: 30px;
+                    -webkit-transition: width .3s ease;
+                    -moz-transition: width .3s ease;
+                    -ms-transition: width .3s ease;
+                    transition: width .3s ease;
+                    vertical-align: top;
+                    /**/
+                }
+                .social_vert ul.with_buttons li > div.tweetbutton,
+                .social_vert ul.with_buttons li > div.g-plusone-wrapper {
+                    padding-left: 6px;
+                }
+                .social_vert ul.with_buttons:hover li > div:hover {
+                    overflow: visible;
+                }
+                .social_vert ul.with_buttons li > div > iframe {
+                    float: left;
+                    width: 160px !important;
+                    height: 55px !important;
+                }
+                .social_vert ul.with_buttons li > div > div {
+                    padding: 0px;
+                }
+
+            .social_vert ul.with_buttons:hover {
+                width: 220px;
+                background: #fff;
+            }
+                .social_vert ul.with_buttons:hover li {
+                    overflow: visible;
+                    width: 220px;
+                    background: #fff;
+                }
+                    .social_vert ul.with_buttons:hover li > div {
+                        width: 100px;
+                        /*padding: 5px 5px 5px 7px;*/
+                    }
+
+/**
+ * On 08a artist detail, the pinterest layout
+ */
+
+.listing.pinteresterize .social {
+    width: 310px;
+    background: #fff;
+    position: absolute;
+    margin: 0 0 30px 30px;
+    font: 11px/43px Arial, sans-serif;
+}
+        .listing.pinteresterize .social a,
+        .listing.pinteresterize .social span {
+            padding: 0 18px;
+        }
+        .listing.pinteresterize .social .ib.sT {
+            color: #1a1a1a;
+            width: auto;
+        }
+        #bb .social .ra1-pw_size_medium .ra1-pw-icon {
+            color: #1a1a1a !important;
+            width: auto;
+        }
+
+
+/**
+ * Media social buttons (inverted colour scheme)
+ */
+.media .social,
+.media .social li,
+.media .social ul + ul > li:first-child {
+    border-color: #404040;
+}
+    .media .social ul li > div {
+        border-color: #404040;
+        background: #000;
+    }
+    .media .node-video-item .social ul.with_buttons li > div,
+    .media .bbcom .social ul.with_buttons li > div {
+      background: rgba(255, 255, 255, 0.85);
+    }
+        .media .social ul.with_buttons li:hover:after {
+            background: #404040;
+        }
+
+#bb .social .ra1-pw_size_medium .ra1-pw-icon {
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 13px -394px transparent !important;
+    display: block !important;
+    margin: 0 !important;
+}
+#bb .social_vert .ra1-pw_size_medium .ra1-pw-icon {
+    background-position: 10px -390px !important;
+}
+#bb .social .ra1-pw_size_medium .ra1-pw-count {
+    display: none !important;
+}
+
+#bb .media .social .ra1-pw_size_medium .ra1-pw-icon {
+  background-position: -137px -394px !important;
+}
+
+
+/**
+ * Updates to po.st sharing code
+ */
+#bb .social .pw-widget .pw-button-post {
+    cursor: pointer;
+    color: transparent !important;
+    width: 40px !important;
+    white-space: nowrap !important;
+    height: 29px !important;
+    background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 13px -394px transparent !important;
+    display: block !important;
+    margin: 0 auto!important;
+}
+#bb .social .ra1-pw_size_medium.pw-widget .pw-button-post .ra1-pw-icon {
+  background-image: none !important;
+}
+
+#bb .media .social .pw-widget .pw-button-post {
+  background-position: -137px -394px !important;
+}
+
+#bb .social .pw-widget .pw-size-small .pw-icon,
+#bb .social .pw-widget .pw-button-post .pw-icon {
+    display: none !important;
+}
+
+.social-milestone {
+  width: 310px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+.social-milestone li {
+  float: left;
+  width: 155px;
+  height: 19px;
+  text-align: center;
+  padding: 9px 0 11px;
+  position: relative;
+  font-size: 11px;
+  font-family: 'Arial', sans-serif;
+}
+.social-milestone li.row1 {
+  border-bottom: 1px solid #e6e6e6;
+}
+.social-milestone li.col1 {
+  border-right: 1px solid #e6e6e6;
+  width: 154px;
+}
+.social-milestone li > div {
+  position: absolute;
+  top: 39px;
+  left: -1px; 
+  background-color: #fff;
+  width: 0;
+  overflow: hidden;
+  z-index: 1;
+  padding: 10px 0;
+  height: 20px;
+}
+
+.social-milestone .fb-like {
+  z-index: 2;
+}
+
+.social-milestone li.hover > div,
+.social-milestone li:hover > div {
+  border: 1px solid #e6e6e6;
+  border-top-width: 0; 
+  width: 100px;
+  overflow: visible;
+}
+.social-milestone .pw-widget .pw-button-post {
+  cursor: pointer;
+  color: transparent !important;
+  width: 40px !important;
+  white-space: nowrap !important;
+  height: 29px !important;
+  background: url("/web/20190719164431im_/https://www.billboard.com/sites/all/themes/bb/images/sprite-2013-01-25.png") no-repeat scroll 13px -394px transparent !important;
+  display: block !important;
+  margin: 0 auto!important;
+}
+.social-milestone .pw-widget .pw-size-small .pw-icon {
+  display: none !important;
+}
+.social-milestone .pw-widget {
+ padding: 6px 0 14px;
+}
+
+#jpd_rightwell {
+  z-index: 1;
+  margin-left: 1px;
+}
+/*
+     FILE ARCHIVED ON 16:44:31 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:44:34 Aug 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 200.433 (3)
+  esindex: 0.007
+  captures_list: 216.595
+  CDXLines.iter: 12.202 (3)
+  PetaboxLoader3.datanode: 173.328 (4)
+  exclusion.robots: 0.229
+  exclusion.robots.policy: 0.216
+  RedisCDXSource: 0.588
+  PetaboxLoader3.resolve: 158.04 (2)
+  load_resource: 134.639
+*/
