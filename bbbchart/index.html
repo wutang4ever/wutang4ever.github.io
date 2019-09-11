@@ -91,8 +91,16 @@
 <body>
 
 <div id="chartSelect" align="center">
-    <label>Enter URL:</label><br>
-    <input type="text" id="chartURL" style="width:400px;"/><br><br>
+    <label>Enter URL:</label>
+    <input type="text" id="chartURL" style="width:400px;"/><br>
+    <label>Or select:</label>
+    <select id="chart-select" style="width:300px;">
+        <option value="">Select chart</option>
+    </select>
+    <select id="date-select" style="width:100px;">
+        <option value="">Select date</option>
+    </select>
+    <br><br>
     <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button>
     <br><br>
     <div id="userMessage"></div><br><br>
@@ -192,6 +200,105 @@
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/xlsx.full.min.js"></script>
         <script>
+
+            var CHARTS = [
+                ['adult-contemporary','1961-07-17'                           ],
+                ['adult-pop-songs','1995-10-07'],
+                ['alternative-album-sales','2007-07-28'],
+                ['alternative-albums','2007-07-28'],
+                ['alternative-songs','1988-09-10'],
+                ['alternative-digital-song-sales','2011-01-22'],
+                ['americana-folk-album-sales','2009-12-05'],
+                ['americana-folk-albums','2009-12-05'],
+                ['artist-100','2014-07-19'],
+                ['billboard-200','1963-08-17'],
+                ['bluegrass-albums','2002-07-20'],
+                ['blues-albums','1995-09-02'],
+                ['blues-digital-song-sales','2010-01-23'],
+                ['bubbling-under-hot-100-singles','1992-12-05'],
+                ['bubbling-under-r-and-b-hip-hop-singles','1992-12-05'],
+                ['cast-albums','2006-01-14'],
+                ['catalog-album-sales','1991-05-25'],
+                ['compilation-albums','2004-10-30'],
+                ['contemporary-jazz','1987-02-28'],
+                ['country-airplay','1990-01-20'],
+                ['country-album-sales','1991-05-25'],
+                ['country-albums','1964-01-11'],
+                ['country-catalog-albums','1991-05-25'],
+                ['country-digital-song-sales','2010-01-23'],
+                ['country-songs','1958-10-20'],
+                ['country-streaming-songs','2013-04-20'],
+                ['current-albums','1983-11-05'],
+                ['dance-club-play-songs','1976-08-28'],
+                ['dance-electronic-album-sales','2001-06-30'],
+                ['dance-electronic-albums','2001-06-30'],
+                ['dance-electronic-digital-song-sales','2010-01-23'],
+                ['dance-electronic-songs','2013-01-26'],
+                ['dance-electronic-streaming-songs','2013-04-20'],
+                ['digital-albums','2005-09-24'],
+                ['digital-song-sales','2004-10-30'],
+                ['hard-rock-album-sales','2007-07-28'],
+                ['hard-rock-albums','2007-07-28'],
+                ['hard-rock-digital-song-sales','2011-01-22'],
+                ['heatseekers-albums','1991-07-13'],
+                ['heatseekers-songs','2009-07-18','2014-11-29'],
+                ['hot-adult-r-and-b-airplay','1993-09-18'],
+                ['hot-dance-airplay','2003-08-16'],
+                ['hot-holiday-songs','2011-12-10'],
+                ['hot-mainstream-rock-tracks','1981-03-21'],
+                ['hot-r-and-b-hip-hop-airplay','1992-04-04'],
+                ['hot-rap-tracks','1999-02-20'],
+                ['independent-albums','2000-01-29'],
+                ['jazz-albums','1993-11-13'],
+                ['jazz-digital-song-sales','2010-01-23'],
+                ['jazz-songs','2005-10-22'],
+                ['latin-album-sales','1993-07-10'],
+                ['latin-albums','1993-07-10'],
+                ['latin-songs','1986-09-06'],
+                ['mainstream-r-and-b-hip-hop','1993-09-18'],
+                ['new-age-albums','1988-08-27'],
+                ['new-age-digital-song-sales','2010-01-23'],
+                ['on-demand-songs','2012-03-24'],
+                ['pop-digital-song-sales','2010-01-23'],
+                ['pop-songs','1992-10-03'],
+                ['r-and-b-albums','2013-01-26'],
+                ['r-and-b-digital-song-sales','2012-11-10'],
+                ['r-and-b-hip-hop-catalog-albums','1997-01-18'],
+                ['r-and-b-hip-hop-digital-song-sales','2010-01-23'],
+                ['r-and-b-hip-hop-streaming-songs','2013-04-20'],
+                ['r-and-b-songs','2012-10-20'],
+                ['r-and-b-streaming-songs','2013-04-20'],
+                ['r-b-hip-hop-albums','1965-01-30'],
+                ['r-b-hip-hop-songs','1958-01-20'],
+                ['radio-songs','1990-11-03'],
+                ['randb-album-sales','2013-01-26'],
+                ['randb-hip-hop-album-sales','1992-12-05'],
+                ['rap-album-sales','2004-06-26'],
+                ['rap-albums','2004-06-26'],
+                ['rap-digital-song-sales','2010-01-23'],
+                ['rap-song','1989-03-11'],
+                ['rap-streaming-songs','2013-04-20'],
+                ['reggae-albums','1994-02-05'],
+                ['reggae-digital-song-sales','2010-01-23'],
+                ['rhythmic-40','1992-10-03'],
+                ['rock-airplay','2009-06-20'],
+                ['rock-album-sales','2006-01-14'],
+                ['rock-albums','2006-01-14'],
+                ['rock-digital-song-sales','2010-01-23'],
+                ['rock-songs','2009-06-20'],
+                ['rock-streaming-songs','2013-04-20'],
+                ['soundtrack-sales','2001-06-30'],
+                ['soundtracks','2001-06-30'],
+                ['streaming-songs','2013-01-26'],
+                ['tastemaker-albums','2005-12-03'],
+                ['the-billboard-hot-100','1958-08-04'],
+                ['top-album-sales','1991-05-25'],
+                ['traditional-jazz-albums','1983-11-12'],
+                ['triple-a','1996-01-20'],
+                ['vinyl-albums','2011-01-22'],
+                ['world-albums','1990-05-19'],
+                ['world-digital-song-sales','2010-01-23']
+            ];
 
             function parseChartFromPrintView(htmlChart) {
                 // setTextArea(htmlChart);
@@ -324,7 +431,7 @@
             function validateResponse(data) {
                 return data.includes('<table>') &&
                     (data.includes('<span class="chart-list-item__ministats-cell-heading">Peak</span>') ||
-                        data.includes('<div class="chart-list-item__weeks-on-chart">'));
+                        data.includes('<div class="chart-list-item">'));
             }
 
             function isNew(p) {
@@ -414,9 +521,9 @@
                 var wb = XLSX.utils.book_new();
                 wb.SheetNames.push("Chart");
                 var ws_data = [];
-                ws_data.push(['TW', 'LW', '2W', 'WOC', 'TITLE', 'ARTIST', 'PEAK', 'LABEL']);
+                ws_data.push(['TW', 'LW', '2W', 'PEAK', 'WOC', 'TITLE', 'ARTIST', 'LABEL', 'CREDITS']);
                 chart.positions.forEach(function(p) {
-                    ws_data.push([p.pos, p.w1, p.w2, p.weeks, p.title, p.artist, p.peak, p.label])
+                    ws_data.push([p.pos, p.w1, p.w2, p.peak, p.weeks, p.title, p.artist, p.label, p.credits]);
                 });
                 wb.Sheets["Chart"] = XLSX.utils.aoa_to_sheet(ws_data);
                 XLSX.writeFile(wb, chart.title+' '+chart.date+`.xlsx`);
@@ -439,9 +546,6 @@
             }
 
             function getChartHtml(chartUrl, callback, format) {
-                setUserMessage('');
-                $('#textAreaOutput').hide();
-                $('#bizChartRoot').hide();
                 $.ajax({
                     url:"https://cors-anywhere.herokuapp.com/"+chartUrl,
                     // headers: {
@@ -457,30 +561,64 @@
                 });
             }
 
-            $(document).ready(function() {
-                $("#getChart").click(function () {
+            function getLastSaturday() {
+                var t = new Date();
+                t.setDate(t.getDate() - t.getDay());
+                t.setDate(t.getDate() -1);
+                return t;
+            }
+
+            function plus(d, days) {
+                var t = new Date(d.getTime());
+                t.setDate(t.getDate()+days);
+                return t;
+            }
+
+            function format(d) {
+                return d.getFullYear()+'-'+("0" + (d.getMonth()+1)).slice(-2)+'-'+("0" + d.getDate()).slice(-2);
+            }
+
+            function get(type) {
+                setUserMessage('');
+                $('#textAreaOutput').hide();
+                $('#bizChartRoot').hide();
+                var selectedChart = $('#chart-select').children("option:selected").val();
+                var selectedDate = $('#date-select').children("option:selected").val();
+                if (selectedChart !== '' && selectedDate !== '') {
+                    var chartUrl = 'https://www.billboard.com/charts/'+selectedChart+'/'+selectedDate;
+                } else {
                     var chartUrl = $("#chartURL").val();
-                    if (chartUrl.includes("billboard.com/charts")) {
-                        getChartHtml(chartUrl, callback, 'TEXT');
-                    } else {
-                        setUserMessage('Incorrect URL');
-                    }
+                }
+                if (chartUrl.includes("billboard.com/charts")) {
+                    getChartHtml(chartUrl, callback, type);
+                } else {
+                    setUserMessage('Incorrect URL');
+                }
+            }
+
+            $(document).ready(function() {
+                CHARTS.forEach(function(e) {
+                    $("#chart-select").append($('<option>', {
+                        value: e[0],
+                        text: e[0]
+                    }));
+                });
+                var d = getLastSaturday();
+                var dates = [format(plus(d,7)), format(d), format(plus(d,-7)), format(plus(d, -14))];
+                dates.forEach(function(e) {
+                    $("#date-select").append($('<option>', {
+                        value: e,
+                        text: e
+                    }));
+                });
+                $("#getChart").click(function () {
+                    get('TEXT');
                 });
                 $("#getBizChart").click(function () {
-                    var chartUrl = $("#chartURL").val();
-                    if (chartUrl.includes("billboard.com/charts")) {
-                        getChartHtml(chartUrl, callback, 'BIZ');
-                    } else {
-                        setUserMessage('Incorrect URL');
-                    }
+                    get('BIZ');
                 });
                 $("#getExcelFile").click(function () {
-                    var chartUrl = $("#chartURL").val();
-                    if (chartUrl.includes("billboard.com/charts")) {
-                        getChartHtml(chartUrl, callback, 'XLSX');
-                    } else {
-                        setUserMessage('Incorrect URL');
-                    }
+                    get('XLSX');
                 });
             });
         </script>
