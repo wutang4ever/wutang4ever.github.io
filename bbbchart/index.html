@@ -354,7 +354,7 @@
             }
 
             function detectRenderLayout(htmlChart) {
-                if (htmlChart.includes('<span class="chart-list-item__ministats-cell-heading">Peak</span>')) {
+                if (htmlChart.includes('chart-list-item__ministats-cell-heading')) {
                     return 'BIZ';
                 } else {
                     return 'MAIN';
@@ -429,9 +429,7 @@
             }
 
             function validateResponse(data) {
-                return data.includes('<table>') &&
-                    (data.includes('<span class="chart-list-item__ministats-cell-heading">Peak</span>') ||
-                        data.includes('<div class="chart-list-item">'));
+                return data.includes('<table>') && data.includes('chart-list-item');
             }
 
             function isNew(p) {
