@@ -347,8 +347,8 @@
                 gainer: gainer,
                 title: title,
                 artist: artist,
-                credits: credits,
-                label: label,
+                credits: !!credits && credits.trim() === '()' ? 'Not Listed' : credits,
+                label: !!label && label.trim() === '()' ? 'Not Listed' : label,
                 peak: peak
             };
             positions.push(p);
