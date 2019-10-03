@@ -612,7 +612,9 @@
             }));
         });
         var d = getLastSaturday();
-        var dates = [format(plus(d,7)), format(d), format(plus(d,-7)), format(plus(d, -14))];
+        var dates = [format(plus(d,7)), format(d), format(plus(d,-7)), format(plus(d, -14)), format(plus(d, -21)), 
+                     format(plus(d, -28)), format(plus(d, -35)), format(plus(d, -42)), format(plus(d, -49)), 
+                     format(plus(d, -56)), format(plus(d, -63)), format(plus(d, -70)), format(plus(d, -77))];
         dates.forEach(function(e) {
             $("#date-select").append($('<option>', {
                 value: e,
