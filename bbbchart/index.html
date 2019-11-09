@@ -364,7 +364,7 @@
     }
 
     function detectRenderLayout(htmlChart) {
-        if (htmlChart.includes('chart-list-item__ministats-cell-heading')) {
+        if (htmlChart.indexOf('chart-list-item__ministats-cell-heading') > 0) {
             return 'BIZ';
         } else {
             return 'MAIN';
@@ -414,7 +414,7 @@
 
     function parseChart(htmlChart) {
         var mainView = htmlChart.slice(htmlChart.indexOf('<main'), htmlChart.indexOf('</main>') + 7);
-        $('#hiddenChart').html(mainView);
+        $('#hiddenChart').html(preventJS(mainView));
         var chart = parseChartFromPrintView(htmlChart);
         parseAdditionalItemsFromRenderViewCommon(chart, htmlChart);
         if (detectRenderLayout(htmlChart) === 'BIZ') {
@@ -424,6 +424,64 @@
         }
         return chart;
     }
+
+    function preventJS(html) {
+        // return html.replace(/<script(?=(\s|>))/i, '<script type="text/xml" ');
+        var wrapper = document.createElement('div');
+        wrapper.innerHTML = html;
+        $(wrapper).find('script').remove();
+        return wrapper
+    }
+
+    function parseChartUK(htmlChart) {
+        var mainView = htmlChart.slice(htmlChart.indexOf('<article class="page"'), htmlChart.indexOf('</article>') + 7);
+        $('#hiddenChart').html(preventJS(mainView));
+
+        var title = $('.article-heading').text().trim();
+        var date = $('.article-date').first().text().trim();
+        var criteria = '';
+        var description = $('.chart-intro-text').text().trim();
+        var positions = [];
+        $('#hiddenChart').find('section>table>tbody>tr:not(".headings")').each(function() {
+            $('#hiddenChartPos').html(this.innerHTML);
+            var pos = $(this).find('.position').text().trim();
+            if (!pos) return;
+            var w2 = '';
+            var w1 = $(this).find('.last-week').text().trim();
+            var gainer = '';
+            var title = $(this).find('.title').text().trim();
+            var artist = $(this).find('.artist').text().trim();
+            var credits = '';
+            var label = $(this).find('label-cat').text().trim();
+            var cert = '';
+            // var weeksAt1 = $(this).find('td:nth-child(6)').text();
+            var weeks = $(this).find('td:nth-child(5)').text().trim();
+            var peak = $(this).find('td:nth-child(4)').text().trim();
+            var p = {
+                w2: w2,
+                w1: w1,
+                pos: pos,
+                cert: cert,
+                weeks: weeks,
+                gainer: gainer,
+                title: title,
+                artist: artist,
+                credits: !!credits && credits.trim() === '()' ? 'Not Listed' : credits,
+                label: !!label && label.trim() === '()' ? 'Not Listed' : label,
+                peak: peak
+            };
+            positions.push(p);
+        });
+
+        return {
+            title: title,
+            date: date,
+            criteria: criteria,
+            description: description,
+            positions: positions
+        };
+    }
+
 
     function setHtml(id, text) {
         $('#'+id).html(text);
@@ -439,11 +497,15 @@
     }
 
     function validateResponse(data) {
-        return data.includes('<table>') && data.includes('chart-list-item');
+        return data.indexOf('<table>') > 0 && data.indexOf('chart-list-item') > 0;
+    }
+
+    function validateResponseUK(data) {
+        return data.indexOf('<table') > 0 && data.indexOf('chart-positions') > 0;
     }
 
     function isNew(p) {
-        return p.w1 === '--' && p.w2 === '--';
+        return (p.w1 === '--' && p.w2 === '--') || (!!p.w1 && (p.w1.toUpperCase() === 'NEW' || p.w1.toUpperCase() === 'RE'));
     }
 
     function getChartText(chart) {
@@ -494,7 +556,7 @@
         var weeks = $('<td>').attr('rowspan', '2').text(position.weeks);
         if (position.weeks === '1') {
             tr.append('<td rowspan="2" colspan="2" class="new"><span>New</span></td>');
-        } else if (position.w1 === '--') {
+        } else if (position.w1 === '--' || position.w1.toUpperCase() === 'RE') {
             tr.append('<td rowspan="2" colspan="2" class="new"><span>Re-Entry</span></td>');
         } else {
             tr.append(w2).append(w1);
@@ -534,7 +596,7 @@
             ws_data.push([p.pos, p.w1, p.w2, p.peak, p.weeks, p.title, p.artist, p.label, p.credits]);
         });
         wb.Sheets["Chart"] = XLSX.utils.aoa_to_sheet(ws_data);
-        XLSX.writeFile(wb, chart.title+' '+chart.date+`.xlsx`);
+        XLSX.writeFile(wb, chart.title+' '+chart.date+'.xlsx');
     }
 
     function callback(data, format) {
@@ -542,6 +604,22 @@
             setUserMessage('No chart found in response from server');
         } else {
             var chart = parseChart(data);
+            if (format === 'TEXT') {
+                var chartText = getChartText(chart);
+                setTextArea(chartText);
+            } else if (format === 'BIZ') {
+                setBizChart(chart);
+            } else if (format === 'XLSX') {
+                download(chart);
+            }
+        }
+    }
+
+    function callbackUK(data, format) {
+        if (!validateResponseUK(data)) {
+            setUserMessage('No chart found in response from server');
+        } else {
+            var chart = parseChartUK(data);
             if (format === 'TEXT') {
                 var chartText = getChartText(chart);
                 setTextArea(chartText);
@@ -597,8 +675,10 @@
         } else {
             var chartUrl = $("#chartURL").val();
         }
-        if (chartUrl.includes("billboard.com/charts")) {
+        if (chartUrl.indexOf("billboard.com/charts") > 0) {
             getChartHtml(chartUrl, callback, type);
+        } else if (chartUrl.indexOf("officialcharts.com/charts") > 0) {
+            getChartHtml(chartUrl, callbackUK, type);
         } else {
             setUserMessage('Incorrect URL');
         }
