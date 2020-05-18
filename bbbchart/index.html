@@ -108,7 +108,7 @@
         <select id="date-select" style="width:100px;">
             <option value="">Select date</option>
         </select>
-        <label>Or paste HTML code (open chart in browswer, press Ctrl+U, copy all code)</label>
+        <label>Or paste HTML code (open chart in browser, press Ctrl+U, copy all code)</label>
         <input type="textarea" id="chartHtml" style="width:400px;height:100px;"/><br>
         <br><br>
         <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button> <button id="clear">Clear All</button>
@@ -551,7 +551,7 @@
             cols.push(p.peak);
             cols.push(')');
             cols.push(p.label);
-            cols.push(p.awards);
+            // cols.push(p.awards);
             lines.push(cols.join(' '));
         });
         return lines.join('\n');
