@@ -99,17 +99,19 @@
 
 <div id="open" hidden="true">
     <div id="chartSelect" align="center">
-        <label>Enter URL:</label>
+        <label>Enter URL (for now only OCC url works):</label>
         <input type="text" id="chartURL" style="width:400px;"/><br>
-        <label>Or select:</label>
+        <label>Or select (does not work any more):</label>
         <select id="chart-select" style="width:300px;">
             <option value="">Select chart</option>
         </select>
         <select id="date-select" style="width:100px;">
             <option value="">Select date</option>
         </select>
+        <label>Or paste HTML code (open chart in browswer, press Ctrl+U, copy all code)</label>
+        <input type="textarea" id="chartHtml" style="width:400px;height:100px;"/><br>
         <br><br>
-        <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button>
+        <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button> <button id="clear">Clear All</button>
         <br><br>
         <div id="userMessage"></div><br><br>
         <!--    <input type="textarea" id="textAreaOutput" hidden="true" style="width: 400px; height: 1200px;"/>-->
@@ -211,101 +213,105 @@
 <script src="scripts/xlsx.full.min.js"></script>
 <script>
 
+    var date = '';
+
     var CHARTS = [
-        ['adult-contemporary','1961-07-17'                           ],
-        ['adult-pop-songs','1995-10-07'],
-        ['alternative-album-sales','2007-07-28'],
-        ['alternative-albums','2007-07-28'],
-        ['alternative-songs','1988-09-10'],
-        ['alternative-digital-song-sales','2011-01-22'],
-        ['americana-folk-album-sales','2009-12-05'],
-        ['americana-folk-albums','2009-12-05'],
-        ['artist-100','2014-07-19'],
-        ['bluegrass-albums','2002-07-20'],
-        ['blues-albums','1995-09-02'],
-        ['blues-digital-song-sales','2010-01-23'],
+        ['the-billboard-hot-100','1958-08-04'],
         ['bubbling-under-hot-100-singles','1992-12-05'],
+        ['r-b-hip-hop-songs','1958-01-20'],
         ['bubbling-under-r-and-b-hip-hop-singles','1992-12-05'],
-        ['cast-albums','2006-01-14'],
-        ['catalog-album-sales','1991-05-25'],
-        ['compilation-albums','2004-10-30'],
-        ['contemporary-jazz','1987-02-28'],
-        ['country-airplay','1990-01-20'],
-        ['country-album-sales','1991-05-25'],
-        ['country-albums','1964-01-11'],
-        ['country-catalog-albums','1991-05-25'],
-        ['country-digital-song-sales','2010-01-23'],
+        ['r-and-b-songs','2012-10-20'],
         ['country-songs','1958-10-20'],
-        ['country-streaming-songs','2013-04-20'],
-        ['current-albums','1983-11-05'],
-        ['dance-club-play-songs','1976-08-28'],
-        ['dance-electronic-album-sales','2001-06-30'],
-        ['dance-electronic-albums','2001-06-30'],
-        ['dance-electronic-digital-song-sales','2010-01-23'],
+        ['radio-songs','1990-11-03'],
+        ['digital-song-sales','2004-10-30'],
+        ['pop-digital-song-sales','2010-01-23'],
+        ['r-and-b-hip-hop-digital-song-sales','2010-01-23'],
+        ['rap-digital-song-sales','2010-01-23'],
+        ['r-and-b-digital-song-sales','2012-11-10'],
+        ['country-digital-song-sales','2010-01-23'],
+        ['pop-songs','1992-10-03'],
+        ['adult-pop-songs','1995-10-07'],
+        ['adult-contemporary','1961-07-17'                           ],
+        ['hot-r-and-b-hip-hop-airplay','1992-04-04'],
+        ['mainstream-r-and-b-hip-hop','1993-09-18'],
+        ['hot-adult-r-and-b-airplay','1993-09-18'],
+        ['rhythmic-40','1992-10-03'],
+        ['country-airplay','1990-01-20'],
+        ['rock-songs','2009-06-20'],
+        ['hard-rock-digital-song-sales','2011-01-22'],
+        ['alternative-digital-song-sales','2011-01-22'],
+        ['rock-digital-song-sales','2010-01-23'],
+        ['rock-airplay','2009-06-20'],
+        ['alternative-songs','1988-09-10'],
+        ['hot-mainstream-rock-tracks','1981-03-21'],
+        ['triple-a','1996-01-20'],
         ['dance-electronic-songs','2013-01-26'],
+        ['dance-electronic-digital-song-sales','2010-01-23'],
+        ['hot-dance-airplay','2003-08-16'],
+        ['dance-club-play-songs','1976-08-28'],
+        ['latin-songs','1986-09-06'],
+
+        ['the-billboard-200','1963-08-17'],
+        ['top-album-sales','1991-05-25'],
+        ['current-albums','1983-11-05'],
+        ['tastemaker-albums','2005-12-03'],
+        ['country-albums','1964-01-11'],
+        ['americana-folk-albums','2009-12-05'],
+        ['bluegrass-albums','2002-07-20'],
+        ['r-b-hip-hop-albums','1965-01-30'],
+        ['rap-albums','2004-06-26'],
+        ['r-and-b-albums','2013-01-26'],
+        ['rock-albums','2006-01-14'],
+        ['hard-rock-albums','2007-07-28'],
+        ['alternative-albums','2007-07-28'],
+        ['dance-electronic-albums','2001-06-30'],
+        ['blues-albums','1995-09-02'],
+        ['jazz-albums','1993-11-13'],
+        ['traditional-jazz-albums','1983-11-12'],
+        ['contemporary-jazz','1987-02-28'],
+        ['new-age-albums','1988-08-27'],
+        ['reggae-albums','1994-02-05'],
+        ['heatseekers-albums','1991-07-13'],
+        ['independent-albums','2000-01-29'],
+        ['soundtracks','2001-06-30'],
+        ['compilation-albums','2004-10-30'],
+        ['cast-albums','2006-01-14'],
+        ['vinyl-albums','2011-01-22'],
+
+        ['alternative-album-sales','2007-07-28'],
+        ['americana-folk-album-sales','2009-12-05'],
+        ['artist-100','2014-07-19'],
+        ['blues-digital-song-sales','2010-01-23'],
+        ['catalog-album-sales','1991-05-25'],
+        ['country-album-sales','1991-05-25'],
+        ['country-catalog-albums','1991-05-25'],
+        ['country-streaming-songs','2013-04-20'],
+        ['dance-electronic-album-sales','2001-06-30'],
         ['dance-electronic-streaming-songs','2013-04-20'],
         ['digital-albums','2005-09-24'],
-        ['digital-song-sales','2004-10-30'],
         ['hard-rock-album-sales','2007-07-28'],
-        ['hard-rock-albums','2007-07-28'],
-        ['hard-rock-digital-song-sales','2011-01-22'],
-        ['heatseekers-albums','1991-07-13'],
         ['heatseekers-songs','2009-07-18','2014-11-29'],
-        ['hot-adult-r-and-b-airplay','1993-09-18'],
-        ['hot-dance-airplay','2003-08-16'],
         ['hot-holiday-songs','2011-12-10'],
-        ['hot-mainstream-rock-tracks','1981-03-21'],
-        ['hot-r-and-b-hip-hop-airplay','1992-04-04'],
         ['hot-rap-tracks','1999-02-20'],
-        ['independent-albums','2000-01-29'],
-        ['jazz-albums','1993-11-13'],
         ['jazz-digital-song-sales','2010-01-23'],
         ['jazz-songs','2005-10-22'],
         ['latin-album-sales','1993-07-10'],
         ['latin-albums','1993-07-10'],
-        ['latin-songs','1986-09-06'],
-        ['mainstream-r-and-b-hip-hop','1993-09-18'],
-        ['new-age-albums','1988-08-27'],
         ['new-age-digital-song-sales','2010-01-23'],
         ['on-demand-songs','2012-03-24'],
-        ['pop-digital-song-sales','2010-01-23'],
-        ['pop-songs','1992-10-03'],
-        ['r-and-b-albums','2013-01-26'],
-        ['r-and-b-digital-song-sales','2012-11-10'],
         ['r-and-b-hip-hop-catalog-albums','1997-01-18'],
-        ['r-and-b-hip-hop-digital-song-sales','2010-01-23'],
         ['r-and-b-hip-hop-streaming-songs','2013-04-20'],
-        ['r-and-b-songs','2012-10-20'],
         ['r-and-b-streaming-songs','2013-04-20'],
-        ['r-b-hip-hop-albums','1965-01-30'],
-        ['r-b-hip-hop-songs','1958-01-20'],
-        ['radio-songs','1990-11-03'],
         ['randb-album-sales','2013-01-26'],
         ['randb-hip-hop-album-sales','1992-12-05'],
         ['rap-album-sales','2004-06-26'],
-        ['rap-albums','2004-06-26'],
-        ['rap-digital-song-sales','2010-01-23'],
         ['rap-song','1989-03-11'],
         ['rap-streaming-songs','2013-04-20'],
-        ['reggae-albums','1994-02-05'],
         ['reggae-digital-song-sales','2010-01-23'],
-        ['rhythmic-40','1992-10-03'],
-        ['rock-airplay','2009-06-20'],
         ['rock-album-sales','2006-01-14'],
-        ['rock-albums','2006-01-14'],
-        ['rock-digital-song-sales','2010-01-23'],
-        ['rock-songs','2009-06-20'],
         ['rock-streaming-songs','2013-04-20'],
         ['soundtrack-sales','2001-06-30'],
-        ['soundtracks','2001-06-30'],
         ['streaming-songs','2013-01-26'],
-        ['tastemaker-albums','2005-12-03'],
-        ['the-billboard-200','1963-08-17'],
-        ['the-billboard-hot-100','1958-08-04'],
-        ['top-album-sales','1991-05-25'],
-        ['traditional-jazz-albums','1983-11-12'],
-        ['triple-a','1996-01-20'],
-        ['vinyl-albums','2011-01-22'],
         ['world-albums','1990-05-19'],
         ['world-digital-song-sales','2010-01-23']
     ];
@@ -325,7 +331,7 @@
             // if (positions.length > 2) {
             //     return;
             // }
-            $('#hiddenChartPos').html(this.innerHTML);
+            // $('#hiddenChartPos').html(this.innerHTML);
             var w2 = $(this).find('td:nth-child(1)').text();
             var w1 = $(this).find('td:nth-child(2)').text();
             var pos = $(this).find('td:nth-child(3)').text();
@@ -406,6 +412,16 @@
         }
         l.each(function() {
             chart.positions[index++].peak = $(this).parent().clone().children().remove().end().text().trim();
+        });
+
+        // AWARDS
+        index = 0;
+        var awards = $('#hiddenChart').find('.chart-list-item__award');
+        if (awards.length !== chart.positions.length) {
+            setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
+        }
+        awards.each(function() {
+            chart.positions[index++].awards = $(this).html().trim();
         });
     }
 
@@ -535,6 +551,7 @@
             cols.push(p.peak);
             cols.push(')');
             cols.push(p.label);
+            cols.push(p.awards);
             lines.push(cols.join(' '));
         });
         return lines.join('\n');
@@ -664,6 +681,11 @@
         return d.getFullYear()+'-'+("0" + (d.getMonth()+1)).slice(-2)+'-'+("0" + d.getDate()).slice(-2);
     }
 
+    function clearAll() {
+        $('#chartHtml').val('');
+        $("#chartURL").val('');
+    }
+
     function get(type) {
         setUserMessage('');
         $('#textAreaOutput').hide();
@@ -675,12 +697,17 @@
         } else {
             var chartUrl = $("#chartURL").val();
         }
-        if (chartUrl.indexOf("billboard.com/charts") > 0) {
-            getChartHtml(chartUrl, callback, type);
-        } else if (chartUrl.indexOf("officialcharts.com/charts") > 0) {
-            getChartHtml(chartUrl, callbackUK, type);
-        } else {
-            setUserMessage('Incorrect URL');
+        var chartHtml = $('#chartHtml').val();
+        if(!!chartHtml && !!chartHtml.trim()) {
+            callback(chartHtml, type);
+        }  else {
+            if (chartUrl.indexOf("billboard.com/charts") > 0) {
+                getChartHtml(chartUrl, callback, type);
+            } else if (chartUrl.indexOf("officialcharts.com/charts") > 0) {
+                getChartHtml(chartUrl, callbackUK, type);
+            } else {
+                setUserMessage('Incorrect URL');
+            }
         }
     }
 
@@ -709,6 +736,9 @@
         });
         $("#getExcelFile").click(function () {
             get('XLSX');
+        });
+        $("#clear").click(function () {
+            clearAll();
         });
         $('#authenticate').click(function() {
             var pass = $("#pass").val();
