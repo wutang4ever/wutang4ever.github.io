@@ -650,13 +650,13 @@
 
     function getChartHtml(chartUrl, callback, format) {
         $.ajax({
-            url:"https://thingproxy.freeboard.io/fetch/"+chartUrl,
+            url:"https://api.allorigins.win/get?url="+chartUrl,
              //headers: {
              //	'Origin': 'https://billboard.com'
              //},
             type:'GET',
             success: function(data){
-                callback(data, format);
+                callback(data.contents, format);
             },
             error: function(data) {
                 setUserMessage('Server error');
