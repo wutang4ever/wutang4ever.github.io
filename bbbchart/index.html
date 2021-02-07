@@ -650,10 +650,10 @@
 
     function getChartHtml(chartUrl, callback, format) {
         $.ajax({
-            url:"http://thingproxy.freeboard.io/fetch/"+chartUrl,
-            // headers: {
-            // 	'Origin': 'https://billboard.com'
-            // },
+            url:"https://thingproxy.freeboard.io/fetch/"+chartUrl,
+             headers: {
+             	'Origin': 'https://billboard.com'
+             },
             type:'GET',
             success: function(data){
                 callback(data, format);
