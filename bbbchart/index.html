@@ -114,7 +114,6 @@
         <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button> <button id="clear">Clear All</button>
         <br><br>
         <div id="userMessage"></div><br><br>
-        <!--    <input type="textarea" id="textAreaOutput" hidden="true" style="width: 400px; height: 1200px;"/>-->
     </div>
 
     <div id="hiddenChart" hidden="true"></div>
@@ -128,34 +127,8 @@
 
         <div id="bb" class="bbbiz" data-behavior="bbbiz">
             <div class="full_width">
-                <!--            <ul class="header_meta">-->
-                <!--                <li class="prev"><a href="/web/20190719160117/https://www.billboard.com/biz/charts/2019-07-13/the-billboard-hot-100">Last week</a></li>-->
-                <!--                <li><span class="chart_date">July 20, 2019</span></li>-->
-                <!--                <li class="next"><span>Next week</span></li>-->
-                <!--            </ul>-->
-                <!--            <div class="comment-print">-->
-                <!--                <a class="print" title="print" href="#print">Print</a>-->
-                <!--            </div>-->
                 <div class="page-title">
                     <h1 class="title" id="page-title">The Billboard Hot 100</h1>
-                    <!--                <div class="social">-->
-                    <!--                    <ul class="with_buttons">-->
-                    <!--                        <li>-->
-                    <!--                            <span class="ib in">2</span>-->
-                    <!--                            <div><script type="IN/Share" data-url="http://www.billboard.com/biz/charts/the-billboard-hot-100"></script></div>-->
-                    <!--                        </li>-->
-                    <!--                        <li>-->
-                    <!--                            <span class="ib fb">35</span>-->
-                    <!--                            <div class="fb-like" data-href="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-send="false" data-layout="button_count" data-width="300" data-show-faces="true"></div> </li>-->
-                    <!--                        <li>-->
-                    <!--                            <span class="ib tw">20</span>-->
-                    <!--                            <div class="tweetbutton-tweet tweetbutton"><a href="http://web.archive.org/web/20190719160117/https://twitter.com/share" data-size="medium" data-count="none" data-via="billboardbiz" data-related=":" data-text="" data-counturl="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-url="http://web.archive.org/web/20190719160117/http://www.billboard.com/biz/charts/the-billboard-hot-100" data-lang="en" class="twitter-share-button"></a></div> </li>-->
-                    <!--                        <li>-->
-                    <!--                            <span class="ib gplus">4</span>-->
-                    <!--                            <div class="g-plusone-wrapper"><div class="g-plusone" data-href="http://www.billboard.com/biz/charts/the-billboard-hot-100" data-size="medium" data-annotation="none"></div></div> </li>-->
-                    <!--                    </ul>-->
-                    <!--                    <div class="cleaner"></div>-->
-                    <!--                </div>-->
                 </div>
                 <div class="header_intro">This week's most popular songs across all genres, ranked by radio airplay audience impressions as measured by Nielsen Music, sales data as compiled by Nielsen Music and streaming activity data provided by online music sources.</div>
                 <div class="tabs"></div>
@@ -181,22 +154,6 @@
                                     <tbody>
                                     </tbody>
                                 </table>
-                                <!--                            <div class="paywall_banner">-->
-                                <!--                                <h2>Subscribe to billboard biz to continue reading this chart and thousands more.</h2>-->
-                                <!--                                <span>Billboard.biz subscribers get:</span>-->
-                                <!--                                <ul>-->
-                                <!--                                    <li>24/7 coverage of every genre and sector of the business with over 150 exclusive charts</li>-->
-                                <!--                                    <li>Bulletin: Breaking stories, chart info and analysis sent directly to your inbox every weekday</li>-->
-                                <!--                                    <li class="cleaner">Billboard Magazine iPad Edition: An enhanced version of the magazine with video, photo galleries and playable charts</li>-->
-                                <!--                                    <li>Archives: A rich history of Billboard.biz articles and exclusive charts</li>-->
-                                <!--                                </ul> <p class="cta">-->
-                                <!--                                <a href="/web/20190719160117/https://www.billboard.com/subscribe" target="_blank">Join now</a>-->
-                                <!--                                or-->
-                                <!--                                <a href="/web/20190719160117/https://www.billboard.com/login-popup/nojs" class="use-ajax">Log In</a> </p>-->
-                                <!--                                <a href="/web/20190719160117/https://www.billboard.com/biz" class="logo">billboard biz</a>-->
-                                <!--                            </div>-->
-                                <!--                            <div class="paywall_banner_back">-->
-                                <!--                            </div> -->
                             </div>
                         </div>
                     </div>
@@ -216,122 +173,117 @@
     var date = '';
 
     var CHARTS = [
-        ['the-billboard-hot-100','1958-08-04'],
-        ['bubbling-under-hot-100-singles','1992-12-05'],
-        ['r-b-hip-hop-songs','1958-01-20'],
-        ['bubbling-under-r-and-b-hip-hop-singles','1992-12-05'],
-        ['r-and-b-songs','2012-10-20'],
-        ['country-songs','1958-10-20'],
-        ['radio-songs','1990-11-03'],
-        ['digital-song-sales','2004-10-30'],
-        ['pop-digital-song-sales','2010-01-23'],
-        ['r-and-b-hip-hop-digital-song-sales','2010-01-23'],
-        ['rap-digital-song-sales','2010-01-23'],
-        ['r-and-b-digital-song-sales','2012-11-10'],
-        ['country-digital-song-sales','2010-01-23'],
-        ['pop-songs','1992-10-03'],
-        ['adult-pop-songs','1995-10-07'],
-        ['adult-contemporary','1961-07-17'                           ],
-        ['hot-r-and-b-hip-hop-airplay','1992-04-04'],
-        ['mainstream-r-and-b-hip-hop','1993-09-18'],
-        ['hot-adult-r-and-b-airplay','1993-09-18'],
-        ['rhythmic-40','1992-10-03'],
-        ['country-airplay','1990-01-20'],
-        ['rock-songs','2009-06-20'],
-        ['hard-rock-digital-song-sales','2011-01-22'],
-        ['alternative-digital-song-sales','2011-01-22'],
-        ['rock-digital-song-sales','2010-01-23'],
-        ['rock-airplay','2009-06-20'],
-        ['alternative-songs','1988-09-10'],
-        ['hot-mainstream-rock-tracks','1981-03-21'],
-        ['triple-a','1996-01-20'],
-        ['dance-electronic-songs','2013-01-26'],
-        ['dance-electronic-digital-song-sales','2010-01-23'],
-        ['hot-dance-airplay','2003-08-16'],
-        ['dance-club-play-songs','1976-08-28'],
-        ['latin-songs','1986-09-06'],
+        ['the-billboard-hot-100'],
+        ['billboard-global-200'],
+        ['billboard-global-excl-us'],
+        ['r-b-hip-hop-songs'],
+        ['bubbling-under-hot-100-singles'],
+        ['bubbling-under-r-and-b-hip-hop-singles'],
+        ['r-and-b-songs'],
+        ['country-songs'],
+        ['radio-songs'],
+        ['digital-song-sales'],
+        ['streaming-songs'],
+        ['on-demand-songs'],
+        ['pop-digital-song-sales'],
+        ['r-and-b-hip-hop-digital-song-sales'],
+        ['rap-digital-song-sales'],
+        ['r-and-b-digital-song-sales'],
+        ['country-digital-song-sales'],
+        ['pop-songs'],
+        ['adult-pop-songs'],
+        ['adult-contemporary'],
+        ['hot-r-and-b-hip-hop-airplay'],
+        ['mainstream-r-and-b-hip-hop'],
+        ['hot-adult-r-and-b-airplay'],
+        ['rhythmic-40'],
+        ['country-airplay'],
+        ['rock-songs'],
+        ['hot-alternative-songs',],
+        ['hot-hard-rock-songs',],
+        ['rock-digital-song-sales'],
+        ['hard-rock-digital-song-sales'],
+        ['alternative-digital-song-sales'],
+        ['rock-airplay'],
+        ['alternative-airplay'],
+        ['hot-mainstream-rock-tracks'],
+        ['triple-a'],
+        ['dance-electronic-songs'],
+        ['dance-electronic-digital-song-sales'],
+        ['hot-dance-airplay'],
+        ['dance-club-play-songs'],
+        ['latin-songs'],
 
-        ['the-billboard-200','1963-08-17'],
-        ['top-album-sales','1991-05-25'],
-        ['current-albums','1983-11-05'],
-        ['tastemaker-albums','2005-12-03'],
-        ['country-albums','1964-01-11'],
-        ['americana-folk-albums','2009-12-05'],
-        ['bluegrass-albums','2002-07-20'],
-        ['r-b-hip-hop-albums','1965-01-30'],
-        ['rap-albums','2004-06-26'],
-        ['r-and-b-albums','2013-01-26'],
-        ['rock-albums','2006-01-14'],
-        ['hard-rock-albums','2007-07-28'],
-        ['alternative-albums','2007-07-28'],
-        ['dance-electronic-albums','2001-06-30'],
-        ['blues-albums','1995-09-02'],
-        ['jazz-albums','1993-11-13'],
-        ['traditional-jazz-albums','1983-11-12'],
-        ['contemporary-jazz','1987-02-28'],
-        ['new-age-albums','1988-08-27'],
-        ['reggae-albums','1994-02-05'],
-        ['heatseekers-albums','1991-07-13'],
-        ['independent-albums','2000-01-29'],
-        ['soundtracks','2001-06-30'],
-        ['compilation-albums','2004-10-30'],
-        ['cast-albums','2006-01-14'],
-        ['vinyl-albums','2011-01-22'],
+        ['the-billboard-200'],
+        ['top-album-sales'],
+        ['current-albums'],
+        ['tastemaker-albums'],
+        ['country-albums'],
+        ['americana-folk-albums'],
+        ['bluegrass-albums'],
+        ['r-b-hip-hop-albums'],
+        ['rap-albums'],
+        ['r-and-b-albums'],
+        ['rock-albums'],
+        ['hard-rock-albums'],
+        ['alternative-albums'],
+        ['dance-electronic-albums'],
+        ['blues-albums'],
+        ['jazz-albums'],
+        ['traditional-jazz-albums'],
+        ['contemporary-jazz'],
+        ['new-age-albums'],
+        ['reggae-albums'],
+        ['heatseekers-albums'],
+        ['independent-albums'],
+        ['soundtracks'],
+        ['compilation-albums'],
+        ['cast-albums'],
+        ['vinyl-albums'],
 
-        ['alternative-album-sales','2007-07-28'],
-        ['americana-folk-album-sales','2009-12-05'],
-        ['artist-100','2014-07-19'],
-        ['blues-digital-song-sales','2010-01-23'],
-        ['catalog-album-sales','1991-05-25'],
-        ['country-album-sales','1991-05-25'],
-        ['country-catalog-albums','1991-05-25'],
-        ['country-streaming-songs','2013-04-20'],
-        ['dance-electronic-album-sales','2001-06-30'],
-        ['dance-electronic-streaming-songs','2013-04-20'],
-        ['digital-albums','2005-09-24'],
-        ['hard-rock-album-sales','2007-07-28'],
-        ['heatseekers-songs','2009-07-18','2014-11-29'],
-        ['hot-holiday-songs','2011-12-10'],
-        ['hot-rap-tracks','1999-02-20'],
-        ['jazz-digital-song-sales','2010-01-23'],
-        ['jazz-songs','2005-10-22'],
-        ['latin-album-sales','1993-07-10'],
-        ['latin-albums','1993-07-10'],
-        ['new-age-digital-song-sales','2010-01-23'],
-        ['on-demand-songs','2012-03-24'],
-        ['r-and-b-hip-hop-catalog-albums','1997-01-18'],
-        ['r-and-b-hip-hop-streaming-songs','2013-04-20'],
-        ['r-and-b-streaming-songs','2013-04-20'],
-        ['randb-album-sales','2013-01-26'],
-        ['randb-hip-hop-album-sales','1992-12-05'],
-        ['rap-album-sales','2004-06-26'],
-        ['rap-song','1989-03-11'],
-        ['rap-streaming-songs','2013-04-20'],
-        ['reggae-digital-song-sales','2010-01-23'],
-        ['rock-album-sales','2006-01-14'],
-        ['rock-streaming-songs','2013-04-20'],
-        ['soundtrack-sales','2001-06-30'],
-        ['streaming-songs','2013-01-26'],
-        ['world-albums','1990-05-19'],
-        ['world-digital-song-sales','2010-01-23']
+        ['alternative-album-sales'],
+        ['americana-folk-album-sales'],
+        ['artist-100'],
+        ['blues-digital-song-sales'],
+        ['catalog-album-sales'],
+        ['country-album-sales'],
+        ['country-catalog-albums'],
+        ['country-streaming-songs'],
+        ['dance-electronic-album-sales'],
+        ['dance-electronic-streaming-songs'],
+        ['digital-albums'],
+        ['hard-rock-album-sales'],
+        ['heatseekers-songs'],
+        ['hot-holiday-songs'],
+        ['hot-rap-tracks'],
+        ['jazz-digital-song-sales'],
+        ['jazz-songs'],
+        ['latin-album-sales'],
+        ['latin-albums'],
+        ['new-age-digital-song-sales'],
+        ['r-and-b-hip-hop-catalog-albums'],
+        ['r-and-b-hip-hop-streaming-songs'],
+        ['r-and-b-streaming-songs'],
+        ['randb-album-sales'],
+        ['randb-hip-hop-album-sales'],
+        ['rap-album-sales'],
+        ['rap-song'],
+        ['rap-streaming-songs'],
+        ['reggae-digital-song-sales'],
+        ['rock-album-sales'],
+        ['rock-streaming-songs'],
+        ['soundtrack-sales'],
+        ['world-albums'],
+        ['world-digital-song-sales']
     ];
 
     function parseChartFromPrintView(htmlChart) {
-        // setTextArea(htmlChart);
-        // return;
         var title = $('.print-chart__title').text();
         var date = $('.print-chart__week').text();
         var criteria = $('.print-chart__criteria').text();
         var description = $('.print-chart__description').text();
-        // var printView = htmlChart.slice(htmlChart.indexOf('<table>'), htmlChart.indexOf('</table>') + 8);
-        // $('#hiddenChart').html(printView);
         var positions = [];
-        // alert($('tbody > tr').length);
         $('#hiddenChart').find('tbody > tr').each(function() {
-            // if (positions.length > 2) {
-            //     return;
-            // }
-            // $('#hiddenChartPos').html(this.innerHTML);
             var w2 = $(this).find('td:nth-child(1)').text();
             var w1 = $(this).find('td:nth-child(2)').text();
             var pos = $(this).find('td:nth-child(3)').text();
@@ -431,18 +383,22 @@
     function parseChart(htmlChart) {
         var mainView = htmlChart.slice(htmlChart.indexOf('<main'), htmlChart.indexOf('</main>') + 7);
         $('#hiddenChart').html(preventJS(mainView));
-        var chart = parseChartFromPrintView(htmlChart);
-        parseAdditionalItemsFromRenderViewCommon(chart, htmlChart);
-        if (detectRenderLayout(htmlChart) === 'BIZ') {
-            parseAdditionalItemsFromRenderViewBiz(chart, htmlChart);
-        } else {
-            parseAdditionalItemsFromRenderViewMain(chart, htmlChart);
-        }
+        var chart;
+        // if (detectNewFormat(htmlChart)) {
+        //     chart = parseNewFormat(htmlChart);
+        // } else {
+            chart = parseChartFromPrintView(htmlChart);
+            parseAdditionalItemsFromRenderViewCommon(chart, htmlChart);
+            if (detectRenderLayout(htmlChart) === 'BIZ') {
+                parseAdditionalItemsFromRenderViewBiz(chart, htmlChart);
+            } else {
+                parseAdditionalItemsFromRenderViewMain(chart, htmlChart);
+            }
+        // }
         return chart;
     }
 
     function preventJS(html) {
-        // return html.replace(/<script(?=(\s|>))/i, '<script type="text/xml" ');
         var wrapper = document.createElement('div');
         wrapper.innerHTML = html;
         $(wrapper).find('script').remove();
@@ -470,7 +426,6 @@
             var credits = '';
             var label = $(this).find('.label').text().trim();
             var cert = '';
-            // var weeksAt1 = $(this).find('td:nth-child(6)').text();
             var weeks = $(this).find('td:nth-child(5)').text().trim();
             var peak = $(this).find('td:nth-child(4)').text().trim();
             var p = {
@@ -529,7 +484,6 @@
         lines.push(chart.title);
         lines.push(chart.date);
         lines.push('TW LW 2W WOC Title Artist ( Peak ) Imprint | label');
-        // alert(chart.positions.length);
         chart.positions.forEach(function(p) {
             var cols = [];
             cols.push(p.pos);
@@ -551,7 +505,6 @@
             cols.push(p.peak);
             cols.push(')');
             cols.push(p.label);
-            // cols.push(p.awards);
             lines.push(cols.join(' '));
         });
         return lines.join('\n');
