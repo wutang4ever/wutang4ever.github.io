@@ -41,7 +41,7 @@
         @import url("styles/wget-styles/footer.css");
         @import url("styles/wget-styles/social.css");
         @import url("styles/wget-styles/genericons.css");
-        @import url("styles/wget-styles/teaser.css");
+        /*@import url("styles/wget-styles/teaser.css");*/
         @import url("styles/wget-styles/gallery.css");
         @import url("styles/wget-styles/most_popular.css");
         @import url("styles/wget-styles/newsletter.css");
@@ -277,36 +277,36 @@
         ['world-digital-song-sales']
     ];
 
-    function parseChartFromPrintView(htmlChart) {
-        var title = $('.print-chart__title').text();
-        var date = $('.print-chart__week').text();
-        var criteria = $('.print-chart__criteria').text();
-        var description = $('.print-chart__description').text();
+    function parseChartUsNew(htmlChart) {
+        var title = $('.chart-results > div > div > div > h2').text().trim();
+        var date = $('.chart-results > div > div > p').text().trim();
+        var criteria = '';
+        var description = '';
         var positions = [];
-        $('#hiddenChart').find('tbody > tr').each(function() {
-            var w2 = $(this).find('td:nth-child(1)').text();
-            var w1 = $(this).find('td:nth-child(2)').text();
-            var pos = $(this).find('td:nth-child(3)').text();
-            var gainer = $(this).find('.item-details__gainer').text();
-            var title = $(this).find('.item-details__title').text();
-            var artist = $(this).find('.item-details__artist').text();
-            var credits = $(this).find('.item-details__credits').text();
-            var label = $(this).find('td:nth-child(4) div:last-child').text();
-            var cert = $(this).find('td:nth-child(5)').text();
-            var weeksAt1 = $(this).find('td:nth-child(6)').text();
-            var weeks = $(this).find('td:nth-child(7)').text();
-            var peak = weeks === '1' ? positions.length + 1 + '' : '';
+        $('#hiddenChart').find('.o-chart-results-list-row-container').each(function() {
+            var nodes = $(this).find('.o-chart-results-list__item');
+            var w2 = '';
+            var w1 = $(nodes[6]).text().trim();
+            var pos = $(nodes[0]).find('span:nth-child(1)').text().trim();
+            // var gainer = $(this).find('.item-details__gainer').text().trim();
+            var title = $(nodes[3]).find('#title-of-a-story').text().trim();
+            var artist = $(nodes[3]).find('span').text().trim();
+            var credits = '';
+            var label = '';
+            var cert = '';
+            var weeks = $(nodes[8]).text().trim();
+            var peak = $(nodes[7]).text().trim();
             var p = {
                 w2: w2,
                 w1: w1,
                 pos: pos,
                 cert: cert,
                 weeks: weeks,
-                gainer: gainer,
+                // gainer: gainer,
                 title: title,
                 artist: artist,
-                credits: !!credits && credits.trim() === '()' ? 'Not Listed' : credits,
-                label: !!label && label.trim() === '()' ? 'Not Listed' : label,
+                credits: credits,
+                label: label,
                 peak: peak
             };
             positions.push(p);
@@ -321,81 +321,10 @@
         };
     }
 
-    function detectRenderLayout(htmlChart) {
-        if (htmlChart.indexOf('chart-list-item__ministats-cell-heading') > 0) {
-            return 'BIZ';
-        } else {
-            return 'MAIN';
-        }
-    }
-
-    function parseAdditionalItemsFromRenderViewMain(chart, htmlChart) {
-        var pos = $('#hiddenChart').find('.chart-list-item');
-        if (pos.length !== chart.positions.length) {
-            setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
-        }
-        // note the strange class name - could be fixed later
-        var l = $('#hiddenChart').find('.chart-list-item,.chart-list-item__weeks-at-one');
-        var extra = 1;
-        var index = -1;
-        l.each(function() {
-            if ($(this).hasClass('chart-list-item')) {
-                extra = 0;
-                index++;
-            } else if ($(this).hasClass('chart-list-item__weeks-at-one')) {
-                if (extra === 1) {
-                    // setUserMessage("Illegal state");
-                }
-                if (extra === 0) {
-                    chart.positions[index].peak = $(this).text();
-                }
-                extra = 1;
-            }
-        });
-    }
-
-    function parseAdditionalItemsFromRenderViewBiz(chart, htmlChart) {
-        var index = 0;
-        var l = $('#hiddenChart').find('.chart-list-item__ministats-cell-heading').filter(function(e) {
-            return $(this).text()==='Peak';
-        });
-        if (l.length !== chart.positions.length) {
-            setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
-        }
-        l.each(function() {
-            chart.positions[index++].peak = $(this).parent().clone().children().remove().end().text().trim();
-        });
-
-        // AWARDS
-        index = 0;
-        var awards = $('#hiddenChart').find('.chart-list-item__award');
-        if (awards.length !== chart.positions.length) {
-            setUserMessage('WARNING: something went wrong, peak positions may be incorrect');
-        }
-        awards.each(function() {
-            chart.positions[index++].awards = $(this).html().trim();
-        });
-    }
-
-    function parseAdditionalItemsFromRenderViewCommon(chart, htmlChart) {
-    }
-
     function parseChart(htmlChart) {
         var mainView = htmlChart.slice(htmlChart.indexOf('<main'), htmlChart.indexOf('</main>') + 7);
         $('#hiddenChart').html(preventJS(mainView));
-        var chart;
-        // if (detectNewFormat(htmlChart)) {
-        //     chart = parseNewFormat(htmlChart);
-        // } else {
-            chart = parseChartFromPrintView(htmlChart);
-            parseAdditionalItemsFromRenderViewCommon(chart, htmlChart);
-            if (detectRenderLayout(htmlChart) === 'BIZ') {
-                parseAdditionalItemsFromRenderViewBiz(chart, htmlChart);
-            } else {
-                parseAdditionalItemsFromRenderViewMain(chart, htmlChart);
-            }
-        // }
-        return chart;
+        return parseChartUsNew(htmlChart);
     }
 
     function preventJS(html) {
@@ -468,7 +397,7 @@
     }
 
     function validateResponse(data) {
-        return data.indexOf('<table>') > 0 && data.indexOf('chart-list-item') > 0;
+        return data.indexOf('o-chart-results-list-row-container') > 0;
     }
 
     function validateResponseUK(data) {
@@ -476,14 +405,17 @@
     }
 
     function isNew(p) {
-        return (p.w1 === '--' && p.w2 === '--') || (!!p.w1 && (p.w1.toUpperCase() === 'NEW' || p.w1.toUpperCase() === 'RE'));
+        return (p.w1 === '--' && p.w2 === '--')
+            || (!!p.w1 && (p.w1.toUpperCase() === 'NEW' || p.w1.toUpperCase() === 'RE'))
+            || p.w1 === '-';
     }
 
     function getChartText(chart) {
         var lines = [];
         lines.push(chart.title);
         lines.push(chart.date);
-        lines.push('TW LW 2W WOC Title Artist ( Peak ) Imprint | label');
+        // lines.push('TW LW 2W WOC Title Artist ( Peak ) Imprint | label');
+        lines.push('TW LW WOC Title Artist ( Peak )');
         chart.positions.forEach(function(p) {
             var cols = [];
             cols.push(p.pos);
@@ -495,7 +427,7 @@
                 }
             } else {
                 cols.push(p.w1);
-                cols.push(p.w2);
+                // cols.push(p.w2);
             }
             cols.push(p.weeks);
             cols.push(p.title);
@@ -526,7 +458,7 @@
         var weeks = $('<td>').attr('rowspan', '2').text(position.weeks);
         if (position.weeks === '1') {
             tr.append('<td rowspan="2" colspan="2" class="new"><span>New</span></td>');
-        } else if (position.w1 === '--' || position.w1.toUpperCase() === 'RE') {
+        } else if (position.w1 === '--' || position.w1.toUpperCase() === 'RE' || position.w1 === '-' ) {
             tr.append('<td rowspan="2" colspan="2" class="new"><span>Re-Entry</span></td>');
         } else {
             tr.append(w2).append(w1);
