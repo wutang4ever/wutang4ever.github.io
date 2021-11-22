@@ -41,7 +41,7 @@
         @import url("styles/wget-styles/footer.css");
         @import url("styles/wget-styles/social.css");
         @import url("styles/wget-styles/genericons.css");
-        /*@import url("styles/wget-styles/teaser.css");*/
+        @import url("styles/wget-styles/teaser.css");
         @import url("styles/wget-styles/gallery.css");
         @import url("styles/wget-styles/most_popular.css");
         @import url("styles/wget-styles/newsletter.css");
@@ -535,13 +535,10 @@
 
     function getChartHtml(chartUrl, callback, format) {
         $.ajax({
-            url:"https://api.allorigins.win/get?url="+chartUrl,
-             //headers: {
-             //	'Origin': 'https://billboard.com'
-             //},
+            url:"https://thingproxy.freeboard.io/fetch/"+chartUrl,
             type:'GET',
             success: function(data){
-                callback(data.contents, format);
+                callback(data, format);
             },
             error: function(data) {
                 setUserMessage('Server error');
