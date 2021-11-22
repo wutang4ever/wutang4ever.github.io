@@ -535,7 +535,7 @@
 
     function getChartHtml(chartUrl, callback, format) {
         $.ajax({
-            url:"https://thingproxy.freeboard.io/fetch/"+chartUrl,
+            url:"https://api.allorigins.win/get?url="+chartUrl,
             type:'GET',
             success: function(data){
                 callback(data, format);
