@@ -535,7 +535,7 @@
 
     function getChartHtml(chartUrl, callback, format) {
         $.ajax({
-            url:"https://api.allorigins.win/get?url="+chartUrl,
+            url:"https://api.codetabs.com/v1/proxy?quest="+chartUrl,
             type:'GET',
             success: function(data){
                 callback(data, format);
