@@ -111,14 +111,25 @@
         <label>Or paste HTML code (open chart in browser, press Ctrl+U, copy all code)</label>
         <input type="textarea" id="chartHtml" style="width:400px;height:100px;"/><br>
         <br>
-        <div style="width:50%; margin-bottom: 10px;">The new format conversion works now,
+        <div style="width:50%; margin-bottom: 3px;">The new format conversion works now,
             but there seems to be no information about W2 or Label/Imprint in the new format,
-            so these fields are excluded.
-        There are also ongoing "network" issues as I am using yet another public (free) CORS proxy to fetch the data,
+            so these fields are excluded. There have also been ongoing "network" issues as I have been using various public (free) CORS proxies to fetch the data,
             and they are always heavily rate limited and unreliable.
             So in case of Server Error just try again later. And pasting HTML code will always work even in case of network issues.
+            </div>
+        <div style="width:50%; margin-bottom: 3px;">
+            Now you can choose CORS proxy from the list below. Proxy 1 is the most reliable, but requires one extra step to do
+            each time when you haven't used the tool for some time - go to
+            <a href="https://cors-anywhere.herokuapp.com/corsdemo">https://cors-anywhere.herokuapp.com/corsdemo</a>
+            and click "Request temporary access to the demo server" button. Proxy 2 and Proxy 3 don't need that but are much less reliable.
         </div>
         <br>
+        <select id="choose-proxy" style="width:300px;">
+            <option label="Proxy 1" value="https://cors-anywhere.herokuapp.com/"></option>
+            <option label="Proxy 2" value="https://api.allorigins.win/get?url="></option>
+            <option label="Proxy 3" value="https://api.codetabs.com/v1/proxy?quest="></option>
+        </select>
+        <br><br>
         <button id="getChart">Get Text</button> <button id="getBizChart">Get Biz Layout</button> <button id="getExcelFile">Get Excel File</button> <button id="clear">Clear All</button>
         <br><br>
         <div id="userMessage"></div><br><br>
@@ -542,8 +553,12 @@
     }
 
     function getChartHtml(chartUrl, callback, format) {
+        var proxy = $('#choose-proxy').children("option:selected").val();
+        if (!proxy) {
+            setUserMessage('Please choose proxy');
+        }
         $.ajax({
-            url:"https://api.codetabs.com/v1/proxy?quest="+chartUrl,
+            url:proxy+chartUrl,
             type:'GET',
             success: function(data){
                 callback(data, format);
