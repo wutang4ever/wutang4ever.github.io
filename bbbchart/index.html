@@ -192,7 +192,7 @@
     var date = '';
 
     var CHARTS = [
-        ['hot-100'],
+        ['the-billboard-hot-100'],
         ['billboard-global-200'],
         ['billboard-global-excl-us'],
         ['r-b-hip-hop-songs'],
@@ -233,7 +233,7 @@
         ['pop-digital-song-sales'],
         ['bubbling-under-r-and-b-hip-hop-singles'],
 
-        ['billboard-200'],
+        ['the-billboard-200'],
         ['top-album-sales'],
         ['current-albums'],
         ['tastemaker-albums'],
@@ -354,28 +354,33 @@
     }
 
     function parseChartUK(htmlChart) {
-        var mainView = htmlChart.slice(htmlChart.indexOf('<article class="page"'), htmlChart.indexOf('</article>') + 7);
+        var headerView = htmlChart.slice(htmlChart.indexOf('<section class="gutter'));
+        headerView = headerView.slice(0, headerView.indexOf('</section>') + 7);
+        $('#hiddenChart').html(preventJS(headerView));
+        var title = $('.prose > h1').clone().children().remove().end().text().trim();
+        var date = $('.prose > p').first().text().trim();
+        var criteria = '';
+        var description = $('.prose > div > p').text().trim();
+
+        var mainView = htmlChart.slice(htmlChart.indexOf('<section class="chart-list'));
+        mainView = mainView.slice(0, mainView.indexOf('</section>') + 7);
         $('#hiddenChart').html(preventJS(mainView));
 
-        var title = $('.article-heading').text().trim();
-        var date = $('.article-date').first().text().trim();
-        var criteria = '';
-        var description = $('.chart-intro-text').text().trim();
         var positions = [];
-        $('#hiddenChart').find('section>table>tbody>tr:not(".headings")').each(function() {
+        $('#hiddenChart').find('.chart-item-content').each(function() {
             $('#hiddenChartPos').html(this.innerHTML);
-            var pos = $(this).find('.position').text().trim();
+            var pos = $(this).find('.position > span > strong').text().trim();
             if (!pos) return;
             var w2 = '';
-            var w1 = $(this).find('.last-week').text().trim();
+            var w1 = $(this).find('.movement > span > span').text().trim();
             var gainer = '';
-            var title = $(this).find('.title').text().trim();
-            var artist = $(this).find('.artist').text().trim();
+            var title = $(this).find('.chart-name').find('span:nth-child(2)').text().trim();
+            var artist = $(this).find('.chart-artist').text().trim();
             var credits = '';
-            var label = $(this).find('.label').text().trim();
+            var label = '';
             var cert = '';
-            var weeks = $(this).find('td:nth-child(5)').text().trim();
-            var peak = $(this).find('td:nth-child(4)').text().trim();
+            var weeks = $(this).find('.weeks > span').text().trim();
+            var peak = $(this).find('.peak > span:nth-child(1)').text().trim();
             var p = {
                 w2: w2,
                 w1: w1,
@@ -420,7 +425,7 @@
     }
 
     function validateResponseUK(data) {
-        return data.indexOf('<table') > 0 && data.indexOf('chart-positions') > 0;
+        return data.indexOf('<section class="chart-list') > 0 && data.indexOf('chart-item-content') > 0;
     }
 
     function isNew(p) {
